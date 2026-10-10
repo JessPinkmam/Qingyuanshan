@@ -102,10 +102,11 @@
 <section>
   <h2>🕘 建议行程（路线A）</h2>
   <div class="timeline">
-    <div class="row"><span class="time">7:30</span><span>南门入园，趁早避开人流，先看老君岩晨光</span></div>
+    <div class="row"><span class="time">7:30</span><span>南门入园 → 虎乳泉（泉州得名之源），趁早避开人流</span></div>
     <div class="row"><span class="time">8:00</span><span>老君岩（宋代老子石雕，镇山之宝）📸</span></div>
-    <div class="row"><span class="time">9:00</span><span>千手岩 · 弘一法师舍利塔（"悲欣交集"石刻）→ 虎乳泉（泉州得名之源）</span></div>
-    <div class="row"><span class="time">10:00</span><span>弥陀岩（元代古刹）📸 → 碧霄岩三世佛（元代藏传佛教石雕）→ 瑞像岩</span></div>
+    <div class="row"><span class="time">9:00</span><span>千手岩 → 弘一法师舍利塔（"悲欣交集"石刻）</span></div>
+    <div class="row"><span class="time">10:00</span><span>弥陀岩（元代古刹）📸 → 第一山刻碑（米芾题）→ 欧阳书院（茶室小憩，露台观景）📸</span></div>
+    <div class="row"><span class="time">10:40</span><span>碧霄岩三世佛（元代藏传佛教石雕）→ 瑞像岩</span></div>
     <div class="row"><span class="time">11:30</span><span>天湖环湖，湖光山色拍拍照 📸</span></div>
     <div class="row"><span class="time">12:00</span><span>南台岩午餐休息（山顶有平价景观餐厅），观景台远眺 📸</span></div>
     <div class="row"><span class="time">13:30</span><span>沿盘山公路步行下山</span></div>
@@ -182,13 +183,20 @@ var SPOTS = {
   laojunyan:  { name:'老君岩', icon:'🗿', pos:[24.94027,118.60810], img:'img/laojunyan.jpg', photo:true,
     ptip:'石像正面经典机位，早上顺光、人少好拍 📸',
     desc:'镇山之宝。宋代老子石雕坐像，高5.63米，中国现存年代最早、最大的道教石雕，全国重点文保。' },
+  huruquan:   { name:'虎乳泉（孔泉）', icon:'💧', pos:[24.93960,118.60815], img:'img/huruquan.jpg',
+    desc:'"泉州"之名的由来——山多泉眼故名"泉山"，泉州即源于此泉。南门上山步道旁，先到泉再登山。' },
   qianshouyan:{ name:'千手岩', icon:'🙏', pos:[24.94085,118.60767], img:'img/qianshouyan.jpg',
-    desc:'观音寺。弘一法师舍利塔在此，塔旁岩壁刻有其临终手书"悲欣交集"四字。' },
-  huruquan:   { name:'虎乳泉（孔泉）', icon:'💧', pos:[24.94124,118.60831], img:'img/huruquan.jpg',
-    desc:'"泉州"之名的由来——山多泉眼故名"泉山"，泉州即源于此泉。' },
+    desc:'观音寺，山间古刹；弘一法师舍利塔即安放在岩畔。' },
+  hongyita:   { name:'弘一法师舍利塔', icon:'🕯️', pos:[24.94100,118.60750], img:'img/hongyita.jpg',
+    desc:'弘一法师（李叔同）圆寂后，舍利塔安放于千手岩畔；塔旁岩壁刻有其临终绝笔"悲欣交集"四字。' },
   mituoyan:   { name:'弥陀岩', icon:'🏯', pos:[24.94202,118.60788], img:'img/mituoyan.jpg', photo:true,
     ptip:'元代古刹，红墙黛瓦适合古风人像 📸',
     desc:'始建于元至正二十四年（1364年），福建省首批省级文保单位；附近有弥陀瀑布。' },
+  diyishan:   { name:'第一山刻碑', icon:'✍️', pos:[24.94250,118.60780], img:'img/diyishan.jpg',
+    desc:'宋代大书法家米芾题刻"第一山"；清源山历代摩崖石刻近700方，多聚集于这一带山道旁。' },
+  ouyangshuyuan:{ name:'欧阳书院', icon:'🍵', pos:[24.94310,118.60790], img:'img/ouyangshuyuan.jpg', photo:true,
+    ptip:'书院茶室，露台观景极佳，适合小憩 📸',
+    desc:'山间书院，现作茶室使用；露台处视野开阔，是徒步中途休憩看景的好地方。' },
   bixiaoyan:  { name:'碧霄岩 · 三世佛', icon:'☸️', pos:[24.94279,118.60767], img:'img/bixiaoyan.jpg',
     desc:'元代藏传佛教三世佛石雕，国内现存年代最早、保存最完整、位置最东南的喇嘛教造像。' },
   ruixiangyan:{ name:'瑞像岩', icon:'🪨', pos:[24.94338,118.60810], img:'img/ruixiangyan.jpg',
@@ -221,20 +229,20 @@ function S(k){ return SPOTS[k].pos; }
 var ROUTES = {
   A: { name:'A · 经典文化线', color:'#2f9e44', rec:'最推荐情侣',
        meta:['约5–6公里','3.5–4.5小时（含游览）','爬升约300米','难度 ★★☆'],
-       line: CLIMB.concat([S('laojunyan'),S('qianshouyan'),S('huruquan'),S('mituoyan'),S('bixiaoyan'),S('ruixiangyan')]).concat(RX_T).concat(T_N).concat(rev(T_N)).concat(rev(T_S)).concat(rev(CLIMB)),
-       order:['southGate','laojunyan','qianshouyan','huruquan','mituoyan','bixiaoyan','ruixiangyan','tianhu','nantaiyan'],
+       line: CLIMB.concat([S('huruquan'),S('laojunyan'),S('qianshouyan'),S('hongyita'),S('mituoyan'),S('diyishan'),S('ouyangshuyuan'),S('bixiaoyan'),S('ruixiangyan')]).concat(RX_T).concat(T_N).concat(rev(T_N)).concat(rev(T_S)).concat(rev(CLIMB)),
+       order:['southGate','huruquan','laojunyan','qianshouyan','hongyita','mituoyan','diyishan','ouyangshuyuan','bixiaoyan','ruixiangyan','tianhu','nantaiyan'],
        back:'原路下山回南门',
        hl:'一天看遍道教（老君岩）、佛教（千手岩）、藏传佛教（三世佛）三教遗迹 + "泉州"得名之源 + 山顶天湖，景点最密集。' },
   B: { name:'B · 登顶观景线', color:'#e8890c', rec:'体力稍好',
        meta:['约7–8公里','4.5–6小时','爬升约450米','难度 ★★★'],
-       line: CLIMB.concat([S('laojunyan'),S('qianshouyan')]).concat(RX_T).concat(T_P).concat([S('peak')]).concat(rev(T_P)).concat(T_N).concat(rev(T_N)).concat(rev(T_S)).concat(rev(CLIMB)),
-       order:['southGate','laojunyan','qianshouyan','tianhu','peak','nantaiyan'],
+       line: CLIMB.concat([S('huruquan'),S('laojunyan'),S('qianshouyan'),S('hongyita')]).concat(RX_T).concat(T_P).concat([S('peak')]).concat(rev(T_P)).concat(T_N).concat(rev(T_N)).concat(rev(T_S)).concat(rev(CLIMB)),
+       order:['southGate','huruquan','laojunyan','qianshouyan','hongyita','tianhu','peak','nantaiyan'],
        back:'原路下山回南门',
        hl:'登顶约500米主峰的成就感 + 俯瞰泉州全城与晋江入海口全景机位，适合喜欢拍照的你们。' },
   C: { name:'C · 轻松半山线', color:'#1971c2', rec:'最省力',
        meta:['约3–4公里','2–3小时','爬升约100米','难度 ★☆☆'],
-       line: [S('nantaiyan')].concat(T_N).concat(lakeLoop()).concat(T_S.slice(0,10)).concat([S('bixiaoyan')]).concat(rev(T_S.slice(0,10))).concat(rev(T_N)),
-       order:['nantaiyan','tianhu','bixiaoyan'],
+       line: [S('nantaiyan')].concat(T_N).concat(lakeLoop()).concat(T_S.slice(0,10)).concat([S('ouyangshuyuan'),S('bixiaoyan')]).concat(rev(T_S.slice(0,10))).concat(rev(T_N)),
+       order:['nantaiyan','tianhu','ouyangshuyuan','bixiaoyan'],
        back:'返回南台岩乘车下山',
        hl:'开车直上南台岩，跳过最陡的南门上山段，把体力留给湖光山色和寺院慢游。' }
 };
