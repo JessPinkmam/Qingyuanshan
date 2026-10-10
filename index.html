@@ -33,6 +33,14 @@
   .chips { display:flex; gap:8px; overflow-x:auto; padding:4px 2px 10px; }
   .chip { flex:0 0 auto; background:#fff; border:1px solid #d8e6d4; border-radius:20px; padding:7px 14px; font-size:13px; cursor:pointer; }
   .chip:active { background:#eef7ea; }
+  .photo-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .photo-card { background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 1px 6px rgba(0,0,0,.07); cursor:pointer; }
+  .photo-card img { width:100%; height:110px; object-fit:cover; display:block; }
+  .photo-card .pc-b { padding:8px 12px 10px; }
+  .photo-card .pc-b b { font-size:14px; }
+  .photo-card .pc-b p { font-size:12px; color:#777; margin-top:2px; }
+  .photo-card.full { grid-column:1 / -1; }
+  .photo-card.full img { height:150px; }
   .info-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
   .info-card { background:#fff; border-radius:12px; padding:12px 14px; box-shadow:0 1px 6px rgba(0,0,0,.05); font-size:13px; }
   .info-card h3 { font-size:14px; margin-bottom:6px; color:#2f6b3a; }
@@ -47,10 +55,13 @@
   .timeline .row:last-child { border:none; }
   .timeline .time { flex:0 0 62px; font-weight:700; color:#2f6b3a; }
   footer { text-align:center; font-size:12px; color:#999; padding:22px 20px 34px; max-width:860px; margin:0 auto; }
-  .leaflet-popup-content { font-size:13px; line-height:1.6; }
+  .leaflet-popup-content { font-size:13px; line-height:1.6; margin:10px 12px; }
   .leaflet-popup-content b { font-size:14px; }
-  .spot-icon { background:#fff; border:2px solid #3a8a4e; border-radius:50%; width:34px!important; height:34px!important; display:flex; align-items:center; justify-content:center; font-size:17px; box-shadow:0 2px 6px rgba(0,0,0,.25); }
+  .leaflet-popup-content img { width:100%; border-radius:8px; margin-bottom:6px; display:block; }
+  .leaflet-popup-content .ptip { background:#fffbe8; border-radius:6px; padding:4px 8px; margin-top:6px; font-size:12px; }
+  .spot-icon { position:relative; background:#fff; border:2px solid #3a8a4e; border-radius:50%; width:34px!important; height:34px!important; display:flex; align-items:center; justify-content:center; font-size:17px; box-shadow:0 2px 6px rgba(0,0,0,.25); }
   .gate-icon { border-color:#c07a1a; }
+  .cam-badge { position:absolute; right:-6px; bottom:-6px; background:#fff; border-radius:50%; font-size:13px; width:20px; height:20px; display:flex; align-items:center; justify-content:center; box-shadow:0 1px 4px rgba(0,0,0,.3); }
 </style>
 </head>
 <body>
@@ -69,13 +80,18 @@
 <section>
   <h2>🗺️ 可交互地图</h2>
   <div id="map"></div>
-  <p class="map-tip">点选下方路线按钮切换高亮 · 点击地图标记看景点介绍 · 可切换标准/卫星图层 · 景点位置为示意</p>
+  <p class="map-tip">路线沿山路实际走向绘制 · 点选下方路线按钮切换 · 点击标记看景点照片和介绍 · 可切换标准/卫星图层</p>
   <div class="tabs" id="tabs">
     <div class="tab active" data-r="A"><span class="t">A · 经典文化线</span><span class="d">约5–6km · 3.5–4.5h · 推荐</span></div>
     <div class="tab" data-r="B"><span class="t">B · 登顶观景线</span><span class="d">约7–8km · 4.5–6h</span></div>
     <div class="tab" data-r="C"><span class="t">C · 轻松半山线</span><span class="d">约3–4km · 2–3h · 最省力</span></div>
   </div>
   <div class="route-card" id="routeCard"></div>
+</section>
+
+<section>
+  <h2>📸 出片机位（点击定位）</h2>
+  <div class="photo-grid" id="photoGrid"></div>
 </section>
 
 <section>
@@ -87,12 +103,12 @@
   <h2>🕘 建议行程（路线A）</h2>
   <div class="timeline">
     <div class="row"><span class="time">7:30</span><span>南门入园，趁早避开人流，先看老君岩晨光</span></div>
-    <div class="row"><span class="time">8:00</span><span>老君岩（宋代老子石雕，镇山之宝）</span></div>
+    <div class="row"><span class="time">8:00</span><span>老君岩（宋代老子石雕，镇山之宝）📸</span></div>
     <div class="row"><span class="time">9:00</span><span>千手岩 · 弘一法师舍利塔（"悲欣交集"石刻）→ 虎乳泉（泉州得名之源）</span></div>
-    <div class="row"><span class="time">10:00</span><span>弥陀岩（元代古刹）→ 碧霄岩三世佛（元代藏传佛教石雕）→ 瑞像岩</span></div>
-    <div class="row"><span class="time">11:30</span><span>天湖环湖，湖光山色拍拍照</span></div>
-    <div class="row"><span class="time">12:00</span><span>南台岩午餐休息（山顶有平价景观餐厅）</span></div>
-    <div class="row"><span class="time">13:30</span><span>沿步道/盘山公路下山</span></div>
+    <div class="row"><span class="time">10:00</span><span>弥陀岩（元代古刹）📸 → 碧霄岩三世佛（元代藏传佛教石雕）→ 瑞像岩</span></div>
+    <div class="row"><span class="time">11:30</span><span>天湖环湖，湖光山色拍拍照 📸</span></div>
+    <div class="row"><span class="time">12:00</span><span>南台岩午餐休息（山顶有平价景观餐厅），观景台远眺 📸</span></div>
+    <div class="row"><span class="time">13:30</span><span>沿盘山公路步行下山</span></div>
     <div class="row"><span class="time">15:00</span><span>回到南门出园（天黑前下山，山路无路灯）</span></div>
   </div>
 </section>
@@ -124,8 +140,9 @@
 </section>
 
 <footer>
-  景点坐标为公开资料推算的示意位置（主峰除外），路线为示意连线，请以景区现场标识为准。<br>
-  里程/用时/爬升为估计值。门票与开放时间截至 2026-10-10 调研，出行前请以官方渠道为准。<br>
+  路线沿高德地图山路走向绘制，景点坐标经地图校准（主峰坐标来自 OpenStreetMap 实测），仍请以景区现场标识为准；里程/用时为估计值。<br>
+  景点图片来自携程/马蜂窝网友分享及 Wikimedia Commons（CC 授权），仅作行程参考。<br>
+  门票与开放时间截至 2026-10-10 调研，出行前请以官方渠道为准。<br>
   Made for 维维 &amp; 威威 · 2026-10-11
 </footer>
 
@@ -158,47 +175,72 @@ function wgs2gcj(lat, lon) {
 }
 function G(p) { var c = wgs2gcj(p[0], p[1]); return [c[0], c[1]]; }
 
-// ---------- 数据 ----------
+// ---------- 数据（坐标经高德地图路网校准，主峰来自 OSM 实测） ----------
 var SPOTS = {
-  southGate:  { name:'南门 · 游客中心', icon:'🎫', gate:true, pos:[24.9375,118.6095],
-    desc:'主入口（泉山路）。老君/千手检票口 7:00–17:30；门票约70元/人；有停车场，节假日车位紧张。' },
-  laojunyan:  { name:'老君岩', icon:'🗿', pos:[24.9400,118.6080],
+  southGate:  { name:'南门 · 游客中心', icon:'🎫', gate:true, pos:[24.93268,118.60617], img:'img/southGate.jpg',
+    desc:'主入口（泉山路）。标志性"清源山"牌坊，老君/千手检票口 7:00–17:30；门票约70元/人；有停车场，节假日车位紧张。' },
+  laojunyan:  { name:'老君岩', icon:'🗿', pos:[24.94027,118.60810], img:'img/laojunyan.jpg', photo:true,
+    ptip:'石像正面经典机位，早上顺光、人少好拍 📸',
     desc:'镇山之宝。宋代老子石雕坐像，高5.63米，中国现存年代最早、最大的道教石雕，全国重点文保。' },
-  qianshouyan:{ name:'千手岩', icon:'🙏', pos:[24.9420,118.6050],
+  qianshouyan:{ name:'千手岩', icon:'🙏', pos:[24.94085,118.60767], img:'img/qianshouyan.jpg',
     desc:'观音寺。弘一法师舍利塔在此，塔旁岩壁刻有其临终手书"悲欣交集"四字。' },
-  huruquan:   { name:'虎乳泉（孔泉）', icon:'💧', pos:[24.9410,118.6060],
+  huruquan:   { name:'虎乳泉（孔泉）', icon:'💧', pos:[24.94124,118.60831], img:'img/huruquan.jpg',
     desc:'"泉州"之名的由来——山多泉眼故名"泉山"，泉州即源于此泉。' },
-  mituoyan:   { name:'弥陀岩', icon:'🏯', pos:[24.9460,118.6060],
+  mituoyan:   { name:'弥陀岩', icon:'🏯', pos:[24.94202,118.60788], img:'img/mituoyan.jpg', photo:true,
+    ptip:'元代古刹，红墙黛瓦适合古风人像 📸',
     desc:'始建于元至正二十四年（1364年），福建省首批省级文保单位；附近有弥陀瀑布。' },
-  bixiaoyan:  { name:'碧霄岩 · 三世佛', icon:'☸️', pos:[24.9480,118.6040],
+  bixiaoyan:  { name:'碧霄岩 · 三世佛', icon:'☸️', pos:[24.94279,118.60767], img:'img/bixiaoyan.jpg',
     desc:'元代藏传佛教三世佛石雕，国内现存年代最早、保存最完整、位置最东南的喇嘛教造像。' },
-  ruixiangyan:{ name:'瑞像岩', icon:'🪨', pos:[24.9470,118.6070],
+  ruixiangyan:{ name:'瑞像岩', icon:'🪨', pos:[24.94338,118.60810], img:'img/ruixiangyan.jpg',
     desc:'宋元石雕造像"7处9尊"之一，摩崖石刻荟萃。' },
-  tianhu:     { name:'天湖', icon:'🏞️', pos:[24.9530,118.6020],
+  tianhu:     { name:'天湖', icon:'🏞️', pos:[24.95206,118.60754], img:'img/tianhu.jpg', photo:true,
+    ptip:'湖畔亭台+倒影，傍晚光线最柔 📸',
     desc:'山顶湖泊，登顶必看的湖光山色，环湖散步很出片。' },
-  nantaiyan:  { name:'南台岩', icon:'⛩️', pos:[24.9500,118.6070],
+  nantaiyan:  { name:'南台岩', icon:'⛩️', pos:[24.95225,118.60123], img:'img/nantaiyan.jpg', photo:true,
+    ptip:'观景台远眺海天，视野开阔 📸',
     desc:'三教合一的寺院，可俯瞰城廓、远眺海天；盘山公路可开车直达，山顶有景观餐厅。' },
-  peak:       { name:'清源洞 · 主峰', icon:'⛰️', pos:[24.9572,118.6035],
-    desc:'主峰约500米（坐标已核实），观泉州城景、晋江出海口的最佳点。' }
+  peak:       { name:'清源洞 · 主峰', icon:'⛰️', pos:[24.95720,118.60350], img:'img/peak.jpg', photo:true,
+    ptip:'俯瞰泉州全城与晋江入海口，必拍全景 📸',
+    desc:'主峰约500米（坐标来自 OpenStreetMap 实测），观泉州城景、晋江出海口的最佳点。' }
 };
+
+// 山路走向（沿高德地图实际路网描记）
+var CLIMB = [[24.93268,118.60617],[24.93423,118.6066],[24.93579,118.60703],[24.93735,118.60745],[24.93871,118.6078],[24.93999,118.60801]];
+var RX_T  = [[24.94338,118.6081],[24.94513,118.60823],[24.94669,118.6081],[24.94863,118.60788],[24.95058,118.60771],[24.95206,118.60754]];
+var T_N   = [[24.95206,118.60754],[24.95213,118.60625],[24.95217,118.60497],[24.95221,118.60368],[24.95225,118.60239],[24.95225,118.60123]];
+var T_S   = [[24.95206,118.60754],[24.95128,118.60763],[24.9505,118.60745],[24.94964,118.60763],[24.94871,118.60745],[24.94778,118.60763],[24.94669,118.60784],[24.94552,118.60806],[24.94435,118.60823],[24.94311,118.60806],[24.94186,118.60788],[24.94077,118.60801]];
+var T_P   = [[24.95206,118.60754],[24.9526,118.60831],[24.95299,118.60909],[24.95338,118.60994],[24.95377,118.61072],[24.95416,118.61132],[24.95455,118.61097],[24.95478,118.61037],[24.95493,118.60977],[24.95505,118.60917]];
+var rev = function(a){ return a.slice().reverse(); };
+function lakeLoop(){
+  var c=[24.95206,118.60754], pts=[];
+  for(var i=0;i<=8;i++){ var a=i/8*Math.PI*2; pts.push([c[0]+Math.sin(a)*0.0013, c[1]+Math.cos(a)*0.0014]); }
+  return pts;
+}
+function S(k){ return SPOTS[k].pos; }
 
 var ROUTES = {
   A: { name:'A · 经典文化线', color:'#2f9e44', rec:'最推荐情侣',
        meta:['约5–6公里','3.5–4.5小时（含游览）','爬升约300米','难度 ★★☆'],
-       pts:['southGate','laojunyan','qianshouyan','huruquan','mituoyan','bixiaoyan','ruixiangyan','tianhu','nantaiyan','southGate'],
+       line: CLIMB.concat([S('laojunyan'),S('qianshouyan'),S('huruquan'),S('mituoyan'),S('bixiaoyan'),S('ruixiangyan')]).concat(RX_T).concat(T_N).concat(rev(T_N)).concat(rev(T_S)).concat(rev(CLIMB)),
+       order:['southGate','laojunyan','qianshouyan','huruquan','mituoyan','bixiaoyan','ruixiangyan','tianhu','nantaiyan'],
+       back:'原路下山回南门',
        hl:'一天看遍道教（老君岩）、佛教（千手岩）、藏传佛教（三世佛）三教遗迹 + "泉州"得名之源 + 山顶天湖，景点最密集。' },
   B: { name:'B · 登顶观景线', color:'#e8890c', rec:'体力稍好',
        meta:['约7–8公里','4.5–6小时','爬升约450米','难度 ★★★'],
-       pts:['southGate','laojunyan','qianshouyan','tianhu','peak','nantaiyan','southGate'],
+       line: CLIMB.concat([S('laojunyan'),S('qianshouyan')]).concat(RX_T).concat(T_P).concat([S('peak')]).concat(rev(T_P)).concat(T_N).concat(rev(T_N)).concat(rev(T_S)).concat(rev(CLIMB)),
+       order:['southGate','laojunyan','qianshouyan','tianhu','peak','nantaiyan'],
+       back:'原路下山回南门',
        hl:'登顶约500米主峰的成就感 + 俯瞰泉州全城与晋江入海口全景机位，适合喜欢拍照的你们。' },
   C: { name:'C · 轻松半山线', color:'#1971c2', rec:'最省力',
        meta:['约3–4公里','2–3小时','爬升约100米','难度 ★☆☆'],
-       pts:['nantaiyan','tianhu','bixiaoyan','nantaiyan'],
+       line: [S('nantaiyan')].concat(T_N).concat(lakeLoop()).concat(T_S.slice(0,10)).concat([S('bixiaoyan')]).concat(rev(T_S.slice(0,10))).concat(rev(T_N)),
+       order:['nantaiyan','tianhu','bixiaoyan'],
+       back:'返回南台岩乘车下山',
        hl:'开车直上南台岩，跳过最陡的南门上山段，把体力留给湖光山色和寺院慢游。' }
 };
 
 // ---------- 地图 ----------
-var map = L.map('map', { zoomControl:true }).setView(G([24.947,118.606]), 14);
+var map = L.map('map', { zoomControl:true }).setView(G([24.947,118.606]), 13);
 var vec = L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}',
   { subdomains:['1','2','3','4'], attribution:'© 高德地图 AutoNavi' });
 var sat = L.tileLayer('https://webst0{s}.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}',
@@ -209,23 +251,21 @@ L.control.layers({ '标准地图':vec, '卫星影像':sat }).addTo(map);
 var markers = {};
 Object.keys(SPOTS).forEach(function(k) {
   var s = SPOTS[k];
-  var icon = L.divIcon({ className:'', html:'<div class="spot-icon'+(s.gate?' gate-icon':'')+'">'+s.icon+'</div>', iconSize:[34,34], iconAnchor:[17,17] });
-  var m = L.marker(G(s.pos), { icon:icon, title:s.name })
-    .bindPopup('<b>'+s.icon+' '+s.name+'</b><br>'+s.desc);
+  var badge = s.photo ? '<span class="cam-badge">📸</span>' : '';
+  var icon = L.divIcon({ className:'', html:'<div class="spot-icon'+(s.gate?' gate-icon':'')+'">'+s.icon+badge+'</div>', iconSize:[34,34], iconAnchor:[17,17] });
+  var popup = '<img src="'+s.img+'"><b>'+s.icon+' '+s.name+'</b><br>'+s.desc +
+    (s.ptip ? '<div class="ptip">'+s.ptip+'</div>' : '');
+  var m = L.marker(G(s.pos), { icon:icon, title:s.name }).bindPopup(popup, { maxWidth:240 });
   m.addTo(map); markers[k] = m;
 });
 
 var lines = {};
 Object.keys(ROUTES).forEach(function(k) {
   var r = ROUTES[k];
-  var latlngs = r.pts.map(function(pk){ return G(SPOTS[pk].pos); });
-  lines[k] = L.polyline(latlngs, { color:r.color, weight:3, opacity:0.35 }).addTo(map);
+  lines[k] = L.polyline(r.line.map(G), { color:r.color, weight:3, opacity:0.35 }).addTo(map);
 });
 
 // ---------- 路线切换 ----------
-var routeNames = { A:'老君岩 → 千手岩 → 虎乳泉 → 弥陀岩 → 碧霄岩 → 瑞像岩 → 天湖 → 南台岩',
-                   B:'老君岩 → 千手岩 → 天湖 → 主峰清源洞 → 南台岩',
-                   C:'南台岩 → 天湖环湖 → 碧霄岩 → 返回南台岩' };
 function selectRoute(k) {
   Object.keys(ROUTES).forEach(function(key) {
     var on = key === k;
@@ -233,12 +273,10 @@ function selectRoute(k) {
   });
   document.querySelectorAll('#tabs .tab').forEach(function(el){ el.classList.toggle('active', el.dataset.r===k); });
   var r = ROUTES[k];
-  var order = r.pts.filter(function(pk, i){ return r.pts.indexOf(pk)===i; })
-    .map(function(pk){ return SPOTS[pk].name; }).join(' → ');
   document.getElementById('routeCard').innerHTML =
     '<div style="font-weight:700;font-size:16px;">'+r.name+' <span style="font-size:12px;color:#e8890c;">'+r.rec+'</span></div>' +
     '<div class="meta">'+r.meta.map(function(m){return '<span>'+m+'</span>';}).join('')+'</div>' +
-    '<ol>'+r.pts.filter(function(pk,i){return r.pts.indexOf(pk)===i;}).map(function(pk){return '<li>'+SPOTS[pk].icon+' '+SPOTS[pk].name+'</li>';}).join('')+'</ol>' +
+    '<ol>'+r.order.map(function(pk){return '<li>'+SPOTS[pk].icon+' '+SPOTS[pk].name+'</li>';}).join('')+'<li>↩️ '+r.back+'</li></ol>' +
     '<div class="hl">✨ '+r.hl+'</div>';
   map.flyToBounds(lines[k].getBounds().pad(0.15), { duration:0.8 });
 }
@@ -246,12 +284,26 @@ document.querySelectorAll('#tabs .tab').forEach(function(el){
   el.addEventListener('click', function(){ selectRoute(el.dataset.r); });
 });
 
+// ---------- 出片机位 ----------
+var pg = document.getElementById('photoGrid');
+var first = true;
+Object.keys(SPOTS).forEach(function(k) {
+  var s = SPOTS[k];
+  if (!s.photo) return;
+  var d = document.createElement('div');
+  d.className = 'photo-card' + (first ? ' full' : '');
+  d.innerHTML = '<img src="'+s.img+'" loading="lazy"><div class="pc-b"><b>📸 '+s.name+'</b><p>'+s.ptip+'</p></div>';
+  d.addEventListener('click', function(){ map.flyTo(G(s.pos), 16, { duration:0.8 }); setTimeout(function(){ markers[k].openPopup(); }, 850); });
+  pg.appendChild(d);
+  first = false;
+});
+
 // ---------- 景点 chips ----------
 var chips = document.getElementById('chips');
 Object.keys(SPOTS).forEach(function(k) {
   var s = SPOTS[k];
   var b = document.createElement('button');
-  b.className = 'chip'; b.textContent = s.icon+' '+s.name;
+  b.className = 'chip'; b.textContent = s.icon+' '+s.name + (s.photo?' 📸':'');
   b.addEventListener('click', function(){ map.flyTo(G(s.pos), 16, { duration:0.8 }); setTimeout(function(){ markers[k].openPopup(); }, 850); });
   chips.appendChild(b);
 });
