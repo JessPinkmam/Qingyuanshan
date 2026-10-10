@@ -27,6 +27,13 @@
   #routeCard ol li{margin:4px 0}
   .back{font-size:.85em;color:#666;background:#f7f5f0;border-radius:8px;padding:8px 12px;margin-top:8px}
   .returnbox{font-size:.9em;background:#fff8e6;border:1px dashed #e8a93d;border-radius:8px;padding:10px 12px;margin-top:10px}
+  .seg{margin-top:10px;font-size:.85em}
+  .seg summary{cursor:pointer;color:#2d5a3d;font-weight:700;padding:6px 0}
+  .seg table{width:100%;border-collapse:collapse;margin-top:6px}
+  .seg th,.seg td{padding:6px 8px;border-bottom:1px solid #eee;text-align:left}
+  .seg th{background:#f0f7f0;color:#2d5a3d}
+  .seg .tot{font-weight:700;background:#f7f5f0}
+  .seg .note{font-size:.8em;color:#999;margin-top:6px}
   .tl .row{display:flex;gap:12px;padding:9px 0;border-bottom:1px dashed #eee;font-size:.92em}
   .tl .row:last-child{border:none}
   .tl .time{flex:0 0 52px;font-weight:700;color:#2d5a3d}
@@ -234,6 +241,49 @@ var ROUTES = {
   }
 };
 
+// ---- 分段里程/时间（估算）：[起点key,终点key,公里,分钟] ----
+var SEG_HALFDAY = [
+  ['dashanmen','zhongmiaozhimen',0.8,10],
+  ['zhongmiaozhimen','laojunyan',1.1,15],
+  ['laojunyan','yuanyuandongtian',0.1,5],
+  ['yuanyuandongtian','jianlongtai',0.1,5],
+  ['jianlongtai','hongyita',0.1,5],
+  ['hongyita','mituoyan',0.3,5],
+  ['mituoyan','zicuihu',0.6,15],
+  ['zicuihu','gaoshifeng',0.4,10],
+  ['gaoshifeng','diyishan',0.9,15],
+  ['diyishan','qianshouyan',0.5,10],
+  ['qianshouyan','shizhiyan',0.3,5],
+  ['shizhiyan','qianshoumen',0.3,5],
+  ['qianshoumen','dashanmen',1.5,25]
+];
+var SEG_FULLDAY = [
+  ['dashanmen','zhongmiaozhimen',0.6,10],
+  ['zhongmiaozhimen','laojunyan',0.8,15],
+  ['laojunyan','yuanyuandongtian',0.1,5],
+  ['yuanyuandongtian','jianlongtai',0.1,5],
+  ['jianlongtai','hongyita',0.1,5],
+  ['hongyita','mituoyan',0.2,5],
+  ['mituoyan','dafozi',0.9,15],
+  ['dafozi','jiangjunshi',0.4,10],
+  ['jiangjunshi','nantaiyan',1.5,30],
+  ['nantaiyan','xieyunting',0.4,5],
+  ['xieyunting','yudayou',0.3,5],
+  ['yudayou','huruquan',0.2,5],
+  ['huruquan','peak',0.2,5],
+  ['peak','baizhangping',0.7,15],
+  ['baizhangping','tianhu',0.7,15],
+  ['tianhu','zicuihu',1.8,35],
+  ['zicuihu','gaoshifeng',0.3,5],
+  ['gaoshifeng','chaoyunyan',0.3,5],
+  ['chaoyunyan','diyishan',0.4,10],
+  ['diyishan','qianshouyan',0.4,5],
+  ['qianshouyan','shizhiyan',0.3,5],
+  ['shizhiyan','qianshoumen',0.2,5],
+  ['qianshoumen','dashanmen',1.2,20]
+];
+var SEGMENTS = {halfday:SEG_HALFDAY, fullday:SEG_FULLDAY};
+
 // ---- 地图 ----
 var map = L.map('map').setView(w2g(24.945,118.6065), 13);
 var vec = L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}',{subdomains:'1234',attribution:'© 高德'});
@@ -268,11 +318,23 @@ function selectRoute(k){
   retLine = L.polyline(g(RETURN),{color:'#999',weight:4,opacity:.85,dashArray:'8,8'}).addTo(map);
   map.fitBounds(curLine.getBounds().pad(0.12));
   var ol = r.order.map(function(key,i){return '<li>'+SPOTS[key].icon+' '+SPOTS[key].name+'</li>';}).join('');
+  var segs = SEGMENTS[k];
+  var rows = segs.map(function(s){
+    return '<tr><td>'+SPOTS[s[0]].icon+' '+SPOTS[s[0]].name+' → '+SPOTS[s[1]].icon+' '+SPOTS[s[1]].name+'</td><td>约'+s[2]+'公里</td><td>约'+s[3]+'分钟</td></tr>';
+  }).join('');
+  var tD = segs.reduce(function(a,s){return a+s[2];},0).toFixed(1);
+  var tM = segs.reduce(function(a,s){return a+s[3];},0);
+  var tMt = '约'+Math.floor(tM/60)+'小时'+(tM%60? tM%60+'分钟':'');
+  var segHtml = '<details class="seg"><summary>📏 分段路程明细（点击展开）</summary>'+
+    '<table><tr><th>分段</th><th>距离</th><th>步行</th></tr>'+rows+
+    '<tr class="tot"><td>合计（含返程）</td><td>约'+tD+'公里</td><td>'+tMt+'</td></tr></table>'+
+    '<div class="note">距离/时间为估算值：山路按约3公里/小时、公路约4公里/小时；不含各景点停留游览时间，仅供参考。</div></details>';
   document.getElementById('routeCard').innerHTML =
     '<p><b>'+r.name+'</b> · '+r.tag+' <span class="level">'+r.level+'</span></p>'+
     '<p style="font-size:.9em;color:#666">'+r.desc+'</p>'+
     '<ol>'+ol+'</ol>'+
-    '<div class="returnbox">↩️ <b>返程路线：</b>山门（千手检票处）→ 沿山路步行约15分钟 → 大山门（取车/返程）。地图上灰色虚线即返程走向。</div>';
+    '<div class="returnbox">↩️ <b>返程路线：</b>山门（千手检票处）→ 沿山路步行约15分钟 → 大山门（取车/返程）。地图上灰色虚线即返程走向。</div>'+
+    segHtml;
   document.getElementById('timeline').innerHTML =
     r.timeline.map(function(t){return '<div class="row"><span class="time">'+t[0]+'</span><span>'+t[1]+'</span></div>';}).join('');
 }
