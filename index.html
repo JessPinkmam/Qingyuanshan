@@ -315,6 +315,7 @@ Object.keys(SPOTS).forEach(function(k){
   m.bindPopup(pop,{maxWidth:240});
   markers[k] = m;
 });
+map.fitBounds(L.latLngBounds(Object.keys(SPOTS).map(function(k){var c=w2g(SPOTS[k].pos[0],SPOTS[k].pos[1]);return [c[0],c[1]];})).pad(0.12));
 function flyTo(k){var s=SPOTS[k],c=w2g(s.pos[0],s.pos[1]);map.flyTo([c[0],c[1]],16,{duration:1});setTimeout(function(){markers[k].openPopup();},1100);}
 
 // ---- 路线 ----
