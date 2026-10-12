@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>紫帽山徒步指南 | 晋江第一高峰</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; background:#f7f5f0; color:#333; line-height:1.7; }
+  .topbar { background:linear-gradient(135deg,#5b4a8a,#7b5ea7); color:#fff; padding:14px 16px; position:sticky; top:0; z-index:1000; box-shadow:0 2px 8px rgba(0,0,0,.15); }
+  .topbar .back { color:#fff; text-decoration:none; font-size:14px; opacity:.9; }
+  .topbar h1 { font-size:20px; margin:4px 0 2px; }
+  .topbar .sub { font-size:13px; opacity:.85; }
+  .hero { background:linear-gradient(135deg,#6d5aa8,#9a7fc4); color:#fff; padding:22px 18px; }
+  .hero .facts { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+  .hero .fact { background:rgba(255,255,255,.18); border-radius:20px; padding:4px 12px; font-size:13px; }
+  #map { height:62vh; min-height:380px; width:100%; z-index:1; }
+  .map-note { font-size:12px; color:#888; padding:8px 16px; background:#fff8e6; border-bottom:1px solid #f0e6c8; }
+  .section { padding:18px 16px; max-width:860px; margin:0 auto; }
+  .section h2 { font-size:18px; margin-bottom:12px; padding-left:10px; border-left:4px solid #7b5ea7; }
+  .route-card { background:#fff; border-radius:12px; padding:16px; margin-bottom:16px; box-shadow:0 2px 10px rgba(0,0,0,.06); }
+  .route-card h3 { font-size:16px; margin-bottom:6px; }
+  .route-card .meta { font-size:13px; color:#7b5ea7; margin-bottom:8px; font-weight:600; }
+  .route-card p { font-size:14px; color:#555; }
+  .seg-table { width:100%; border-collapse:collapse; font-size:13px; margin-top:10px; }
+  .seg-table th, .seg-table td { border:1px solid #e8e2d5; padding:6px 8px; text-align:left; }
+  .seg-table th { background:#f3efe6; }
+  .seg-table tr.total td { font-weight:700; background:#faf7ef; }
+  .seg-toggle { font-size:13px; color:#7b5ea7; cursor:pointer; margin-top:8px; display:inline-block; }
+  .spot-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  @media (max-width:560px){ .spot-grid{ grid-template-columns:1fr; } }
+  .spot { background:#fff; border-radius:12px; padding:14px; box-shadow:0 2px 10px rgba(0,0,0,.06); }
+  .spot h4 { font-size:15px; margin-bottom:4px; }
+  .spot .tag { font-size:12px; color:#fff; background:#7b5ea7; border-radius:10px; padding:1px 8px; margin-right:4px; }
+  .spot .tag.photo { background:#e0912f; }
+  .spot p { font-size:13px; color:#666; margin-top:6px; }
+  .spot .tip { font-size:13px; color:#8a6d1c; background:#fff8e6; border-radius:8px; padding:6px 10px; margin-top:8px; }
+  .timeline { list-style:none; }
+  .timeline li { background:#fff; border-radius:10px; padding:10px 14px; margin-bottom:8px; font-size:14px; box-shadow:0 1px 6px rgba(0,0,0,.05); }
+  .timeline .t { font-weight:700; color:#7b5ea7; margin-right:8px; }
+  .checklist { list-style:none; }
+  .checklist li { background:#fff; border-radius:10px; padding:10px 14px; margin-bottom:8px; font-size:14px; box-shadow:0 1px 6px rgba(0,0,0,.05); cursor:pointer; }
+  .checklist li.done { text-decoration:line-through; color:#aaa; }
+  .info-box { background:#fff; border-radius:12px; padding:16px; box-shadow:0 2px 10px rgba(0,0,0,.06); font-size:14px; }
+  .info-box dt { font-weight:700; color:#5b4a8a; margin-top:10px; }
+  .info-box dt:first-child { margin-top:0; }
+  .info-box dd { margin-left:0; color:#555; }
+  .warn { background:#fff3e0; border-left:4px solid #e0912f; padding:10px 14px; border-radius:0 8px 8px 0; font-size:13px; margin-top:12px; }
+  footer { text-align:center; padding:24px 16px 40px; font-size:13px; color:#999; }
+  footer a { color:#7b5ea7; text-decoration:none; margin:0 8px; }
+  .legend { background:#fff; padding:8px 12px; font-size:12px; border-radius:8px; box-shadow:0 1px 5px rgba(0,0,0,.2); line-height:1.9; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back" href="index.html">← 回清源山徒步指南</a>
+  <h1>🟣 紫帽山徒步指南</h1>
+  <div class="sub">晋江第一高峰 · 泉州四大名山 · 免费开放</div>
+</div>
+
+<div class="hero">
+  <div style="font-size:15px;">为峰凡有十二，常有紫云覆盖其巅——如紫帽戴头，故名。</div>
+  <div class="facts">
+    <span class="fact">⛰️ 主峰 517.8 米</span>
+    <span class="fact">🎫 不收门票</span>
+    <span class="fact">📍 晋江市紫帽镇</span>
+    <span class="fact">🚗 鲤城区自驾约 30 分钟</span>
+    <span class="fact">🏅 省级旅游度假区</span>
+  </div>
+</div>
+
+<div id="map"></div>
+<div class="map-note">⚠️ 地图上景点位置为示意标注（精确坐标采集中），路线为示意走向；实地请以景区标识为准。</div>
+
+<div class="section">
+  <h2>🥾 推荐路线</h2>
+
+  <div class="route-card">
+    <h3>① 经典登山线 <span style="font-size:13px;color:#888;">（推荐首刷）</span></h3>
+    <div class="meta">⏱️ 约 2–3 小时（含游览） · 📏 往返约 7.4 公里 · 爬升约 450 米</div>
+    <p>景区正门 → 登山古道（林荫石阶）→ <b>金粟洞</b> → 继续上行 → <b>凌霄塔（主峰）</b> → 原路返回。古道+古寺+文峰塔，一条线把紫帽山的精华走完。</p>
+    <table class="seg-table">
+      <tr><th>路段</th><th>距离</th><th>步行用时</th></tr>
+      <tr><td>正门 → 金粟洞（登山古道石阶）</td><td>约 3.0 km</td><td>约 50 分钟</td></tr>
+      <tr><td>金粟洞 → 凌霄塔（上行）</td><td>约 0.7 km</td><td>约 25 分钟</td></tr>
+      <tr><td>凌霄塔 → 正门（原路下山）</td><td>约 3.7 km</td><td>约 60 分钟</td></tr>
+      <tr class="total"><td>合计（不含游览停留）</td><td>约 7.4 km</td><td>约 2 小时 15 分</td></tr>
+    </table>
+    <div style="font-size:12px;color:#999;margin-top:6px;">分段数据为估算，含金粟洞、凌霄塔各停留 20–30 分钟则全程约 3 小时。</div>
+  </div>
+
+  <div class="route-card">
+    <h3>② 环线穿越 <span style="font-size:13px;color:#888;">（不走回头路）</span></h3>
+    <div class="meta">⏱️ 约 4–6 小时 · 📏 约 8.5 公里 · 累计爬升近 500 米</div>
+    <p>综合服务中心 → 登山步道 → 后山路 → 金粟洞小广场 → 凌霄路 → 下山栈道 → 返回起点。2026 年福建省新年登高赛赛道，登山+后山野趣+栈道下山，一圈走全。</p>
+    <table class="seg-table">
+      <tr><th>路段</th><th>距离</th><th>步行用时</th></tr>
+      <tr><td>起点 → 登山步道口</td><td>约 1.0 km</td><td>约 15 分钟</td></tr>
+      <tr><td>登山步道 → 后山路</td><td>约 2.0 km</td><td>约 45 分钟</td></tr>
+      <tr><td>后山路 → 金粟洞小广场</td><td>约 1.5 km</td><td>约 30 分钟</td></tr>
+      <tr><td>金粟洞 → 凌霄塔（登顶）</td><td>约 0.7 km</td><td>约 25 分钟</td></tr>
+      <tr><td>凌霄塔 → 下山栈道</td><td>约 1.8 km</td><td>约 35 分钟</td></tr>
+      <tr><td>下山栈道 → 返回起点</td><td>约 1.5 km</td><td>约 25 分钟</td></tr>
+      <tr class="total"><td>合计（不含游览停留）</td><td>约 8.5 km</td><td>约 2 小时 55 分</td></tr>
+    </table>
+    <div style="font-size:12px;color:#999;margin-top:6px;">分段数据为估算；体力分配建议：上山 6 成力，下山留 4 成。</div>
+  </div>
+
+  <div class="route-card">
+    <h3>③ 轻松版 <span style="font-size:13px;color:#888;">（老人小孩 / 纯打卡）</span></h3>
+    <div class="meta">⏱️ 约 2 小时 · 📏 步行约 1.2 公里 + 观光车</div>
+    <p>乘景区观光车直达半山（约 20 元/人），再走约 1.2 公里平整石阶、40 分钟登顶凌霄塔；或只走平缓的<b>福道</b>（约 10 公里，可量力而走其中一段），空中走廊+水库湖光，轻松出片。</p>
+  </div>
+</div>
+
+<div class="section">
+  <h2>📸 景点打卡</h2>
+  <div class="spot-grid">
+    <div class="spot">
+      <h4>凌霄塔 <span class="tag photo">📸 必拍</span><span class="tag">主峰</span></h4>
+      <p>紫帽山右峰绝顶，海拔 517.8 米。花岗岩五层八角实心石塔，乾隆丙午年重建，历史上被视为关乎泉州文运的文峰塔，民间传可旺文启智。登塔远眺，晋江、泉州城尽收眼底。</p>
+      <div class="tip">📷 机位：塔前平台拍人+塔+远景；清晨或日落前 2 小时光影最佳。</div>
+    </div>
+    <div class="spot">
+      <h4>金粟洞 <span class="tag">半山</span></h4>
+      <p>紫帽山南麓半山腰，始建于唐宋、清代古建筑，市级文保。登山中途的祈福点，可挂祈愿福条，古意十足。</p>
+      <div class="tip">📷 机位：洞前古建+石阶，拍"问道"感；体力一般者可在此折返。</div>
+    </div>
+    <div class="spot">
+      <h4>空中走廊 <span class="tag photo">📸 必拍</span><span class="tag">福道</span></h4>
+      <p>福道终点的百米悬空栈道，架设于林木之间，2025 年 11 月底随 10 公里福道全面开放，是紫帽山新晋网红打卡地。</p>
+      <div class="tip">📷 机位：栈道中段俯拍林海，或逆光拍剪影；恐高者量力而行。</div>
+    </div>
+    <div class="spot">
+      <h4>福道（虎岫—紫湖段） <span class="tag">平缓</span></h4>
+      <p>全长约 10 公里，起于紫湖郊野公园虎岫水库，串联虎岫、紫湖两个水库，沿线马尾松、樱花、三角梅，平缓好走，适合散步和亲子。</p>
+    </div>
+    <div class="spot">
+      <h4>紫帽山摩崖石刻 <span class="tag">人文</span></h4>
+      <p>宋、清两代崖刻，市级文保，分布于山体各处，凌霄塔下石壁亦有"凌霄塔""乾隆丙午年重建"等题刻，边走边寻，别有野趣。</p>
+    </div>
+    <div class="spot">
+      <h4>美食市集·紫帽镇区 <span class="tag">补给</span></h4>
+      <p>山下紫帽镇区有美食市集等餐饮，下山后觅食方便。山上补给点少，务必自备充足饮水和干粮上山。</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>🕘 行程建议（经典线·一日）</h2>
+  <ul class="timeline">
+    <li><span class="t">08:30</span>景区正门出发，登山古道上行</li>
+    <li><span class="t">09:30</span>到金粟洞，歇脚祈福、拍照（约 20 分钟）</li>
+    <li><span class="t">10:00</span>继续上行，登顶凌霄塔</li>
+    <li><span class="t">10:30–11:30</span>山顶游览：凌霄塔、摩崖石刻、远眺晋江泉州，山顶野餐补给</li>
+    <li><span class="t">11:30</span>原路下山（或转下山栈道走环线）</li>
+    <li><span class="t">13:00</span>回到山下，紫帽镇区美食市集午餐 🍜</li>
+    <li><span class="t">下午</span>体力有余可去福道走一段（虎岫水库—空中走廊），轻松收尾</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>🎒 装备清单</h2>
+  <ul class="checklist" id="packlist">
+    <li>💧 饮用水 1.5–2L / 人（山上补给少）</li>
+    <li>🥪 干粮 / 能量棒（山顶野餐）</li>
+    <li>👟 防滑运动鞋或登山鞋（雨后石阶很滑）</li>
+    <li>🧢 遮阳帽 + 防晒（山顶无遮阴）</li>
+    <li>🧥 轻便外套（山顶风大）</li>
+    <li>📱 充电宝（拍照+导航耗电）</li>
+    <li>🗑️ 垃圾袋（福道垃圾桶还在完善，自己带走垃圾）</li>
+    <li>🦯 登山杖（可选，环线长下坡护膝）</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>ℹ️ 实用信息</h2>
+  <div class="info-box">
+    <dl>
+      <dt>🎫 门票</dt><dd>不收门票，开放式度假区（晋江市政府官网公示）。</dd>
+      <dt>🕘 开放</dt><dd>游客中心 8:30–12:00、13:30–17:30；登山步道/福道日常可自由进出，建议日间游览。</dd>
+      <dt>🚗 自驾</dt><dd>鲤城区出发约 30 分钟；景区入口、金粟洞山门均有停车场。注意：2026 年起停车场据报开始收费，具体以现场公示为准。</dd>
+      <dt>🚌 公交</dt><dd>K205 路（清源山风景区 ↔ 官桥园区）途经紫帽；48 路 / K612 路至紫湖村委会站；另有 9 路可达景区。</dd>
+      <dt>🚡 观光车</dt><dd>景区有观光车可至半山（约 20 元/人），再步行约 1.2 公里登顶。</dd>
+      <dt>📞 咨询</dt><dd>景区咨询电话 0595-82076518。</dd>
+      <dt>⚠️ 提醒</dt><dd>雨天石阶湿滑穿防滑鞋；节假日人流大（年接待超 200 万人次），建议错峰；山上补给少，自备饮水干粮。</dd>
+    </dl>
+    <div class="warn">📌 本页路线距离、用时为估算值，不含游览停留；景点地图位置为示意标注。出行前建议再核实停车收费与天气。</div>
+  </div>
+</div>
+
+<footer>
+  <a href="index.html">← 清源山徒步指南</a> ·
+  <a href="bijiashan.html">笔架山桫椤谷</a>
+  <div style="margin-top:8px;">紫帽山徒步指南 · 数据整理自公开资料，仅供参考</div>
+</footer>
+
+<script>
+// WGS-84 -> GCJ-02
+function wgs2gcj(lat, lng){
+  var a=6378245.0, ee=0.00669342162296594323;
+  function trans(x){ var r=x>0?x:-x; return x; }
+  var dLat=transformLat(lng-105.0, lat-35.0), dLng=transformLng(lng-105.0, lat-35.0);
+  var radLat=lat/180.0*Math.PI, magic=Math.sin(radLat);
+  magic=1-ee*magic*magic; var sqrtMagic=Math.sqrt(magic);
+  dLat=(dLat*180.0)/((a*(1-ee))/(magic*sqrtMagic)*Math.PI);
+  dLng=(dLng*180.0)/(a/sqrtMagic*Math.cos(radLat)*Math.PI);
+  return [lat+dLat, lng+dLng];
+  function transformLat(x,y){ var ret=-100.0+2.0*x+3.0*y+0.2*y*y+0.1*x*y+0.2*Math.sqrt(Math.abs(x)); ret+=(20.0*Math.sin(6.0*x*Math.PI)+20.0*Math.sin(2.0*x*Math.PI))*2.0/3.0; ret+=(20.0*Math.sin(y*Math.PI)+40.0*Math.sin(y/3.0*Math.PI))*2.0/3.0; ret+=(160.0*Math.sin(y/12.0*Math.PI)+320*Math.sin(y*Math.PI/30.0))*2.0/3.0; return ret; }
+  function transformLng(x,y){ var ret=300.0+x+2.0*y+0.1*x*x+0.1*x*y+0.1*Math.sqrt(Math.abs(x)); ret+=(20.0*Math.sin(6.0*x*Math.PI)+20.0*Math.sin(2.0*x*Math.PI))*2.0/3.0; ret+=(20.0*Math.sin(x*Math.PI)+40.0*Math.sin(x/3.0*Math.PI))*2.0/3.0; ret+=(150.0*Math.sin(x/12.0*Math.PI)+300.0*Math.sin(x/30.0*Math.PI))*2.0/3.0; return ret; }
+}
+
+// 景点数据：[名称, 纬度WGS84, 经度WGS84, 简介, 是否打卡点]
+// ⚠️ 当前为示意坐标，精确坐标采集中
+var spots=[
+  ["🏁 景区正门 / 综合服务中心",24.8500,118.5600,"主登山口，紫帽镇区、紫帽中学一带。停车、咨询、观光车乘车点。",false],
+  ["🛕 金粟洞",24.8560,118.5540,"半山南麓，唐宋始建、清代古建筑，登山中途祈福点。",false],
+  ["🗼 凌霄塔 / 主峰 517.8m",24.8620,118.5480,"晋江第一高峰。五层八角花岗岩石塔，乾隆丙午年重建，文峰塔。登高远眺晋江泉州。",true],
+  ["✒️ 摩崖石刻",24.8580,118.5500,"宋、清崖刻，市级文保，分布山体各处，凌霄塔下亦有题刻。",false],
+  ["🌉 空中走廊",24.8600,118.5440,"福道终点百米悬空栈道，架设于林木之间，新晋网红打卡地。",true],
+  ["🏞️ 福道入口 · 虎岫水库",24.8520,118.5420,"约10公里福道起点（紫湖郊野公园虎岫水库旁），平缓好走。",false],
+  ["💧 紫湖水库",24.8580,118.5660,"福道串联的水库之一，湖光山色，休闲配套集中。",false],
+  ["🍜 美食市集 · 镇区",24.8490,118.5610,"山下紫帽镇区餐饮集中地，下山觅食、补给。",false]
+];
+
+var road=L.tileLayer("https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}",{subdomains:["1","2","3","4"],maxZoom:18,attribution:"© 高德地图"});
+var sat=L.tileLayer("https://webst0{s}.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}",{subdomains:["1","2","3","4"],maxZoom:18,attribution:"© 高德地图"});
+var map=L.map("map",{layers:[road]}).setView(wgs2gcj(24.856,118.553),13);
+L.control.layers({"🗺️ 路网":road,"🛰️ 卫星":sat}).addTo(map);
+
+spots.forEach(function(s){
+  var p=wgs2gcj(s[1],s[2]);
+  var icon=s[4]?"📸":"📍";
+  L.marker(p).addTo(map).bindPopup("<b>"+s[0]+"</b><br><span style='font-size:13px;color:#666'>"+s[3]+"</span>");
+});
+
+// 经典线（示意）：正门→金粟洞→凌霄塔
+var classic=[[24.8500,118.5600],[24.8530,118.5570],[24.8560,118.5540],[24.8590,118.5510],[24.8620,118.5480]].map(function(p){return wgs2gcj(p[0],p[1]);});
+// 环线（示意）：起点→登山步道→后山→金粟洞→凌霄塔→栈道→起点
+var loop=[[24.8500,118.5600],[24.8540,118.5560],[24.8580,118.5490],[24.8560,118.5540],[24.8620,118.5480],[24.8580,118.5440],[24.8520,118.5520],[24.8500,118.5600]].map(function(p){return wgs2gcj(p[0],p[1]);});
+// 福道（示意）：虎岫水库→紫湖水库→空中走廊
+var fudao=[[24.8520,118.5420],[24.8550,118.5480],[24.8580,118.5660],[24.8600,118.5440]].map(function(p){return wgs2gcj(p[0],p[1]);});
+
+var r1=L.polyline(classic,{color:"#2e9e5b",weight:4}).bindPopup("① 经典登山线（示意）");
+var r2=L.polyline(loop,{color:"#e0912f",weight:4,dashArray:"8,6"}).bindPopup("② 环线穿越（示意）");
+var r3=L.polyline(fudao,{color:"#5b8def",weight:4}).bindPopup("③ 福道漫步（示意）");
+L.layerGroup([r1,r2]).addTo(map);
+var fudaoLayer=L.layerGroup([r3]);
+L.control.layers({"🗺️ 路网":road,"🛰️ 卫星":sat},{"🥾 登山路线":L.layerGroup([r1,r2]),"🚶 福道":fudaoLayer}).addTo(map);
+
+L.control({position:"bottomleft"}).onAdd=function(){ var d=L.DomUtil.create("div","legend"); d.innerHTML="🟢 经典登山线<br>🟠 环线穿越（虚线）<br>📸 打卡点"; return d; }.addTo(map);
+
+// 装备清单勾选
+document.querySelectorAll("#packlist li").forEach(function(li){
+  li.addEventListener("click",function(){ li.classList.toggle("done"); });
+});
+</script>
+</body>
+</html>
