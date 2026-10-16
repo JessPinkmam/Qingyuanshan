@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>🎈 维维的威兰达提车清单</title>
+<style>
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent;}
+body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; margin: 0; background: #fff7f1; color: #3a2c28; padding-bottom: 96px; overflow-x: hidden;}
+
+/* ===== 气球 ===== */
+.balloon { position: fixed; bottom: -90px; border-radius: 50% 50% 50% 50% / 55% 55% 45% 45%;
+z-index: 1; pointer-events: none; opacity:.5; animation: rise linear infinite;}
+.balloon::before { content: ""; position: absolute; top: 12%; left: 18%; width: 22%; height: 32%;
+background: rgba(255,255,255,.55); border-radius: 50%; transform: rotate(-18deg);}
+.balloon::after { content: ""; position: absolute; top: 100%; left: 50%; width: 2px; height: 56px;
+background: rgba(150,120,110,.4); transform: translateX(-50%);}
+@keyframes rise {
+0% { transform: translate3d(0,0,0) rotate(-5deg);}
+50% { transform: translate3d(18px,-58vh,0) rotate(5deg);}
+100% { transform: translate3d(-10px,-118vh,0) rotate(-5deg);}
+}
+
+/* ===== 头部：暖阳渐变 ===== */
+header { position: sticky; top: 0; z-index: 10; color: #fff; padding: 20px 18px 14px;
+background: linear-gradient(120deg, #d94f70, #f0935c, #d94f70); background-size: 220% 220%;
+animation: gradientShift 9s ease-in-out infinite; box-shadow: 0 2px 14px rgba(217,79,112,.25);}
+@keyframes gradientShift { 0%,100% { background-position: 0% 40%;} 50% { background-position: 100% 60%;}}
+header h1 { margin: 0 0 4px; font-size: 20px; animation: fadeDown.5s ease both; text-shadow: 0 1px 4px rgba(120,30,50,.25);}
+header p { margin: 0; font-size: 13px; opacity:.92; animation: fadeDown.5s.08s ease both;}
+@keyframes fadeDown { from { opacity: 0; transform: translateY(-12px);} to { opacity: 1; transform: none;}}
+
+.road { position: relative; height: 34px; margin-top: 14px;}
+.road.lane { position: absolute; left: 0; right: 0; top: 20px; height: 4px; border-radius: 2px;
+background: rgba(255,255,255,.3);
+background-image: linear-gradient(90deg, #fff 55%, transparent 45%);
+background-size: 22px 4px; background-repeat: repeat-x;
+animation: laneMove 1s linear infinite;}
+@keyframes laneMove { to { background-position-x: 22px;}}
+#car { position: absolute; top: 0; left: 0; font-size: 24px; transform: translateX(-4px);
+transition: left.7s cubic-bezier(.34,1.4,.64,1); animation: carBob 1.2s ease-in-out infinite; filter: drop-shadow(0 3px 3px rgba(120,30,50,.3));}
+@keyframes carBob { 0%,100% { margin-top: 0;} 50% { margin-top: -3px;}}
+.progress-text { font-size: 12px; margin-top: 6px; opacity:.95;}
+.progress-text b { color: #ffe08a; font-size: 15px;}
+
+.top-card { margin: 14px 14px 0; background: #fff1e2; border: 1px solid #f3c89f; border-radius: 14px; padding: 14px 15px;
+animation: fadeUp.55s.1s ease both; box-shadow: 0 2px 10px rgba(200,130,60,.12); position: relative; z-index: 2;}
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px);} to { opacity: 1; transform: none;}}
+.top-card h2 { margin: 0 0 8px; font-size: 15px; color: #a05c1e;}
+.top-card ol { margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.7; color: #7a4d16;}
+
+.section { margin: 14px 14px 0; background: #fffdfb; border-radius: 14px; overflow: hidden;
+box-shadow: 0 2px 8px rgba(190,120,70,.09); animation: fadeUp.5s ease both; animation-delay: var(--d, 0s);
+position: relative; z-index: 2;}
+.section-head { padding: 14px 15px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none;}
+.section-head:active { background: #fff5ec;}
+.section-head h2 { margin: 0; font-size: 15px;}
+.section-head.count { font-size: 12px; color: #a08a7a; background: #fbeee2; border-radius: 10px; padding: 2px 9px; transition: all.3s;}
+.section-head.count.full { background: #ffe0ea; color: #d94f70;}
+.section-head.arrow { transition: transform.35s cubic-bezier(.34,1.4,.64,1); color: #c9a68e; font-size: 13px;}
+.section.collapsed.arrow { transform: rotate(-90deg);}
+.collapsible { display: grid; grid-template-rows: 1fr; transition: grid-template-rows.38s cubic-bezier(.4,0,.2,1);}
+.section.collapsed.collapsible { grid-template-rows: 0fr;}
+.collapsible > div { overflow: hidden; min-height: 0;}
+
+.item { display: flex; gap: 12px; padding: 13px 15px; border-top: 1px solid #f7ece1; cursor: pointer; align-items: flex-start;
+transition: transform.12s, background.2s;}
+.item:active { transform: scale(.985); background: #fff5ec;}
+.box { flex: none; width: 24px; height: 24px; border: 2px solid #d8bfab; border-radius: 8px; margin-top: 1px;
+display: flex; align-items: center; justify-content: center; font-size: 15px; color: #fff;
+transition: background.2s, border-color.2s, transform.2s; background: #fff;}
+.item.done.box { background: #ef6a8a; border-color: #ef6a8a; animation: pop.35s cubic-bezier(.34,1.8,.64,1);}
+@keyframes pop { 0% { transform: scale(.4);} 55% { transform: scale(1.25);} 100% { transform: scale(1);}}
+.item.done.box::after { content: "✓"; animation: checkIn.25s ease both; display: block;}
+@keyframes checkIn { from { transform: scale(0) rotate(-30deg);} to { transform: scale(1) rotate(0);}}
+.item.txt { flex: 1; min-width: 0;}
+.item.title { font-size: 14px; line-height: 1.5; transition: color.25s;}
+.item.done.title { color: #c4a892; text-decoration: line-through;}
+.item.done { animation: doneFlash.4s ease;}
+@keyframes doneFlash { 0% { background: #ffe9ef;} 100% { background: transparent;}}
+.badge { flex: none; font-size: 11px; background: #fee2e2; color: #dc2626; border-radius: 5px; padding: 2px 7px; margin-top: 2px;}
+.badge.tip { background: #fff1e2; color: #c2703d;}
+.hint-toggle { font-size: 12px; color: #d94f70; margin-top: 5px; display: inline-block;}
+.hint-wrap { display: grid; grid-template-rows: 0fr; transition: grid-template-rows.3s ease;}
+.hint-wrap.open { grid-template-rows: 1fr;}
+.hint-wrap > div { overflow: hidden; min-height: 0;}
+.hint { font-size: 12px; color: #a08a7a; line-height: 1.65; padding-top: 4px;}
+.diagram { margin: 8px 0 2px;}
+.diagram svg { width: 100%; height: auto; display: block; background: #fffaf5; border: 1px solid #f0ddd0; border-radius: 10px;}
+.diagram.cap { font-size: 11px; color: #c4a892; text-align: center; padding: 5px 0 2px;}
+
+.sweet { text-align: center; color: #c2703d; font-size: 13px; margin: 18px 14px 0; animation: fadeUp.5s ease both; position: relative; z-index: 2;}
+
+#doneBanner { margin: 16px 14px 0; background: linear-gradient(135deg, #e75480, #f7a072); color: #fff;
+border-radius: 14px; padding: 18px 16px; text-align: center; font-size: 15px; font-weight: 600; display: none;
+box-shadow: 0 4px 16px rgba(231,84,128,.35); position: relative; z-index: 2; line-height: 1.7;}
+#doneBanner.show { display: block; animation: bannerIn.6s cubic-bezier(.34,1.5,.64,1) both;}
+@keyframes bannerIn { from { opacity: 0; transform: scale(.85) translateY(14px);} to { opacity: 1; transform: none;}}
+
+.particle { position: fixed; width: 7px; height: 7px; border-radius: 50%; pointer-events: none; z-index: 99;}
+.confetti { position: fixed; top: -14px; width: 9px; height: 13px; pointer-events: none; z-index: 99; border-radius: 2px;}
+
+.footer-bar { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(255,253,251,.96); backdrop-filter: blur(8px);
+border-top: 1px solid #f0ddd0; padding: 12px 14px calc(12px + env(safe-area-inset-bottom)); display: flex; gap: 10px; z-index: 20;}
+.footer-bar button { flex: 1; border: none; border-radius: 12px; padding: 13px 0; font-size: 14px; cursor: pointer;
+transition: transform.12s; font-weight: 600;}
+.footer-bar button:active { transform: scale(.96);}
+#exportBtn { background: linear-gradient(135deg, #d94f70, #f0935c); color: #fff; box-shadow: 0 3px 10px rgba(217,79,112,.3);}
+#resetBtn { background: #fbeee2; color: #a08a7a; flex:.5;}
+#exportResult { margin: 14px; background: #fffdfb; border-radius: 14px; padding: 14px 15px; display: none;
+animation: fadeUp.4s ease both; box-shadow: 0 2px 8px rgba(190,120,70,.09); position: relative; z-index: 2;}
+#exportResult h3 { margin: 0 0 8px; font-size: 14px;}
+#exportResult textarea { width: 100%; height: 150px; border: 1px solid #ecd9c8; border-radius: 8px; padding: 10px; font-size: 13px; background: #fffaf5;}
+#exportResult button { margin-top: 8px; background: #ef6a8a; color: #fff; border: none; border-radius: 9px; padding: 10px 20px; font-size: 13px; font-weight: 600;}
+#exportResult button:active { transform: scale(.95);}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🎈 维维的威兰达提车清单</h1>
+<p>威威陪你一起验 · 全部变绿再签字开走 💕</p>
+<div class="road">
+<div class="lane"></div>
+<div id="car">🚗</div>
+</div>
+<div class="progress-text"><b id="pnum">0</b> / <span id="ptotal">0</span> 已完成</div>
+</header>
+
+<div class="top-card">
+<h2>⭐ 提车前先看这 3 件事</h2>
+<ol>
+<li><b>三码合一</b>：合格证、车身铭牌、发票上的 VIN 码必须一致，不一致直接拒收。</li>
+<li><b>看出厂日期</b>：驾驶门框 / 发动机舱铭牌，超 6 个月算库存车，可以谈折扣或换车。</li>
+<li><b>先验车后签字</b>：PDI 单、交车确认单没签之前你都有主动权，签完再发现问题就难扯了。</li>
+</ol>
+</div>
+
+<div id="sections"></div>
+
+<div class="sweet">💕 威威陪维维一起验车 · 祝提车大吉，一路平安 🛣️</div>
+
+<div id="doneBanner">🎉 全部搞定，可以签字开走啦！<br>💕 开着威兰达，我们去兜风吧 🛣️</div>
+
+<div id="exportResult">
+<h3>⚠️ 未完成项（复制发给销售）</h3>
+<textarea id="exportText" readonly></textarea><br>
+<button onclick="copyExport()">复制到剪贴板</button>
+</div>
+
+<div class="footer-bar">
+<button id="resetBtn" onclick="resetAll()">↺ 重置</button>
+<button id="exportBtn" onclick="exportLeft()">导出未完成项</button>
+</div>
+
+<script>
+/* ============ 气球 ============ */
+(function(){
+const colors = ["#f9a8c9","#fbc4a8","#f7d6a0","#f5a8a8","#e8b4d8","#f9c89b"];
+for (let i = 0; i < 9; i++) {
+const b = document.createElement("div");
+b.className = "balloon";
+const s = 30 + Math.random() * 24;
+b.style.width = s + "px"; b.style.height = s * 1.28 + "px";
+b.style.left = (2 + Math.random() * 94) + "vw";
+b.style.background = `radial-gradient(circle at 32% 30%, #ffffff88, ${colors[i % colors.length]})`;
+b.style.animationDuration = (13 + Math.random() * 10) + "s";
+b.style.animationDelay = (-Math.random() * 20) + "s";
+document.body.appendChild(b);
+}
+})();
+
+/* ============ 图解 SVG ============ */
+const SVG = {
+vin: `<svg viewBox="0 0 340 228">
+<path d="M28 132 C28 112 44 102 74 98 L108 94 L132 64 C137 57 144 54 154 54 L214 54 C224 54 231 57 237 64 L261 94 L294 100 C314 104 322 114 322 132 L322 140 L28 140 Z" fill="#dce8f7" stroke="#33507e" stroke-width="2.5"/>
+<path d="M142 92 L160 62 L206 62 L222 92 Z" fill="#9fc0e8" stroke="#33507e" stroke-width="1.5"/>
+<path d="M230 92 L244 66 L258 92 Z" fill="#9fc0e8" stroke="#33507e" stroke-width="1.5"/>
+<circle cx="98" cy="140" r="19" fill="#2b2f36"/><circle cx="98" cy="140" r="8" fill="#9aa3b2"/>
+<circle cx="256" cy="140" r="19" fill="#2b2f36"/><circle cx="256" cy="140" r="8" fill="#9aa3b2"/>
+<g font-size="13" font-weight="700" text-anchor="middle">
+<circle cx="130" cy="98" r="11" fill="#dc2626"/><text x="130" y="103" fill="#fff">1</text>
+<circle cx="186" cy="112" r="11" fill="#f59e0b"/><text x="186" y="117" fill="#fff">2</text>
+<circle cx="292" cy="112" r="11" fill="#0284c7"/><text x="292" y="117" fill="#fff">3</text>
+</g>
+<g font-size="12.5" fill="#334155">
+<circle cx="20" cy="170" r="6" fill="#dc2626"/><text x="32" y="175">1 前挡风玻璃左下角（站车外就能看）</text>
+<circle cx="20" cy="190" r="6" fill="#f59e0b"/><text x="32" y="195">2 驾驶位车门框上的铭牌</text>
+<circle cx="20" cy="210" r="6" fill="#0284c7"/><text x="32" y="215">3 发动机舱内（打开发动机盖）</text>
+</g>
+</svg><div class="cap">三处 VIN 码必须完全一致</div>`,
+
+plate: `<svg viewBox="0 0 340 196">
+<rect x="30" y="14" width="280" height="130" rx="10" fill="#ffffff" stroke="#33507e" stroke-width="2"/>
+<text x="50" y="44" font-size="13" fill="#334155">制造厂：广汽丰田汽车有限公司</text>
+<text x="50" y="68" font-size="13" fill="#334155">品牌 / 型号：威兰达 — —</text>
+<text x="50" y="92" font-size="13" fill="#334155">VIN：LVGXXXXXXXXXXXXXX</text>
+<rect x="42" y="102" width="236" height="30" rx="6" fill="#fee2e2"/>
+<text x="52" y="122" font-size="13.5" font-weight="700" fill="#b91c1c">出厂日期：2026 年 3 月</text>
+<line x1="336" y1="117" x2="288" y2="117" stroke="#dc2626" stroke-width="2"/>
+<polygon points="288,111 288,123 278,117" fill="#dc2626"/>
+<text x="50" y="166" font-size="12.5" fill="#64748b">和今天差超过 6 个月 = 库存车，可谈折扣或换车</text>
+<text x="50" y="186" font-size="12.5" fill="#64748b">超过 12 个月：直接要求换一台</text>
+</svg><div class="cap">铭牌一般在驾驶位门框 / 发动机舱内</div>`,
+
+tire: `<svg viewBox="0 0 340 200">
+<text x="170" y="22" font-size="13" font-weight="700" fill="#334155" text-anchor="middle">看胎壁最后四位数字</text>
+<circle cx="100" cy="105" r="66" fill="#262b33"/>
+<circle cx="100" cy="105" r="64" fill="none" stroke="#3d4450" stroke-width="2"/>
+<circle cx="100" cy="105" r="32" fill="#14171c" stroke="#3d4450" stroke-width="2"/>
+<circle cx="100" cy="105" r="11" fill="#6b7280"/>
+<defs><path id="tireArc" d="M38 105 A66 66 0 0 0 162 105"/></defs>
+<text font-size="14" fill="#d5dbe5" letter-spacing="4"><textPath href="#tireArc" startOffset="6%">DOT·8P2R···3025</textPath></text>
+<ellipse cx="128" cy="158" rx="32" ry="15" fill="none" stroke="#f43f5e" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="160" y1="158" x2="196" y2="158" stroke="#f43f5e" stroke-width="1.5"/>
+<text x="202" y="154" font-size="14" font-weight="700" fill="#b91c1c">3025</text>
+<text x="202" y="172" font-size="12" fill="#475569">= 2025 年第 30 周生产</text>
+<text x="202" y="190" font-size="12" fill="#475569">和出厂日期差太久要问清楚</text>
+</svg><div class="cap">四位数字 = 生产周 + 年份末两位</div>`,
+
+glass: `<svg viewBox="0 0 340 196">
+<polygon points="70,150 100,40 240,40 290,150" fill="#cfe3f7" stroke="#33507e" stroke-width="2"/>
+<polygon points="125,140 142,58 198,58 215,140" fill="#eaf3fd"/>
+<text x="170" y="118" font-size="30" font-weight="700" fill="#1e3a5f" text-anchor="middle">··· 6</text>
+<text x="170" y="142" font-size="11" fill="#64748b" text-anchor="middle">玻璃角落的小字</text>
+<g font-size="12.5" fill="#334155">
+<text x="24" y="172">数字 = 年份末位（如 6 → 2016 / 2026，结合出厂日期判断）</text>
+<text x="24" y="190">圆点在数字左边：月份 = 7 − 点数（3 个点 = 4 月）</text>
+</g>
+</svg><div class="cap">所有玻璃日期都应接近出厂日期</div>`,
+
+odo: `<svg viewBox="0 0 340 178">
+<rect x="40" y="14" width="260" height="122" rx="16" fill="#1f2430"/>
+<path d="M92 108 A46 46 0 0 1 208 108" fill="none" stroke="#4b5563" stroke-width="7" stroke-linecap="round"/>
+<line x1="92" y1="108" x2="104" y2="108" stroke="#9aa3b2" stroke-width="3"/>
+<line x1="208" y1="108" x2="196" y2="108" stroke="#9aa3b2" stroke-width="3"/>
+<line x1="150" y1="64" x2="150" y2="76" stroke="#9aa3b2" stroke-width="3"/>
+<rect x="122" y="88" width="96" height="32" rx="6" fill="#0b0e14" stroke="#f0935c" stroke-width="1.5"/>
+<text x="170" y="110" font-size="16" fill="#f7b267" text-anchor="middle" font-weight="700">28 km</text>
+<ellipse cx="170" cy="104" rx="64" ry="28" fill="none" stroke="#f43f5e" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="40" y="160" font-size="12.5" fill="#475569">新车一般 &lt; 50 km，几百公里可能是试驾车 / 调拨车</text>
+</svg><div class="cap">着车状态下看仪表总里程（ODO）</div>`,
+
+lights: `<svg viewBox="0 0 340 206">
+<path d="M70 158 L70 104 C70 84 90 74 120 70 L140 44 C143 39 148 37 155 37 L185 37 C192 37 197 39 200 44 L220 70 C250 74 270 84 270 104 L270 158 Z" fill="#dce8f7" stroke="#33507e" stroke-width="2.5"/>
+<path d="M145 66 L155 46 L185 46 L195 66 Z" fill="#9fc0e8" stroke="#33507e" stroke-width="1.5"/>
+<ellipse cx="106" cy="106" rx="23" ry="12" fill="#fef9c3" stroke="#b45309" stroke-width="2"/>
+<ellipse cx="234" cy="106" rx="23" ry="12" fill="#fef9c3" stroke="#b45309" stroke-width="2"/>
+<rect x="90" y="128" width="28" height="10" rx="5" fill="#fdba74" stroke="#c2410c"/>
+<rect x="222" y="128" width="28" height="10" rx="5" fill="#fdba74" stroke="#c2410c"/>
+<circle cx="122" cy="146" r="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+<circle cx="218" cy="146" r="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+<g font-size="12.5" fill="#334155">
+<line x1="84" y1="102" x2="40" y2="88" stroke="#94a3b8"/><text x="36" y="84" text-anchor="end">大灯（远近光）</text>
+<line x1="90" y1="133" x2="40" y2="146" stroke="#94a3b8"/><text x="36" y="150" text-anchor="end">转向灯</text>
+<line x1="128" y1="150" x2="150" y2="182" stroke="#94a3b8"/><text x="150" y="198">雾灯</text>
+<line x1="256" y1="102" x2="300" y2="88" stroke="#94a3b8"/><text x="304" y="84">双闪一起试</text>
+</g>
+</svg><div class="cap">找个人在车外帮你看，或对着玻璃看反光</div>`
+};
+
+/* ============ 清单数据 ============ */
+const DATA = [
+{ name: "📄 证件手续", items: [
+{ t: "三码合一：合格证 / 铭牌 / 发票 VIN 一致", h: "三处 17 位 VIN 码必须完全一致，不一致直接拒收。位置看上图。", must: true, img: "vin"},
+{ t: "核对铭牌出厂日期", h: "驾驶位门框或发动机舱内的铭牌，看“出厂日期”栏。超 6 个月是库存车，可以谈折扣或直接换一台。", must: true, img: "plate"},
+{ t: "购车发票、合格证、一致性证书齐全", h: "三证缺一不可，没有合格证上不了牌。", must: true},
+{ t: "三包手册、保养手册有盖章", h: "三包凭证是维权依据，当场确认。", must: false},
+{ t: "合同 vs 实车：配置、颜色、价格一致", h: "赠品（贴膜、脚垫、记录仪）兑现情况写进备注。", must: true},
+{ t: "临牌 / 上牌流程、保险生效时间确认", h: "保险生效必须早于你开出 4S 店的时间；问清临牌有效期。", must: false},
+{ t: "贷款用户：抵押、还款卡、提前还款违约金", h: "绿本是否抵押在银行，问清楚再签字。", must: false},
+]},
+{ name: "🔍 车身外观（绕车两圈）", items: [
+{ t: "漆面：顺光 + 逆光各看一遍", h: "重点看保险杠、门把手、后视镜边缘；蹲下看腰线是否顺直，有无色差橘皮。", must: true},
+{ t: "钣金缝隙均匀，车门 / 机盖 / 尾门开合顺畅", h: "缝隙一边宽一边窄可能是拆装修复过。", must: true},
+{ t: "玻璃无裂纹，生产日期接近出厂日期", h: "看玻璃角落小字：数字=年份末位，左边圆点数=7-月份。每块玻璃都扫一眼。", must: false, img: "glass"},
+{ t: "轮胎无鼓包裂纹，生产日期 < 1 年", h: "看胎壁最后四位数字：前两位=周，后两位=年份。备胎 / 补胎液也要看。", must: false, img: "tire"},
+{ t: "里程表 < 50 公里", h: "着车看仪表 ODO 总里程。几百公里可能是试驾车或长途调拨车。", must: true, img: "odo"},
+{ t: "底盘看一眼：无漏油、无托底", h: "让销售升起来或趴下看一眼，五分钟的事。", must: false},
+]},
+{ name: "💺 内饰 & 功能", items: [
+{ t: "两把钥匙都能用", h: "遥控 + 机械钥匙，两把都试一遍锁车解锁。", must: true},
+{ t: "座椅内饰无污渍破损", h: "轨道前后调一遍，头枕扶手都动一下；座椅塑料膜可要求保留。", must: false},
+{ t: "中控屏、仪表、倒车影像、雷达", h: "每个菜单点进去看一眼，挂 R 挡确认倒车影像。", must: false},
+{ t: "让销售演示 TSS 智行安全功能", h: "车道偏离预警、自适应巡航、预碰撞系统，提车时让销售带你试一遍，比自己翻说明书快。", must: false},
+{ t: "空调、四个车窗、天窗", h: "一键升降、天窗开合都试，有异响当场提。", must: false},
+{ t: "全车灯光：大灯 / 转向 / 刹车 / 雾灯 / 双闪", h: "按图标注逐个试，找人帮你在车外看。", must: false, img: "lights"},
+{ t: "随车工具：三角牌、千斤顶、拖车钩", h: "后备箱盖板下面全翻出来看，别信“都在里面”。", must: false},
+]},
+{ name: "🛣️ 点火 & 短途试驾", items: [
+{ t: "点火后无故障灯常亮", h: "自检后 ABS、气囊、发动机灯应熄灭，常亮就别提。", must: true},
+{ t: "怠速平稳，方向盘不抖", h: "新车有点味道正常，刺鼻化学味 + 抖动不正常。", must: false},
+{ t: "刹车、转向、加速都试一脚", h: "刹车不偏、转向不跑偏、加速无顿挫异响。", must: true},
+{ t: "雨刮、喷水、喇叭", h: "十秒钟的事，顺手试了。", must: false},
+]},
+{ name: "💰 费用 & 离店前", items: [
+{ t: "尾款与合同一致，无新增收费", h: "“出库费”“PDI 检测费”等巧立名目直接拒绝。", must: true},
+{ t: "赠品到手或写进书面备注", h: "口头承诺 = 没有承诺，写进交车单并签字。", must: false},
+{ t: "拍照留存：合同 / 发票 / 铭牌 / 里程表 / 车身四角", h: "后续扯皮这些照片就是证据。", must: false},
+{ t: "问清免费首保时间 / 里程", h: "广丰一般 6 个月或 1 万公里免费首保，让销售发你文字版，别只口头说。", must: false},
+]},
+];
+
+const KEY = "weilandacheck_v1";
+let state = JSON.parse(localStorage.getItem(KEY) || "{}");
+const COLORS = ["#f43f5e","#fb923c","#facc15","#f472b6","#fb7185","#fdba74"];
+
+function burst(x, y, n, spread) {
+for (let i = 0; i < n; i++) {
+const p = document.createElement("div");
+p.className = "particle";
+p.style.background = COLORS[Math.floor(Math.random() * COLORS.length)];
+p.style.left = x + "px"; p.style.top = y + "px";
+document.body.appendChild(p);
+const ang = Math.random() * Math.PI * 2, dist = spread * (0.4 + Math.random() * 0.6);
+p.animate([
+{ transform: "translate(0,0) scale(1)", opacity: 1},
+{ transform: `translate(${Math.cos(ang)*dist}px, ${Math.sin(ang)*dist - 14}px) scale(.3)`, opacity: 0}
+], { duration: 550 + Math.random()*250, easing: "cubic-bezier(.2,.7,.3,1)"}).onfinish = () => p.remove();
+}
+}
+
+function bigConfetti() {
+for (let i = 0; i < 100; i++) {
+const c = document.createElement("div");
+c.className = "confetti";
+c.style.background = COLORS[Math.floor(Math.random() * COLORS.length)];
+c.style.left = Math.random() * 100 + "vw";
+document.body.appendChild(c);
+c.animate([
+{ transform: "translateY(0) rotate(0deg)", opacity: 1},
+{ transform: `translateY(${window.innerHeight + 40}px) rotate(${540 + Math.random()*540}deg)`, opacity:.9}
+], { duration: 2200 + Math.random()*1800, easing: "cubic-bezier(.2,.6,.4,1)", delay: Math.random()*600}).onfinish = () => c.remove();
+}
+}
+
+function render() {
+const wrap = document.getElementById("sections");
+wrap.innerHTML = "";
+let total = 0, done = 0;
+DATA.forEach((sec, si) => {
+let sd = 0;
+sec.items.forEach((_, ii) => { if (state[si+"-"+ii]) sd++;});
+total += sec.items.length; done += sd;
+const div = document.createElement("div");
+div.className = "section";
+div.style.setProperty("--d", (0.15 + si * 0.07) + "s");
+div.innerHTML = `<div class="section-head">
+<h2>${sec.name}</h2>
+<span style="display:flex;align-items:center;gap:8px">
+<span class="count ${sd===sec.items.length?'full':''}">${sd}/${sec.items.length}</span>
+<span class="arrow">▼</span>
+</span></div>
+<div class="collapsible"><div class="items"></div></div>`;
+div.querySelector(".section-head").onclick = () => div.classList.toggle("collapsed");
+const box = div.querySelector(".items");
+sec.items.forEach((it, ii) => {
+const id = si + "-" + ii;
+const el = document.createElement("div");
+el.className = "item" + (state[id]? " done": "");
+const toggleLabel = it.img? "▸ 怎么看（含图解）": "▸ 怎么看";
+el.innerHTML = `<div class="box"></div>
+<div class="txt"><div class="title">${it.t}</div>
+<span class="hint-toggle">${toggleLabel}</span>
+<div class="hint-wrap"><div>
+${it.img? `<div class="diagram">${SVG[it.img]}</div>`: ""}
+<div class="hint">${it.h}</div>
+</div></div>
+</div>
+${it.must? '<span class="badge">必查</span>': '<span class="badge tip">建议</span>'}`;
+el.onclick = (e) => {
+if (e.target.classList.contains("hint-toggle")) {
+const w = el.querySelector(".hint-wrap");
+w.classList.toggle("open");
+e.target.textContent = w.classList.contains("open")? "▾ 收起": toggleLabel;
+return;
+}
+const r = el.querySelector(".box").getBoundingClientRect();
+const was =!!state[id];
+state[id] =!was;
+localStorage.setItem(KEY, JSON.stringify(state));
+if (!was) burst(r.left + r.width/2, r.top + r.height/2, 7, 34);
+const prevDone = done;
+render();
+if (!was && prevDone + 1 === total) setTimeout(() => bigConfetti(), 350);
+};
+box.appendChild(el);
+});
+wrap.appendChild(div);
+});
+
+const pct = total? done / total: 0;
+document.getElementById("car").style.left = `calc(${(pct*100).toFixed(1)}% - ${(pct*28).toFixed(0)}px)`;
+const pnum = document.getElementById("pnum");
+const step = () => {
+const cur = parseInt(pnum.textContent) || 0;
+if (cur === done) return;
+pnum.textContent = cur + (done > cur? 1: -1);
+setTimeout(step, 40);
+};
+step();
+document.getElementById("ptotal").textContent = total;
+
+const banner = document.getElementById("doneBanner");
+banner.classList.toggle("show", done === total && total > 0);
+}
+
+function exportLeft() {
+const lines = [];
+DATA.forEach((sec, si) => {
+const ids = [];
+sec.items.forEach((it, ii) => { if (!state[si+"-"+ii]) ids.push("• " + it.t);});
+if (ids.length) { lines.push(""); lines.push(...ids); lines.push("");}
+});
+const box = document.getElementById("exportResult");
+box.style.display = "block";
+document.getElementById("exportText").value = lines.length? lines.join("\n"): "全部完成 ✅ 可以提车了！";
+box.scrollIntoView({ behavior: "smooth", block: "center"});
+}
+function copyExport() {
+const t = document.getElementById("exportText");
+t.select();
+try { document.execCommand("copy");} catch(e) {}
+if (navigator.clipboard) navigator.clipboard.writeText(t.value).catch(()=>{});
+const btn = event.target;
+const old = btn.textContent;
+btn.textContent = "✓ 已复制！";
+setTimeout(() => btn.textContent = old, 1500);
+}
+function resetAll() {
+if (confirm("清空所有勾选吗？")) { state = {}; localStorage.removeItem(KEY); render();}
+}
+render();
+</script>
+</body>
+</html>
