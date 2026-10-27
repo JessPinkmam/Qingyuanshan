@@ -148,7 +148,7 @@ const PRESETS=[
 {a:'兔子 Rabbit',b:'花篮 / 捧花 Flowers',c:'发光蝴蝶 Glowing Butterfly',d:'$20\u201328（主力款）',img:'images/ai/ai-rabbit-butterfly.webp',cap:'AI 概念：兔子 + 捧花 + 发光蝴蝶'},
 {a:'仙女 Fairy',b:'月亮地插 Moon Stake',c:'7 颗暖白 LED',d:'$14\u201320（冲量送礼款）',img:'images/ai/ai-fairy-moon.webp',cap:'AI 概念：仙女 + 月亮地插 · 地插款'},
 {a:'狗狗 Dog',b:'手提灯笼 Lantern',c:'7 颗暖白 LED',d:'$20\u201328（主力款）',img:'images/ai/ai-dog-lantern.webp',cap:'AI 概念：狗狗 + 手提灯笼（AI 图里是金色狗，只看造型和灯笼）'}];
-const AI_BY_HERO={'乌龟':'images/ai/ai-turtle-succulent.webp','兔子':'images/ai/ai-rabbit-butterfly.webp','仙女':'images/ai/ai-fairy-moon.webp','狗狗':'images/ai/ai-dog-lantern.webp'};
+const AI_BY_HERO={'乌龟':'images/ai/ai-turtle-succulent.webp','青蛙':'images/ai/ai-frog-succulent.webp','兔子':'images/ai/ai-rabbit-butterfly.webp','狗狗':'images/ai/ai-dog-lantern.webp','黑熊':'images/ai/ai-bear-sunflower.webp','高地牛':'images/ai/ai-cow-lights.webp','地精':'images/gnome.jpg','天使':'images/ai/ai-angel-succulent.webp','仙女':'images/ai/ai-fairy-moon.webp'};
 function setPreset(i){const pr=PRESETS[i];document.getElementById('a').value=pr.a;document.getElementById('b').value=pr.b;document.getElementById('c').value=pr.c;document.getElementById('d').value=pr.d;document.querySelectorAll('#presets .preset').forEach((f,j)=>f.classList.toggle('on',j===i));gen();}
 function updateGenPreview(){
  const a=document.getElementById('a').value,b=document.getElementById('b').value,c=document.getElementById('c').value;
@@ -156,7 +156,7 @@ function updateGenPreview(){
  const hero=a.slice(0,2);
  const img=document.getElementById('genimg'),cap=document.getElementById('gencap');
  if(hit){img.src=hit.img;cap.textContent=hit.cap+'（点图可放大）';}
- else if(AI_BY_HERO[hero]){img.src=AI_BY_HERO[hero];cap.textContent='AI 概念图：'+hero+'主角示意，第二功能以标题为准（点图可放大）';}
+ else if(AI_BY_HERO[hero]){img.src=AI_BY_HERO[hero];cap.textContent='预览图：'+hero+'主角（'+(hero==='地精'?'实拍图':'AI 概念图')+'），第二功能与发光点以标题和检查单为准（点图可放大）';}
  else{img.removeAttribute('src');cap.textContent='这个主角暂无 AI 概念图，换乌龟 / 兔子 / 仙女 / 狗狗可看图';}
 }
 function gen(){const a=document.getElementById('a').value,b=document.getElementById('b').value,c=document.getElementById('c').value,d=document.getElementById('d').value;
