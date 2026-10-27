@@ -87,7 +87,7 @@ a{color:#ffe082}
 </ul></div>
 
 <div class="card"><h2>🎯 选品公式生成器：点一点，拼出你的标题和检查单</h2>
-<p>👆 先点下面 4 张 <b>AI 概念图</b>，生成器会自动填好整套组合；也可以点完再换下拉框微调。AI 图只是选品灵感，不是真实商品图。</p>
+<p>👆 点下面 4 张 <b>AI 概念图</b>可直接生成一整套，也可以先换下拉框再微调，预览图会跟着主角换。AI 图只是选品灵感，不是真实商品图。</p>
 <div class="gallery" id="presets">
 <figure class="preset" onclick="setPreset(0)"><img src="images/ai/ai-turtle-succulent.webp" alt="AI 乌龟多肉" loading="lazy"><figcaption>🐢 乌龟 + 多肉 + 7 暖白 LED<br><span class="small">头牌公式，点我生成</span></figcaption></figure>
 <figure class="preset" onclick="setPreset(1)"><img src="images/ai/ai-rabbit-butterfly.webp" alt="AI 兔子蝴蝶" loading="lazy"><figcaption>🐰 兔子 + 捧花 + 发光蝴蝶<br><span class="small">第二发光点，点我生成</span></figcaption></figure>
@@ -160,7 +160,7 @@ function updateGenPreview(){
  else{img.removeAttribute('src');cap.textContent='这个主角暂无 AI 概念图，换乌龟 / 兔子 / 仙女 / 狗狗可看图';}
 }
 function gen(){const a=document.getElementById('a').value,b=document.getElementById('b').value,c=document.getElementById('c').value,d=document.getElementById('d').value;
-document.getElementById('out').textContent=`标题模板（英文原意，直译参考）：\nSolar Garden Statues ${a} with ${b} and ${c} — Lawn Decor for Patio, Balcony, Yard Ornament, Gifts for Mom Grandma Women\n\n检查单：\n□ 主图 1 张黄昏夜景 + 1 张白天参照物（手/花盆对比尺寸）\n□ 目标价：${d}，先算树脂 + 灯板 + 电池 + 包装 + 运费再定\n□ 防水：户外款至少 IP44，地插款争取 IP65；写清晒 6–8 小时、亮 6–10 小时\n□ 标题塞满：Solar + 主角 + 第二功能 + LED 数 + Patio/Balcony/Yard + Gifts for Mom Grandma`;}
+document.getElementById('out').textContent=`标题模板（英文原意，直译参考）：\nSolar Garden Statues ${a} with ${b} and ${c} — Lawn Decor for Patio, Balcony, Yard Ornament, Gifts for Mom Grandma Women\n\n检查单：\n□ 主图 1 张黄昏夜景 + 1 张白天参照物（手/花盆对比尺寸）\n□ 目标价：${d}，先算树脂 + 灯板 + 电池 + 包装 + 运费再定\n□ 防水：户外款至少 IP44，地插款争取 IP65；写清晒 6–8 小时、亮 6–10 小时\n□ 标题塞满：Solar + 主角 + 第二功能 + LED 数 + Patio/Balcony/Yard + Gifts for Mom Grandma`;updateGenPreview();}
 updateGenPreview();
 document.querySelectorAll('.controls button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.controls button').forEach(x=>x.classList.remove('on'));b.classList.add('on');render();});
 document.getElementById('q').oninput=render;document.getElementById('sort').onchange=render;
