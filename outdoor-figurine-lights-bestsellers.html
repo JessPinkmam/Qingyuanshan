@@ -19,7 +19,15 @@ input{flex:1;min-width:200px;border-radius:12px}
 .sales{color:#ffd54f;font-weight:700}.meta{font-size:13px;opacity:.85;line-height:1.6}
 #detail{position:sticky;bottom:12px;background:#fff8e1;color:#222;border-radius:16px;padding:16px;border:2px solid #f2c14e;display:none}
 #detail h3{color:#7a4d00}.warn{background:#3a241d;border:1px solid #a85a3a;border-radius:12px;padding:12px}
-.small{font-size:13px;opacity:.8;line-height:1.7}select{width:100%;margin:6px 0;border-radius:12px}
+.small{font-size:13px;opacity:.8;line-height:1.7}
+.thumb{width:100%;height:200px;object-fit:cover;border-radius:10px;margin-bottom:8px;background:#0f1a14}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.gallery figure{margin:0;background:#12211a;border:1px solid #2c4a33;border-radius:12px;overflow:hidden;cursor:pointer}
+.gallery img{width:100%;height:180px;object-fit:cover;display:block}
+.gallery figcaption{padding:8px 10px;font-size:13px;line-height:1.5}
+#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:99;padding:16px}
+#lightbox img{max-width:92vw;max-height:82vh;border-radius:12px}
+#lightbox p{color:#fff;text-align:center}select{width:100%;margin:6px 0;border-radius:12px}
 .out{background:#12211a;border:1px dashed #f2c14e;border-radius:12px;padding:12px;margin-top:10px;white-space:pre-wrap;line-height:1.7}
 a{color:#ffe082}
 @media(max-width:600px){h1{font-size:22px}.bar label{width:86px}}
@@ -32,6 +40,18 @@ a{color:#ffe082}
 <div class="card"><h2>📌 一句话结论：赢的不是“灯”，是“一只可爱的动物 + 一个能装东西的造型 + 7 颗暖光 LED”</h2>
 <p class="big">榜单被一个公式统治：<b>Nacome 式“动物 + 多肉盆 + 7 LED”</b>——乌龟月销 10,000+，同款青蛙、地精、天使轮番挂 Best Seller 标。单独只有造型、没有第二功能的纯摆件，很难冲到头部；单独只有灯串、没有“脸”的，也不在这个类目里打。</p>
 <p>买家画像非常集中：标题里反复出现 <b>Gifts for Mom / Grandma / Women</b>。也就是说，<b>第一买家是送礼的人，不是园艺发烧友</b>。白天要“可爱到能拍照”，晚上要“亮起来有魔法感”，礼盒感本身就是产品的一部分。</p></div>
+
+<div class="card"><h2>🖼️ 先看图：8 个好卖造型长这样</h2><p>点任意一张可以放大。图片是公开搜索到的同类畅销款示意，版权归原卖家 / 来源所有，仅作选品研究参考，不是每张都对应下面某一条 listing 的精确主图。</p>
+<div class="gallery">
+<figure onclick="openLB('images/turtle.jpg','乌龟 + 多肉 + 发光多肉')"><img src="images/turtle.jpg" alt="乌龟背上多肉发光" loading="lazy"><figcaption>🐢 乌龟 + 多肉：夜里多肉一颗颗亮起来，头牌公式</figcaption></figure>
+<figure onclick="openLB('images/frog.jpg','青蛙 + 发光花朵')"><img src="images/frog.jpg" alt="青蛙肚皮发光花朵" loading="lazy"><figcaption>🐸 青蛙 + 发光花：肚皮就是灯板，夜景一眼懂</figcaption></figure>
+<figure onclick="openLB('images/gnome.jpg','地精 + 多肉 + 蝴蝶')"><img src="images/gnome.jpg" alt="地精帽子多肉发光" loading="lazy"><figcaption>🧙 地精 + 多肉 + 蝴蝶：帽子、花、蝴蝶三个记忆点</figcaption></figure>
+<figure onclick="openLB('images/fairy-moon.jpg','仙女 + 月亮地插')"><img src="images/fairy-moon.jpg" alt="仙女坐在月亮上发光" loading="lazy"><figcaption>🌙 仙女 + 月亮：地插款，墙上还能投出花纹影子</figcaption></figure>
+<figure onclick="openLB('images/rabbit.jpg','兔子 + 发光蝴蝶')"><img src="images/rabbit.jpg" alt="兔子头顶发光蝴蝶" loading="lazy"><figcaption>🐰 兔子 + 蝴蝶：蝴蝶是第二发光点，拍照最出片</figcaption></figure>
+<figure onclick="openLB('images/dog.jpg','狗狗 + 手提灯笼')"><img src="images/dog.jpg" alt="狗狗提着发光灯笼" loading="lazy"><figcaption>🐶 狗狗 + 灯笼：按宠物选礼物的细分，脸先认狗</figcaption></figure>
+<figure onclick="openLB('images/cow.jpg','高地牛 + 发光眼睛')"><img src="images/cow.jpg" alt="高地牛眼睛发光" loading="lazy"><figcaption>🐮 高地牛：眼睛发光，网红萌物路线</figcaption></figure>
+<figure onclick="openLB('images/bear.jpg','黑熊 + 发光向日葵')"><img src="images/bear.jpg" alt="黑熊抱着发光向日葵" loading="lazy"><figcaption>🐻 黑熊 + 向日葵：抱花造型，送礼感直接拉满</figcaption></figure>
+</div></div>
 
 <div class="card"><h2>📊 好卖元素出现率（本页样本 16 款统计，不是 Amazon 官方数据）</h2>
 <div class="bar"><label>🐢🦊 动物主角</label><div class="track"><div class="fill" style="width:81%"></div></div><div class="num">13/16</div></div>
@@ -84,20 +104,20 @@ a{color:#ffe082}
 </main>
 <script>
 const D=[
-{n:"Nacome 乌龟 + 多肉 + 7 LED",e:"Nacome",cat:"animal succulent",price:14,orig:27.99,sales:10000,rating:"Best Seller",why:"榜单头牌公式。乌龟+多肉盆+7 LED，月销档最高（不同快照显示 5K+/10K+）。树脂、可回收材料认证，送礼标题拉满。",tip:"抄公式别抄款：换主角（兔子/熊）或换第二功能（灯笼/花篮），否则就是跟卖。"},
-{n:"Vuees 仙女 + 月亮地插",e:"Vuees",cat:"person moon stake",price:15.99,orig:26.99,sales:3000,rating:"4.6",why:"仙女坐在月亮上的地插造型，白天是花园剪影，晚上是发光点。路径/花坛场景极强，$15.99 送礼价。",tip:"地插款要拼安装：插杆长度、抗风、IP 防水写清楚，否则差评集中在倒伏。"},
-{n:"GIGALUMI 乌龟摆件灯（蘑菇/花园款）",e:"GIGALUMI",cat:"animal",price:21.99,orig:29.99,sales:600,rating:"4.6",why:"同一主角、不同品牌也能卖：乌龟是类目基本盘，$21.99 比 Nacome 折扣价高一档，靠造型差异化活着。",tip:"跟头部同主角时，价格不能只高一点，必须在造型、尺寸或灯数上给买家一个选你的理由。"},
-{n:"YODY 兔子捧花 + 发光蝴蝶",e:"YODY",cat:"animal",price:0,orig:0,sales:400,rating:"—",why:"兔子捧花 + 一只发光蝴蝶，400+/月。蝴蝶是第二发光点，让夜景照片多一个记忆点。树脂、太阳能、防水。",tip:"“动物+蝴蝶”是低成本加分项：蝴蝶翅膀透光，夜里比再加 5 颗灯更显眼。"},
-{n:"Nacome 青蛙 + 多肉 + 7 LED",e:"Nacome",cat:"animal succulent",price:0,orig:0,sales:200,rating:"Best Seller",why:"和乌龟同模不同主角，挂 Best Seller 标。证明公式可复制：换主角就能开第二条 listing，不是每个款都要重新发明。",tip:"系列化思路：同一模具逻辑、同一灯板、同一包装，换 3 个主角 = 3 条 listing，分摊开模成本。"},
-{n:"Nacome 地精 + 多肉 + 7 LED",e:"Nacome",cat:"person succulent",price:0,orig:0,sales:0,rating:"Best Seller",why:"地精是花园常青主角，叠加多肉盆后从“传统摆件”变成“会亮的摆件”，搜索词从 Gnome 扩展到 Solar Figurine Lights。",tip:"传统主角 + 太阳能灯 = 最稳的升级路径，别为了新奇选没人搜的主角。"},
+{n:"Nacome 乌龟 + 多肉 + 7 LED",img:"images/turtle.jpg",e:"Nacome",cat:"animal succulent",price:14,orig:27.99,sales:10000,rating:"Best Seller",why:"榜单头牌公式。乌龟+多肉盆+7 LED，月销档最高（不同快照显示 5K+/10K+）。树脂、可回收材料认证，送礼标题拉满。",tip:"抄公式别抄款：换主角（兔子/熊）或换第二功能（灯笼/花篮），否则就是跟卖。"},
+{n:"Vuees 仙女 + 月亮地插",img:"images/fairy-moon.jpg",e:"Vuees",cat:"person moon stake",price:15.99,orig:26.99,sales:3000,rating:"4.6",why:"仙女坐在月亮上的地插造型，白天是花园剪影，晚上是发光点。路径/花坛场景极强，$15.99 送礼价。",tip:"地插款要拼安装：插杆长度、抗风、IP 防水写清楚，否则差评集中在倒伏。"},
+{n:"GIGALUMI 乌龟摆件灯（蘑菇/花园款）",img:"images/turtle.jpg",e:"GIGALUMI",cat:"animal",price:21.99,orig:29.99,sales:600,rating:"4.6",why:"同一主角、不同品牌也能卖：乌龟是类目基本盘，$21.99 比 Nacome 折扣价高一档，靠造型差异化活着。",tip:"跟头部同主角时，价格不能只高一点，必须在造型、尺寸或灯数上给买家一个选你的理由。"},
+{n:"YODY 兔子捧花 + 发光蝴蝶",img:"images/rabbit.jpg",e:"YODY",cat:"animal",price:0,orig:0,sales:400,rating:"—",why:"兔子捧花 + 一只发光蝴蝶，400+/月。蝴蝶是第二发光点，让夜景照片多一个记忆点。树脂、太阳能、防水。",tip:"“动物+蝴蝶”是低成本加分项：蝴蝶翅膀透光，夜里比再加 5 颗灯更显眼。"},
+{n:"Nacome 青蛙 + 多肉 + 7 LED",img:"images/frog.jpg",e:"Nacome",cat:"animal succulent",price:0,orig:0,sales:200,rating:"Best Seller",why:"和乌龟同模不同主角，挂 Best Seller 标。证明公式可复制：换主角就能开第二条 listing，不是每个款都要重新发明。",tip:"系列化思路：同一模具逻辑、同一灯板、同一包装，换 3 个主角 = 3 条 listing，分摊开模成本。"},
+{n:"Nacome 地精 + 多肉 + 7 LED",img:"images/gnome.jpg",e:"Nacome",cat:"person succulent",price:0,orig:0,sales:0,rating:"Best Seller",why:"地精是花园常青主角，叠加多肉盆后从“传统摆件”变成“会亮的摆件”，搜索词从 Gnome 扩展到 Solar Figurine Lights。",tip:"传统主角 + 太阳能灯 = 最稳的升级路径，别为了新奇选没人搜的主角。"},
 {n:"Nacome 天使 + 多肉 + 7 LED",e:"Nacome",cat:"person succulent",price:0,orig:0,sales:0,rating:"Best Seller",why:"天使 + 多肉，纪念 / 送礼属性更强，适合 Mom / Grandma / Memorial 场景词，价格敏感度低于动物款。",tip:"天使、纪念款的文案要克制、温柔，不要用搞笑梗，差评往往来自“感觉不庄重”。"},
-{n:"GIGALUMI 青蛙摆件灯",e:"GIGALUMI",cat:"animal",price:23.99,orig:32.99,sales:0,rating:"—",why:"青蛙同样是基本盘，$23.99 档。说明 $20–28 是动物款的主力带，不是越便宜越好。",tip:"$20+ 档必须在主图里讲清尺寸和亮度，否则买家会拿 $14 款比价。"},
-{n:"GIGALUMI 黑熊 9 英寸摆件灯",e:"GIGALUMI",cat:"animal",price:26.99,orig:31.99,sales:0,rating:"—",why:"熊 + 9 英寸，比小乌龟大一圈，价格也高一档。适合门廊、露台的大摆件场景。",tip:"大尺寸款的运费和破损率要先算进定价，别只看售价。"},
-{n:"Lavezee 狗狗 9.8 英寸摆件",e:"Lavezee",cat:"animal",price:0,orig:0,sales:0,rating:"—",why:"狗狗 + 狗主人送礼词（Dog Lovers），是“按宠物选礼物”的细分：买家先认狗，再认灯。",tip:"宠物细分要做品种差异：拉布拉多、柯基、金毛的脸不一样，通用狗脸转化率有限。"},
-{n:"ILLUMINEW 狗 + 睡眠猫 + 灯笼组合",e:"ILLUMINEW",cat:"animal lantern",price:0,orig:0,sales:0,rating:"—",why:"狗提灯笼 + 睡眠猫，一对组合卖“故事感”，不是单只动物。组合款适合礼盒、成套定价。",tip:"组合款拍照要拍“两只在一起的夜景”，单拍一只等于浪费组合溢价。"},
-{n:"CHUANGFENG 地精 9.5 英寸太阳能灯",e:"CHUANGFENG",cat:"person",price:19.98,orig:29.99,sales:0,rating:"4.4",why:"地精单品、$19.98 档、4.4 分，说明地精即使不带多肉盆也能走量，但评分低于带多肉的头部款。",tip:"4.4 分在礼物类目是危险线：低于 4.5，送礼买家会犹豫，先修差评再推量。"},
-{n:"Glintoper 高地牛 12 英寸三层叠",e:"Glintoper",cat:"animal",price:0,orig:0,sales:0,rating:"—",why:"高地牛 + 三层叠 + 暖白光，12 英寸高，走“网红萌牛”路线。IP44、亮 6–10 小时，圣诞/生日送礼词强。",tip:"网红动物有窗口期：牛、树懒、水豚轮着火，别在热度过了才开模。"},
-{n:"Limygus 金属奔跑仙女地插",e:"Limygus",cat:"person stake moon",price:0,orig:0,sales:0,rating:"—",why:"金属 + 青铜色仙女地插，和树脂款拉开材质差。金属款白天剪影好看，适合高端花园、走道两侧成排插。",tip:"金属款要讲防锈：不锈钢 / 涂层写清楚，否则雨季差评会追上来。"},
+{n:"GIGALUMI 青蛙摆件灯",img:"images/frog.jpg",e:"GIGALUMI",cat:"animal",price:23.99,orig:32.99,sales:0,rating:"—",why:"青蛙同样是基本盘，$23.99 档。说明 $20–28 是动物款的主力带，不是越便宜越好。",tip:"$20+ 档必须在主图里讲清尺寸和亮度，否则买家会拿 $14 款比价。"},
+{n:"GIGALUMI 黑熊 9 英寸摆件灯",img:"images/bear.jpg",e:"GIGALUMI",cat:"animal",price:26.99,orig:31.99,sales:0,rating:"—",why:"熊 + 9 英寸，比小乌龟大一圈，价格也高一档。适合门廊、露台的大摆件场景。",tip:"大尺寸款的运费和破损率要先算进定价，别只看售价。"},
+{n:"Lavezee 狗狗 9.8 英寸摆件",img:"images/dog.jpg",e:"Lavezee",cat:"animal",price:0,orig:0,sales:0,rating:"—",why:"狗狗 + 狗主人送礼词（Dog Lovers），是“按宠物选礼物”的细分：买家先认狗，再认灯。",tip:"宠物细分要做品种差异：拉布拉多、柯基、金毛的脸不一样，通用狗脸转化率有限。"},
+{n:"ILLUMINEW 狗 + 睡眠猫 + 灯笼组合",img:"images/dog.jpg",e:"ILLUMINEW",cat:"animal lantern",price:0,orig:0,sales:0,rating:"—",why:"狗提灯笼 + 睡眠猫，一对组合卖“故事感”，不是单只动物。组合款适合礼盒、成套定价。",tip:"组合款拍照要拍“两只在一起的夜景”，单拍一只等于浪费组合溢价。"},
+{n:"CHUANGFENG 地精 9.5 英寸太阳能灯",img:"images/gnome.jpg",e:"CHUANGFENG",cat:"person",price:19.98,orig:29.99,sales:0,rating:"4.4",why:"地精单品、$19.98 档、4.4 分，说明地精即使不带多肉盆也能走量，但评分低于带多肉的头部款。",tip:"4.4 分在礼物类目是危险线：低于 4.5，送礼买家会犹豫，先修差评再推量。"},
+{n:"Glintoper 高地牛 12 英寸三层叠",img:"images/cow.jpg",e:"Glintoper",cat:"animal",price:0,orig:0,sales:0,rating:"—",why:"高地牛 + 三层叠 + 暖白光，12 英寸高，走“网红萌牛”路线。IP44、亮 6–10 小时，圣诞/生日送礼词强。",tip:"网红动物有窗口期：牛、树懒、水豚轮着火，别在热度过了才开模。"},
+{n:"Limygus 金属奔跑仙女地插",img:"images/fairy-moon.jpg",e:"Limygus",cat:"person stake moon",price:0,orig:0,sales:0,rating:"—",why:"金属 + 青铜色仙女地插，和树脂款拉开材质差。金属款白天剪影好看，适合高端花园、走道两侧成排插。",tip:"金属款要讲防锈：不锈钢 / 涂层写清楚，否则雨季差评会追上来。"},
 {n:"OxyLED 6 件套：蝴蝶 / 蜻蜓 / 蜂鸟地插",e:"OxyLED",cat:"stake",price:0,orig:0,sales:0,rating:"—",why:"2 蝴蝶 + 2 蜻蜓 + 2 蜂鸟，70cm 高，变色 LED，IP65。套装逻辑：单价低、数量多、沿小路一排插，视觉冲击靠“排布”不是单个造型。",tip:"套装款的夜景主图必须拍“一排插在花坛里的全景”，单只特写卖不出套装感。"},
 {n:"Dracarys 100 件迷你仙女花园动物套装",e:"Dracarys",cat:"stake",price:0,orig:0,sales:0,rating:"Best Seller",why:"100 件微缩树脂动物，DIY 微景观、仙女花园场景。不是 yard 大摆件，是“桌面 + 微景观”另一条线，靠数量和玩法取胜。",tip:"迷你套装别和 yard 大摆件比单价，比的是“可玩性 + 拍照的丰富度”。"}];
 const grid=document.getElementById('grid'),detail=document.getElementById('detail');
@@ -107,12 +127,14 @@ function render(){
  let list=D.filter(d=>(f==='all'||d.cat.includes(f))&&(!q||d.n.includes(q)||d.e.toLowerCase().includes(q.toLowerCase())));
  let s=document.getElementById('sort').value;
  if(s==='sales')list.sort((a,b)=>b.sales-a.sales); if(s==='priceAsc')list.sort((a,b)=>(a.price||99)-(b.price||99)); if(s==='priceDesc')list.sort((a,b)=>(b.price||99)-(a.price||99));
- grid.innerHTML=list.map((d,i)=>`<div class="item" onclick='show(${D.indexOf(d)})'><h3>${d.n}</h3><div><span class="tag">${d.e}</span><span class="tag">${d.rating}</span>${d.sales?`<span class="tag sales">约 ${d.sales.toLocaleString()}+ / 月</span>`:''}</div><div class="meta">${d.price?`价格：约 $${d.price}（原价 $${d.orig}）`:'价格：快照未显示，以 listing 为准'}<br>${d.why.slice(0,52)}…</div></div>`).join('')||'<p>没有匹配的款，换个关键词试试。</p>';
+ grid.innerHTML=list.map((d,i)=>`<div class="item" onclick='show(${D.indexOf(d)})'>${d.img?`<img class="thumb" src="${d.img}" alt="${d.n}" loading="lazy" onclick="event.stopPropagation();openLB('${d.img}','${d.n}')" onerror="this.style.display='none'">`:''}<h3>${d.n}</h3><div><span class="tag">${d.e}</span><span class="tag">${d.rating}</span>${d.sales?`<span class="tag sales">约 ${d.sales.toLocaleString()}+ / 月</span>`:''}</div><div class="meta">${d.price?`价格：约 $${d.price}（原价 $${d.orig}）`:'价格：快照未显示，以 listing 为准'}<br>${d.why.slice(0,52)}…</div></div>`).join('')||'<p>没有匹配的款，换个关键词试试。</p>';
 }
-function show(i){const d=D[i];detail.style.display='block';detail.innerHTML=`<h3>${d.n} · ${d.e}</h3><p><b>为什么卖：</b>${d.why}</p><p><b>给你的启示：</b>${d.tip}</p><p class="small">月销：${d.sales?`约 ${d.sales.toLocaleString()}+ / 月`:'快照未显示'} · 评分/标识：${d.rating} · 价格：${d.price?`约 $${d.price}`:'以 listing 为准'}</p>`;detail.scrollIntoView({behavior:'smooth',block:'nearest'});}
+function show(i){const d=D[i];detail.style.display='block';detail.innerHTML=`${d.img?`<img src="${d.img}" alt="${d.n}" style="width:100%;max-height:300px;object-fit:cover;border-radius:10px;margin-bottom:10px" onclick="openLB('${d.img}','${d.n}')">`:''}<h3>${d.n} · ${d.e}</h3><p><b>为什么卖：</b>${d.why}</p><p><b>给你的启示：</b>${d.tip}</p><p class="small">月销：${d.sales?`约 ${d.sales.toLocaleString()}+ / 月`:'快照未显示'} · 评分/标识：${d.rating} · 价格：${d.price?`约 $${d.price}`:'以 listing 为准'}</p>`;detail.scrollIntoView({behavior:'smooth',block:'nearest'});}
 function gen(){const a=document.getElementById('a').value,b=document.getElementById('b').value,c=document.getElementById('c').value,d=document.getElementById('d').value;
 document.getElementById('out').textContent=`标题模板（英文原意，直译参考）：\nSolar Garden Statues ${a} with ${b} and ${c} — Lawn Decor for Patio, Balcony, Yard Ornament, Gifts for Mom Grandma Women\n\n检查单：\n□ 主图 1 张黄昏夜景 + 1 张白天参照物（手/花盆对比尺寸）\n□ 目标价：${d}，先算树脂 + 灯板 + 电池 + 包装 + 运费再定\n□ 防水：户外款至少 IP44，地插款争取 IP65；写清晒 6–8 小时、亮 6–10 小时\n□ 标题塞满：Solar + 主角 + 第二功能 + LED 数 + Patio/Balcony/Yard + Gifts for Mom Grandma`;}
 document.querySelectorAll('.controls button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.controls button').forEach(x=>x.classList.remove('on'));b.classList.add('on');render();});
 document.getElementById('q').oninput=render;document.getElementById('sort').onchange=render;
 ['a','b','c','d'].forEach(id=>document.getElementById(id).onchange=gen);render();gen();
-</script></body></html>
+</script><div id="lightbox" onclick="this.style.display='none'"><div><img id="lbimg" src="" alt=""><p id="lbtxt"></p><p style="font-size:13px;opacity:.7">点任意处关闭</p></div></div>
+<script>function openLB(src,txt){document.getElementById('lbimg').src=src;document.getElementById('lbtxt').textContent=txt;document.getElementById('lightbox').style.display='flex';}</script>
+</body></html>
