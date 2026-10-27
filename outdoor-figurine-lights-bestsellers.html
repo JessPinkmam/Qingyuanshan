@@ -27,7 +27,10 @@ input{flex:1;min-width:200px;border-radius:12px}
 .gallery figcaption{padding:8px 10px;font-size:13px;line-height:1.5}
 #lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:99;padding:16px}
 #lightbox img{max-width:92vw;max-height:82vh;border-radius:12px}
-#lightbox p{color:#fff;text-align:center}select{width:100%;margin:6px 0;border-radius:12px}
+#lightbox p{color:#fff;text-align:center}
+.preset{border:2px solid transparent}
+.preset.on{border-color:#f2c14e;box-shadow:0 0 0 2px #f2c14e}
+#genpreview img{width:100%;max-height:320px;object-fit:cover;border-radius:12px;display:block}select{width:100%;margin:6px 0;border-radius:12px}
 .out{background:#12211a;border:1px dashed #f2c14e;border-radius:12px;padding:12px;margin-top:10px;white-space:pre-wrap;line-height:1.7}
 a{color:#ffe082}
 @media(max-width:600px){h1{font-size:22px}.bar label{width:86px}}
@@ -84,6 +87,15 @@ a{color:#ffe082}
 </ul></div>
 
 <div class="card"><h2>🎯 选品公式生成器：点一点，拼出你的标题和检查单</h2>
+<p>👆 先点下面 4 张 <b>AI 概念图</b>，生成器会自动填好整套组合；也可以点完再换下拉框微调。AI 图只是选品灵感，不是真实商品图。</p>
+<div class="gallery" id="presets">
+<figure class="preset" onclick="setPreset(0)"><img src="images/ai/ai-turtle-succulent.webp" alt="AI 乌龟多肉" loading="lazy"><figcaption>🐢 乌龟 + 多肉 + 7 暖白 LED<br><span class="small">头牌公式，点我生成</span></figcaption></figure>
+<figure class="preset" onclick="setPreset(1)"><img src="images/ai/ai-rabbit-butterfly.webp" alt="AI 兔子蝴蝶" loading="lazy"><figcaption>🐰 兔子 + 捧花 + 发光蝴蝶<br><span class="small">第二发光点，点我生成</span></figcaption></figure>
+<figure class="preset" onclick="setPreset(2)"><img src="images/ai/ai-fairy-moon.webp" alt="AI 仙女月亮" loading="lazy"><figcaption>🌙 仙女 + 月亮地插<br><span class="small">地插款，点我生成</span></figcaption></figure>
+<figure class="preset" onclick="setPreset(3)"><img src="images/ai/ai-dog-lantern.webp" alt="AI 狗狗灯笼" loading="lazy"><figcaption>🐶 狗狗 + 手提灯笼<br><span class="small">宠物送礼细分，点我生成</span></figcaption></figure>
+</div>
+<div id="genpreview" style="margin-top:12px"><img id="genimg" src="images/ai/ai-turtle-succulent.webp" alt="AI 概念图预览" onclick="openLB(this.src,document.getElementById('gencap').textContent)"><p id="gencap" class="small" style="text-align:center">AI 概念：乌龟 + 多肉 + 7 暖白 LED · 头牌公式（点图可放大）</p></div>
+
 <label>主角</label><select id="a"><option>乌龟 Turtle</option><option>青蛙 Frog</option><option>兔子 Rabbit</option><option>狗狗 Dog</option><option>黑熊 Bear</option><option>高地牛 Highland Cow</option><option>地精 Gnome</option><option>天使 Angel</option><option>仙女 Fairy</option></select>
 <label>第二功能</label><select id="b"><option>多肉盆 Succulent Planter</option><option>手提灯笼 Lantern</option><option>花篮 / 捧花 Flowers</option><option>蘑菇座 Mushroom Seat</option><option>月亮地插 Moon Stake</option></select>
 <label>发光点</label><select id="c"><option>7 颗暖白 LED</option><option>5 颗暖白 LED</option><option>发光蝴蝶 Glowing Butterfly</option><option>变色 LED Color-Changing</option></select>
@@ -130,8 +142,26 @@ function render(){
  grid.innerHTML=list.map((d,i)=>`<div class="item" onclick='show(${D.indexOf(d)})'>${d.img?`<img class="thumb" src="${d.img}" alt="${d.n}" loading="lazy" onclick="event.stopPropagation();openLB('${d.img}','${d.n}')" onerror="this.style.display='none'">`:''}<h3>${d.n}</h3><div><span class="tag">${d.e}</span><span class="tag">${d.rating}</span>${d.sales?`<span class="tag sales">约 ${d.sales.toLocaleString()}+ / 月</span>`:''}</div><div class="meta">${d.price?`价格：约 $${d.price}（原价 $${d.orig}）`:'价格：快照未显示，以 listing 为准'}<br>${d.why.slice(0,52)}…</div></div>`).join('')||'<p>没有匹配的款，换个关键词试试。</p>';
 }
 function show(i){const d=D[i];detail.style.display='block';detail.innerHTML=`${d.img?`<img src="${d.img}" alt="${d.n}" style="width:100%;max-height:300px;object-fit:cover;border-radius:10px;margin-bottom:10px" onclick="openLB('${d.img}','${d.n}')">`:''}<h3>${d.n} · ${d.e}</h3><p><b>为什么卖：</b>${d.why}</p><p><b>给你的启示：</b>${d.tip}</p><p class="small">月销：${d.sales?`约 ${d.sales.toLocaleString()}+ / 月`:'快照未显示'} · 评分/标识：${d.rating} · 价格：${d.price?`约 $${d.price}`:'以 listing 为准'}</p>`;detail.scrollIntoView({behavior:'smooth',block:'nearest'});}
+
+const PRESETS=[
+{a:'乌龟 Turtle',b:'多肉盆 Succulent Planter',c:'7 颗暖白 LED',d:'$14\u201320（冲量送礼款）',img:'images/ai/ai-turtle-succulent.webp',cap:'AI 概念：乌龟 + 多肉 + 7 暖白 LED · 头牌公式'},
+{a:'兔子 Rabbit',b:'花篮 / 捧花 Flowers',c:'发光蝴蝶 Glowing Butterfly',d:'$20\u201328（主力款）',img:'images/ai/ai-rabbit-butterfly.webp',cap:'AI 概念：兔子 + 捧花 + 发光蝴蝶'},
+{a:'仙女 Fairy',b:'月亮地插 Moon Stake',c:'7 颗暖白 LED',d:'$14\u201320（冲量送礼款）',img:'images/ai/ai-fairy-moon.webp',cap:'AI 概念：仙女 + 月亮地插 · 地插款'},
+{a:'狗狗 Dog',b:'手提灯笼 Lantern',c:'7 颗暖白 LED',d:'$20\u201328（主力款）',img:'images/ai/ai-dog-lantern.webp',cap:'AI 概念：狗狗 + 手提灯笼（AI 图里是金色狗，只看造型和灯笼）'}];
+const AI_BY_HERO={'乌龟':'images/ai/ai-turtle-succulent.webp','兔子':'images/ai/ai-rabbit-butterfly.webp','仙女':'images/ai/ai-fairy-moon.webp','狗狗':'images/ai/ai-dog-lantern.webp'};
+function setPreset(i){const pr=PRESETS[i];document.getElementById('a').value=pr.a;document.getElementById('b').value=pr.b;document.getElementById('c').value=pr.c;document.getElementById('d').value=pr.d;document.querySelectorAll('#presets .preset').forEach((f,j)=>f.classList.toggle('on',j===i));gen();}
+function updateGenPreview(){
+ const a=document.getElementById('a').value,b=document.getElementById('b').value,c=document.getElementById('c').value;
+ const hit=PRESETS.find(pr=>pr.a===a&&pr.b===b&&pr.c===c);
+ const hero=a.slice(0,2);
+ const img=document.getElementById('genimg'),cap=document.getElementById('gencap');
+ if(hit){img.src=hit.img;cap.textContent=hit.cap+'（点图可放大）';}
+ else if(AI_BY_HERO[hero]){img.src=AI_BY_HERO[hero];cap.textContent='AI 概念图：'+hero+'主角示意，第二功能以标题为准（点图可放大）';}
+ else{img.removeAttribute('src');cap.textContent='这个主角暂无 AI 概念图，换乌龟 / 兔子 / 仙女 / 狗狗可看图';}
+}
 function gen(){const a=document.getElementById('a').value,b=document.getElementById('b').value,c=document.getElementById('c').value,d=document.getElementById('d').value;
 document.getElementById('out').textContent=`标题模板（英文原意，直译参考）：\nSolar Garden Statues ${a} with ${b} and ${c} — Lawn Decor for Patio, Balcony, Yard Ornament, Gifts for Mom Grandma Women\n\n检查单：\n□ 主图 1 张黄昏夜景 + 1 张白天参照物（手/花盆对比尺寸）\n□ 目标价：${d}，先算树脂 + 灯板 + 电池 + 包装 + 运费再定\n□ 防水：户外款至少 IP44，地插款争取 IP65；写清晒 6–8 小时、亮 6–10 小时\n□ 标题塞满：Solar + 主角 + 第二功能 + LED 数 + Patio/Balcony/Yard + Gifts for Mom Grandma`;}
+updateGenPreview();
 document.querySelectorAll('.controls button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.controls button').forEach(x=>x.classList.remove('on'));b.classList.add('on');render();});
 document.getElementById('q').oninput=render;document.getElementById('sort').onchange=render;
 ['a','b','c','d'].forEach(id=>document.getElementById(id).onchange=gen);render();gen();
