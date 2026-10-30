@@ -10,7 +10,6 @@ header{background:#123524;color:#fff;padding:28px 20px 22px}header h1{margin:0 0
 .card{background:#fff;border:1px solid #e7e0d2;border-radius:14px;padding:18px;margin:14px 0}
 h2{margin:0 0 10px;font-size:20px}h3{margin:14px 0 6px;font-size:16px}
 .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.node{border:1px solid #1f8a5a;background:#eef8f1;border-radius:99px;padding:7px 12px;cursor:pointer;font-size:14px}.node:hover{background:#1f8a5a;color:#fff}.arrow{color:#999}
-.tag{display:inline-block;background:#fff3cd;border:1px solid #f0d48a;border-radius:99px;padding:2px 9px;font-size:13px;margin:2px}
 table{width:100%;border-collapse:collapse;font-size:14px}th,td{border:1px solid #e5ddcc;padding:7px;text-align:left;vertical-align:top}
 input,select,textarea{width:100%;padding:7px 9px;border:1px solid #ccc;border-radius:8px;font-size:14px;background:#fff}
 button{background:#1f8a5a;color:#fff;border:0;border-radius:99px;padding:9px 16px;cursor:pointer;font-size:14px}button.sec{background:#eee;color:#222}
@@ -19,6 +18,27 @@ button{background:#1f8a5a;color:#fff;border:0;border-radius:99px;padding:9px 16p
 .muted{color:#666;font-size:13px}.pill{display:inline-block;padding:2px 8px;border-radius:99px;background:#eef8f1;font-size:12px}
 details{border:1px solid #eee;border-radius:10px;padding:10px 12px;margin:8px 0}summary{cursor:pointer;font-weight:700}
 .check{accent-color:#1f8a5a;width:18px;height:18px}
+/* ---- 图文动画 ---- */
+.scene{background:linear-gradient(180deg,#eef8f1,#fff8e1);border:1px dashed #c9d8c2;border-radius:12px;padding:12px;margin:10px 0;font-size:30px;text-align:center;overflow:hidden}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes sway{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes drive{from{transform:translateX(-160px)}to{transform:translateX(920px)}}
+@keyframes cloudmove{from{transform:translateX(-80px)}to{transform:translateX(920px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px) rotate(-4deg)}75%{transform:translateX(4px) rotate(4deg)}}
+@keyframes flip{to{transform:rotate(180deg) translateY(-14px)}}
+@keyframes growbar{from{transform:scaleY(.1)}to{transform:scaleY(1)}}
+@keyframes drip{0%{transform:translateY(0);opacity:1}100%{transform:translateY(26px);opacity:0}}
+.bounce{animation:bounce 1.6s ease-in-out infinite;display:inline-block}.sway{animation:sway 1.8s ease-in-out infinite;display:inline-block}.floaty{animation:floaty 2.2s ease-in-out infinite;display:inline-block}
+.truck{animation:drive 9s linear infinite}.cloud{animation:cloudmove 22s linear infinite}.sunspin{animation:spin 14s linear infinite;transform-origin:center;transform-box:fill-box}
+.wind{animation:shake .5s ease-in-out infinite}.flip{animation:flip .8s forwards}.shake{animation:shake .6s ease-in-out 2}
+.chart{display:flex;align-items:flex-end;gap:4px;height:150px;padding:8px 4px 0;border-bottom:2px solid #999}
+.chart .col{flex:1;text-align:center}.chart .b{margin:0 auto;width:100%;max-width:34px;background:#1f8a5a;border-radius:6px 6px 0 0;transition:height .7s ease;transform-origin:bottom;animation:growbar .7s ease}
+.jtrack{position:relative;height:8px;background:#eee;border-radius:99px;margin:16px 4px}.jdot{position:absolute;top:-11px;font-size:26px;transition:left .8s ease}
+.jnodes{display:flex;justify-content:space-between;font-size:12px;color:#666}
+.wbar{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:13px}.wbar i{display:block;height:20px;border-radius:6px;transition:width .7s ease}
+.active-chap{outline:3px solid #f0b429!important}
 </style></head><body>
 <header><h1>🛍️ 亚马逊选品与市场调研：新手带教方案</h1>
 <p>编写日期：2026年10月30日 ｜ 主做站点：美国站（可替换） ｜ 配套工具：卖家精灵（插件 + 网页版）</p>
@@ -27,6 +47,26 @@ details{border:1px solid #eee;border-radius:10px;padding:10px 12px;margin:8px 0}
 <div class="sticky"><b>带教进度</b> <span id="progText">0 / 9 章过关</span><div class="bar"><i id="progBar"></i></div>
 <div class="muted">勾选每章末尾的“本章过关”，进度会实时更新。页面数据只保存在你这台浏览器里，不会上传。</div></div>
 
+<div class="card"><h2>🚚 先看一遍：一件货是怎么从工厂走到买家手里的</h2>
+<svg viewBox="0 0 900 210" width="100%" role="img" aria-label="货从工厂经头程到FBA仓再到买家的动画示意">
+<rect width="900" height="210" fill="#dff3ff"/><g class="sunspin"><circle cx="820" cy="32" r="22" fill="#ffcf3d"/><g stroke="#ffcf3d" stroke-width="4"><line x1="820" y1="2" x2="820" y2="10"/><line x1="820" y1="54" x2="820" y2="62"/><line x1="790" y1="32" x2="798" y2="32"/><line x1="842" y1="32" x2="850" y2="32"/></g></g>
+<g class="cloud"><ellipse cx="120" cy="34" rx="42" ry="16" fill="#fff"/><ellipse cx="150" cy="28" rx="30" ry="14" fill="#fff"/></g>
+<rect x="30" y="110" width="150" height="70" fill="#8a6d4b"/><text x="105" y="140" text-anchor="middle" font-size="20">🏭 工厂</text><text x="105" y="166" text-anchor="middle" font-size="13">出厂价 + 包装</text>
+<rect x="360" y="110" width="170" height="70" fill="#1f6f8b"/><text x="445" y="140" text-anchor="middle" fill="#fff" font-size="20">🏬 FBA仓</text><text x="445" y="166" text-anchor="middle" fill="#fff" font-size="13">仓储 + 配送 + 退货</text>
+<rect x="700" y="110" width="150" height="70" fill="#e8a838"/><text x="775" y="140" text-anchor="middle" font-size="20">🏠 买家</text><text x="775" y="166" text-anchor="middle" font-size="13">付 售价</text>
+<rect y="180" width="900" height="12" fill="#555"/>
+<g class="truck"><rect x="0" y="138" width="110" height="42" fill="#1f8a5a"/><rect x="82" y="126" width="38" height="54" fill="#2fae74"/><circle cx="28" cy="180" r="12" fill="#222"/><circle cx="98" cy="180" r="12" fill="#222"/><text x="55" y="165" text-anchor="middle" fill="#fff" font-size="18">📦 头程</text></g>
+<text x="270" y="100" font-size="16">✈️🚢 头程运费 + 关税</text><text x="580" y="100" font-size="16">佣金 + 广告 + 优惠券 ↓</text>
+</svg>
+<p class="muted">这条线就是第零章的“漏钱地图”：售价不是利润，中间每一段都要扣钱。卡车会一直循环跑，代表货在不停流转，钱也可能压在路上和仓库里。</p></div>
+
+<div class="card"><h2>▶️ 选品旅程动画：点播放，看 9 个节点怎么走</h2>
+<div class="jtrack"><div class="jdot" id="jdot" style="left:0%">📦</div></div>
+<div class="jnodes"><span>赚钱</span><span>灵感</span><span>需求</span><span>竞争</span><span>差异</span><span>利润</span><span>风险</span><span>试水</span><span>决定</span></div>
+<p id="jtext"><b>第零章：</b>先搞懂这门生意怎么赚钱。</p>
+<button onclick="playJourney()">▶ 播放旅程</button> <button class="sec" onclick="pauseJourney()">⏸ 暂停</button> <button class="sec" onclick="resetJourney()">↺ 回到开头</button>
+<p class="muted">播放时小包裹会一站一站走，每到一站，对应章节卡片会高亮。点下面流程里的任意节点，也可以直接跳过去。</p></div>
+
 <div class="card"><h2>选品的 9 个节点：点一个，跳到那一章</h2>
 <div class="flow" id="flow"></div>
 <p class="muted">三个常见死法要先记住：① 凭感觉选品 ② 只看卖得好、不算利润 ③ 货压在仓库里、钱转不动。</p>
@@ -34,6 +74,29 @@ details{border:1px solid #eee;border-radius:10px;padding:10px 12px;margin:8px 0}
 <div><b>🏪 贯穿比喻 1：小区门口开小店</b><br>邻居缺什么、周边店铺卖得怎样、进货能不能赚钱、会不会惹麻烦 —— 就是需求、竞争、利润、风险。</div>
 <div><b>👓 贯穿比喻 2：卖家精灵插件是“透视眼镜”</b><br>逛亚马逊时，每个商品背后的销量、走势、利润一眼就能看到。但记住：那是估算，不是真值。</div>
 </div></div>
+
+<div class="card"><h2>📈 图文：季节性一眼看懂（示意指数，不是真实销量）</h2>
+<p class="muted">点一个产品，看它 12 个月的需求曲线怎么动。季节款要在旺季前几个月备货，因为运输 + 上架都要时间。</p>
+<button onclick="season('cup')">🥤 水杯：全年平稳</button> <button class="sec" onclick="season('warm')">🧤 暖手宝：冬天才火</button> <button class="sec" onclick="season('xmas')">🎄 圣诞装饰：过节就没人要</button>
+<div class="chart" id="seasonChart"></div>
+<div style="display:flex;justify-content:space-between;font-size:12px;color:#666"><span>1月</span><span>3月</span><span>6月</span><span>9月</span><span>12月</span></div>
+<p id="seasonNote"></p></div>
+
+<div class="card"><h2>🥬 图文：竞争狠不狠，看摊位多少就明白</h2>
+<div class="grid2">
+<div><b>卖白菜：50 个摊</b><div style="font-size:20px;line-height:1.4">🥬🥬🥬🥬🥬🥬🥬🥬🥬🥬<br>🥬🥬🥬🥬🥬🥬🥬🥬🥬🥬<br><span class="muted">再摆一个，很难被看见。</span></div></div>
+<div><b>卖冷门香料：只有 3 家</b><div style="font-size:26px">🌶️　🧂　🫚<br><span class="muted">摊少，机会反而大，但也要先确认：到底有没有人买这个香料。</span></div></div></div>
+<p><b>市场集中度示意：</b>前 5 名拿走 70% 销量 = 大户垄断，新手难进；前 5 名只拿 30% = 比较分散，还有空位。</p>
+<div class="wbar"><span style="width:150px">大户垄断型</span><i style="width:70%;background:#c0392b"></i><span>70%</span></div>
+<div class="wbar"><span style="width:150px">分散型</span><i style="width:30%;background:#1f8a5a"></i><span>30%</span></div></div>
+
+<div class="card"><h2>☂️ 图文动画：差评里的机会，就是一把“不翻的伞”</h2>
+<p>邻居都说这家店的伞一刮风就翻。点“起风了”试试：普通伞会翻，改进款不会。</p>
+<div style="display:flex;gap:20px;text-align:center;flex-wrap:wrap">
+<div style="flex:1"><div id="umb1" style="font-size:64px">☂️</div><b>普通伞</b><div class="muted">差评：风一吹就翻</div></div>
+<div style="flex:1"><div id="umb2" style="font-size:64px">☂️</div><b>改进款：加固伞骨</b><div class="muted">卖点：大风也不翻</div></div></div>
+<button onclick="wind()">💨 起风了</button> <button class="sec" onclick="nowind()">↺ 复原</button>
+<p class="muted">改进要算成本：加固伞骨贵了 1 块钱，买家愿不愿意为“不翻”多付 2 块钱？愿意，才是真机会。</p></div>
 
 <div class="card"><h2>工具分工：卖家精灵怎么用</h2>
 <p class="muted">官方定位：<b>选品用网页，运营用插件</b>。插件适合逛的时候随手看一眼；网页版适合批量筛选、深挖市场、做正式调研。</p>
@@ -45,6 +108,7 @@ details{border:1px solid #eee;border-radius:10px;padding:10px 12px;margin:8px 0}
 
 <div class="card"><h2>🧮 第五章配套：利润计算器（樱桃去核器练手例）</h2>
 <p class="muted">官方教程例子：1688 同款 7 元；产品 + 彩盒总重 243 克；头程空运 45 元/公斤，平均每个约 10.9 元；售价 12.8 美元。下面默认就是这组数，你可以改着玩。</p>
+<div class="scene" style="font-size:22px">🍒 樱桃去核器 <span class="bounce">→</span> 📦 243克 <span class="bounce">→</span> ✈️ 头程约10.9元 <span class="bounce">→</span> 💵 售价 $12.8</div>
 <div class="grid2">
 <div><label>售价（美元）<input id="price" type="number" value="12.8" step="0.1"></label>
 <label>汇率（元/美元）<input id="fx" type="number" value="7.1" step="0.1"></label>
@@ -60,6 +124,7 @@ details{border:1px solid #eee;border-radius:10px;padding:10px 12px;margin:8px 0}
 <label>毛利率底线（%）<input id="floor" type="number" value="20"></label></div></div>
 <button onclick="calc()">算一次</button> <button class="sec" onclick="stress()">做压力测试</button>
 <div id="calcOut" style="margin-top:12px"></div>
+<div id="waterfall" style="margin-top:10px"></div>
 <div id="stressOut" style="margin-top:10px"></div>
 <p class="muted">三个新手常漏的点：① 包装也算重量，140 克本体 + 彩盒 = 243 克，运费按总重算。② 体积差 1 厘米可能跳一个配送费档位。③ 广告按比例预留，官方例约 10%，新品期往往更高。插件算法是通用的，你自己的头程价、汇率、渠道要自己覆盖；亚马逊费用会调整，旧产品要定期重算。毛利率和现金流是两回事，货款提前压几个月，资金转不过来一样会出事。</p></div>
 
@@ -85,7 +150,9 @@ details{border:1px solid #eee;border-radius:10px;padding:10px 12px;margin:8px 0}
 <div id="revSum" style="margin-top:10px"></div><table style="margin-top:8px"><tbody id="revRows"></tbody></table></div>
 
 <div class="card"><h2>⚠️ 风险检查清单：花钱之前先排坑</h2>
-<p class="muted">插件查不了侵权和认证，必须人工查商标库、专利信息和平台品类政策。每个“不确定”都要写出怎么确认、谁确认、何时确认。</p><div id="riskRows"></div><p id="riskOut"></p></div>
+<p class="muted">插件查不了侵权和认证，必须人工查商标库、专利信息和平台品类政策。每个“不确定”都要写出怎么确认、谁确认、何时确认。</p>
+<div class="scene" style="font-size:26px">🚦 商标 <span class="floaty">🟢</span> 专利 <span class="floaty">🟡</span> 认证 <span class="floaty">🔴</span> <span style="font-size:16px">绿灯才能走，红灯先停下来查清楚。</span></div>
+<div id="riskRows"></div><p id="riskOut"></p></div>
 
 <div class="card"><h2>🗓️ 四周进度安排</h2>
 <table><tr><th>周次</th><th>内容</th><th>交付物</th></tr>
@@ -105,7 +172,7 @@ details{border:1px solid #eee;border-radius:10px;padding:10px 12px;margin:8px 0}
 <button onclick="genReport()">生成报告草稿</button> <button class="sec" onclick="copyReport()">复制报告</button>
 <textarea id="report" rows="14" placeholder="报告草稿会显示在这里"></textarea></div>
 
-<p class="muted" style="text-align:center">本页为教学工具页，示例数字来自你给的带教结构，不是实时亚马逊数据；正式决策前请以卖家精灵网页版 / 插件里的实际查询为准，并多来源对照。</p>
+<p class="muted" style="text-align:center">本页为教学工具页，示例数字来自你给的带教结构，季节曲线和市场集中度均为教学示意，不是实时亚马逊数据；正式决策前请以卖家精灵网页版 / 插件里的实际查询为准，并多来源对照。</p>
 </div>
 <script>
 const chapters=[
@@ -118,12 +185,31 @@ const chapters=[
 {id:'c6',w:'第 3 周',t:'第六章 避坑：风险检查',m:'开店前先查有没有营业执照、会不会被邻居投诉。',e:'做了一款很像某大牌的包，被投诉下架，货全砸在手里。',task:'用下面风险清单给候选产品逐项打勾。',pass:'每个“不确定”项，都要写出怎么确认。',tool:'产品查询看历史价格，突然大幅降价可能是清仓或价格战；在导出差评里搜“尺码、坏了、不符”等词，估计退货原因。',extra:'查侵权（商标、专利、外观）；品类限制与认证（食品、儿童用品、带电、带磁等）；易碎、过大、过重导致运费吃掉利润；退货率高的品类。'},
 {id:'c7',w:'第 4 周',t:'第七章 找货源与小批量试水',m:'先少进几箱货摆一周，看邻居买不买。',e:'拿样品自己用、摔、拆包装，别只看图片和报价。',task:'找 3 家供应商做对比表（价格、起订量、样品质量、交期、沟通）；写首批进货方案（数量、总投入、预计多久卖完）。',pass:'首批投入在能承受亏损的范围内。',tool:'上架后用关键词收录，一键查自己的产品在各个词下排第几，跟踪试水效果。',extra:'去哪找供应商、怎么比价比质量，都要落到对比表上，不要只凭一家报价就定。'},
 {id:'c8',w:'第 4 周',t:'第八章 做决定与复盘',m:'用同一把尺子给候选产品排序，而不是凭印象。',e:'两个产品看着都行，打分表一算，利润和风险一栏就分出了高下。',task:'每人交一份完整选品报告，互相挑毛病。',pass:'报告完整覆盖各章结论；带教人提 5 个挑战性问题，学员都能用数据回答。',tool:'收藏列表把候选产品存起来，一两个月后回头对照当初的判断。',extra:'上架后定期回头看当初的判断哪里对、哪里算错了。'}];
+const scenes=['<span class="bounce">💰100</span> → <span>📦进货</span> → <span>🚢头程</span> → <span>🏬佣金+配送</span> → <span>📣广告</span> → <span class="floaty">💸到手？</span>',
+'<span class="bounce">🏆榜单</span> <span class="bounce">💡痛点</span> <span class="bounce">😤差评</span> <span class="bounce">📱短视频</span> <span style="font-size:16px">四个渠道都要逛一圈</span>',
+'<span class="sway">☀️夏天</span> <span class="sway">❄️冬天</span> <span style="font-size:16px">同一件货，旺季完全不一样，上面季节图可以点着看</span>',
+'<span>🥬🥬🥬 50个摊</span> <span style="font-size:20px">VS</span> <span>🌶️ 3家</span>',
+'<span id="umbScene">☂️</span><span class="wind">💨💨</span> <span style="font-size:16px">普通伞翻了，改进款没翻，下面可以亲手按“起风了”</span>',
+'<span class="bounce">🍒</span> → <span>📦</span> → <span>✈️</span> → <span class="floaty">💵 到手利润</span>',
+'<span>🚦</span> <span style="font-size:16px">红灯停：商标、专利、认证没查清，别先下单</span>',
+'<span class="shake">📦</span> <span>🧪自己用</span> <span>💥摔一摔</span> <span>✂️拆包装</span>',
+'<span class="sway">⚖️</span> <span style="font-size:16px">同一把尺子打分，分高的先做，分低的先放一放</span>'];
 document.getElementById('flow').innerHTML=chapters.map((c,i)=>`<span class="node" onclick="document.getElementById('${c.id}').scrollIntoView({behavior:'smooth'})">${c.t.replace(/^第.*?章 /,'')}</span>${i<chapters.length-1?'<span class="arrow">→</span>':''}`).join('');
-document.getElementById('chapters').innerHTML=chapters.map(c=>`<div class="card" id="${c.id}"><span class="pill">${c.w}</span><h2>${c.t}</h2>
+document.getElementById('chapters').innerHTML=chapters.map((c,i)=>`<div class="card" id="${c.id}"><span class="pill">${c.w}</span><h2>${c.t}</h2><div class="scene">${scenes[i]}</div>
 <p><b>一句话比喻：</b>${c.m}</p><p><b>生活例子：</b>${c.e}</p><p><b>讲什么：</b>${c.extra}</p><p><b>插件操作：</b>${c.tool}</p>
 <p><b>动手任务：</b>${c.task}</p><p><b>过关标准：</b>${c.pass}</p>
 <label><input type="checkbox" class="check chap" onchange="prog()"> 本章过关</label></div>`).join('');
 function prog(){let n=document.querySelectorAll('.chap:checked').length;document.getElementById('progText').textContent=n+' / 9 章过关';document.getElementById('progBar').style.width=(n/9*100)+'%'}
+let jidx=0,jtimer=null;
+function showJourney(){let c=chapters[jidx];document.getElementById('jdot').style.left=(jidx/8*96)+'%';document.getElementById('jtext').innerHTML='<b>'+c.t+'：</b>'+c.m;document.querySelectorAll('#chapters .card').forEach((el,i)=>el.classList.toggle('active-chap',i===jidx))}
+function playJourney(){pauseJourney();jtimer=setInterval(()=>{jidx=(jidx+1)%9;showJourney()},1400);showJourney()}
+function pauseJourney(){if(jtimer)clearInterval(jtimer);jtimer=null}
+function resetJourney(){pauseJourney();jidx=0;showJourney()}
+function wind(){document.getElementById('umb1').classList.add('flip');document.getElementById('umb2').classList.add('wind')}
+function nowind(){document.getElementById('umb1').classList.remove('flip');document.getElementById('umb2').classList.remove('wind')}
+const seasonData={cup:{d:[70,72,75,73,78,80,82,81,79,77,74,72],n:'水杯全年都有人买，曲线几乎是平的，这就是长期款。备货不用抢季节，但要拼差异和价格。'},warm:{d:[95,90,60,30,15,10,8,12,20,45,80,98],n:'暖手宝冬天冲到顶，夏天几乎没人买。旺季是 11–12 月和 1 月，所以 9 月前就要备好货，算上头程和上架时间。'},xmas:{d:[20,18,15,15,18,20,22,25,30,55,85,100],n:'圣诞装饰 12 月冲到顶，1 月立刻掉下来。过了节没人要，剩货就是库存压力，首批宁可少进。'}};
+function season(k){let s=seasonData[k];document.getElementById('seasonChart').innerHTML=s.d.map(v=>`<div class="col"><div class="b" style="height:${v}%"></div><div style="font-size:11px">${v}</div></div>`).join('');document.getElementById('seasonNote').textContent=s.n}
+season('cup');
 const tools=[['一整页商品的大致情况','快速预览：产品列表页直接显示'],['这个词多少人搜、有哪些相关词','关键词挖掘'],['销量、排名、价格的一年走势','产品查询与历史曲线'],['这个市场好不好进','市场分析'],['对手靠什么词出单','关键词反查'],['买家为什么给差评','评论下载'],['这个产品赚不赚钱','利润计算器'],['我的产品在某个词下排第几','关键词收录'],['把候选产品存起来','收藏列表']];
 document.getElementById('toolBtns').innerHTML=tools.map(t=>`<button class="sec" onclick="document.getElementById('toolAns').innerHTML='<b>${t[0]}</b> → ${t[1]}'">${t[0]}</button>`).join('');
 const v=id=>parseFloat(document.getElementById(id).value)||0;
@@ -132,8 +218,9 @@ let price=v('price'),fx=v('fx')||7.1,buy=(v('buy')+v('pack'))/fx,head=v('wt')/10
 let comm=price*v('comm')/100,fba=v('fba'),ad=price*v('ad')/100*(stress?2:1),coup=v('coupon'),ret=price*(stress?10:v('ret'))/100;
 let stor=stress?0.5:0;let profit=price-buy-head-comm-fba-ad-coup-ret-stor;
 return{price,buy,head,comm,fba,ad,coup,ret,stor,profit,margin:profit/price*100}}
+function waterfall(r){let items=[['售价',r.price,'#123524'],['进货',-r.buy,'#c0392b'],['头程',-r.head,'#c0392b'],['佣金',-r.comm,'#c0392b'],['配送',-r.fba,'#c0392b'],['广告',-r.ad,'#c0392b'],['优惠券',-r.coup,'#c0392b'],['退货预留',-r.ret,'#c0392b'],['到手利润',r.profit,'#1f8a5a']];document.getElementById('waterfall').innerHTML='<b>利润瀑布图（每件，美元）：售价从左到右一路被扣，最后剩下的就是到手。</b>'+items.map(x=>`<div class="wbar"><span style="width:80px">${x[0]}</span><i style="width:${Math.max(4,Math.abs(x[1])/r.price*100)}%;background:${x[2]}"></i><span>${x[1]>=0?'+':''}$${x[1].toFixed(2)}</span></div>`).join('')}
 function calc(){let r=calcVals(false);document.getElementById('calcOut').innerHTML=`<div class="big">到手利润 <span class="${r.profit>=0?'ok':'bad'}">$${r.profit.toFixed(2)} / 件</span> ｜ 毛利率 ${r.margin.toFixed(1)}%</div>
-<p>漏钱地图（美元/件）：进货 $${r.buy.toFixed(2)} ｜ 头程 $${r.head.toFixed(2)} ｜ 佣金 $${r.comm.toFixed(2)} ｜ 配送 $${r.fba.toFixed(2)} ｜ 广告 $${r.ad.toFixed(2)} ｜ 优惠券 $${r.coup.toFixed(2)} ｜ 退货预留 $${r.ret.toFixed(2)}</p>`}
+<p>漏钱地图（美元/件）：进货 $${r.buy.toFixed(2)} ｜ 头程 $${r.head.toFixed(2)} ｜ 佣金 $${r.comm.toFixed(2)} ｜ 配送 $${r.fba.toFixed(2)} ｜ 广告 $${r.ad.toFixed(2)} ｜ 优惠券 $${r.coup.toFixed(2)} ｜ 退货预留 $${r.ret.toFixed(2)}</p>`;waterfall(r)}
 function stress(){let n=calcVals(false),s=calcVals(true),f=v('floor');document.getElementById('stressOut').innerHTML=`<b>压力测试（广告翻倍 + 退货 10% + 头程涨 20% + 多压仓 3 个月约 $0.50）：</b><br>正常毛利率 ${n.margin.toFixed(1)}% → 压力后 <span class="${s.margin>=f?'ok':'bad'}">${s.margin.toFixed(1)}%</span>，到手 $${s.profit.toFixed(2)}/件。底线 ${f}%：${s.margin>=f?'✅ 压力后仍过底线，可以继续看':'❌ 压力后跌破底线，先淘汰或重算'}`;calc()}
 const dims=[['需求',20],['竞争（分越高越有利）',25],['利润',30],['风险（分越高越安全）',15],['差异化',10]];
 document.getElementById('scoreRows').innerHTML=dims.map((d,i)=>`<tr><td>${d[0]}（${d[1]}%）</td><td><input type="range" min="1" max="5" value="3" id="sa${i}" oninput="score()"><span id="sav${i}">3</span></td><td><input type="range" min="1" max="5" value="3" id="sb${i}" oninput="score()"><span id="sbv${i}">3</span></td></tr>`).join('');
