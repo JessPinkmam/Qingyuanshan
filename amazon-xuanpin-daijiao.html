@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>亚马逊选品与市场调研：新手带教方案</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#f6f3ec;color:#222;line-height:1.7}
+header{background:#123524;color:#fff;padding:28px 20px 22px}header h1{margin:0 0 8px;font-size:26px;line-height:1.3}header p{margin:4px 0;color:#d8e8dd;max-width:900px}
+.wrap{max-width:980px;margin:0 auto;padding:18px}
+.sticky{position:sticky;top:0;z-index:5;background:#fff;border:1px solid #e3ddd0;border-radius:12px;padding:10px 14px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.bar{height:10px;background:#eee;border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;background:#1f8a5a;width:0;transition:width .4s}
+.card{background:#fff;border:1px solid #e7e0d2;border-radius:14px;padding:18px;margin:14px 0}
+h2{margin:0 0 10px;font-size:20px}h3{margin:14px 0 6px;font-size:16px}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.node{border:1px solid #1f8a5a;background:#eef8f1;border-radius:99px;padding:7px 12px;cursor:pointer;font-size:14px}.node:hover{background:#1f8a5a;color:#fff}.arrow{color:#999}
+.tag{display:inline-block;background:#fff3cd;border:1px solid #f0d48a;border-radius:99px;padding:2px 9px;font-size:13px;margin:2px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{border:1px solid #e5ddcc;padding:7px;text-align:left;vertical-align:top}
+input,select,textarea{width:100%;padding:7px 9px;border:1px solid #ccc;border-radius:8px;font-size:14px;background:#fff}
+button{background:#1f8a5a;color:#fff;border:0;border-radius:99px;padding:9px 16px;cursor:pointer;font-size:14px}button.sec{background:#eee;color:#222}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:700px){.grid2{grid-template-columns:1fr}}
+.big{font-size:26px;font-weight:800}.ok{color:#1f8a5a;font-weight:700}.bad{color:#c0392b;font-weight:700}
+.muted{color:#666;font-size:13px}.pill{display:inline-block;padding:2px 8px;border-radius:99px;background:#eef8f1;font-size:12px}
+details{border:1px solid #eee;border-radius:10px;padding:10px 12px;margin:8px 0}summary{cursor:pointer;font-weight:700}
+.check{accent-color:#1f8a5a;width:18px;height:18px}
+</style></head><body>
+<header><h1>🛍️ 亚马逊选品与市场调研：新手带教方案</h1>
+<p>编写日期：2026年10月30日 ｜ 主做站点：美国站（可替换） ｜ 配套工具：卖家精灵（插件 + 网页版）</p>
+<p>一句话：选品不是凭感觉。找产品 → 看需求 → 看竞争 → 找差异 → 算利润 → 查风险 → 小批量试水 → 再做决定，每一步都用数据说话。</p></header>
+<div class="wrap">
+<div class="sticky"><b>带教进度</b> <span id="progText">0 / 9 章过关</span><div class="bar"><i id="progBar"></i></div>
+<div class="muted">勾选每章末尾的“本章过关”，进度会实时更新。页面数据只保存在你这台浏览器里，不会上传。</div></div>
+
+<div class="card"><h2>选品的 9 个节点：点一个，跳到那一章</h2>
+<div class="flow" id="flow"></div>
+<p class="muted">三个常见死法要先记住：① 凭感觉选品 ② 只看卖得好、不算利润 ③ 货压在仓库里、钱转不动。</p>
+<div class="grid2">
+<div><b>🏪 贯穿比喻 1：小区门口开小店</b><br>邻居缺什么、周边店铺卖得怎样、进货能不能赚钱、会不会惹麻烦 —— 就是需求、竞争、利润、风险。</div>
+<div><b>👓 贯穿比喻 2：卖家精灵插件是“透视眼镜”</b><br>逛亚马逊时，每个商品背后的销量、走势、利润一眼就能看到。但记住：那是估算，不是真值。</div>
+</div></div>
+
+<div class="card"><h2>工具分工：卖家精灵怎么用</h2>
+<p class="muted">官方定位：<b>选品用网页，运营用插件</b>。插件适合逛的时候随手看一眼；网页版适合批量筛选、深挖市场、做正式调研。</p>
+<div id="toolBtns" style="display:flex;flex-wrap:wrap;gap:8px"></div>
+<div id="toolAns" style="margin-top:12px;background:#f7f9f5;border-radius:10px;padding:12px">点上面一个问题，看该用什么功能。</div>
+<p class="muted">提醒：① 销量、搜索量都是估算，看大方向有用，精确数字别当真。② 同一个产品多看几个来源对照。③ 功能界面会更新，以你账号里实际看到的为准。免费用户有次数限制，以官网现行规则为准。</p></div>
+
+<div id="chapters"></div>
+
+<div class="card"><h2>🧮 第五章配套：利润计算器（樱桃去核器练手例）</h2>
+<p class="muted">官方教程例子：1688 同款 7 元；产品 + 彩盒总重 243 克；头程空运 45 元/公斤，平均每个约 10.9 元；售价 12.8 美元。下面默认就是这组数，你可以改着玩。</p>
+<div class="grid2">
+<div><label>售价（美元）<input id="price" type="number" value="12.8" step="0.1"></label>
+<label>汇率（元/美元）<input id="fx" type="number" value="7.1" step="0.1"></label>
+<label>进货价（元，不含包装）<input id="buy" type="number" value="7" step="0.5"></label>
+<label>包装（元）<input id="pack" type="number" value="0" step="0.5"></label>
+<label>单个总重含包装（克）<input id="wt" type="number" value="243"></label>
+<label>头程（元/公斤）<input id="head" type="number" value="45"></label></div>
+<div><label>平台佣金（%）<input id="comm" type="number" value="15"></label>
+<label>配送费 FBA（美元）<input id="fba" type="number" value="3.8" step="0.1"></label>
+<label>广告费（% 售价）<input id="ad" type="number" value="10"></label>
+<label>优惠券（美元）<input id="coupon" type="number" value="0" step="0.1"></label>
+<label>预留退货损失（% 售价）<input id="ret" type="number" value="3"></label>
+<label>毛利率底线（%）<input id="floor" type="number" value="20"></label></div></div>
+<button onclick="calc()">算一次</button> <button class="sec" onclick="stress()">做压力测试</button>
+<div id="calcOut" style="margin-top:12px"></div>
+<div id="stressOut" style="margin-top:10px"></div>
+<p class="muted">三个新手常漏的点：① 包装也算重量，140 克本体 + 彩盒 = 243 克，运费按总重算。② 体积差 1 厘米可能跳一个配送费档位。③ 广告按比例预留，官方例约 10%，新品期往往更高。插件算法是通用的，你自己的头程价、汇率、渠道要自己覆盖；亚马逊费用会调整，旧产品要定期重算。毛利率和现金流是两回事，货款提前压几个月，资金转不过来一样会出事。</p></div>
+
+<div class="card"><h2>📊 第八章配套：选品打分表</h2>
+<p class="muted">权重建议：需求 20% ｜ 竞争 25% ｜ 利润 30% ｜ 风险 15% ｜ 差异化 10%。注意：竞争、风险这两项在这里按“越有利分越高”打（竞争越小、风险越低，分越高），这样总分越高越值得做。每个分数都要附一句依据。</p>
+<label>产品 A 名字 <input id="pa" value="候选 A"></label><label>产品 B 名字 <input id="pb" value="候选 B"></label>
+<table><tr><th>维度（权重）</th><th>A 打分 1–5</th><th>B 打分 1–5</th></tr><tbody id="scoreRows"></tbody></table>
+<div style="margin-top:10px"><span id="scoreOut"></span></div>
+<label>A 的依据（一句话）<textarea id="ea" rows="2" placeholder="例如：搜索量稳定、季节性弱"></textarea></label>
+<label>B 的依据（一句话）<textarea id="eb" rows="2" placeholder="例如：前 5 名评价均超 5000，新手难追"></textarea></label></div>
+
+<div class="card"><h2>📝 候选清单：目标先找 10 个</h2>
+<p><span id="candCount"></span> ｜ 来源至少覆盖 3 种渠道；理由不能是“我觉得好看”。</p>
+<div class="grid2"><input id="cName" placeholder="产品名"><select id="cChan"><option>平台畅销榜</option><option>新品榜 / 飙升榜</option><option>生活痛点</option><option>差评抱怨</option><option>短视频 / 社交平台</option></select>
+<input id="cSale" placeholder="月销量（估算）"><input id="cPrice" placeholder="价格（美元）"><input id="cRev" placeholder="评价数"><input id="cWhy" placeholder="为什么能卖（一句话）"></div>
+<button onclick="addCand()" style="margin-top:10px">加入候选</button>
+<table style="margin-top:10px"><thead><tr><th>产品</th><th>来源</th><th>月销 / 价格 / 评价</th><th>为什么能卖</th><th></th></tr></thead><tbody id="candRows"></tbody></table></div>
+
+<div class="card"><h2>😤 差评整理表：从抱怨里找卖点</h2>
+<p class="muted">任务：读 50 条差评，总结 3 个可改进点。改进点要做得到，且买家愿意为它多付钱。还要识别刷出来的好评和恶意差评：看评价时间是否扎堆、内容是否雷同、有没有具体细节。</p>
+<div class="grid2"><input id="rComp" placeholder="竞品编号"><input id="rText" placeholder="差评原文摘要"><select id="rCat"><option>质量</option><option>尺寸</option><option>功能</option><option>包装</option><option>说明书</option><option>其他</option></select><input id="rN" type="number" value="1" placeholder="出现次数"></div>
+<button onclick="addRev()" style="margin-top:10px">加入一条</button>
+<div id="revSum" style="margin-top:10px"></div><table style="margin-top:8px"><tbody id="revRows"></tbody></table></div>
+
+<div class="card"><h2>⚠️ 风险检查清单：花钱之前先排坑</h2>
+<p class="muted">插件查不了侵权和认证，必须人工查商标库、专利信息和平台品类政策。每个“不确定”都要写出怎么确认、谁确认、何时确认。</p><div id="riskRows"></div><p id="riskOut"></p></div>
+
+<div class="card"><h2>🗓️ 四周进度安排</h2>
+<table><tr><th>周次</th><th>内容</th><th>交付物</th></tr>
+<tr><td>第 1 周</td><td>第零章、第一章</td><td>漏钱地图、10 个候选产品清单</td></tr>
+<tr><td>第 2 周</td><td>第二、三、四章</td><td>季节判断、竞争打分、差评整理表</td></tr>
+<tr><td>第 3 周</td><td>第五、六章</td><td>利润试算表（含压力测试）、风险检查清单</td></tr>
+<tr><td>第 4 周</td><td>第七、八章</td><td>供应商对比表、首批进货方案、完整选品报告</td></tr></table>
+<p class="muted">考核：每章过关标准达标才进下一章，不达标就补做。终期交付一份完整选品报告，含需求、竞争、机会点、利润（含压力测试）、风险、货源、打分结论。带教人评价看四点：数据有没有出处、结论有没有逻辑、有没有做压力测试、有没有诚实写出“不确定”的地方。</p></div>
+
+<div class="card"><h2>📖 术语小词典</h2>
+<details><summary>头程 / FBA / 佣金</summary>头程：从国内把货运到亚马逊仓库的一段运输。FBA：亚马逊帮你存货、发货、处理退货，收的费用叫仓储配送费。佣金：每卖一件，按售价比例交给平台的钱。</details>
+<details><summary>ASIN / BSR / Listing / 毛利率</summary>ASIN：亚马逊给每个商品的编号。BSR：商品在所属类目里的销售排名，数字越小卖得越好。Listing：一个商品在平台上的整个展示页面。毛利率：到手利润占售价的比例。</details>
+<p class="muted">带教人补充笔记：① 工具数据不能全信，两三个来源对照。② 别被榜单骗了，爆款常被大卖家占满，关键看新品能不能进榜。③ 现金流比毛利率更要命，很多人死在货压太多。④ 评价有水分。⑤ 产品有生命周期，起量、稳定、下滑，要知道何时进、何时撤。⑥ 插件是起点，不是答案。</p></div>
+
+<div class="card"><h2>📄 生成我的选品报告草稿</h2>
+<p class="muted">点生成后，会把上面的利润、打分、候选、风险汇总成一段文字，你可以直接复制去改、去交。</p>
+<button onclick="genReport()">生成报告草稿</button> <button class="sec" onclick="copyReport()">复制报告</button>
+<textarea id="report" rows="14" placeholder="报告草稿会显示在这里"></textarea></div>
+
+<p class="muted" style="text-align:center">本页为教学工具页，示例数字来自你给的带教结构，不是实时亚马逊数据；正式决策前请以卖家精灵网页版 / 插件里的实际查询为准，并多来源对照。</p>
+</div>
+<script>
+const chapters=[
+{id:'c0',w:'第 1 周',t:'第零章 先搞懂这门生意怎么赚钱',m:'菜市场摆摊，卖了 100 块，摊位费、进货款、烂掉的菜扣完，还剩多少？',e:'一个保温杯卖 25 美元，先猜到手多少，再用利润计算器对答案。',task:'拆一个商品，画出它的“漏钱地图”。',pass:'能说出至少 8 个费用项，并指出哪项最容易漏。',tool:'打开任意商品详情页，点开利润计算器，看一次初算结果。',extra:'一件东西卖出去，钱流向四个地方：进货成本（出厂价、包装）；运输成本（头程运费、关税）；亚马逊收的钱（佣金、仓储配送费、仓储费）；推广和损耗（广告、优惠券、退货、积压）。'},
+{id:'c1',w:'第 1 周',t:'第一章 找灵感：产品从哪来',m:'逛小区周边，看邻居抱怨什么、缺什么。',e:'每天用的充电线老是断，这就是一个需求。',task:'找 10 个产品，记下月销量、价格、评价数，并写下“为什么能卖”。',pass:'来源至少覆盖 3 种渠道；理由不能是“我觉得好看”。',tool:'在榜单页用快速预览，整页商品的数据直接摆出来，不用逐个点进去。',extra:'渠道：平台畅销榜、新品榜、飙升榜；生活里用着别扭的东西；差评里的抱怨；短视频和社交平台上在火的东西。带教补充：榜单爆款往往已被大卖家占满，要看新品能不能进榜。'},
+{id:'c2',w:'第 2 周',t:'第二章 看市场大不大：需求',m:'数一数这条街每天有多少人路过。',e:'暖手宝只有冬天好卖，水杯全年有人买，圣诞装饰过了节就没人要。',task:'查 3 个产品过去一年的曲线，判断长期款还是季节款，标出旺季月份。',pass:'能解释为什么季节款要在旺季前几个月就开始备货（要算上运输和上架时间）。',tool:'关键词挖掘查搜索量和相关词；产品查询看销量、排名、价格的一年走势。',extra:'看搜索量、月销量、季节性、趋势是升是降。'},
+{id:'c3',w:'第 2 周',t:'第三章 看竞争狠不狠',m:'菜市场卖白菜的有 50 个摊，再摆一个很难出头；卖冷门香料的只有 3 家，机会反而大。',e:'前几名评价数动辄几千，新手追不上，就是竞争信号。',task:'给 3 个产品打竞争激烈程度分（1–5 分），每个分数附数据证据。',pass:'每个分数至少有两条数据支撑。',tool:'市场分析看市场集中度；快速预览看前几名的评价数和上架时间；关键词挖掘看广告出价的历史趋势。',extra:'看是几个大户垄断还是很分散；前几名的评价数新手追不追得上；打广告要花多少才能被看到。带教补充：新品期广告花费往往高于成熟期，不要拿成熟产品的广告比例乐观套用。'},
+{id:'c4',w:'第 2 周',t:'第四章 找机会点：怎么和别人不一样',m:'邻居都说这家店的伞一刮风就翻，你开一家“不翻”的。',e:'差评里反复说“线太短”，加长线 + 收纳扣就是卖点。',task:'读 50 条差评，总结 3 个可改进点，并估算改进会增加多少成本。',pass:'改进点要做得到，且买家愿意为它多付钱。',tool:'评论下载，把前几名的评论导出成表格，再按问题归类。',extra:'从材质、尺寸、配件、包装、说明书入手做改进。带教补充：识别刷出来的好评和恶意差评，看评价时间是否扎堆、内容是否雷同、有没有具体细节。'},
+{id:'c5',w:'第 3 周',t:'第五章 算清楚账：利润（最重要）',m:'漏钱地图这次要每一项都写出具体数字。',e:'樱桃去核器练手：7 元进货、243 克总重、头程约 10.9 元、售价 12.8 美元。',task:'同一个产品，分别按乐观、一般、悲观三套数字各算一次；再对 3 个候选做压力测试，淘汰到 1–2 个。',pass:'能独立填完利润试算表，并说清楚“最怕哪一项出问题”。',tool:'商品详情页点开利润计算器；配送费不要自己猜，用运费小图标输入长宽高和重量后应用结果。',extra:'压力测试四问：广告费翻倍？退货率到 10%（服装鞋子等多留）？汇率、运费上涨？货多压三个月，仓储费 + 资金占用？先定一条毛利率底线，压力测试后低于底线就不做。'},
+{id:'c6',w:'第 3 周',t:'第六章 避坑：风险检查',m:'开店前先查有没有营业执照、会不会被邻居投诉。',e:'做了一款很像某大牌的包，被投诉下架，货全砸在手里。',task:'用下面风险清单给候选产品逐项打勾。',pass:'每个“不确定”项，都要写出怎么确认。',tool:'产品查询看历史价格，突然大幅降价可能是清仓或价格战；在导出差评里搜“尺码、坏了、不符”等词，估计退货原因。',extra:'查侵权（商标、专利、外观）；品类限制与认证（食品、儿童用品、带电、带磁等）；易碎、过大、过重导致运费吃掉利润；退货率高的品类。'},
+{id:'c7',w:'第 4 周',t:'第七章 找货源与小批量试水',m:'先少进几箱货摆一周，看邻居买不买。',e:'拿样品自己用、摔、拆包装，别只看图片和报价。',task:'找 3 家供应商做对比表（价格、起订量、样品质量、交期、沟通）；写首批进货方案（数量、总投入、预计多久卖完）。',pass:'首批投入在能承受亏损的范围内。',tool:'上架后用关键词收录，一键查自己的产品在各个词下排第几，跟踪试水效果。',extra:'去哪找供应商、怎么比价比质量，都要落到对比表上，不要只凭一家报价就定。'},
+{id:'c8',w:'第 4 周',t:'第八章 做决定与复盘',m:'用同一把尺子给候选产品排序，而不是凭印象。',e:'两个产品看着都行，打分表一算，利润和风险一栏就分出了高下。',task:'每人交一份完整选品报告，互相挑毛病。',pass:'报告完整覆盖各章结论；带教人提 5 个挑战性问题，学员都能用数据回答。',tool:'收藏列表把候选产品存起来，一两个月后回头对照当初的判断。',extra:'上架后定期回头看当初的判断哪里对、哪里算错了。'}];
+document.getElementById('flow').innerHTML=chapters.map((c,i)=>`<span class="node" onclick="document.getElementById('${c.id}').scrollIntoView({behavior:'smooth'})">${c.t.replace(/^第.*?章 /,'')}</span>${i<chapters.length-1?'<span class="arrow">→</span>':''}`).join('');
+document.getElementById('chapters').innerHTML=chapters.map(c=>`<div class="card" id="${c.id}"><span class="pill">${c.w}</span><h2>${c.t}</h2>
+<p><b>一句话比喻：</b>${c.m}</p><p><b>生活例子：</b>${c.e}</p><p><b>讲什么：</b>${c.extra}</p><p><b>插件操作：</b>${c.tool}</p>
+<p><b>动手任务：</b>${c.task}</p><p><b>过关标准：</b>${c.pass}</p>
+<label><input type="checkbox" class="check chap" onchange="prog()"> 本章过关</label></div>`).join('');
+function prog(){let n=document.querySelectorAll('.chap:checked').length;document.getElementById('progText').textContent=n+' / 9 章过关';document.getElementById('progBar').style.width=(n/9*100)+'%'}
+const tools=[['一整页商品的大致情况','快速预览：产品列表页直接显示'],['这个词多少人搜、有哪些相关词','关键词挖掘'],['销量、排名、价格的一年走势','产品查询与历史曲线'],['这个市场好不好进','市场分析'],['对手靠什么词出单','关键词反查'],['买家为什么给差评','评论下载'],['这个产品赚不赚钱','利润计算器'],['我的产品在某个词下排第几','关键词收录'],['把候选产品存起来','收藏列表']];
+document.getElementById('toolBtns').innerHTML=tools.map(t=>`<button class="sec" onclick="document.getElementById('toolAns').innerHTML='<b>${t[0]}</b> → ${t[1]}'">${t[0]}</button>`).join('');
+const v=id=>parseFloat(document.getElementById(id).value)||0;
+function calcVals(stress){
+let price=v('price'),fx=v('fx')||7.1,buy=(v('buy')+v('pack'))/fx,head=v('wt')/1000*v('head')/fx*(stress?1.2:1);
+let comm=price*v('comm')/100,fba=v('fba'),ad=price*v('ad')/100*(stress?2:1),coup=v('coupon'),ret=price*(stress?10:v('ret'))/100;
+let stor=stress?0.5:0;let profit=price-buy-head-comm-fba-ad-coup-ret-stor;
+return{price,buy,head,comm,fba,ad,coup,ret,stor,profit,margin:profit/price*100}}
+function calc(){let r=calcVals(false);document.getElementById('calcOut').innerHTML=`<div class="big">到手利润 <span class="${r.profit>=0?'ok':'bad'}">$${r.profit.toFixed(2)} / 件</span> ｜ 毛利率 ${r.margin.toFixed(1)}%</div>
+<p>漏钱地图（美元/件）：进货 $${r.buy.toFixed(2)} ｜ 头程 $${r.head.toFixed(2)} ｜ 佣金 $${r.comm.toFixed(2)} ｜ 配送 $${r.fba.toFixed(2)} ｜ 广告 $${r.ad.toFixed(2)} ｜ 优惠券 $${r.coup.toFixed(2)} ｜ 退货预留 $${r.ret.toFixed(2)}</p>`}
+function stress(){let n=calcVals(false),s=calcVals(true),f=v('floor');document.getElementById('stressOut').innerHTML=`<b>压力测试（广告翻倍 + 退货 10% + 头程涨 20% + 多压仓 3 个月约 $0.50）：</b><br>正常毛利率 ${n.margin.toFixed(1)}% → 压力后 <span class="${s.margin>=f?'ok':'bad'}">${s.margin.toFixed(1)}%</span>，到手 $${s.profit.toFixed(2)}/件。底线 ${f}%：${s.margin>=f?'✅ 压力后仍过底线，可以继续看':'❌ 压力后跌破底线，先淘汰或重算'}`;calc()}
+const dims=[['需求',20],['竞争（分越高越有利）',25],['利润',30],['风险（分越高越安全）',15],['差异化',10]];
+document.getElementById('scoreRows').innerHTML=dims.map((d,i)=>`<tr><td>${d[0]}（${d[1]}%）</td><td><input type="range" min="1" max="5" value="3" id="sa${i}" oninput="score()"><span id="sav${i}">3</span></td><td><input type="range" min="1" max="5" value="3" id="sb${i}" oninput="score()"><span id="sbv${i}">3</span></td></tr>`).join('');
+function score(){let ta=0,tb=0;dims.forEach((d,i)=>{let a=+document.getElementById('sa'+i).value,b=+document.getElementById('sb'+i).value;document.getElementById('sav'+i).textContent=a;document.getElementById('sbv'+i).textContent=b;ta+=a*d[1];tb+=b*d[1]});ta/=100;tb/=100;document.getElementById('scoreOut').innerHTML=`<b>${document.getElementById('pa').value||'A'}：${ta.toFixed(2)} 分</b> ｜ <b>${document.getElementById('pb').value||'B'}：${tb.toFixed(2)} 分</b> ｜ ${ta===tb?'两人打平，看依据和利润再定':(ta>tb?'目前 A 领先':'目前 B 领先')}`}
+score();calc();
+let cands=[];function addCand(){let o={n:document.getElementById('cName').value||'未命名',c:document.getElementById('cChan').value,s:document.getElementById('cSale').value,p:document.getElementById('cPrice').value,r:document.getElementById('cRev').value,w:document.getElementById('cWhy').value};cands.push(o);renderCand()}
+function renderCand(){document.getElementById('candCount').textContent='已找 '+cands.length+' / 10 个候选';document.getElementById('candRows').innerHTML=cands.map((o,i)=>`<tr><td>${o.n}</td><td>${o.c}</td><td>${o.s} / $${o.p} / ${o.r}</td><td>${o.w}</td><td><button class="sec" onclick="cands.splice(${i},1);renderCand()">删</button></td></tr>`).join('')}
+let revs=[];function addRev(){revs.push({c:document.getElementById('rComp').value||'竞品',t:document.getElementById('rText').value,k:document.getElementById('rCat').value,n:+document.getElementById('rN').value||1});renderRev()}
+function renderRev(){let sum={};revs.forEach(r=>sum[r.k]=(sum[r.k]||0)+r.n);document.getElementById('revSum').textContent='按问题归类：'+Object.entries(sum).map(e=>e[0]+' '+e[1]+'次').join(' ｜ ');document.getElementById('revRows').innerHTML=revs.map((r,i)=>`<tr><td>${r.c}</td><td>${r.t}</td><td>${r.k} × ${r.n}</td><td><button class="sec" onclick="revs.splice(${i},1);renderRev()">删</button></td></tr>`).join('')}
+const risks=['商标是否查过，有无撞名','专利和外观是否查过','是否有品类限制或需要认证','是否带电、带磁、含液体、含粉末','是否易碎、过大、过重','同类产品退货率和差评里的退货原因','说明书和包装是否需要当地语言、当地标识'];
+document.getElementById('riskRows').innerHTML=risks.map((r,i)=>`<div style="margin:8px 0"><label><input type="checkbox" class="check risk" onchange="risk()"> ${r}</label><input id="rk${i}" placeholder="如不确定：怎么写确认、谁确认、何时确认"></div>`).join('');
+function risk(){let n=document.querySelectorAll('.risk:checked').length;document.getElementById('riskOut').innerHTML='已确认 '+n+' / '+risks.length+' 项。未确认的项不要先下单。'}
+function genReport(){let r=calcVals(false);let s=document.getElementById('scoreOut').textContent;document.getElementById('report').value=`亚马逊选品报告草稿（2026-10-30，美国站，卖家精灵辅助）\n\n1. 候选：共 ${cands.length} 个。${cands.map(c=>c.n+'（'+c.c+'，'+c.w+'）').join('；')}\n2. 利润试算（以当前计算器为准）：售价 $${r.price}，到手约 $${r.profit.toFixed(2)}/件，毛利率 ${r.margin.toFixed(1)}%。\n3. 打分：${s}\n4. 风险：已确认 ${document.querySelectorAll('.risk:checked').length} / ${risks.length} 项。\n5. 差评机会：${revs.map(x=>x.k+'：'+x.t).join('；')||'尚未整理'}\n6. 不确定项：请把风险清单里未确认的项逐条写清确认方法、负责人和时间，再决定是否小批量试水。\n\n提醒：工具销量、搜索量均为估算，正式决策前多来源对照。`}
+function copyReport(){let t=document.getElementById('report');t.select();document.execCommand('copy')}
+</script></body></html>
