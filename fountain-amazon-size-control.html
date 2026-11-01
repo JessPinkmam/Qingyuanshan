@@ -51,6 +51,11 @@
   .chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 12px; }
   .chip { border: 1px solid #0f766e; padding: 4px 10px; font-size: 13px; background: #fff; }
   .chip b { color: #0f766e; }
+  .chip { cursor: pointer; font-family: inherit; }
+  .chip.active { background: #0f766e; color: #fff; }
+  .chip.active b { color: #fff; }
+  .stepnav { display: flex; gap: 10px; margin-top: 10px; }
+  .stepnav button { padding: 8px 16px; font-size: 14px; border: 1px solid #0f766e; background: #fff; color: #0f766e; cursor: pointer; }
   .arrow { color: #999; }
   .dropwrap { display: flex; gap: 10px; align-items: end; flex-wrap: wrap; margin-top: 12px; }
   .dropwrap label { font-size: 14px; color: #555; display: block; margin-bottom: 4px; }
@@ -189,31 +194,39 @@
       <line x1="190" y1="8" x2="190" y2="26" stroke="#0f766e" stroke-width="2"/>
       <polygon points="190,30 184,20 196,20" fill="#0f766e"/>
       <text x="200" y="20" font-size="12" fill="#0f766e">自由跌落</text>
-      <polygon points="120,70 160,30 300,30 260,70" fill="#f2f2f0" stroke="#333333" stroke-width="2"/>
-      <polygon points="260,70 300,30 300,170 260,210" fill="#e8e8e6" stroke="#333333" stroke-width="2"/>
-      <rect x="120" y="70" width="140" height="140" fill="#ffffff" stroke="#333333" stroke-width="2"/>
-      <text x="210" y="56" text-anchor="middle" font-size="14" fill="#333333">顶面</text>
-      <text x="190" y="150" text-anchor="middle" font-size="14" fill="#333333">正面</text>
-      <text x="282" y="128" text-anchor="middle" font-size="14" fill="#333333">侧面</text>
+      <polygon points="120,80 165,40 305,40 280,80" fill="#f2f2f0" stroke="#333333" stroke-width="2"/>
+      <polygon points="280,80 305,40 305,150 280,190" fill="#e8e8e6" stroke="#333333" stroke-width="2"/>
+      <rect x="120" y="80" width="160" height="110" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+      <text x="212" y="66" text-anchor="middle" font-size="14" fill="#333333">顶面</text>
+      <text x="200" y="140" text-anchor="middle" font-size="14" fill="#333333">正面</text>
+      <line x1="305" y1="118" x2="314" y2="121" stroke="#555555" stroke-width="1.5"/>
+      <text x="318" y="125" font-size="14" fill="#333333">侧面</text>
       <line x1="90" y1="228" x2="340" y2="228" stroke="#999999" stroke-width="1.5"/>
       <text x="90" y="248" font-size="12" fill="#555555">地面：平整坚硬（混凝土/钢板）</text>
-      <circle cx="260" cy="210" r="8" fill="#b91c1c"/>
-      <line x1="268" y1="216" x2="340" y2="242" stroke="#b91c1c" stroke-width="1.5"/>
-      <text x="350" y="248" font-size="14" font-weight="bold" fill="#b91c1c">最脆弱角（第 1 摔）</text>
+      <line id="hlEdgeShort" x1="280" y1="190" x2="305" y2="150" stroke="#b91c1c" stroke-width="5" style="display:none"/>
+      <line id="hlEdgeMed" x1="280" y1="80" x2="280" y2="190" stroke="#b91c1c" stroke-width="5" style="display:none"/>
+      <line id="hlEdgeLong" x1="120" y1="190" x2="280" y2="190" stroke="#b91c1c" stroke-width="5" style="display:none"/>
+      <polygon id="hlFaceSmall" points="280,80 305,40 305,150 280,190" fill="rgba(185,28,28,0.18)" stroke="#b91c1c" stroke-width="2.5" style="display:none"/>
+      <polygon id="hlFaceMed" points="120,80 165,40 305,40 280,80" fill="rgba(185,28,28,0.18)" stroke="#b91c1c" stroke-width="2.5" style="display:none"/>
+      <rect id="hlFaceLarge" x="120" y="80" width="160" height="110" fill="rgba(185,28,28,0.18)" stroke="#b91c1c" stroke-width="2.5" style="display:none"/>
+      <circle id="hlCorner" cx="280" cy="190" r="9" fill="#b91c1c" style="display:none"/>
     </svg>
   </div>
-  <div class="chips">
-    <span class="chip"><b>1</b> 最脆弱角</span><span class="arrow">→</span>
-    <span class="chip"><b>2</b> 短棱</span><span class="arrow">→</span>
-    <span class="chip"><b>3</b> 中棱</span><span class="arrow">→</span>
-    <span class="chip"><b>4</b> 长棱</span><span class="arrow">→</span>
-    <span class="chip"><b>5</b> 小面</span><span class="arrow">→</span>
-    <span class="chip"><b>6</b> 小面对面</span><span class="arrow">→</span>
-    <span class="chip"><b>7</b> 中面</span><span class="arrow">→</span>
-    <span class="chip"><b>8</b> 中面对面</span><span class="arrow">→</span>
-    <span class="chip"><b>9</b> 大面</span><span class="arrow">→</span>
-    <span class="chip"><b>10</b> 大面对面</span>
+  <div class="chips" id="dropChips">
+    <button type="button" class="chip" data-step="1"><b>1</b> 最脆弱角</button><span class="arrow">→</span>
+    <button type="button" class="chip" data-step="2"><b>2</b> 短棱</button><span class="arrow">→</span>
+    <button type="button" class="chip" data-step="3"><b>3</b> 中棱</button><span class="arrow">→</span>
+    <button type="button" class="chip" data-step="4"><b>4</b> 长棱</button><span class="arrow">→</span>
+    <button type="button" class="chip" data-step="5"><b>5</b> 小面</button><span class="arrow">→</span>
+    <button type="button" class="chip" data-step="6"><b>6</b> 小面对面</button><span class="arrow">→</span>
+    <button type="button" class="chip" data-step="7"><b>7</b> 中面</button><span class="arrow">→</span>
+    <button type="button" class="chip" data-step="8"><b>8</b> 中面对面</button><span class="arrow">→</span>
+    <button type="button" class="chip" data-step="9"><b>9</b> 大面</button><span class="arrow">→</span>
+    <button type="button" class="chip" data-step="10"><b>10</b> 大面对面</button>
   </div>
+  <div id="dropStepNote"><p>点上面任意一步，看图上红标的位置。</p></div>
+  <div class="stepnav"><button type="button" id="dropPrev">← 上一步</button><button type="button" id="dropNext">下一步 →</button></div>
+  <p class="note">图中对应关系：正面是大面，顶面是中面，侧面是小面；对面（底面、背面、另一侧面）在图中看不到，点到那一步时说明里会讲怎么翻箱子。</p>
   <table>
     <tr><th>内盒毛重</th><th>跌落高度（ISTA 1A）</th></tr>
     <tr><td>10kg 以下（1–20 磅）</td><td>76cm（30 英寸）</td></tr>
@@ -329,6 +342,43 @@
     var h = dropHeight(kg);
     el.innerHTML = h ? "<p>内盒毛重 " + kg + "kg，对应跌落高度：<strong>" + h + "</strong>。</p>" : "<p>请填写内盒毛重。</p>";
   });
+  var dropSteps = {
+    1: { show: ["hlCorner"], note: "第 1 摔：最脆弱的角。红点就是它，先摔最弱的角，角最容易破箱。" },
+    2: { show: ["hlEdgeShort"], note: "第 2 摔：该角最短的棱。红点连出去的短边（深度方向）。" },
+    3: { show: ["hlEdgeMed"], note: "第 3 摔：该角次长的棱。红点连出去的竖边。" },
+    4: { show: ["hlEdgeLong"], note: "第 4 摔：该角最长的棱。红点连出去的底边。" },
+    5: { show: ["hlFaceSmall"], note: "第 5 摔：最小的面。图中的侧面。" },
+    6: { show: ["hlFaceSmall"], dash: true, note: "第 6 摔：小面的对面。另一侧面，在箱子背面，图中看不到；摔的时候把箱子翻个面。" },
+    7: { show: ["hlFaceMed"], note: "第 7 摔：中等的面。图中的顶面。" },
+    8: { show: ["hlFaceMed"], dash: true, note: "第 8 摔：中面的对面。底面，在箱子下面；摔的时候把箱子翻过来。" },
+    9: { show: ["hlFaceLarge"], note: "第 9 摔：最大的面。图中的正面。" },
+    10: { show: ["hlFaceLarge"], dash: true, note: "第 10 摔：大面的对面。背面，图中看不到；摔的时候把箱子翻个面。" }
+  };
+  var curStep = 1;
+  function selectStep(n) {
+    curStep = n;
+    ["hlCorner", "hlEdgeShort", "hlEdgeMed", "hlEdgeLong", "hlFaceSmall", "hlFaceMed", "hlFaceLarge"].forEach(function(id) {
+      document.getElementById(id).style.display = "none";
+    });
+    var s = dropSteps[n];
+    s.show.forEach(function(id) {
+      var el = document.getElementById(id);
+      el.style.display = "block";
+      if (el.tagName === "polygon" || el.tagName === "rect") {
+        el.style.strokeDasharray = s.dash ? "6 4" : "none";
+      }
+    });
+    document.querySelectorAll("#dropChips .chip").forEach(function(c) {
+      c.classList.toggle("active", parseInt(c.getAttribute("data-step"), 10) === n);
+    });
+    document.getElementById("dropStepNote").innerHTML = "<p>" + s.note + "</p>";
+  }
+  document.querySelectorAll("#dropChips .chip").forEach(function(c) {
+    c.addEventListener("click", function() { selectStep(parseInt(c.getAttribute("data-step"), 10)); });
+  });
+  document.getElementById("dropPrev").addEventListener("click", function() { selectStep(curStep > 1 ? curStep - 1 : 10); });
+  document.getElementById("dropNext").addEventListener("click", function() { selectStep(curStep < 10 ? curStep + 1 : 1); });
+  selectStep(1);
   calc();
 </script>
 </body>
