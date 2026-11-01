@@ -46,13 +46,22 @@
   .box { margin: 0 auto 6px; border: 3px solid #0f766e; background: rgba(15,118,110,.08); transition: width .4s, height .4s; }
   .box.std { border-style: dashed; border-color: #999; background: transparent; }
   .checklist li { margin-bottom: 8px; }
+  .svgbox { background: #fff; border: 1px solid #e3e3e0; padding: 14px; margin-top: 12px; overflow-x: auto; }
+  .svgbox svg { display: block; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 12px; }
+  .chip { border: 1px solid #0f766e; padding: 4px 10px; font-size: 13px; background: #fff; }
+  .chip b { color: #0f766e; }
+  .arrow { color: #999; }
+  .dropwrap { display: flex; gap: 10px; align-items: end; flex-wrap: wrap; margin-top: 12px; }
+  .dropwrap label { font-size: 14px; color: #555; display: block; margin-bottom: 4px; }
+  .dropwrap input { width: 140px; padding: 8px; font-size: 16px; border: 1px solid #ccc; }
   .foot { margin-top: 40px; color: #888; font-size: 13px; border-top: 1px solid #e3e3e0; padding-top: 12px; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>桌面喷泉：亚马逊尺寸控制</h1>
-  <p class="sub">美国站 FBA 尺寸分段，热卖 listing 对照，以及我们的包装尺寸要控制在什么地步。</p>
+  <p class="sub">美国站 FBA 尺寸分段，热卖 listing 对照，我们的包装尺寸控制线，以及内盒外箱麦头和摔箱测试。</p>
 
   <div class="callout">
     <strong>先说结论：</strong>我们的包装后尺寸要落在<strong>大号标准尺寸</strong>里——
@@ -125,6 +134,96 @@
     <li><strong>AWD 只收标准尺寸。</strong>落到大件档的货不能进 AWD 仓，只能直接建 FBA 货件。</li>
     <li><strong>大件档配送费比标准档高一档</strong>，仓储也按体积计费，能回标准档就别停在大件档。</li>
   </ul>
+
+  <h2>五、内盒与外箱麦头：贴什么、贴哪里</h2>
+  <p>麦头分两套，别混在一起：工厂印的外箱唛头是给物流和海关看的；亚马逊的 FBA 标签是给仓库收货看的。两套都要有，互相别遮挡。</p>
+  <div class="svgbox">
+    <svg viewBox="0 0 720 290" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, PingFang SC, Microsoft YaHei, sans-serif">
+      <rect x="20" y="40" width="230" height="190" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+      <rect x="40" y="60" width="110" height="70" fill="#ffffff" stroke="#0f766e" stroke-width="2" stroke-dasharray="6 4"/>
+      <text x="95" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f766e">FBA 箱标</text>
+      <text x="95" y="112" text-anchor="middle" font-size="12" fill="#333333">Box ID（每箱唯一）</text>
+      <rect x="195" y="50" width="42" height="42" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+      <text x="216" y="77" text-anchor="middle" font-size="11" fill="#333333">国家标</text>
+      <text x="135" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#333333">MADE IN CHINA</text>
+      <text x="135" y="258" text-anchor="middle" font-size="14" fill="#555555">外箱正面</text>
+      <rect x="290" y="40" width="160" height="190" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+      <rect x="310" y="60" width="120" height="58" fill="#ffffff" stroke="#0f766e" stroke-width="2" stroke-dasharray="6 4"/>
+      <text x="370" y="88" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f766e">FBA 箱标（第 2 张）</text>
+      <text x="370" y="106" text-anchor="middle" font-size="12" fill="#333333">贴不同面，防磨损丢扫</text>
+      <text x="305" y="145" font-size="12" fill="#333333">品名 / 货号 SKU / 数量</text>
+      <text x="305" y="165" font-size="12" fill="#333333">毛重 / 净重 / 箱规 cm</text>
+      <text x="305" y="185" font-size="12" fill="#333333">箱号 / MADE IN CHINA</text>
+      <rect x="310" y="198" width="120" height="24" fill="#ffffff" stroke="#b45309" stroke-width="1.5"/>
+      <text x="370" y="215" text-anchor="middle" font-size="11" fill="#b45309">Team Lift（超 50 磅时）</text>
+      <text x="370" y="258" text-anchor="middle" font-size="14" fill="#555555">外箱侧面（唛头文字区）</text>
+      <rect x="490" y="70" width="190" height="130" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+      <rect x="510" y="92" width="3" height="44" fill="#333333"/><rect x="517" y="92" width="2" height="44" fill="#333333"/><rect x="522" y="92" width="5" height="44" fill="#333333"/><rect x="531" y="92" width="2" height="44" fill="#333333"/><rect x="537" y="92" width="4" height="44" fill="#333333"/><rect x="545" y="92" width="2" height="44" fill="#333333"/><rect x="551" y="92" width="6" height="44" fill="#333333"/><rect x="561" y="92" width="2" height="44" fill="#333333"/><rect x="567" y="92" width="3" height="44" fill="#333333"/><rect x="574" y="92" width="5" height="44" fill="#333333"/><rect x="583" y="92" width="2" height="44" fill="#333333"/>
+      <text x="550" y="156" text-anchor="middle" font-size="13" font-weight="bold" fill="#333333">FNSKU（盖住原厂 UPC）</text>
+      <text x="550" y="178" text-anchor="middle" font-size="13" fill="#333333">MADE IN CHINA</text>
+      <text x="585" y="258" text-anchor="middle" font-size="14" fill="#555555">内盒（单台销售包装）</text>
+    </svg>
+  </div>
+  <h3>内盒（单台产品的销售包装）</h3>
+  <ul>
+    <li><strong>FNSKU 条码：</strong>每台都要贴，贴平整面，避开接缝和弯曲处，完全盖住原厂 UPC 条码，条码要清晰可扫。</li>
+    <li><strong>Made in China：</strong>产品或包装上要有，最好是永久性印刷，别用容易掉的贴纸。</li>
+    <li><strong>塑料袋窒息警告：</strong>内盒里如果用了开口超过 5 英寸的塑料袋，袋子上必须有英文窒息警告。</li>
+    <li><strong>多件套：</strong>一盒是套装的，外包装要标 Sold as Set / Do Not Separate。</li>
+  </ul>
+  <h3>外箱（装多台内盒的运输箱）</h3>
+  <ul>
+    <li><strong>FBA 箱标（Box ID）：</strong>卖家平台生成，每箱唯一，不可复印复用；亚马逊要求每箱 1 张，实务上贴 2 张（不同面）防磨损丢扫；贴平整面，避开接缝、开口和箱角，胶带不能盖住条码；多箱套装时贴最外层大箱。</li>
+    <li><strong>承运商面单：</strong>和 FBA 箱标分开贴，别互相遮挡。</li>
+    <li><strong>Made in China：</strong>外箱上也要有。</li>
+    <li><strong>国家标（头程常用）：</strong>边长 4cm 的正方形，贴在窄侧面右上角。</li>
+    <li><strong>Team Lift / Mech Lift：</strong>单箱超过 50 磅（22.7kg）贴 Team Lift，超过 100 磅（45kg）贴 Mech Lift（机械提升）。</li>
+    <li><strong>外箱本身：</strong>多台标准尺寸货拼箱时，任一边 ≤ 25 英寸，单箱 ≤ 50 磅（单件本身超限的除外）；六面完整硬质箱，强力胶带密封，箱内物品晃动不移位；填充用气泡膜、牛皮纸等，别用松散泡沫颗粒。</li>
+  </ul>
+
+  <h2>六、内盒摔箱测试：1 角 3 棱 6 面</h2>
+  <p>按 ISTA 1A（跨境常用）：取一个完整包装好的内盒，在平整坚硬的地面（混凝土地面或钢板）上自由跌落，共 10 次。顺序从最严酷的姿态开始：先摔最脆弱的角，再摔该角的三条棱，最后摔六个面。</p>
+  <div class="svgbox">
+    <svg viewBox="0 0 720 280" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, PingFang SC, Microsoft YaHei, sans-serif">
+      <polygon points="60,70 100,30 240,30 200,70" fill="#f2f2f0" stroke="#333333" stroke-width="2"/>
+      <polygon points="200,70 240,30 240,170 200,210" fill="#e8e8e6" stroke="#333333" stroke-width="2"/>
+      <rect x="60" y="70" width="140" height="140" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+      <text x="150" y="56" text-anchor="middle" font-size="14" fill="#333333">顶面</text>
+      <text x="130" y="150" text-anchor="middle" font-size="14" fill="#333333">正面</text>
+      <text x="222" y="128" text-anchor="middle" font-size="14" fill="#333333">侧面</text>
+      <circle cx="200" cy="210" r="8" fill="#b91c1c"/>
+      <line x1="208" y1="216" x2="280" y2="248" stroke="#b91c1c" stroke-width="1.5"/>
+      <text x="285" y="252" font-size="14" font-weight="bold" fill="#b91c1c">最脆弱角（第 1 摔）</text>
+      <text x="60" y="252" font-size="13" fill="#555555">棱是该角的三条棱：短棱 → 中棱 → 长棱；面按小 → 中 → 大各摔正反两面。</text>
+    </svg>
+  </div>
+  <div class="chips">
+    <span class="chip"><b>1</b> 最脆弱角</span><span class="arrow">→</span>
+    <span class="chip"><b>2</b> 短棱</span><span class="arrow">→</span>
+    <span class="chip"><b>3</b> 中棱</span><span class="arrow">→</span>
+    <span class="chip"><b>4</b> 长棱</span><span class="arrow">→</span>
+    <span class="chip"><b>5</b> 小面</span><span class="arrow">→</span>
+    <span class="chip"><b>6</b> 小面对面</span><span class="arrow">→</span>
+    <span class="chip"><b>7</b> 中面</span><span class="arrow">→</span>
+    <span class="chip"><b>8</b> 中面对面</span><span class="arrow">→</span>
+    <span class="chip"><b>9</b> 大面</span><span class="arrow">→</span>
+    <span class="chip"><b>10</b> 大面对面</span>
+  </div>
+  <table>
+    <tr><th>内盒毛重</th><th>跌落高度（ISTA 1A）</th></tr>
+    <tr><td>10kg 以下（1–20 磅）</td><td>76cm（30 英寸）</td></tr>
+    <tr><td>10–18kg（21–40 磅）</td><td>61cm（24 英寸）</td></tr>
+    <tr><td>19–27kg（41–60 磅）</td><td>46cm（18 英寸）</td></tr>
+    <tr><td>28–45kg（61–100 磅）</td><td>31cm（12 英寸）</td></tr>
+    <tr><td>46–68kg（101–150 磅）</td><td>20cm（8 英寸）</td></tr>
+  </table>
+  <div class="dropwrap">
+    <div><label>内盒毛重（千克）</label><input id="dropKg" type="number" step="0.1" min="0" placeholder="例如 6.5"></div>
+    <div><button id="dropGo">查跌落高度</button></div>
+  </div>
+  <div id="dropResult"><p class="note">填毛重查对应高度。</p></div>
+  <p><strong>判定：</strong>摔完后纸箱无开裂、无穿孔，内装产品无破损、功能正常，才算通过。注意：内盒按内盒毛重查高度；多台装的外箱要测外箱，按外箱毛重查。喷泉是易碎品（树脂件、水泵），内盒缓冲要按这个测试去验证，别只凭手感。</p>
+  <p class="note">不同资料对千克分档的换算略有出入（磅分档是 20 / 40 / 60 / 100 / 150 磅），上表按检验报告常用换算；正式认证以 ISTA 官方程序为准。</p>
 
   <div class="foot">
     分段标准以亚马逊 Seller Central 商品尺寸分段页为准；热卖数据为 2026-10-17 快照。制作于 2026-11-01。
@@ -209,6 +308,21 @@
   });
   ["inL", "inW", "inH", "inKg"].forEach(function(id) {
     document.getElementById(id).addEventListener("input", calc);
+  });
+  function dropHeight(kg) {
+    if (!(kg > 0)) return "";
+    if (kg < 10) return "76cm（30 英寸）";
+    if (kg < 19) return "61cm（24 英寸）";
+    if (kg < 28) return "46cm（18 英寸）";
+    if (kg < 45) return "31cm（12 英寸）";
+    if (kg <= 68) return "20cm（8 英寸）";
+    return "超过 68kg 不适用 ISTA 1A，改按 ISTA 1B 或客户指定标准";
+  }
+  document.getElementById("dropGo").addEventListener("click", function() {
+    var kg = parseFloat(document.getElementById("dropKg").value);
+    var el = document.getElementById("dropResult");
+    var h = dropHeight(kg);
+    el.innerHTML = h ? "<p>内盒毛重 " + kg + "kg，对应跌落高度：<strong>" + h + "</strong>。</p>" : "<p>请填写内盒毛重。</p>";
   });
   calc();
 </script>
