@@ -20,17 +20,17 @@ input{flex:1;min-width:200px;border-radius:12px}
 #detail{position:sticky;bottom:12px;background:#fff8e1;color:#222;border-radius:16px;padding:16px;border:2px solid #f2c14e;display:none}
 #detail h3{color:#7a4d00}.warn{background:#3a241d;border:1px solid #a85a3a;border-radius:12px;padding:12px}
 .small{font-size:13px;opacity:.8;line-height:1.7}
-.thumb{width:100%;height:200px;object-fit:cover;border-radius:10px;margin-bottom:8px;background:#0f1a14}
+.thumb{width:100%;height:auto;max-height:280px;object-fit:contain;border-radius:10px;margin-bottom:8px;background:#0f1a14}
 .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
 .gallery figure{margin:0;background:#12211a;border:1px solid #2c4a33;border-radius:12px;overflow:hidden;cursor:pointer}
-.gallery img{width:100%;height:180px;object-fit:cover;display:block}
+.gallery img{width:100%;height:auto;object-fit:contain;display:block;background:#0f1a14}
 .gallery figcaption{padding:8px 10px;font-size:13px;line-height:1.5}
 #lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:99;padding:16px}
 #lightbox img{max-width:92vw;max-height:82vh;border-radius:12px}
 #lightbox p{color:#fff;text-align:center}
 .preset{border:2px solid transparent}
 .preset.on{border-color:#f2c14e;box-shadow:0 0 0 2px #f2c14e}
-#genpreview img{width:100%;max-height:320px;object-fit:cover;border-radius:12px;display:block}select{width:100%;margin:6px 0;border-radius:12px}
+#genpreview img{width:100%;height:auto;max-height:560px;object-fit:contain;border-radius:12px;display:block;background:#0f1a14}select{width:100%;margin:6px 0;border-radius:12px}
 .out{background:#12211a;border:1px dashed #f2c14e;border-radius:12px;padding:12px;margin-top:10px;white-space:pre-wrap;line-height:1.7}
 a{color:#ffe082}
 @media(max-width:600px){h1{font-size:22px}.bar label{width:86px}}
@@ -141,7 +141,7 @@ function render(){
  if(s==='sales')list.sort((a,b)=>b.sales-a.sales); if(s==='priceAsc')list.sort((a,b)=>(a.price||99)-(b.price||99)); if(s==='priceDesc')list.sort((a,b)=>(b.price||99)-(a.price||99));
  grid.innerHTML=list.map((d,i)=>`<div class="item" onclick='show(${D.indexOf(d)})'>${d.img?`<img class="thumb" src="${d.img}" alt="${d.n}" loading="lazy" onclick="event.stopPropagation();openLB('${d.img}','${d.n}')" onerror="this.style.display='none'">`:''}<h3>${d.n}</h3><div><span class="tag">${d.e}</span><span class="tag">${d.rating}</span>${d.sales?`<span class="tag sales">约 ${d.sales.toLocaleString()}+ / 月</span>`:''}</div><div class="meta">${d.price?`价格：约 $${d.price}（原价 $${d.orig}）`:'价格：快照未显示，以 listing 为准'}<br>${d.why.slice(0,52)}…</div></div>`).join('')||'<p>没有匹配的款，换个关键词试试。</p>';
 }
-function show(i){const d=D[i];detail.style.display='block';detail.innerHTML=`${d.img?`<img src="${d.img}" alt="${d.n}" style="width:100%;max-height:300px;object-fit:cover;border-radius:10px;margin-bottom:10px" onclick="openLB('${d.img}','${d.n}')">`:''}<h3>${d.n} · ${d.e}</h3><p><b>为什么卖：</b>${d.why}</p><p><b>给你的启示：</b>${d.tip}</p><p class="small">月销：${d.sales?`约 ${d.sales.toLocaleString()}+ / 月`:'快照未显示'} · 评分/标识：${d.rating} · 价格：${d.price?`约 $${d.price}`:'以 listing 为准'}</p>`;detail.scrollIntoView({behavior:'smooth',block:'nearest'});}
+function show(i){const d=D[i];detail.style.display='block';detail.innerHTML=`${d.img?`<img src="${d.img}" alt="${d.n}" style="width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:10px;margin-bottom:10px;background:#0f1a14" onclick="openLB('${d.img}','${d.n}')">`:''}<h3>${d.n} · ${d.e}</h3><p><b>为什么卖：</b>${d.why}</p><p><b>给你的启示：</b>${d.tip}</p><p class="small">月销：${d.sales?`约 ${d.sales.toLocaleString()}+ / 月`:'快照未显示'} · 评分/标识：${d.rating} · 价格：${d.price?`约 $${d.price}`:'以 listing 为准'}</p>`;detail.scrollIntoView({behavior:'smooth',block:'nearest'});}
 
 const PRESETS=[
 {a:'乌龟 Turtle',b:'多肉盆 Succulent Planter',c:'7 颗暖白 LED',d:'$14\u201320（冲量送礼款）',img:'images/ai/ai-turtle-succulent.webp',cap:'AI 概念：乌龟 + 多肉 + 7 暖白 LED · 头牌公式'},
