@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>王中祥 - 机器人全栈工程师</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f2f2f2; color: #1a1a1a; font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; line-height: 1.7; padding: 32px 16px; }
+  .page { max-width: 820px; margin: 0 auto; background: #fff; padding: 48px 56px 40px; box-shadow: 0 2px 16px rgba(0,0,0,.08); }
+  .toolbar { max-width: 820px; margin: 0 auto 16px; text-align: right; }
+  .toolbar button { border: 1px solid #1f4e79; background: #1f4e79; color: #fff; padding: 8px 18px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+  h1 { font-size: 30px; letter-spacing: 2px; }
+  .head-wrap { display: flex; align-items: center; gap: 20px; }
+  .avatar { width: 76px; height: 76px; border-radius: 50%; object-fit: cover; border: 2px solid #1f4e79; }
+  .contact a { color: #1f4e79; }
+  .intent { margin-top: 6px; font-size: 17px; color: #1f4e79; font-weight: 600; }
+  .contact { margin-top: 10px; font-size: 14px; color: #555; }
+  .contact span { margin-right: 18px; }
+  .ph { color: #b00; border-bottom: 1px dashed #b00; }
+  hr.head { border: none; border-top: 2px solid #1f4e79; margin: 20px 0 24px; }
+  .section { margin-bottom: 26px; }
+  .section h2 { font-size: 17px; color: #1f4e79; border-left: 4px solid #1f4e79; padding-left: 10px; margin-bottom: 12px; }
+  .section p, .section li { font-size: 14.5px; }
+  .section ul { padding-left: 20px; }
+  .section li { margin-bottom: 6px; }
+  .item { margin-bottom: 16px; }
+  .item-head { display: flex; justify-content: space-between; font-weight: 600; font-size: 15px; }
+  .item-head .date { font-weight: 400; color: #555; font-size: 14px; white-space: nowrap; margin-left: 12px; }
+  .item-sub { color: #555; font-size: 14px; margin: 2px 0 6px; }
+  .tags span { display: inline-block; border: 1px solid #ccc; border-radius: 4px; padding: 2px 10px; margin: 0 8px 8px 0; font-size: 13.5px; }
+  .note { font-size: 13px; color: #b00; }
+  .edu-line { font-size: 15px; font-weight: 600; }
+  .edu-line span { font-weight: 400; color: #555; font-size: 14px; }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .page { box-shadow: none; padding: 0; max-width: none; }
+    .toolbar { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">打印 / 存为 PDF</button></div>
+<div class="page">
+
+  <div class="head-wrap">
+    <img class="avatar" src="https://github.com/JessPinkmam.png" alt="头像" onerror="this.style.display='none'">
+    <div>
+      <h1>王中祥</h1>
+      <div class="intent">求职意向：机器人全栈工程师</div>
+    </div>
+  </div>
+  <div class="contact">
+    <span>意向城市：泉州</span>
+    <span>工作经验：约 4 年</span>
+    <span>电话：15859775361</span>
+    <span>邮箱：15859775361wzx@gmail.com</span>
+    <span>GitHub：<a href="https://github.com/JessPinkmam">github.com/JessPinkmam</a></span>
+  </div>
+  <hr class="head">
+
+  <div class="section">
+    <h2>个人简介</h2>
+    <p>机械设计制造及其自动化本科出身，兼具机械系统思维与 AI Agent 落地经验。做过从 0 到 1 的 Agent 系统：数据感知、规则引擎与大模型规划决策、自动执行，闭环可验证。应聘机器人全栈工程师，希望把这套感知、决策、执行的系统能力迁移到人形机器人平台。</p>
+  </div>
+
+  <div class="section">
+    <h2>教育背景</h2>
+    <p class="edu-line">江苏海洋大学 · 机械设计制造及其自动化 · 本科 <span>（2018 – 2022）</span></p>
+    <p style="color:#555; font-size:14px; margin-top:4px;">相关课程：理论力学、机械原理、控制工程基础</p>
+  </div>
+
+  <div class="section">
+    <h2>技能</h2>
+    <div class="tags">
+      <span>Python（熟练）</span>
+      <span>C/C++（基础）</span>
+      <span>ROS（学习中）</span>
+      <span>感知、决策与规划</span>
+      <span>运动控制原理</span>
+      <span>系统集成测试</span>
+      <span>LLM 应用开发（RAG、Prompt 规则引擎）</span>
+      <span>数据分析与对账</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>工作经历</h2>
+    <div class="item">
+      <div class="item-head"><span>厦门拉森科技有限公司 · 亚马逊 AI 应用研究员</span><span class="date">2025.03 – 2026.05</span></div>
+      <ul>
+        <li><strong>广告 Agent（从 0 到 1）：</strong>主导搭建基于 LLM 规划与 Prompt 规则引擎的广告 Agent，覆盖 SP、SB 全广告类型，自动调价、自动否词、预算分配策略，服务 2 个品牌 US 站点。广告花费占比从 20% 降至 12%，ACOS 同步优化，年节省广告费约 $500K。系统结构为数据感知、规则引擎与大模型规划决策、自动执行的闭环，与机器人感知、决策、执行是同一套系统思维。</li>
+        <li><strong>培训 Agent（RAG）：</strong>主导设计并部署基于 RAG 架构的广告培训 Agent（LLM、向量知识库、亚马逊 SOP 语料），面向业务组 20 人，新人广告实操培训周期从 4 周缩短至 2 周，显著降低老员工带教成本。</li>
+        <li><strong>AI 辅助修图：</strong>主导接入多模态图像生成模型（Google Banana 系），重构 A+ 页面制作流程，实现 AI 辅助修图 + 自动排版，单品制作工时从 7 天压缩至 3 天（效率提升 133%），支撑新品上架节奏提速。</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="item-head"><span>泉州星跃电子科技有限公司 · 亚马逊主管运营</span><span class="date">2022.12 – 2024.10</span></div>
+      <ul>
+        <li>带 3 人运营团队，负责多店铺监控、绩效问题处理、补货与活动审核、市场情报搜集与产品开发对接；数据驱动选品与推广，单链接日均 150 单，客单价 $20–$90，ACOS 控制在 13%，店群推广费率（TACOS）控制在 9.5% 以下；一款产品大类排名进入前 1 万，小类稳定前三。</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="item-head"><span>福建领动时代传媒有限公司 · 跨境部门助理</span><span class="date">2022.06 – 2022.12</span></div>
+      <ul>
+        <li>负责 Amazon、eBay 等平台日常运营：上架、页面优化、订单与客诉处理，协助广告投放、关键词优化与促销策划。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>项目经历</h2>
+    <div class="item">
+      <div class="item-head"><span>多智能体任务分诊系统（LangGraph，个人 Demo）</span><span class="date">2026</span></div>
+      <ul>
+        <li>基于 LangGraph 搭建客服分诊 Agent，本地可运行、带自测；状态机驱动任务分诊，工具调用与结果验证形成闭环。与机器人任务规划中的状态机与决策流程同构。</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="item-head"><span>业务数据闭环审计系统（脱敏）</span><span class="date">2026</span></div>
+      <ul>
+        <li>Python 诊断脚本，对业务数据做自动对账与异常检测，只读设计不写库，输出异常清单驱动人工复核，覆盖数据从产生到核对的完整闭环。</li>
+      </ul>
+      <p class="note">注：本段为在职项目脱敏版，如不写入正式简历请删除整段。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>自我评价</h2>
+    <p>学习能力强，坚持日常充电，正在系统学习 ROS；数据敏感，习惯用数据验证判断；独立思考，知行合一；对机器人技术有浓厚兴趣，愿意不断学习和挑战新技术。</p>
+  </div>
+
+</div>
+</body>
+</html>
