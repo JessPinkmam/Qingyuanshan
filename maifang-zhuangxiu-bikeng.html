@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>买房装修避坑指南 · 先算清，再下定，再装好</title>
+<style>
+:root{--cream:#faf6ef;--paper:#fffdf8;--ink:#33291f;--muted:#7a6f63;--line:#e7dccb;--gold:#b9975b;--gold2:#8a6d3b;--green:#5a6b52;--red:#a44a3f}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;line-height:1.7}
+a{color:var(--gold2)}header{max-width:1080px;margin:0 auto;padding:24px 20px 6px}
+.eyebrow{color:var(--gold2);letter-spacing:.18em;font-size:13px}
+nav.top{position:sticky;top:0;z-index:5;background:#33291f;color:#f5ead2;padding:12px 20px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+nav.top a{color:#fff;text-decoration:none}nav.top b{margin-right:auto}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;max-width:1080px;margin:0 auto;padding:16px 20px 8px}
+h1{font-family:"Songti SC","Noto Serif SC",serif;font-size:40px;line-height:1.25;margin:10px 0}.lead{color:var(--muted);font-size:17px}
+.hero img{width:100%;height:320px;object-fit:cover;border-radius:18px;box-shadow:0 18px 40px rgba(60,45,25,.18)}
+.cap{font-size:13px;color:var(--muted)}main{max-width:1080px;margin:0 auto;padding:0 20px 48px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;margin:18px 0;box-shadow:0 8px 24px rgba(60,45,25,.06)}
+.part{border-top:3px solid var(--gold);margin-top:34px}
+h2{font-family:"Songti SC","Noto Serif SC",serif;font-size:26px;margin:4px 0 6px}h3{font-size:18px;margin:14px 0 6px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+label{display:block;font-size:14px;color:var(--muted);margin:10px 0 4px}input{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;font-size:16px;background:#fff}
+button{cursor:pointer;border:0;border-radius:999px;padding:12px 20px;background:var(--ink);color:#fff;font-size:15px}button.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}button.gold{background:var(--gold2)}
+.result{background:#f3ecdd;border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:14px}.big{font-size:26px;font-weight:700}.warn{color:var(--red);font-weight:700}.ok{color:var(--green);font-weight:700}
+.pill{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;margin:4px 6px 4px 0;cursor:pointer;background:#fff}.pill.active{background:var(--ink);color:#fff}
+.pit,.step{border-top:1px solid var(--line);padding:14px 0}.step{cursor:pointer}.step p{display:none}.step.open p{display:block}
+.tag{font-size:12px;color:var(--gold2);border:1px solid var(--line);border-radius:999px;padding:2px 8px}
+.check{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-top:1px solid #f0e8d8}.check input{width:20px;height:20px;margin-top:4px;flex:none}
+.bar{height:10px;background:#eee3cf;border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;background:var(--gold);width:0;transition:.3s}
+.note{font-size:13px;color:var(--muted)}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px}.gallery img{width:100%;height:210px;object-fit:cover;border-radius:14px}
+@media(max-width:760px){.hero,.grid2,.grid3,.gallery{grid-template-columns:1fr}h1{font-size:32px}.hero img{height:230px}}
+</style></head><body>
+<nav class="top"><b>买房装修避坑指南</b><a href="#buy">第一册 · 买房</a><a href="#reno">第二册 · 装修</a><a href="#buycalc">算总账</a><a href="#renobudget">分预算</a></nav>
+<header><div class="eyebrow">一页看完 · 买房 + 装修</div></header>
+<section class="hero"><div><h1>先算清，再下定，<br>再把家装好。</h1><p class="lead">样板间是美颜过的，合同才是真实的；水电和防水封进墙里，返工最贵。这页把买房和装修连起来算：买房剩多少钱，直接就是装修预算的起点，不用再开另一页。</p>
+<p><button onclick="document.getElementById('buycalc').scrollIntoView({behavior:'smooth'})">先算买房总账</button> <button class="ghost" onclick="document.getElementById('renobudget').scrollIntoView({behavior:'smooth'})">直接看装修预算</button></p>
+<p class="note">本页所有利率、比例、税费均为示例和估算，以当地政策、银行和不动产登记部门的实际口径为准。</p></div>
+<figure style="margin:0"><img src="https://cdn.decorilla.com/images/2000/6abce13c-185a-4f46-90c7-f8e4d6dc9203/Warm-and-Modern-Home-Renovation-After-Rendering.jpg?cv=1" alt="温馨明亮的客厅示意" onerror="this.style.display='none'"><figcaption class="cap">图为温馨家居示意，不是某个具体楼盘的实拍。看房时，重点看真实楼栋、真实楼层、真实朝向。</figcaption></figure></section>
+<main>
+<section class="card part" id="buy"><div class="eyebrow">第一册 · 买房</div><h2>买房，先算清再下定</h2><p>这册不替你选楼盘，只帮你把三件事算明白：总共要花多少钱、每月还得起多少、哪些话必须写进合同。</p></section>
+
+<section class="card" id="buycalc"><h2>01 先算总账</h2><p class="note">填你自己的数。月供超过月收入一半，压力会很大；首付之外，税费、维修基金、中介费、过户杂费常常还要多准备一笔。</p>
+<div class="grid3">
+<div><label>房价（万元）</label><input id="price" type="number" value="150"></div>
+<div><label>首付比例（%）</label><input id="downPct" type="number" value="30"></div>
+<div><label>贷款年限（年）</label><input id="years" type="number" value="30"></div>
+<div><label>年利率（%，示例）</label><input id="rate" type="number" step="0.01" value="3.10"></div>
+<div><label>家庭月收入（元）</label><input id="income" type="number" value="15000"></div>
+<div><label>手头可动用总资金（万元，可选）</label><input id="cash" type="number" value="80"></div>
+</div>
+<p><button onclick="calcBuy()">算一下</button></p>
+<div class="result" id="buyOut">点“算一下”，这里会出首付、贷款额、等额本息月供和月供占比。</div>
+<p class="note" id="remainNote"></p>
+<p><button class="gold" onclick="carryToReno()">把买房后剩下的钱，带到下面装修预算 ↓</button></p>
+</section>
+
+<section class="card"><h2>02 新房和二手房，坑不一样</h2>
+<div><button class="pill active" id="bNew" onclick="showType('new')">新房</button><button class="pill" id="bOld" onclick="showType('old')">二手房</button></div>
+<div id="typeNew"><h3>新房重点看</h3><p>开发商的五证和预售许可、交房时间与延期赔偿、面积差异怎么算、装修标准要写清品牌和型号、车位和公摊、物业费和前期物业合同。销售口头说的学区、配套、地铁，一律以合同和政府规划为准，合同里没有就等于没有。</p></div>
+<div id="typeOld" style="display:none"><h3>二手房重点看</h3><p>房产证上的产权人是否齐全、是否夫妻共同财产、房管局查册有没有抵押和查封、原业主户口什么时候迁出、房龄和贷款年限、房屋真实状况和漏水史。钱不要直接给卖家，走资金监管或托管，过户完成后再放款。</p></div>
+</section>
+
+<section class="card"><h2>03 看房清单</h2><p>不同时段各去一次：早上看采光，晚上听噪音和看亮灯率，下雨天看墙角和窗边渗不渗水。打勾后有进度。</p>
+<div class="bar"><i id="buyBar"></i></div><p id="buyProg" class="note">已完成 0 / 12</p><div id="buyChecks"></div>
+<p><button class="ghost" onclick="copyList('buy')">复制我的看房小结</button> <span id="buyCopyMsg" class="note"></span></p>
+</section>
+
+<section class="card" id="pits"><h2>04 坑点，按阶段筛</h2>
+<div>
+<button class="pill active" onclick="filterPits('all',this)">全部</button><button class="pill" onclick="filterPits('选房',this)">选房</button><button class="pill" onclick="filterPits('签约',this)">签约</button><button class="pill" onclick="filterPits('贷款',this)">贷款</button><button class="pill" onclick="filterPits('交房',this)">交房</button><button class="pill" onclick="filterPits('二手房',this)">二手房</button>
+</div><div id="pitList"></div>
+</section>
+
+<section class="card"><h2>05 签约前，逐字核对这五句</h2>
+<div class="grid2"><div><h3>定金还是订金</h3><p>定金有担保效力，买方违约一般不退；订金通常可退。交钱前先看清收据上写的是哪两个字。</p></div>
+<div><h3>交房日和赔偿</h3><p>写清具体日期、延期按日赔偿的标准，不要只写“预计”或“力争”。</p></div>
+<div><h3>面积差</h3><p>实测面积和合同面积差多少、按什么价补或退，提前写死。</p></div>
+<div><h3>补充协议</h3><p>补充协议往往是开发商埋条款的地方，逐条看，和主合同不一致的地方要问清。</p></div></div></section>
+
+<section class="card part" id="reno"><div class="eyebrow">第二册 · 装修</div><h2>装修，钱花在墙里，不花在面子上</h2><p>水电和防水封进墙里，返工最贵；复杂吊顶和背景墙最先可以做减法。这册帮你把预算分开、把流程按节点验收，装到一半不断粮。</p></section>
+
+<section class="card" id="renobudget"><h2>06 预算分配器</h2><p class="note">通用参考：硬装约四成，主材约三成，家具家电约两成，软装约一成，再单独留 10% 至 15% 的机动金。比例不必死守，但开工前一定要写下来，哪些能压、哪些不能省。</p>
+<div class="grid3">
+<div><label>装修总预算（万元）</label><input id="renoTotal" type="number" value="25"></div>
+<div><label>建筑面积（平方米）</label><input id="renoArea" type="number" value="100"></div>
+<div><label>机动金比例（%）</label><input id="reservePct" type="number" value="12"></div>
+<div><label>硬装（水电泥瓦木工油漆，%）</label><input id="rp1" type="number" value="40"></div>
+<div><label>主材（瓷砖地板门窗橱柜卫浴，%）</label><input id="rp2" type="number" value="30"></div>
+<div><label>家具家电（%）</label><input id="rp3" type="number" value="20"></div>
+<div><label>软装（窗帘灯具饰品，%）</label><input id="rp4" type="number" value="10"></div>
+</div>
+<p><button onclick="calcReno()">分一下</button></p>
+<div class="result" id="renoOut"></div>
+</section>
+
+<section class="card"><h2>07 省与不省，一句话分清</h2>
+<div><button class="pill active" id="bNo" onclick="showSave('no')">坚决不省</button><button class="pill" id="bYes" onclick="showSave('yes')">可以做减法</button></div>
+<div id="saveNo"><h3>不省：藏在墙里、每天都用的</h3><p>水电改造、防水、墙面基层、门窗、五金铰链、水管电线品牌和线径。省了这几样，住进去出问题，拆墙重做的钱远比当初省下的多。</p></div>
+<div id="saveYes" style="display:none"><h3>可以省：纯装饰、容易过时的</h3><p>复杂吊顶、电视背景墙、水晶灯、造型墙、全屋繁复线条。先保证收纳、采光、插座够用，装饰以后慢慢添，反而更耐看。</p></div>
+</section>
+
+<section class="card" id="flow"><h2>08 全流程，点一步看一步</h2><p class="note">每道工序做完先验收，再进下一道。问题在这个阶段改，成本最低。点下面的步骤展开验收要点。</p><div id="steps"></div></section>
+
+<section class="card"><h2>09 验收清单</h2><p>验收最好白天自然光下做，带上合同、图纸和卷尺。发现问题先拍照、书面记录、约定整改时间，不要只靠口头提醒，也不要等尾款结清后再提。</p>
+<div class="bar"><i id="renoBar"></i></div><p id="renoProg" class="note">已完成 0 / 14</p><div id="renoChecks"></div>
+<p><button class="ghost" onclick="copyList('reno')">复制我的验收小结</button> <span id="renoCopyMsg" class="note"></span></p>
+</section>
+
+<section class="card"><h2>10 签合同前，核对报价单</h2><div class="grid2"><div><h3>按项还是按平方米</h3><p>同一项工艺，按项计价和按平方米计价结果可能差很多。报价要细化到项目、数量、单价、品牌型号，方便后期核对增项。</p></div><div><h3>增项上限</h3><p>合同里写清增项比例上限、付款节点、工期和违约责任。低价签单、后期增项是最常见的套路，口头承诺一律落到纸面。</p></div><div><h3>图纸齐不齐</h3><p>平面布置图、水电点位图、立面图是否齐全，尺寸是否和现场一致。好看的图纸不等于能施工的方案。</p></div><div><h3>保修写清楚</h3><p>水电隐蔽工程、防水、柜体等不同项目的保修期限分开写，收好合同、付款凭证、保修卡和水电走向图。</p></div></div>
+<div class="gallery"><img src="https://www.drfbuilders.com/wp-content/uploads/2025/05/new-home-remodel-interior.webp" alt="装修后室内示意" onerror="this.style.display='none'"><img src="https://housebouse.com/wp-content/uploads/2023/08/Where-To-Start-Home-Renovation.jpg" alt="装修起点示意" onerror="this.style.display='none'"></div>
+<p class="note">图片为家居示意。入住前保持通风，等室内空气达标再安心入住。</p></section>
+<p class="note">参考口径：首套公积金贷款利率约 2.85% 为 2025 年公开报道的参考值，实际以公积金中心为准；装修预算分配、闭水试验 24 至 48 小时、卫生间防水墙面不低于 1.8 米、强弱电分开等做法为行业通用做法整理，具体以合同和当地规范为准。</p>
+</main>
+<script>
+const buyChecks=["早上采光：客厅和主卧上午有没有直射光","晚上噪音：关窗和开窗各听一次，楼下马路、高架、电梯井","下雨天或雨后：窗边、墙角、天花有没有水渍","亮灯率和入住率：晚上看小区亮灯，太低要问物业","水压和排水：同时开两个水龙头，下水是否顺畅","户型动线：厨房、卫生间、阳台是不是顺手","公摊和得房率：问清套内面积，不要只听建筑面积","车位和充电：车位是买是租，电车充电怎么解决","物业费和服务：问在住业主，报修响应快不快","周边配套：菜场、医院、学校、通勤各走一次","楼层和遮挡：前后楼会不会挡光，低楼层潮不潮","合同承诺：销售说的每一句，有没有写进合同"];
+const renoChecks=["水管打压合格，30 分钟以上不掉压","电路通断和漏电保护逐个测试通过","强弱电分开走线，大功率电器独立回路","防水闭水 24 小时以上，楼下确认无渗漏","管线走向已拍照留档","瓷砖空鼓、平整度、砖缝检查通过","墙面平整、无明显色差、流坠、砂眼","柜体垂直、柜门缝隙均匀、开合顺畅","门窗开合顺畅、密封和锁具正常","地漏排水坡度到位，泼水试验顺畅","所有插座和开关通电正常","下水畅通，无返味和堵塞","合同、报价单、付款凭证、保修卡已收齐","整改问题已书面记录并约定完成时间"];
+const pits=[
+["选房","只看样板间","样板间经过美颜和放大，家具常常是定制小尺寸。一定要看毛坯或同楼栋同户型的真实房源，不同楼层各看一次。"],
+["选房","只算首付","税费、维修基金、中介费、过户杂费可能还要多出十几万。先按总预算倒推首付，不要把钱算到一分不剩。"],
+["签约","口头承诺没进合同","学区、配套、装修品牌、交房标准，合同里没有就等于没有。销售的微信承诺也要截图留存，并争取写进补充协议。"],
+["签约","补充协议没细看","面积差、延期赔偿、车位归属、物业条款常藏在补充协议里，逐条核对再签字。"],
+["贷款","只问一家银行","不同银行利率、放款速度、提前还款规则可能差不少。公积金优先，不够再组合贷，提前问清卖家或开发商是否接受组合贷。"],
+["贷款","月供算得太满","月供占家庭月收入最好控制在合理区间，留出装修、生活和应急的钱。收入不稳定时，月供稳定的还款方式压力更小。"],
+["交房","收房先签字后验房","先验房再签字。空鼓、裂缝、渗水、门窗、插座、地漏逐项查，问题拍照并书面记录，约定整改时间再收房。"],
+["交房","精装标准模糊","精装房要核对品牌、型号、配置清单，样板间和交付标准不一致时，以合同附件为准。"],
+["二手房","产权人不全","多个产权人要全部同意出售，婚后财产要夫妻双方到场。只和一个人谈、另一个人不知情，后面容易纠纷。"],
+["二手房","没查册就交钱","去房管局查册，看抵押、查封、租赁情况。业主不配合查册，要格外小心。"],
+["二手房","户口没约定迁出时间","原业主户口不迁出，新业主可能无法迁入。签约前写清迁出时间和违约责任。"],
+["二手房","房款直接给卖家","走资金监管或托管，过户完成后再放款，不要直接把全款打给个人。"],
+];
+const steps=[
+["设计与量房","定风格之前先定生活方式：常住几口人、收纳放哪里、家电尺寸多大。图纸要和现场尺寸对上，插座点位按家具和家电位置落到墙面上。"],
+["拆改","承重墙不能动，拆改前确认哪些墙能拆。拆完检查结构安全，再进水电。"],
+["水电改造","开工前和设计师、工长一起现场定位。厨房、空调、冰箱、烤箱等大功率电器走独立回路，强弱电分开走管。完工后打压测试、通电测试，管线走向拍照留档，日后打孔才不会误伤。"],
+["防水与闭水试验","卫生间墙面防水一般不低于 1.8 米，淋浴区建议做到顶。做完防水蓄水 24 至 48 小时，到楼下确认无渗漏，再贴砖。"],
+["泥瓦","瓷砖看空鼓率、平整度、砖缝顺直度，地漏看排水坡度。问题在这个阶段改，成本最低。"],
+["木工与定制","柜体垂直、柜门缝隙均匀、开合顺畅，五金顺滑。尺寸和现场再核对一次，别等装完才发现门打不开。"],
+["油漆","墙面看平整度、阴阳角、色差、流坠和砂眼。光线好的白天验收，别只在灯下看。"],
+["安装与收尾","门窗反复开合，检查密封、锁具和排水孔；所有插座、开关、漏电保护逐个通电测试；卫生间和阳台做泼水试验，看排水顺不顺。"],
+["竣工验收与通风","按区域逐项核对清单和保修条款，收好水电走向图、保修卡和发票。入住前保持通风，空气达标再搬。"],
+];
+function buildChecks(list,elId,barId,progId){let el=document.getElementById(elId);list.forEach(t=>{let l=document.createElement('label');l.className='check';l.innerHTML='<input type=checkbox onchange="upd(\''+elId+'\',\''+barId+'\',\''+progId+'\','+list.length+')"> <span>'+t+'</span>';el.appendChild(l);});}
+function upd(elId,barId,progId,total){let n=document.querySelectorAll('#'+elId+' input:checked').length;document.getElementById(barId).style.width=(n/total*100)+'%';document.getElementById(progId).textContent='已完成 '+n+' / '+total;}
+function renderPits(f){let h='';pits.filter(p=>f==='all'||p[0]===f).forEach(p=>{h+='<div class="pit"><span class="tag">'+p[0]+'</span><h3>'+p[1]+'</h3><p>'+p[2]+'</p></div>'});document.getElementById('pitList').innerHTML=h;}
+function filterPits(f,el){document.querySelectorAll('#pits .pill').forEach(b=>b.classList.remove('active'));el.classList.add('active');renderPits(f);}
+function showType(t){document.getElementById('typeNew').style.display=t==='new'?'block':'none';document.getElementById('typeOld').style.display=t==='old'?'block':'none';document.getElementById('bNew').classList.toggle('active',t==='new');document.getElementById('bOld').classList.toggle('active',t==='old');}
+function showSave(t){document.getElementById('saveNo').style.display=t==='no'?'block':'none';document.getElementById('saveYes').style.display=t==='yes'?'block':'none';document.getElementById('bNo').classList.toggle('active',t==='no');document.getElementById('bYes').classList.toggle('active',t==='yes');}
+let _remain=0;
+function calcBuy(){let price=+document.getElementById('price').value||0,dp=+document.getElementById('downPct').value||0,years=+document.getElementById('years').value||30,rate=+document.getElementById('rate').value||0,income=+document.getElementById('income').value||0,cash=+document.getElementById('cash').value||0;
+let down=price*dp/100,loan=price-down,r=rate/100/12,n=years*12,month=loan*10000*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1);
+let first=loan*10000/n+loan*10000*r;let ratio=income?month/income*100:0;let fees=price*0.05;_remain=Math.max(0,cash-down-fees);
+document.getElementById('buyOut').innerHTML='首付约 <span class="big">'+down.toFixed(1)+' 万元</span>，贷款约 '+loan.toFixed(1)+' 万元<br>等额本息月供约 <span class="big">'+Math.round(month)+' 元</span>，等额本金首月约 '+Math.round(first)+' 元<br>月供占月收入约 <b>'+ratio.toFixed(1)+'%</b> '+(ratio>50?'<span class="warn">偏高，留足生活和装修钱再定</span>':ratio>0?'<span class="ok">在常见可承受区间内，仍以你实际开支为准</span>':'')+'<br><span class="note">税费杂费这里按房价 5% 粗估，仅作提醒，实际按城市、房源和政策算。</span>';
+document.getElementById('remainNote').innerHTML=_remain>0?'按你填的总资金算，首付加粗估杂费后大约还剩 <b>'+_remain.toFixed(1)+' 万元</b>，点下面按钮就能带到装修预算。':'你填的总资金扣掉首付和粗估杂费后已经不够，装修预算要另外准备，或把房价和首付比例再往下调一调。';}
+function carryToReno(){calcBuy();if(_remain>0){document.getElementById('renoTotal').value=_remain.toFixed(1);calcReno();}document.getElementById('renobudget').scrollIntoView({behavior:'smooth'});}
+function calcReno(){let total=+document.getElementById('renoTotal').value||0,area=+document.getElementById('renoArea').value||0,rp=+document.getElementById('reservePct').value||0;
+let ps=[+document.getElementById('rp1').value||0,+document.getElementById('rp2').value||0,+document.getElementById('rp3').value||0,+document.getElementById('rp4').value||0];
+let sum=ps.reduce((a,b)=>a+b,0);let reserve=total*rp/100;let usable=total-reserve;let names=['硬装','主材','家具家电','软装'];
+let rows=names.map((n,i)=>n+'约 <b>'+(usable*ps[i]/100).toFixed(2)+' 万元</b>（'+ps[i]+'%）').join('<br>');
+document.getElementById('renoOut').innerHTML='总预算 <span class="big">'+total.toFixed(1)+' 万元</span>，机动金约 '+reserve.toFixed(2)+' 万元，剩下可分配约 '+usable.toFixed(2)+' 万元<br>'+rows+'<br>折合每平方米约 <b>'+(area?Math.round(total*10000/area):0)+' 元</b><br>'+(sum!==100?'<span class="warn">四个比例加起来是 '+sum+'%，不是 100%，请调到 100% 再定。</span>':'<span class="ok">四个比例正好 100%，可以拿去和报价单逐项对。</span>');}
+function copyList(kind){let elId=kind==='buy'?'buyChecks':'renoChecks',msgId=kind==='buy'?'buyCopyMsg':'renoCopyMsg',title=kind==='buy'?'我的看房小结':'我的装修验收小结';
+let done=[];document.querySelectorAll('#'+elId+' label').forEach(l=>{if(l.querySelector('input').checked)done.push(l.textContent.trim())});
+let txt=title+'\n已查：\n'+(done.length?done.map(x=>'□ '+x).join('\n'):'（还没打勾）');navigator.clipboard&&navigator.clipboard.writeText(txt);document.getElementById(msgId).textContent='已复制，去微信或备忘录粘贴就能用。';}
+let sEl=document.getElementById('steps');
+steps.forEach((s,i)=>{let d=document.createElement('div');d.className='step';d.innerHTML='<h3>'+(i+1)+' · '+s[0]+' <span class="note">点我展开</span></h3><p>'+s[1]+'</p>';d.onclick=()=>d.classList.toggle('open');sEl.appendChild(d);});
+buildChecks(buyChecks,'buyChecks','buyBar','buyProg');buildChecks(renoChecks,'renoChecks','renoBar','renoProg');
+renderPits('all');calcBuy();calcReno();
+</script></body></html>
