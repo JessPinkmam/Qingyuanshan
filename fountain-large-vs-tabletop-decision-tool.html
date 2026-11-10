@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>喷泉大小件选品与利润对比工具 · 亚马逊美国站（2026-11-10）</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; background: #f4f1ea; color: #2b2620; line-height: 1.7; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 24px 18px 60px; }
+  .top { background: #fffdf8; border: 1px solid #e3dcc9; border-radius: 14px; padding: 24px 24px 18px; }
+  .top h1 { margin: 0 0 6px; font-size: 23px; line-height: 1.4; }
+  .top .sub { color: #8a7f6a; font-size: 13px; margin: 0 0 14px; }
+  .top p { font-size: 14px; margin: 8px 0; }
+  .grade { display: inline-block; font-size: 11px; padding: 1px 8px; border-radius: 12px; margin-left: 4px; vertical-align: middle; font-weight: normal; }
+  .grade.ok { background: #e2ecdc; color: #3d6b2f; }
+  .grade.est { background: #f3e3c2; color: #8a6410; }
+  .grade.todo { background: #ece7db; color: #6d6353; }
+  h2 { font-size: 19px; margin: 34px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #d8cfb8; }
+  h3 { font-size: 16px; margin: 20px 0 8px; }
+  .card { background: #fffdf8; border: 1px solid #e3dcc9; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px; }
+  .warn { background: #fdf3e3; border: 1px solid #e8cfa0; border-radius: 10px; padding: 14px 16px; font-size: 14px; }
+  .bad { background: #fbeeea; border: 1px solid #e5b8ae; border-radius: 10px; padding: 14px 16px; font-size: 14px; }
+  .good { background: #edf3e8; border: 1px solid #c4d6b8; border-radius: 10px; padding: 14px 16px; font-size: 14px; }
+  .verdict { background: #f0ead9; border-left: 5px solid #b98a2f; border-radius: 8px; padding: 16px 18px; font-size: 15px; }
+  .verdict b { color: #7a5a12; }
+  .note { font-size: 13px; color: #8a7f6a; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; background: #fffdf8; }
+  th, td { border: 1px solid #ddd5c2; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f0ead9; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tr.hl td { background: #f0ead9; font-weight: bold; }
+  td.neg { color: #9a3b2e; font-weight: bold; }
+  td.pos { color: #3d6b2f; font-weight: bold; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .ctl { margin-bottom: 12px; }
+  .ctl label { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 2px; }
+  .ctl label output { font-weight: bold; font-variant-numeric: tabular-nums; }
+  .ctl input[type=range] { width: 100%; accent-color: #b98a2f; }
+  .ctl input[type=number] { width: 110px; padding: 4px 8px; font-size: 14px; border: 1px solid #ddd5c2; border-radius: 6px; background: #fff; }
+  .rowline { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-size: 14px; margin-bottom: 10px; }
+  .rowline span.lbl { min-width: 96px; }
+  button { font-size: 13px; padding: 5px 12px; border-radius: 16px; border: 1px solid #c9bfa4; background: #fffdf8; cursor: pointer; }
+  button.on { background: #b98a2f; color: #fff; border-color: #b98a2f; }
+  button:hover { border-color: #b98a2f; }
+  .seg { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+  ul { margin: 6px 0; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  .checklist label { display: block; font-size: 14px; margin-bottom: 8px; cursor: pointer; }
+  .checklist input { margin-right: 8px; accent-color: #b98a2f; }
+  .foot { font-size: 13px; color: #8a7f6a; margin-top: 30px; border-top: 1px solid #ddd5c2; padding-top: 14px; }
+  a { color: #8a5a00; word-break: break-all; }
+  .bignum { font-size: 22px; font-weight: bold; font-variant-numeric: tabular-nums; }
+  .kpi { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 12px 0; }
+  .kpi .cell { background: #fffdf8; border: 1px solid #e3dcc9; border-radius: 10px; padding: 12px; text-align: center; }
+  .kpi .cell .t { font-size: 12px; color: #8a7f6a; }
+  .kpi .cell .v { font-size: 20px; font-weight: bold; font-variant-numeric: tabular-nums; }
+  @media (max-width: 640px) {
+    .grid2 { grid-template-columns: 1fr; }
+    .kpi { grid-template-columns: repeat(2, 1fr); }
+    .top h1 { font-size: 20px; }
+    table { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <h1>喷泉大小件选品与利润对比工具</h1>
+    <p class="sub">亚马逊美国站 · 大件户外喷泉（100×40×25cm 外箱）对比桌面喷泉（45×35×20.5cm 外箱）· 数据截至 2026-11-10</p>
+    <p>这页不预设大件或小件更优。所有数字都可以调：拖动下面任何一个假设，利润、回本和结论都会跟着变。每个数字后面都标了证据等级：<span class="grade ok">已验证</span> 是两个以上独立来源对得上的；<span class="grade est">估算</span> 是从已验证数字算出来的，但里面含一个假设输入；<span class="grade todo">待验证</span> 是还没查到的，不能当事实用。</p>
+    <p class="note">请用浏览器打开本页（Chrome / Safari / Edge 均可）。Muse 文件预览里滑块和按钮点不动，不是页面坏了。所有计算都在本机进行，不联网、不上传。</p>
+  </div>
+
+  <h2>结论（随你的假设实时变化）</h2>
+  <div class="verdict" id="verdict">正在计算……</div>
+  <p class="note" id="verdictNote"></p>
+
+  <h2>先定情景</h2>
+  <div class="card">
+    <div class="rowline"><span class="lbl">销售情景</span>
+      <span class="seg" id="scenSeg">
+        <button data-scen="bad">悲观</button>
+        <button data-scen="base" class="on">基准</button>
+        <button data-scen="good">乐观</button>
+      </span>
+      <span class="note" id="scenNote">基准：大件每月 25 件，桌面每月 50 件，广告占售价 15%。</span>
+    </div>
+    <div class="rowline"><span class="lbl">FBA 费率表</span>
+      <span class="seg" id="feeSeg">
+        <button data-fee="2026" class="on">2026 年费率</button>
+        <button data-fee="2027">2027 年费率（Q1 上架实际适用）</button>
+      </span>
+    </div>
+    <p class="note">亚马逊 2026-11-05 公布 2027 年费用调整，2027-01-15 生效：大号大件改为 $9.88 + $0.39/磅，大件 45 磅配送费从 $26.98 涨到 $27.99。Q1 2027 上架按 2027 年费率算才对，2026 年费率只作对照。<span class="grade ok">已验证</span> 桌面款 2027 年小号大件费率本次未查到，切换后仍按 $13.32 显示，请以 Seller Central Fee Preview 为准。<span class="grade todo">待验证</span></p>
+    <div class="rowline"><span class="lbl">首批备货</span>
+      <span>大件 <input type="number" id="batchL" value="100" min="10" max="1000" step="10"> 件</span>
+      <span>桌面 <input type="number" id="batchS" value="100" min="10" max="1000" step="10"> 件</span>
+      <span class="note">默认各 100 件，只为算资金占用对比，不是建议数量。</span>
+    </div>
+  </div>
+
+  <h2>调假设：大件户外喷泉</h2>
+  <div class="card">
+    <div class="grid2">
+      <div>
+        <div class="rowline"><span class="lbl">目标售价</span>$ <input type="number" id="priceL" value="199" min="100" max="400" step="1"> <span class="note">同类带 $150–$300，中位约 $199<span class="grade ok">已验证</span></span></div>
+        <div class="rowline"><span class="lbl">出厂价</span>$ <input type="number" id="costL" value="80" min="30" max="200" step="1">
+          <span class="seg"><button data-costl="60">$60</button><button data-costl="80" class="on">$80</button><button data-costl="120">$120</button></span>
+        </div>
+        <p class="note" style="margin:0 0 10px">$60 是最好情况，$80 是压力情况，$120 是 1688 挂牌带（¥870–¥1,128）。三个数都没有实报过价，都是假设。<span class="grade todo">待验证</span></p>
+        <div class="ctl"><label>头程海运加目的港（每件）<output id="freightLOut">$18.75</output></label>
+          <input type="range" id="freightL" min="11.5" max="26" step="0.25" value="18.75">
+          <div class="note">0.1 CBM × $95–$220/CBM 加 $2–$4 目的港杂费。<span class="grade ok">已验证</span></div></div>
+        <div class="ctl"><label>关税（按出厂价计）<output id="tariffLOut">37.5%</output></label>
+          <input type="range" id="tariffL" min="0" max="50" step="0.5" value="37.5">
+          <div class="note">HTS 8413.70.20（另有一说 8413.81，相差约 1%），Section 301 List 1 是 25%，加 2026-07-24 起的 12.5%，合计 37.5%。20% 那档不适用带泵喷泉。<span class="grade ok">已验证</span></div></div>
+      </div>
+      <div>
+        <div class="ctl"><label>广告占售价（ACOS）<output id="acosLOut">15%</output></label>
+          <input type="range" id="acosL" min="0" max="30" step="1" value="15">
+          <div class="note">新品起量期假设，无本类目实测 ACOS。<span class="grade todo">待验证</span> 关键词出价参考：solar fountain $0.82，dragon flame solar light $0.36（卖家精灵反查，非亚马逊实时价）。</div></div>
+        <div class="ctl"><label>退货率<output id="retLOut">10%</output></label>
+          <input type="range" id="retL" min="0" max="25" step="1" value="10">
+          <div class="note">无本类目可信平均退货率，10% 是假设。<span class="grade todo">待验证</span> 亚马逊对 Lawn and Garden 收退货处理费的起征线是 7.7%。</div></div>
+        <div class="ctl"><label>退回件无法再售比例<output id="unsLout">50%</output></label>
+          <input type="range" id="unsL" min="0" max="100" step="10" value="50">
+          <div class="note">退回件里坏掉、不能再卖的比例，假设。<span class="grade todo">待验证</span></div></div>
+        <div class="ctl"><label>库存存放月数<output id="storLout">2 个月</output></label>
+          <input type="range" id="storL" min="0" max="6" step="1" value="2">
+          <div class="note">超大件仓储 $0.56/立方英尺/月（1–9 月），大件每件 3.53 立方英尺，约 $1.98/月；10–12 月 $1.40，约 $4.94/月。<span class="grade ok">已验证</span> 181 天起加收滞销附加费。</div></div>
+        <div class="ctl"><label>月销量（基准情景）<output id="salesLOut">25 件/月</output></label>
+          <input type="range" id="salesL" min="0" max="100" step="1" value="25">
+          <div class="note">情景值，不是预测。依据：Cheng Pin 38 英寸款 50+ 件/月（91 条评价），Bumilgar 30 条评价；新品无评价，起量会远低于这些已在售款。预估依据见下面“销量预估”一节。<span class="grade est">估算</span></div></div>
+      </div>
+    </div>
+    <p class="note" style="margin:4px 0 0">固定项：佣金 15%（Lawn and Garden）<span class="grade ok">已验证</span>；FBA 配送费 2026 年 $26.98（45 磅，大号大件，含 3.5% 燃油附加）<span class="grade ok">已验证</span>；2027 年 $27.99。外箱 100×40×25cm，体积重 44 磅，实重按 20kg 计 45 磅计费；50 磅整仍是大号大件 $28.95，51 磅跳超大档 $38.63。<span class="grade ok">已验证</span></p>
+  </div>
+
+  <h2>调假设：桌面喷泉</h2>
+  <div class="card">
+    <div class="grid2">
+      <div>
+        <div class="rowline"><span class="lbl">目标售价</span>$ <input type="number" id="priceS" value="36" min="15" max="80" step="1"> <span class="note">现实带 $24–$36：HoMedics $24，GOSSI $33.99。<span class="grade ok">已验证</span></span></div>
+        <div class="rowline"><span class="lbl">出厂价</span>$ <input type="number" id="costS" value="12" min="3" max="30" step="1">
+          <span class="seg"><button data-costs="6">$6</button><button data-costs="12" class="on">$12</button></span>
+        </div>
+        <p class="note" style="margin:0 0 10px">$6 只适合简单款，蝴蝶/叶层这种树脂款现实是 $12 左右（1688 ¥75–¥105）。<span class="grade est">估算</span></p>
+        <div class="ctl"><label>头程海运加目的港（每件）<output id="freightSOut">$8.00</output></label>
+          <input type="range" id="freightS" min="5" max="11" step="0.25" value="8">
+          <div class="note">0.0323 CBM × $95–$220/CBM 加 $2–$4 目的港杂费。<span class="grade ok">已验证</span></div></div>
+        <div class="ctl"><label>关税（按出厂价计）<output id="tariffSOut">37.5%</output></label>
+          <input type="range" id="tariffS" min="0" max="50" step="0.5" value="37.5">
+          <div class="note">与大件同口径，37.5%。<span class="grade ok">已验证</span></div></div>
+      </div>
+      <div>
+        <div class="ctl"><label>广告占售价（ACOS）<output id="acosSOut">15%</output></label>
+          <input type="range" id="acosS" min="0" max="30" step="1" value="15">
+          <div class="note">新品假设。<span class="grade todo">待验证</span></div></div>
+        <div class="ctl"><label>退货率<output id="retSOut">10%</output></label>
+          <input type="range" id="retS" min="0" max="25" step="1" value="10">
+          <div class="note">假设。<span class="grade todo">待验证</span></div></div>
+        <div class="ctl"><label>退回件无法再售比例<output id="unsSout">50%</output></label>
+          <input type="range" id="unsS" min="0" max="100" step="10" value="50">
+          <div class="note">假设。<span class="grade todo">待验证</span></div></div>
+        <div class="ctl"><label>库存存放月数<output id="storSout">2 个月</output></label>
+          <input type="range" id="storS" min="0" max="6" step="1" value="2">
+          <div class="note">桌面款也是超大件仓储档，每件 1.14 立方英尺，约 $0.64/月（1–9 月）。<span class="grade ok">已验证</span></div></div>
+        <div class="ctl"><label>月销量（基准情景）<output id="salesSOut">50 件/月</output></label>
+          <input type="range" id="salesS" min="0" max="200" step="1" value="50">
+          <div class="note">情景值，不是预测。依据：HoMedics 头部款 500+ 件/周（44,492 条评价），新品无评价，起量远低于头部。预估依据见下面“销量预估”一节。<span class="grade est">估算</span></div></div>
+      </div>
+    </div>
+    <p class="note" style="margin:4px 0 0">固定项：佣金 15%<span class="grade ok">已验证</span>；FBA 配送费 $13.32（15 磅，小号大件，含 3.5% 燃油附加）<span class="grade ok">已验证</span>。外箱 45×35×20.5cm，短边 8.07 英寸超过 8 英寸标准上限，只能走小号大件；压到 20.32cm 以内可回标准档，省约 $2.30/件。</p>
+  </div>
+
+  <h2>每件的账（广告和退货之后）</h2>
+  <div class="card">
+    <table>
+      <thead><tr><th>每件成本项</th><th class="num">大件户外喷泉</th><th class="num">桌面喷泉</th><th>口径</th></tr></thead>
+      <tbody id="pnlBody"></tbody>
+    </table>
+    <p class="note">退货成本算法：退货率 ×（损失的 FBA 配送费 + $5 退款处理 + 无法再售比例 ×（出厂价 + 关税 + 头程））。7.7% 起征线以上的退货处理费另计，本表未含，量很小。广告按 ACOS × 售价计。仓储按存放月数 × 月费计。</p>
+  </div>
+
+  <h2>盈亏平衡点</h2>
+  <div class="card">
+    <div class="kpi">
+      <div class="cell"><div class="t">大件最高可承受出厂价</div><div class="v" id="beCostL">—</div></div>
+      <div class="cell"><div class="t">大件最低可承受售价</div><div class="v" id="bePriceL">—</div></div>
+      <div class="cell"><div class="t">桌面最高可承受出厂价</div><div class="v" id="beCostS">—</div></div>
+      <div class="cell"><div class="t">桌面最低可承受售价</div><div class="v" id="bePriceS">—</div></div>
+    </div>
+    <p class="note">按当前其他假设算：出厂价高于“最高可承受出厂价”就亏；售价低于“最低可承受售价”就亏。拿工厂实报价回来，先对这两个数。</p>
+  </div>
+
+  <h2>销量情景与资金回收（基准情景以外也可直接拖月销量）</h2>
+  <div class="card">
+    <table>
+      <thead><tr><th>情景</th><th class="num">大件月销量</th><th class="num">大件月净利润</th><th class="num">桌面月销量</th><th class="num">桌面月净利润</th></tr></thead>
+      <tbody id="scenBody"></tbody>
+    </table>
+    <p class="note">销量是情景值，不是预测：悲观、基准、乐观三档的月销量分别是大件 10 / 25 / 50 件、桌面 20 / 50 / 120 件，ACOS 分别是 20% / 15% / 10%。新品无评价，起量大概率落在悲观到基准之间。</p>
+  </div>
+
+  <h2>销量预估：新品上市前 6 个月能卖多少</h2>
+  <div class="card">
+    <p style="margin-top:0">新品 0 评价起步，头几个月不可能接近在售款的量。下面的数是按类比款反推的<span class="grade est">估算</span>，不是预测——每一档都写了依据，觉得不准可以直接改月销量滑块重算。旺季爬坡期（1–3 月）和稳定期（4–6 月）分开算，因为 Q1 上架正好爬坡进春夏旺季。</p>
+    <h3 style="margin-top:0">类比款在卖多少（已验证片段）</h3>
+    <div style="overflow-x:auto">
+    <table>
+      <thead><tr><th>产品</th><th class="num">上月购买</th><th>评价</th><th>来源</th></tr></thead>
+      <tbody>
+        <tr><td>Alpine CPS182 43 英寸工业多层喷泉（户外独立喷泉畅销第一）</td><td class="num">200+ 件</td><td>3.9★</td><td>亚马逊品类页快照（约 2026-05 抓取，正值旺季）</td></tr>
+        <tr><td>Alpine WIN582 22 英寸 3 层岩石喷泉</td><td class="num">1K+ 件</td><td>4.5★</td><td>同上</td></tr>
+        <tr><td>Alpine WIN316 4 层岩石喷泉</td><td class="num">800+ 件</td><td>4.6★</td><td>同上</td></tr>
+        <tr><td>Alpine MAZ254 38 英寸复古多层喷泉</td><td class="num">400+ 件</td><td>—</td><td>同上</td></tr>
+        <tr><td>Cheng Pin 38 英寸错层石墙喷泉 B0CX4X9L7B（非大牌，最接近新品处境）</td><td class="num">50+ 件</td><td>4.4★ / 91 条</td><td>镜像站 2026-11-09 抓取</td></tr>
+        <tr><td>Bumilgar 35.4 英寸螺旋喷泉 B0CH35SYKQ</td><td class="num">已售罄</td><td>4.1★ / 30 条</td><td>镜像站 2026-10-31 抓取，$199.97</td></tr>
+        <tr><td>HoMedics Silver Springs B000QTUJXS（桌面款头部）</td><td class="num">500+ 件/周（约 2,000 件/月）</td><td>4.1★ / 44,492 条</td><td>镜像站 2026-11-09 抓取，FBA，$24</td></tr>
+        <tr><td>Alpine WCT202 11 英寸桌面喷泉</td><td class="num">500+ 件</td><td>—</td><td>亚马逊品类页快照（约 2026-05 抓取）</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="note">上面是已经有评价的老款的量，不是新品能直接拿到的量。Alpine 是大牌，几百到几千条评价；Cheng Pin 这种非大牌、91 条评价的款每月 50+ 件，才是新品最现实的对标天花板。</p>
+    <h3>新品月销量预估（件/月）</h3>
+    <div style="overflow-x:auto">
+    <table>
+      <thead><tr><th>情景</th><th class="num">大件爬坡 1–3 月</th><th class="num">大件稳定 4–6 月</th><th class="num">大件稳定期月利润</th><th class="num">桌面爬坡 1–3 月</th><th class="num">桌面稳定 4–6 月</th><th class="num">桌面稳定期月利润</th></tr></thead>
+      <tbody id="fcBody"></tbody>
+    </table>
+    </div>
+    <p class="note" id="fcTotal"></p>
+    <p class="note">月利润 = 稳定期月销量 × 每件净利润（按该情景的广告占比和当前其他假设算）。依据：大件稳定期基准 25 件/月 = Cheng Pin 50+ 件/月的一半（新品无评价、非大牌，取一半）；乐观 50 件/月 = 追平 Cheng Pin；悲观 8 件/月 = 约六分之一。大件爬坡期约是稳定期的三分之一（0–10 条评价、广告还在学习期、Q1 还没进旺季）。桌面稳定期基准 50 件/月 = 头部 HoMedics 约 2,000 件/月的 2.5%；乐观 120 件/月 = 约 6%；悲观 20 件/月 = 1%。桌面爬坡期约是稳定期的四成。<span class="grade est">估算</span></p>
+    <div class="rowline">
+      <button id="fcRampBtn">把爬坡期月销量填入上面</button>
+      <button id="fcSteadyBtn">把稳定期月销量填入上面</button>
+      <span class="note">按当前情景（<span id="fcScenNote">基准</span>）填入，会同步改月销量滑块、资金回收和结论。</span>
+    </div>
+    <h3>季节</h3>
+    <p>户外喷泉搜索量在 2–4 月见顶、春夏成交最多（Google Trends 与行业报告一致），Q1 上架正好爬坡进旺季；但 Q1 本身（1–3 月）还不是成交高峰，爬坡期别按旺季的量算。桌面款带礼品属性，11–12 月和春季相对好，全年比户外平稳。<span class="grade est">估算</span></p>
+    <p><b>关键一句：销量救不了单件亏损。</b>按默认假设，大件每件亏 $30.03，稳定期卖 25 件/月就是每月亏约 $751；桌面每件亏 $16.96，卖 50 件/月每月亏约 $848——量越大亏得越多。先把单件利润算正，再谈销量。翻盘条件不变：大件出厂价压到约 $59 以内（$199 售价），或售价提到 $229（出厂 $60 时每件赚 $19.85，稳定期 25 件/月约赚 $496/月）。</p>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">首批备货资金与回本（基准情景）</h3>
+    <table>
+      <thead><tr><th></th><th class="num">大件户外喷泉</th><th class="num">桌面喷泉</th><th>说明</th></tr></thead>
+      <tbody id="cashBody"></tbody>
+    </table>
+    <p class="note">前期资金 = 首批件数 ×（出厂价 + 关税 + 头程），不含 FBA 配送费（按单结算）和广告费（按周结算）。回本月数 = 前期资金 ÷ 月净利润；月净利润为负时写“回不了本”。亚马逊账期约 14 天滚动结算，回款不含在内。</p>
+  </div>
+
+  <h2>风险清单</h2>
+  <div class="card">
+    <table>
+      <thead><tr><th>风险</th><th>影响</th><th>什么会改变决策</th></tr></thead>
+      <tbody>
+        <tr><td>出厂价高于假设</td><td>大件最致命。$120 的报价下，$199 售价每件亏约 $49，$229 也亏约 $24（广告前）。<span class="grade est">估算</span></td><td>拿到工厂实报价再定。报价超过盈亏平衡出厂价，大件直接不做。</td></tr>
+        <tr><td>50 磅重量红线</td><td>51 磅起跳超大档，配送费 $28.95 跳到 $38.63（+ $9.68）。<span class="grade ok">已验证</span></td><td>称准打包后实重。实测同类 39 英寸树脂款产品约 24–25 磅，打包后约 30 磅的话红线还远；用户说的 20kg 未核实。<span class="grade todo">待验证</span></td></tr>
+        <tr><td>退货</td><td>大件一件退货沉没约 $93（出厂价 + 关税 + 头程，$60 成本口径）；退货率 10%、一半无法再售时，每卖一件摊约 $8–$10。<span class="grade est">估算</span></td><td>退货率超 15% 或无法再售比例超 70%，大件的利润基本被吃光。包装防摔和说明书（先加水再通电）是能控制的部分。</td></tr>
+        <tr><td>2027 年费用调整</td><td>2027-01-15 起大号大件 $9.88 + $0.39/磅，大件 45 磅配送费 $27.99，比 2026 年贵约 $1。<span class="grade ok">已验证</span></td><td>上架前在 Seller Central Fee Preview 里按 2027 年费率重算一次。</td></tr>
+        <tr><td>关税政策变化</td><td>2026-11-10 美中关税休战到期；178 项 Section 301 豁免延期到 2027-01-09，但不含泵喷泉。当前 37.5% 仍适用，未见直接加税文件。<span class="grade ok">已验证</span></td><td>下单前让货代或报关行按 HTS 8413.70.20（或 8413.81）确认一遍税率。</td></tr>
+        <tr><td>库存滞销</td><td>仓储本身便宜（大件约 $2/月），但 181 天起加收滞销附加费，最高 $7.90/立方英尺/月；Q4 仓储费翻 2.5 倍。<span class="grade ok">已验证</span></td><td>户外旺季是 3–6 月，Q1 上架赶得上；别在 Q4 压大货。</td></tr>
+        <tr><td>资金占用</td><td>同样 100 件，大件前期资金约是桌面的 8–10 倍（按 $80 对 $12 出厂价算）。<span class="grade est">估算</span></td><td>手头紧的时候，大件首单本身就是风险。桌面款资金压力小，但它不赚钱，省下的钱不是赚到的钱。</td></tr>
+        <tr><td>新品无评价</td><td>同类在售款都有几十到几万条评价，新品 0 评价起量慢，广告 ACOS 会高于老品。<span class="grade ok">已验证</span></td><td>广告预算按 ACOS 20% 以上的悲观档先算，跑起来再降。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>市场对照：真实在售款</h2>
+  <div class="card">
+    <h3 style="margin-top:0">大件 / 户外 / 落地款（约 78–100cm）</h3>
+    <table>
+      <thead><tr><th>产品</th><th class="num">价格</th><th>评价</th><th>来源</th></tr></thead>
+      <tbody>
+        <tr><td>Bumilgar 35.4 英寸螺旋喷泉 B0CH35SYKQ</td><td class="num">$199.97</td><td>4.1★ / 30 条</td><td>镜像站 2026-10-31 抓取，已售罄</td></tr>
+        <tr><td>Cheng Pin 38 英寸错层石墙喷泉 B0CX4X9L7B</td><td class="num">$179.88</td><td>4.4★ / 91 条，50+ 件/月</td><td>镜像站 2026-11-09 抓取</td></tr>
+        <tr><td>Alpine 70 英寸金属叶层喷泉 B01HUYDDUW</td><td class="num">$184.99</td><td>3.9★ / 288 条</td><td>Northern Tool 镜像 2026-11-08，在售</td></tr>
+        <tr><td>Teamson 38.58 英寸弧形仿石板喷泉 B08XXXPJND</td><td class="num">$151.99</td><td>595 条</td><td>镜像站 2026-11-07 抓取</td></tr>
+        <tr><td>SERBILHOME 31.9 英寸 S 形喷泉 B0D22JLSDC</td><td class="num">未见现价</td><td>66 条</td><td>镜像站 2026-06-04 抓取，已缺货</td></tr>
+        <tr><td>Sunlinua 31.9 英寸 S 形喷泉 B0FFGFG5SS</td><td class="num">未见现价</td><td>131 条</td><td>镜像站 2026-07-16 抓取</td></tr>
+        <tr><td>Alpine 72 英寸镜面瀑布喷泉 B002NHJD4M</td><td class="num">$451.19</td><td>评分两家镜像不一致</td><td>pricehistory.app 2026-11-10</td></tr>
+        <tr><td>约 39 英寸同类（复核补充，未独立复核）</td><td class="num">$153–$301</td><td>—</td><td>Alpine CPS182 43 英寸 $199.99（户外独立喷泉畅销第一）；Teamson 39 英寸 $171.27；John Timberland 39.5 英寸 $279.99；Pure Garden $153.52；Westcharm $199.99</td></tr>
+      </tbody>
+    </table>
+    <p class="note">价格带约 $150–$300，中位约 $199。没有一款是 5 款供应商产品的同款，全是同概念类比款。亚马逊当天对自动访问基本全拦（403），以上价格是镜像抓取或搜索片段，不是实时亚马逊价，下单前以产品页为准。</p>
+    <h3>桌面款（$24–$36 现实带）</h3>
+    <table>
+      <thead><tr><th>产品</th><th class="num">价格</th><th>评价</th><th>来源</th></tr></thead>
+      <tbody>
+        <tr><td>HoMedics Silver Springs B000QTUJXS</td><td class="num">$24.00</td><td>4.1★ / 44,492 条，500+ 件/周</td><td>镜像站 2026-11-09 抓取，FBA</td></tr>
+        <tr><td>GOSSI 2 层桌面喷泉 B09LLG1VQL</td><td class="num">$33.99</td><td>4.1★ / 197 条</td><td>镜像站 2026-11-05 抓取，FBA</td></tr>
+        <tr><td>Sassy Primitives 珊瑚蝴蝶 7.5 英寸（不在亚马逊卖）</td><td class="num">$36.00</td><td>—</td><td>2026-11-08 见过，2026-11-10 未能复核，不当实时价</td></tr>
+        <tr><td>Sullivans 蝴蝶喷泉 MET2480（Home Depot）</td><td class="num">$96.03</td><td>—</td><td>Home Depot 实拍 2026-11-10，已缺货；停产款，不是市场锚</td></tr>
+        <tr><td>Bits and Pieces 玻璃蝴蝶喷泉 B01LBNRFM0</td><td class="num">美国价未验证</td><td>4.1★ / 341 条</td><td>埃及镜像站转录，2026-11-10</td></tr>
+      </tbody>
+    </table>
+    <p class="note">桌面款头部是 HoMedics $24，44,492 条评价，新品在这个价位带里抢量要靠价格或差异化，利润空间已经被头部压得很薄。</p>
+  </div>
+
+  <h2>关键数字的证据等级</h2>
+  <div class="card">
+    <table>
+      <thead><tr><th>数字</th><th class="num">取值</th><th>等级</th><th>来源与日期</th></tr></thead>
+      <tbody>
+        <tr><td>大号大件 FBA 配送费（2026 非旺季）</td><td class="num">$9.35 + $0.38/磅</td><td><span class="grade ok">已验证</span></td><td>Seller Central 2026 费率表；$9.73 + $0.42 是 2025 年旧表</td></tr>
+        <tr><td>小号大件 FBA 配送费（2026 非旺季）</td><td class="num">$7.55 + $0.38/磅</td><td><span class="grade ok">已验证</span></td><td>Seller Central 2026 费率表</td></tr>
+        <tr><td>燃油附加</td><td class="num">3.5%</td><td><span class="grade ok">已验证</span></td><td>2026-04-17 起，未宣布结束日</td></tr>
+        <tr><td>大件 45 磅配送费 / 桌面 15 磅配送费</td><td class="num">$26.98 / $13.32</td><td><span class="grade ok">已验证</span></td><td>按费率表算出，两次独立复核一致</td></tr>
+        <tr><td>50 磅红线</td><td class="num">50 磅 $28.95；51 磅 $38.63</td><td><span class="grade ok">已验证</span></td><td>Seller Central 2026 费率表</td></tr>
+        <tr><td>2027 年大号大件费率</td><td class="num">$9.88 + $0.39/磅</td><td><span class="grade ok">已验证</span></td><td>亚马逊 2026-11-05 公布，2027-01-15 生效</td></tr>
+        <tr><td>佣金</td><td class="num">15%</td><td><span class="grade ok">已验证</span></td><td>Lawn and Garden / Home and Kitchen</td></tr>
+        <tr><td>关税</td><td class="num">37.5%</td><td><span class="grade ok">已验证</span></td><td>HTS 8413.70.20（或 8413.81，相差约 1%），Section 301 List 1 是 25% 加 12.5%</td></tr>
+        <tr><td>拼箱海运（中国到美西，2026-11）</td><td class="num">$95–$220/CBM</td><td><span class="grade ok">已验证</span></td><td>DTFU、Dantful、Sino-shipping；40HQ $7,000–$9,000（Drewry WCI $7,539，2026-11-05）</td></tr>
+        <tr><td>超大件仓储</td><td class="num">$0.56 / $1.40 每立方英尺/月</td><td><span class="grade ok">已验证</span></td><td>Seller Central；1–9 月 / 10–12 月；181 天起滞销附加费</td></tr>
+        <tr><td>大件出厂价</td><td class="num">$60 / $80 / $120 三档</td><td><span class="grade todo">待验证</span></td><td>无实报价。出口挂牌 $69–$182，1688 ¥870–¥1,128（约 $122–$158）</td></tr>
+        <tr><td>桌面出厂价</td><td class="num">$6 / $12 两档</td><td><span class="grade est">估算</span></td><td>1688 ¥23.8–¥105；树脂款现实约 $12</td></tr>
+        <tr><td>退货率、无法再售比例</td><td class="num">默认 10% / 50%</td><td><span class="grade todo">待验证</span></td><td>无本类目可信平均退货率；Lawn and Garden 退货处理费起征线 7.7%</td></tr>
+        <tr><td>新品月销量预估（爬坡 / 稳定）</td><td class="num">大件 3–15 / 8–50；桌面 8–40 / 20–120</td><td><span class="grade est">估算</span></td><td>见“销量预估”一节：按类比款反推，悲观/基准/乐观三档；新品 0 评价起步</td></tr>
+        <tr><td>类比款“上月购买”片段</td><td class="num">大件 200–1,000+；桌面 500+/周</td><td><span class="grade ok">已验证</span></td><td>亚马逊品类页快照（约 2026-05，旺季）与镜像站抓取（2026-10/11）；是在售老款的量，新品远低于此</td></tr>
+        <tr><td>广告 ACOS</td><td class="num">默认 15%</td><td><span class="grade todo">待验证</span></td><td>新品假设；关键词出价 solar fountain $0.82（卖家精灵反查）</td></tr>
+        <tr><td>户外旺季 3–6 月</td><td class="num">—</td><td><span class="grade est">估算</span></td><td>多方间接证据，无亚马逊美国站月度曲线</td></tr>
+        <tr><td>打包后实重 20kg</td><td class="num">20kg</td><td><span class="grade todo">待验证</span></td><td>用户口述；同类 39 英寸树脂款产品约 24–25 磅，打包后约 30 磅更可能；费用影响极小（体积重说了算）</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>本次修正说明（相对 2026-11-10 上午的评估）</h2>
+  <div class="card">
+    <ul>
+      <li><b>头程算错了，改过来了。</b>100cm 外箱是正好 0.1 CBM，头程是 $11.50–$26/件；之前用的 $6–$14 是 78cm 落地款的运费。每件少算了 $3.50–$8。</li>
+      <li><b>关税 20% 那档删了。</b>带泵喷泉走 Section 301 List 1（25%），不是 List 4A（7.5%），只剩 37.5% 这一档。</li>
+      <li><b>仓储补进了每件的账。</b>之前漏了，大件约 $1.98/月，桌面约 $0.64/月。</li>
+      <li><b>50 磅红线改准了。</b>50 磅整还是大号大件 $28.95，51 磅才跳超大档 $38.63；之前说的 $39.40 是 52 磅的数。</li>
+      <li><b>出厂价 $60 不再当基准。</b>没有任何实报价支撑，且低于所有能查到的挂牌价。本页默认大件出厂价 $80（压力情况），$60 只作最好情况，$120 是 1688 挂牌带。</li>
+      <li><b>退货和广告不再给固定数。</b>退货率和 ACOS 都做成可调的，默认值标明是假设。</li>
+      <li><b>新增 2027 年费率。</b>Q1 2027 上架适用 2027 年费率，大件配送费 $27.99，比 2026 年贵约 $1。</li>
+    </ul>
+    <p class="note">修正后的广告前利润：大件 $199 / 出厂 $60 是 $31.69–$46.19，$199 / $80 是 $4.19–$18.69；$229 / $60 是 $57.19–$71.69，$229 / $80 是 $29.69–$44.19。桌面 $36 / $6 是 −$2.72–+$3.32，$36 / $12 是 −$10.97–−$4.93（以上按 1 个月仓储算；本页默认 2 个月仓储，数字略低一点）。</p>
+  </div>
+
+  <h2>备货前必须核实的事</h2>
+  <div class="card checklist" id="checklist">
+    <label><input type="checkbox" data-k="c1"> 工厂实报价：大件和桌面各一款，含泵、LED、ETL 认证、出口包装</label>
+    <label><input type="checkbox" data-k="c2"> 打包后实重实测：大件外箱到底多少公斤，卡不卡 50 磅线</label>
+    <label><input type="checkbox" data-k="c3"> 货代或报关行确认 HTS 编码（8413.70.20 或 8413.81）和 37.5% 关税</label>
+    <label><input type="checkbox" data-k="c4"> 货代实报头程价（拼箱或整柜），按 0.1 CBM / 0.0323 CBM 算</label>
+    <label><input type="checkbox" data-k="c5"> Seller Central Fee Preview 按 2027 年费率重算配送费</label>
+    <label><input type="checkbox" data-k="c6"> 先打样确认：树脂厚度、泵噪音、漏水、包装防摔（大件退货一件亏约 $93）</label>
+    <p class="note">打勾状态只存在本机浏览器里，换设备不保存。</p>
+  </div>
+
+  <p class="foot">数据截至 2026-11-10。研究底稿：research_notes/fountain-profit-recheck-20261110.md 与 fountain-decision-tool-research-20261110.md；五款核查报告（版权与在售链接）见 <a href="喷泉两款-版权与亚马逊核查报告-20261108.html">喷泉五款 · 版权与亚马逊在售核查报告</a>。价格是镜像抓取或搜索片段，不是实时亚马逊价；费用以 Seller Central 为准，下单前重算。</p>
+
+</div>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var fmt = function (n, d) { d = (d === undefined) ? 2 : d; var s = (n < 0 ? "-$" : "$") + Math.abs(n).toFixed(d); return s; };
+  var fmt0 = function (n) { return (n < 0 ? "-$" : "$") + Math.abs(Math.round(n)).toLocaleString("en-US"); };
+  var cls = function (n) { return n < 0 ? "neg" : (n > 0 ? "pos" : ""); };
+
+  var FBA = {
+    "2026": { L: 26.98, S: 13.32 },
+    "2027": { L: 27.99, S: 13.32 } // 2027 small bulky not captured; keep 2026, flagged in text
+  };
+  var STORE_MO = { L: 1.98, S: 0.64 };
+  var SCEN = {
+    bad:  { sL: 10, sS: 20, acos: 20, label: "悲观：大件每月 10 件，桌面每月 20 件，广告占售价 20%。" },
+    base: { sL: 25, sS: 50, acos: 15, label: "基准：大件每月 25 件，桌面每月 50 件，广告占售价 15%。" },
+    good: { sL: 50, sS: 120, acos: 10, label: "乐观：大件每月 50 件，桌面每月 120 件，广告占售价 10%。" }
+  };
+  // New-listing monthly-units forecast: ramp months 1-3, steady months 4-6.
+  // Basis in the "销量预估" section: large steady base 25 = half of Cheng Pin's 50+/mo;
+  // tabletop steady base 50 = ~2.5% of HoMedics' ~2,000/mo. Estimates, not predictions.
+  var FC = {
+    bad:  { sLr: 3,  sLs: 8,  sSr: 8,  sSs: 20 },
+    base: { sLr: 8,  sLs: 25, sSr: 20, sSs: 50 },
+    good: { sLr: 15, sLs: 50, sSr: 40, sSs: 120 }
+  };
+  var scen = "base", feeYear = "2026";
+
+  function val(id) { var v = parseFloat($(id).value); return isNaN(v) ? 0 : v; }
+
+  function pnl(p) {
+    // p: price, cost, freight, tariff%, fba, storeMo, months, ret%, uns%, acos%
+    var referral = p.price * 0.15;
+    var tariffAmt = p.cost * p.tariff / 100;
+    var storage = STORE_MO[p.k] * p.months;
+    var ret = p.ret / 100 * (p.fba + 5 + (p.uns / 100) * (p.cost + tariffAmt + p.freight));
+    var ads = p.acos / 100 * p.price;
+    var margin = p.price - referral - p.fba - p.cost - tariffAmt - p.freight - storage - ret - ads;
+    return { referral: referral, tariffAmt: tariffAmt, storage: storage, ret: ret, ads: ads, margin: margin };
+  }
+
+  function breakeven(p) {
+    // margin=0 solved for cost and for price (returns depend on cost)
+    var r = p.ret / 100, u = p.uns / 100, t = p.tariff / 100, a = p.acos / 100;
+    var denomC = (1 + t) * (1 + r * u);
+    var maxCost = (p.price * (0.85 - a) - p.fba * (1 + r) - p.freight * (1 + r * u) - STORE_MO[p.k] * p.months - 5 * r) / denomC;
+    var rhs = p.fba * (1 + r) + p.freight * (1 + r * u) + STORE_MO[p.k] * p.months + 5 * r + p.cost * (1 + t) * (1 + r * u);
+    var minPrice = (0.85 - a) > 0.01 ? rhs / (0.85 - a) : Infinity;
+    return { maxCost: maxCost, minPrice: minPrice };
+  }
+
+  function readInputs(over) {
+    var o = over || {};
+    var L = {
+      k: "L", price: val("priceL"), cost: val("costL"), freight: val("freightL"),
+      tariff: val("tariffL"), fba: FBA[feeYear].L, months: val("storL"),
+      ret: val("retL"), uns: val("unsL"), acos: (o.acos !== undefined ? o.acos : val("acosL")),
+      units: (o.sL !== undefined ? o.sL : val("salesL")), batch: val("batchL")
+    };
+    var S = {
+      k: "S", price: val("priceS"), cost: val("costS"), freight: val("freightS"),
+      tariff: val("tariffS"), fba: FBA[feeYear].S, months: val("storS"),
+      ret: val("retS"), uns: val("unsS"), acos: (o.acos !== undefined ? o.acos : val("acosS")),
+      units: (o.sS !== undefined ? o.sS : val("salesS")), batch: val("batchS")
+    };
+    return { L: L, S: S };
+  }
+
+  function money(n) { return fmt(n); }
+
+  function render() {
+    // outputs
+    $("freightLOut").textContent = fmt(val("freightL"));
+    $("tariffLOut").textContent = val("tariffL") + "%";
+    $("acosLOut").textContent = val("acosL") + "%";
+    $("retLOut").textContent = val("retL") + "%";
+    $("unsLout").textContent = val("unsL") + "%";
+    $("storLout").textContent = val("storL") + " 个月";
+    $("salesLOut").textContent = val("salesL") + " 件/月";
+    $("freightSOut").textContent = fmt(val("freightS"));
+    $("tariffSOut").textContent = val("tariffS") + "%";
+    $("acosSOut").textContent = val("acosS") + "%";
+    $("retSOut").textContent = val("retS") + "%";
+    $("unsSout").textContent = val("unsS") + "%";
+    $("storSout").textContent = val("storS") + " 个月";
+    $("salesSOut").textContent = val("salesS") + " 件/月";
+
+    var inp = readInputs();
+    var pL = pnl(inp.L), pS = pnl(inp.S);
+
+    var rows = [
+      ["售价", inp.L.price, inp.S.price, ""],
+      ["佣金 15%", -pL.referral, -pS.referral, "已验证"],
+      ["FBA 配送费（" + feeYear + "）", -inp.L.fba, -inp.S.fba, "已验证"],
+      ["出厂价", -inp.L.cost, -inp.S.cost, "待验证 / 估算"],
+      ["关税 " + inp.L.tariff + "% / " + inp.S.tariff + "%（按出厂价）", -pL.tariffAmt, -pS.tariffAmt, "已验证"],
+      ["头程加目的港", -inp.L.freight, -inp.S.freight, "已验证（区间）"],
+      ["仓储（" + inp.L.months + " 个月 / " + inp.S.months + " 个月）", -pL.storage, -pS.storage, "已验证"],
+      ["退货摊销（" + inp.L.ret + "% / " + inp.S.ret + "%）", -pL.ret, -pS.ret, "待验证"],
+      ["广告（ACOS " + inp.L.acos + "% / " + inp.S.acos + "%）", -pL.ads, -pS.ads, "待验证"]
+    ];
+    var html = "";
+    rows.forEach(function (r) {
+      html += "<tr><td>" + r[0] + "</td><td class=\"num\">" + money(r[1]) + "</td><td class=\"num\">" + money(r[2]) + "</td><td class=\"note\">" + r[3] + "</td></tr>";
+    });
+    html += "<tr class=\"hl\"><td>每件净利润</td><td class=\"num " + cls(pL.margin) + "\">" + money(pL.margin) + "</td><td class=\"num " + cls(pS.margin) + "\">" + money(pS.margin) + "</td><td></td></tr>";
+    html += "<tr><td>利润率</td><td class=\"num " + cls(pL.margin) + "\">" + (pL.margin / inp.L.price * 100).toFixed(1) + "%</td><td class=\"num " + cls(pS.margin) + "\">" + (pS.margin / inp.S.price * 100).toFixed(1) + "%</td><td></td></tr>";
+    $("pnlBody").innerHTML = html;
+
+    var beL = breakeven(inp.L), beS = breakeven(inp.S);
+    $("beCostL").textContent = isFinite(beL.maxCost) ? fmt(beL.maxCost) : "—";
+    $("bePriceL").textContent = isFinite(beL.minPrice) ? fmt(beL.minPrice) : "—";
+    $("beCostS").textContent = isFinite(beS.maxCost) ? fmt(beS.maxCost) : "—";
+    $("bePriceS").textContent = isFinite(beS.minPrice) ? fmt(beS.minPrice) : "—";
+
+    // scenarios
+    var shtml = "";
+    Object.keys(SCEN).forEach(function (k) {
+      var sc = SCEN[k];
+      var i2 = readInputs({ sL: sc.sL, sS: sc.sS, acos: sc.acos });
+      var mL = pnl(i2.L).margin * sc.sL, mS = pnl(i2.S).margin * sc.sS;
+      var name = k === "bad" ? "悲观" : (k === "base" ? "基准" : "乐观");
+      shtml += "<tr" + (k === scen ? " class=\"hl\"" : "") + "><td>" + name + "</td><td class=\"num\">" + sc.sL + "</td><td class=\"num " + cls(mL) + "\">" + money(mL) + "</td><td class=\"num\">" + sc.sS + "</td><td class=\"num " + cls(mS) + "\">" + money(mS) + "</td></tr>";
+    });
+    $("scenBody").innerHTML = shtml;
+
+    // forecast: ramp (months 1-3) vs steady (months 4-6), monthly profit at steady state
+    var fhtml = "";
+    var fcTotals = {};
+    Object.keys(FC).forEach(function (k) {
+      var f = FC[k];
+      var sc = SCEN[k];
+      var i2 = readInputs({ sL: f.sLs, sS: f.sSs, acos: sc.acos });
+      var mL = pnl(i2.L).margin, mS = pnl(i2.S).margin;
+      var name = k === "bad" ? "悲观" : (k === "base" ? "基准" : "乐观");
+      var profL = mL * f.sLs, profS = mS * f.sSs;
+      fcTotals[k] = {
+        unitsL: 3 * (f.sLr + f.sLs), unitsS: 3 * (f.sSr + f.sSs),
+        profitL: 3 * mL * (f.sLr + f.sLs), profitS: 3 * mS * (f.sSr + f.sSs)
+      };
+      fhtml += "<tr" + (k === scen ? " class=\"hl\"" : "") + "><td>" + name + "</td><td class=\"num\">" + f.sLr + "</td><td class=\"num\">" + f.sLs + "</td><td class=\"num " + cls(profL) + "\">" + money(profL) + "</td><td class=\"num\">" + f.sSr + "</td><td class=\"num\">" + f.sSs + "</td><td class=\"num " + cls(profS) + "\">" + money(profS) + "</td></tr>";
+    });
+    $("fcBody").innerHTML = fhtml;
+    var ft = fcTotals[scen];
+    var scenName = scen === "bad" ? "悲观" : (scen === "base" ? "基准" : "乐观");
+    $("fcScenNote").textContent = scenName;
+    $("fcTotal").textContent = "按当前情景（" + scenName + "）：前 6 个月大件共卖约 " + ft.unitsL + " 件，合计 " + money(ft.profitL) + "；桌面共卖约 " + ft.unitsS + " 件，合计 " + money(ft.profitS) + "（爬坡期 3 个月 + 稳定期 3 个月，按该情景广告占比算）。";
+
+    // cash flow (base scenario)
+    function cash(p) {
+      var upfront = p.batch * (p.cost + p.cost * p.tariff / 100 + p.freight);
+      var m = pnl(p);
+      var monthlyNet = p.units * m.margin;
+      var monthlyRev = p.units * p.price;
+      var payback = monthlyNet > 0 ? upfront / monthlyNet : Infinity;
+      var cover = p.units > 0 ? p.batch / p.units : Infinity;
+      return { upfront: upfront, monthlyNet: monthlyNet, monthlyRev: monthlyRev, payback: payback, cover: cover };
+    }
+    var cL = cash(inp.L), cS = cash(inp.S);
+    var crows = [
+      ["前期资金（出厂价 + 关税 + 头程）", cL.upfront, cS.upfront, "首批各 " + inp.L.batch + " / " + inp.S.batch + " 件"],
+      ["月销售额", cL.monthlyRev, cS.monthlyRev, "月销量 × 售价"],
+      ["月净利润", cL.monthlyNet, cS.monthlyNet, "月销量 × 每件净利润"],
+      ["回本月数", cL.payback, cS.payback, "前期资金 ÷ 月净利润"],
+      ["首批库存可卖", cL.cover, cS.cover, "月"]
+    ];
+    var chtml = "";
+    crows.forEach(function (r) {
+      var fL = (r[0] === "回本月数") ? (isFinite(r[1]) ? r[1].toFixed(1) + " 个月" : "回不了本") : (r[0] === "首批库存可卖" ? (isFinite(r[1]) ? r[1].toFixed(1) + " 个月" : "—") : fmt0(r[1]));
+      var fS = (r[0] === "回本月数") ? (isFinite(r[2]) ? r[2].toFixed(1) + " 个月" : "回不了本") : (r[0] === "首批库存可卖" ? (isFinite(r[2]) ? r[2].toFixed(1) + " 个月" : "—") : fmt0(r[2]));
+      chtml += "<tr><td>" + r[0] + "</td><td class=\"num\">" + fL + "</td><td class=\"num\">" + fS + "</td><td class=\"note\">" + r[3] + "</td></tr>";
+    });
+    $("cashBody").innerHTML = chtml;
+
+    // verdict
+    var v = $("verdict"), vn = $("verdictNote");
+    var baseNetL = cL.monthlyNet, baseNetS = cS.monthlyNet;
+    var beC = beL.maxCost;
+    if (pL.margin <= 0 && pS.margin <= 0) {
+      v.innerHTML = "<b>按当前假设，两款都不赚钱，先不要备货。</b>大件每件 " + money(pL.margin) + "，桌面每件 " + money(pS.margin) + "。先拿工厂实报价，再对盈亏平衡点。";
+      vn.textContent = "最可能的原因是出厂价或广告占比太高，或者售价定低了。";
+    } else if (pL.margin > 0 && pS.margin <= 0) {
+      v.innerHTML = "<b>大件更优，但只在出厂价守住的前提下。</b>大件每件赚 " + money(pL.margin) + "（利润率 " + (pL.margin / inp.L.price * 100).toFixed(1) + "%），基准情景月净利润 " + money(baseNetL) + "；桌面每件 " + money(pS.margin) + "，不赚钱。";
+      vn.textContent = "大件成立的条件：出厂价不超过 " + fmt(beC) + "（当前最高可承受出厂价），且售价守住 $" + inp.L.price + "。报价一旦到 $120，$199 售价每件亏约 $49，$229 也亏约 $24，结论立刻翻过来。";
+    } else if (pL.margin > 0 && pS.margin > 0) {
+      var better = baseNetL >= baseNetS ? "大件" : "桌面";
+      v.innerHTML = "<b>两款都赚钱，月净利润更高的是" + better + "。</b>大件每件 " + money(pL.margin) + "，基准月净利润 " + money(baseNetL) + "；桌面每件 " + money(pS.margin) + "，基准月净利润 " + money(baseNetS) + "。";
+      vn.textContent = "只看每件利润大件赢；只看资金占用桌面赢（前期资金 " + fmt0(cS.upfront) + " 对 " + fmt0(cL.upfront) + "）。回本月数：大件 " + (isFinite(cL.payback) ? cL.payback.toFixed(1) + " 个月" : "回不了本") + "，桌面 " + (isFinite(cS.payback) ? cS.payback.toFixed(1) + " 个月" : "回不了本") + "。";
+    } else {
+      v.innerHTML = "<b>桌面更优，但只是因为大件亏得更多。</b>大件每件 " + money(pL.margin) + "，桌面每件 " + money(pS.margin) + "。";
+      vn.textContent = "大件亏的原因先看三个数：出厂价是不是超过了最高可承受出厂价 " + fmt(beC) + "，售价是不是低于最低可承受售价 " + fmt(beL.minPrice) + "，广告占比是不是太高。";
+    }
+  }
+
+  // wire inputs
+  var inputs = document.querySelectorAll("input[type=range], input[type=number]");
+  inputs.forEach(function (el) { el.addEventListener("input", render); el.addEventListener("change", render); });
+
+  document.querySelectorAll("#scenSeg button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      scen = b.getAttribute("data-scen");
+      document.querySelectorAll("#scenSeg button").forEach(function (x) { x.classList.toggle("on", x === b); });
+      var sc = SCEN[scen];
+      $("salesL").value = sc.sL; $("salesS").value = sc.sS;
+      $("acosL").value = sc.acos; $("acosS").value = sc.acos;
+      $("scenNote").textContent = sc.label;
+      render();
+    });
+  });
+
+  document.querySelectorAll("#feeSeg button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      feeYear = b.getAttribute("data-fee");
+      document.querySelectorAll("#feeSeg button").forEach(function (x) { x.classList.toggle("on", x === b); });
+      render();
+    });
+  });
+
+  // forecast presets: fill the monthly-sales sliders with ramp or steady units of the current scenario
+  $("fcRampBtn").addEventListener("click", function () {
+    var f = FC[scen];
+    $("salesL").value = f.sLr; $("salesS").value = f.sSr;
+    render();
+  });
+  $("fcSteadyBtn").addEventListener("click", function () {
+    var f = FC[scen];
+    $("salesL").value = f.sLs; $("salesS").value = f.sSs;
+    render();
+  });
+
+  document.querySelectorAll("[data-costl]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      $("costL").value = b.getAttribute("data-costl");
+      document.querySelectorAll("[data-costl]").forEach(function (x) { x.classList.toggle("on", x === b); });
+      render();
+    });
+  });
+  document.querySelectorAll("[data-costs]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      $("costS").value = b.getAttribute("data-costs");
+      document.querySelectorAll("[data-costs]").forEach(function (x) { x.classList.toggle("on", x === b); });
+      render();
+    });
+  });
+
+  // checklist persistence (device-local)
+  var cks = document.querySelectorAll("#checklist input[type=checkbox]");
+  cks.forEach(function (c) {
+    try {
+      var saved = localStorage.getItem("fountain-tool-" + c.getAttribute("data-k"));
+      if (saved === "1") c.checked = true;
+    } catch (e) {}
+    c.addEventListener("change", function () {
+      try { localStorage.setItem("fountain-tool-" + c.getAttribute("data-k"), c.checked ? "1" : "0"); } catch (e) {}
+    });
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
