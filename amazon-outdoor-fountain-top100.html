@@ -101,6 +101,20 @@
   .tabbtn.on{ background:var(--green); color:#fff; border-color:var(--green); }
   .tabbtn:focus-visible{ outline:2px solid var(--green); outline-offset:2px; }
   .tablink{ margin-left:auto; font-size:14px; font-weight:700; padding:8px 12px; border:1px solid var(--green); border-radius:8px; background:var(--green-soft); text-decoration:none; white-space:nowrap; }
+
+  .stats-row{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:13px;color:var(--muted);background:var(--green-soft);border:1px solid #cfe0cd;border-radius:8px;padding:10px 14px;margin:0 0 14px}
+  .stats-row b{color:var(--ink)}
+  .stats-row .cap{margin:0}
+  .pagefoot{border-top:2px solid var(--green);margin-top:28px;padding-top:6px;font-size:13px;color:var(--muted)}
+  .pagefoot h3{font-size:15px;color:var(--ink);margin:16px 0 6px}
+  .pagefoot table{font-size:13px}
+  .pagefoot details summary{cursor:pointer;font-weight:700;font-size:15px;color:var(--ink);margin:16px 0 6px}
+  .qthumb{float:left;width:64px;height:64px;object-fit:contain;border:1px solid var(--line);border-radius:6px;background:#fff;margin:2px 10px 6px 0;cursor:zoom-in}
+  #tab-reviews ol li,#tab-reviews ul.note li{overflow:hidden}
+  .persona-imgs{display:flex;gap:8px;margin:8px 0 2px;flex-wrap:wrap}
+  .persona-imgs img{width:110px;height:110px;object-fit:contain;border:1px solid var(--line);border-radius:6px;background:#fff;cursor:zoom-in}
+  .plink{font-size:13px}
+  .src-link{font-size:13px;white-space:nowrap}
   .tabpage[hidden]{ display:none; }
 
 </style>
@@ -109,7 +123,7 @@
 <div class="wrap">
 <header>
   <h1>亚马逊美国户外喷泉 Top 100 · 落地款目录</h1>
-  <p class="sub">数据日期：<b>2026-11-11</b> · 范围：<b>只收落地款（freestanding）户外喷泉</b>，桌面款、壁挂款、水泵配件、溢流槽配件已全部剔除（见下方口径说明） · 来源：亚马逊 Best Sellers（户外喷泉类目）及亚马逊搜索“outdoor fountain”按畅销排序的公开缓存页，辅以第三方榜单核对 · 本页图片全部为真实商品图（<b>100 款已核实</b>，点击任意图片可看完整大图，图片完整展示、不裁切），<b>无 AI 生成图、无手绘线条图</b> · 请在浏览器中打开本页，不要在文件预览里查看。</p>
+  <p class="sub">数据日期：<b>2026-11-11</b> · 范围：<b>只收落地款（freestanding）户外喷泉</b>，桌面款、壁挂款、水泵配件、溢流槽配件已全部剔除（口径明细见页底） · 来源：亚马逊 Best Sellers（户外喷泉类目）及亚马逊搜索“outdoor fountain”按畅销排序的公开缓存页，辅以第三方榜单核对 · 本页图片全部为真实商品图（<b>100 款已核实</b>，点击任意图片可看完整大图，图片完整展示、不裁切），<b>无 AI 生成图、无手绘线条图</b> · 请在浏览器中打开本页，不要在文件预览里查看。</p>
 </header>
 
 
@@ -117,13 +131,18 @@
   <button type="button" class="tabbtn on" role="tab" id="tabbtn-catalog" aria-controls="tab-catalog" aria-selected="true" data-tab="catalog">产品目录</button>
   <button type="button" class="tabbtn" role="tab" id="tabbtn-reviews" aria-controls="tab-reviews" aria-selected="false" data-tab="reviews" tabindex="-1">差评透视</button>
   <button type="button" class="tabbtn" role="tab" id="tabbtn-personas" aria-controls="tab-personas" aria-selected="false" data-tab="personas" tabindex="-1">用户画像</button>
-  <button type="button" class="tabbtn" role="tab" id="tabbtn-about" aria-controls="tab-about" aria-selected="false" data-tab="about" tabindex="-1">总览与说明</button>
   <a class="tablink" href="fountain-size-comparison-check.html">大小件对比 ↗</a>
 </nav>
 
 <div class="tabpage" id="tab-catalog" role="tabpanel" aria-labelledby="tabbtn-catalog">
 <section class="panel">
-  <h2 style="margin-top:0">预估月销量 Top 10</h2>
+  <div class="stats-row">
+    <span><b>风格</b> 乡村自然 35 · 层叠古典 25 · 现代简约 19 · 太阳能 6 · 鸟浴两用 6 · 雕塑球体 7 · 铸石古典 1 · 其他 1</span>
+    <span><b>尺寸</b> 30–45″ 51 款为主 · 45″+ 17 · 20–30″ 19 · &lt;20″ 6 · 未核实 7</span>
+    <span><b>价格</b> ≥$200 24 · $100–200 14 · $50–100 4 · &lt;$50 1 · 未核实 57（下单前重核价）</span>
+    <span class="cap">铸石古典只有 1 款（Design Toscano 45 英寸小便童雕塑喷泉）；壁挂和水泵配件两类在本榜是 0——已被口径剔除。</span>
+  </div>
+<h2 style="margin-top:0">预估月销量 Top 10</h2>
   <table>
     <tr><th>排名</th><th>产品</th><th>预估月销量</th><th>价格</th><th>星级</th><th>风格</th></tr>
     <tr><td>#1</td><td><a href="https://www.amazon.com/s?k=VIVOHOME+VIVOHOME+Bird+Bath+with+Solar+Fountain+for+Outside%2C+Polyresin+Pedestal+Bird+Baths" target="_blank" rel="noopener">VIVOHOME Bird Bath with Solar Fountain for Outside, Polyresin Pedestal</a><div class="tbrand">VIVOHOME</div></td><td>约 2,000–3,000/月</td><td>未核实</td><td>未核实</td><td>鸟浴两用</td></tr>
@@ -1728,7 +1747,7 @@
 <div class="tabpage" id="tab-reviews" role="tabpanel" aria-labelledby="tabbtn-reviews" hidden>
 <section class="panel">
   <h2 style="margin-top:0">差评透视</h2>
-  <p>本节是 2026-11-11 的差评专项：对 100 款落地喷泉逐款查买家差评。方法与 11 月 5 日桌面喷泉差评页相同——亚马逊评价页直接抓取会被挡（403），所以用 shopabunda / desertcart 的亚马逊 listing 镜像、Home Depot / Target / Wayfair / Macy's / Bed Bath &amp; Beyond 的同款评价页，以及 Ubuy 买家反馈汇总。镜像页不显示单条评价的星级，所以下面引文一律标“差评”，不写 1★，除非原页本身显示了星级。频次口径是“多少款出现该类差评”（去重后 81 款有核实数据），不是差评占全部评价的比例。</p>
+  <p>本节是 2026-11-11 的差评专项：对 100 款落地喷泉逐款查买家差评。方法与 11 月 5 日桌面喷泉差评页相同——亚马逊评价页直接抓取会被挡（403），所以用 shopabunda / desertcart 的亚马逊 listing 镜像、Home Depot / Target / Wayfair / Macy's / Bed Bath &amp; Beyond 的同款评价页，以及 Ubuy 买家反馈汇总。镜像页不显示单条评价的星级，所以下面引文一律标“差评”，不写 1★，除非原页本身显示了星级。频次口径是“多少款出现该类差评”（去重后 81 款有核实数据），不是差评占全部评价的比例。原话后的链接：草稿轮次的有直接来源页链接；早轮原话的镜像页链接未留存，附产品页链接。</p>
   <p><b>覆盖：</b>100 个排名中，<b>81 款（去重后）有核实过的差评数据</b>；9 款未找到可用差评来源（#21、#23、#28、#37、#71、#73、#74、#77、#92）；其余 10 个排名是其他排名的重复 listing，已去重计数：#13=#16=#62 同款 BG3035；#50=#52；#48=#54；#14=#64；#66=#70；#72=#75；#11=#85；#18=#33=#76 同款。Reddit 本轮未打通，页里没有任何 Reddit 内容。草稿轮次（2026-11-11 13:50–14:05）按 Top 20 逐款补充检索了 Home Depot / Target / Best Buy / Woot / cultivationag，新增原话见下；该轮次是抽查，不统计频次。</p>
   <h3>差评分门别类（按出现款数排序，共 81 款有数据）</h3>
   <table>
@@ -1755,154 +1774,154 @@
   <div class="aspect" data-cat="6" tabindex="0" role="button" title="点一下，只显示带“漏水”差评的产品">
     <div class="aspect-name">漏水</div>
     <div class="aspect-nums"><b>55 款</b> · 68%（去重后 81 款）/ 卡片级 63 款</div>
-    <div class="aspect-ex">例如：#1 VIVOHOME 鸟浴 · #2 Alpine 27″木桶 · #3 Grepatio 5层岩石</div>
-    <div class="aspect-q">“Leaking as though intended to be a sieve, the fountain’s cracks were too many to keep filling.” —— Palmer，Sunlinua 37″（#17），2024-07-31，shopabunda 镜像</div>
+    <div class="aspect-ex">例如：<a href="https://www.amazon.com/s?k=VIVOHOME+VIVOHOME+Bird+Bath+with+Solar+Fountain+for+Outside%2C+Polyresin+Pedestal+Bird+Baths" target="_blank" rel="noopener">#1 VIVOHOME 鸟浴</a>（搜索） · <a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+27%22+Tall+Rustic+Outdoor+2-Tier+Barrel+Pump+Water+Fou" target="_blank" rel="noopener">#2 Alpine 27″木桶</a>（搜索） · <a href="https://www.amazon.com/s?k=Grepatio+Grepatio+Outdoor+5-Tiers+Cascading+Rock+Water+Fountain%2C+Waterfall+Fountain+with+4" target="_blank" rel="noopener">#3 Grepatio 5层岩石</a>（搜索）</div>
+    <div class="aspect-q">“Leaking as though intended to be a sieve, the fountain’s cracks were too many to keep filling.” —— Palmer，Sunlinua 37″（#17），2024-07-31，shopabunda 镜像 <a class="src-link" href="https://www.amazon.com/s?k=37%22+L+Garden+Outdoor+Water+Fountain%2C+Floor+Standing+5-Tiers+Rock+Natural+Waterfall+Outdoor" target="_blank" rel="noopener">亚马逊搜索 ↗</a></div>
   </div>
   <div class="aspect" data-cat="4" tabindex="0" role="button" title="点一下，只显示带“频繁加水”差评的产品">
     <div class="aspect-name">频繁加水</div>
     <div class="aspect-nums"><b>47 款</b> · 58%（去重后 81 款）/ 卡片级 52 款</div>
-    <div class="aspect-ex">例如：#1 VIVOHOME 鸟浴 · #2 Alpine 27″木桶 · #4 Sunlinua 40″树干</div>
-    <div class="aspect-q">“I have been having to fill it up twice a day and then top it off a third time before going to bed…” —— GoBigRed，Alpine MAZ254（#19），2024-07-03，shopabunda 镜像</div>
+    <div class="aspect-ex">例如：<a href="https://www.amazon.com/s?k=VIVOHOME+VIVOHOME+Bird+Bath+with+Solar+Fountain+for+Outside%2C+Polyresin+Pedestal+Bird+Baths" target="_blank" rel="noopener">#1 VIVOHOME 鸟浴</a>（搜索） · <a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+27%22+Tall+Rustic+Outdoor+2-Tier+Barrel+Pump+Water+Fou" target="_blank" rel="noopener">#2 Alpine 27″木桶</a>（搜索） · <a href="https://www.amazon.com/dp/B0F7LSH3CG" target="_blank" rel="noopener">#4 Sunlinua 40″树干</a></div>
+    <div class="aspect-q">“I have been having to fill it up twice a day and then top it off a third time before going to bed…” —— GoBigRed，Alpine MAZ254（#19），2024-07-03，shopabunda 镜像 <a class="src-link" href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+MAZ254+Outdoor+Floor+Tiered+Vintage+Water+Fountain+w" target="_blank" rel="noopener">亚马逊搜索 ↗</a></div>
   </div>
   <div class="aspect" data-cat="5" tabindex="0" role="button" title="点一下，只显示带“廉价感”差评的产品">
     <div class="aspect-name">廉价感</div>
     <div class="aspect-nums"><b>41 款</b> · 51%（去重后 81 款）/ 卡片级 45 款</div>
-    <div class="aspect-ex">例如：#1 VIVOHOME 鸟浴 · #6 Alpine 40″岩石 · #9 Takamota 52.8″</div>
-    <div class="aspect-q">“After a few months of use the blue painted surface of the ‘bath’ part has steadily been flaking away…” —— S Walker，VIVOHOME 20″鸟浴（#1），2026-09-02，ShopAbunda（草稿轮次）</div>
+    <div class="aspect-ex">例如：<a href="https://www.amazon.com/s?k=VIVOHOME+VIVOHOME+Bird+Bath+with+Solar+Fountain+for+Outside%2C+Polyresin+Pedestal+Bird+Baths" target="_blank" rel="noopener">#1 VIVOHOME 鸟浴</a>（搜索） · <a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+%7C+40%22+4-Tier+Rock+Floor+Fountain+with+Cascading+Wate" target="_blank" rel="noopener">#6 Alpine 40″岩石</a>（搜索） · <a href="https://www.amazon.com/s?k=Takamota+Takamota+52.8%22+Tall+Outdoor+Water+Fountain+with+Lights%2C+6-Tier+Cascading+Resin+Wa" target="_blank" rel="noopener">#9 Takamota 52.8″</a>（搜索）</div>
+    <div class="aspect-q">“After a few months of use the blue painted surface of the ‘bath’ part has steadily been flaking away…” —— S Walker，VIVOHOME 20″鸟浴（#1），2026-09-02，ShopAbunda（草稿轮次） <a class="src-link" href="https://www.shopabunda.com/products/vivohome-polyresin-antique-outdoor-copper-garden-bird-bath-and-solar-powered-round-pond-fountain-combo-set" target="_blank" rel="noopener">来源页 ↗</a></div>
   </div>
   <div class="aspect" data-cat="9" tabindex="0" role="button" title="点一下，只显示带“泵短命”差评的产品">
     <div class="aspect-name">泵短命</div>
     <div class="aspect-nums"><b>38 款</b> · 47%（去重后 81 款）/ 卡片级 45 款</div>
-    <div class="aspect-ex">例如：#1 VIVOHOME 鸟浴 · #2 Alpine 27″木桶 · #4 Sunlinua 40″树干</div>
-    <div class="aspect-q">“after eight days with the fountain running the motor went.” —— Denise，Bumilgar 51.4″（#13/#16），2026-05-06，shopabunda 镜像</div>
+    <div class="aspect-ex">例如：<a href="https://www.amazon.com/s?k=VIVOHOME+VIVOHOME+Bird+Bath+with+Solar+Fountain+for+Outside%2C+Polyresin+Pedestal+Bird+Baths" target="_blank" rel="noopener">#1 VIVOHOME 鸟浴</a>（搜索） · <a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+27%22+Tall+Rustic+Outdoor+2-Tier+Barrel+Pump+Water+Fou" target="_blank" rel="noopener">#2 Alpine 27″木桶</a>（搜索） · <a href="https://www.amazon.com/dp/B0F7LSH3CG" target="_blank" rel="noopener">#4 Sunlinua 40″树干</a></div>
+    <div class="aspect-q">“after eight days with the fountain running the motor went.” —— Denise，Bumilgar 51.4″（#13/#16），2026-05-06，shopabunda 镜像 <a class="src-link" href="https://www.amazon.com/dp/B0CFVKJ954" target="_blank" rel="noopener">产品页 ↗</a></div>
   </div>
   <div class="aspect" data-cat="3" tabindex="0" role="button" title="点一下，只显示带“溅水”差评的产品">
     <div class="aspect-name">溅水</div>
     <div class="aspect-nums"><b>35 款</b> · 43%（去重后 81 款）/ 卡片级 39 款</div>
-    <div class="aspect-ex">例如：#1 VIVOHOME 鸟浴 · #2 Alpine 27″木桶 · #3 Grepatio 5层岩石</div>
-    <div class="aspect-q">“the spray was so high it was squirting water OUT of the basin!” —— Mrs. E.，VIVOHOME 20″鸟浴（#1），2026-06-22，shopabunda 镜像</div>
+    <div class="aspect-ex">例如：<a href="https://www.amazon.com/s?k=VIVOHOME+VIVOHOME+Bird+Bath+with+Solar+Fountain+for+Outside%2C+Polyresin+Pedestal+Bird+Baths" target="_blank" rel="noopener">#1 VIVOHOME 鸟浴</a>（搜索） · <a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+27%22+Tall+Rustic+Outdoor+2-Tier+Barrel+Pump+Water+Fou" target="_blank" rel="noopener">#2 Alpine 27″木桶</a>（搜索） · <a href="https://www.amazon.com/s?k=Grepatio+Grepatio+Outdoor+5-Tiers+Cascading+Rock+Water+Fountain%2C+Waterfall+Fountain+with+4" target="_blank" rel="noopener">#3 Grepatio 5层岩石</a>（搜索）</div>
+    <div class="aspect-q">“the spray was so high it was squirting water OUT of the basin!” —— Mrs. E.，VIVOHOME 20″鸟浴（#1），2026-06-22，shopabunda 镜像 <a class="src-link" href="https://www.shopabunda.com/products/vivohome-polyresin-antique-outdoor-copper-garden-bird-bath-and-solar-powered-round-pond-fountain-combo-set" target="_blank" rel="noopener">来源页 ↗</a></div>
   </div>
   <div class="aspect" data-cat="10" tabindex="0" role="button" title="点一下，只显示带“开关灯光”差评的产品">
     <div class="aspect-name">开关灯光</div>
     <div class="aspect-nums"><b>30 款</b> · 37%（去重后 81 款）/ 卡片级 34 款</div>
-    <div class="aspect-ex">例如：#3 Grepatio 5层岩石 · #6 Alpine 40″岩石 · #7 Teamson 33.25″碗叠石</div>
-    <div class="aspect-q">“one light has gone out” —— Annette，Alpine 40″岩石（#6），2026-09-04，shopabunda 镜像（同条还说水泵停转、底部有裂纹漏水）</div>
+    <div class="aspect-ex">例如：<a href="https://www.amazon.com/s?k=Grepatio+Grepatio+Outdoor+5-Tiers+Cascading+Rock+Water+Fountain%2C+Waterfall+Fountain+with+4" target="_blank" rel="noopener">#3 Grepatio 5层岩石</a>（搜索） · <a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+%7C+40%22+4-Tier+Rock+Floor+Fountain+with+Cascading+Wate" target="_blank" rel="noopener">#6 Alpine 40″岩石</a>（搜索） · <a href="https://www.amazon.com/dp/B0D3KQR83P" target="_blank" rel="noopener">#7 Teamson 33.25″碗叠石</a></div>
+    <div class="aspect-q">“one light has gone out” —— Annette，Alpine 40″岩石（#6），2026-09-04，shopabunda 镜像（同条还说水泵停转、底部有裂纹漏水） <a class="src-link" href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+%7C+40%22+4-Tier+Rock+Floor+Fountain+with+Cascading+Wate" target="_blank" rel="noopener">亚马逊搜索 ↗</a></div>
   </div>
   <div class="aspect" data-cat="11" tabindex="0" role="button" title="点一下，只显示带“到货损坏”差评的产品">
     <div class="aspect-name">到货损坏</div>
     <div class="aspect-nums"><b>26 款</b> · 32%（去重后 81 款）/ 卡片级 32 款</div>
-    <div class="aspect-ex">例如：#5 Alpine 40″木桶 · #6 Alpine 40″岩石 · #7 Teamson 33.25″碗叠石</div>
-    <div class="aspect-q">“mine arrived missing multiple essential parts — which made it completely unusable right out of the box.” —— Amazon Customer，Teamson 33.25″碗叠石（#7），2026-05-03，shopabunda 镜像</div>
+    <div class="aspect-ex">例如：<a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+40%22+Tall+Outdoor+Floor+Tiered+Rustic+Pump+and+Barrel" target="_blank" rel="noopener">#5 Alpine 40″木桶</a>（搜索） · <a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+%7C+40%22+4-Tier+Rock+Floor+Fountain+with+Cascading+Wate" target="_blank" rel="noopener">#6 Alpine 40″岩石</a>（搜索） · <a href="https://www.amazon.com/dp/B0D3KQR83P" target="_blank" rel="noopener">#7 Teamson 33.25″碗叠石</a></div>
+    <div class="aspect-q">“mine arrived missing multiple essential parts — which made it completely unusable right out of the box.” —— Amazon Customer，Teamson 33.25″碗叠石（#7），2026-05-03，shopabunda 镜像 <a class="src-link" href="https://www.amazon.com/dp/B0D3KQR83P" target="_blank" rel="noopener">产品页 ↗</a></div>
   </div>
   <div class="aspect" data-cat="12" tabindex="0" role="button" title="点一下，只显示带“客服”差评的产品">
     <div class="aspect-name">客服</div>
     <div class="aspect-nums"><b>22 款</b> · 27%（去重后 81 款）/ 卡片级 27 款</div>
-    <div class="aspect-ex">例如：#1 VIVOHOME 鸟浴 · #10 Dephet 48.4″太阳能 · #11 Alpine 33″陶罐</div>
-    <div class="aspect-q">卖家寄来的退货标签上没有地址，留的电话打过去是空号 —— Denise，Bumilgar 51.4″（#13/#16），2026-05-06，shopabunda 镜像（同条评价的附带说明）</div>
+    <div class="aspect-ex">例如：<a href="https://www.amazon.com/s?k=VIVOHOME+VIVOHOME+Bird+Bath+with+Solar+Fountain+for+Outside%2C+Polyresin+Pedestal+Bird+Baths" target="_blank" rel="noopener">#1 VIVOHOME 鸟浴</a>（搜索） · <a href="https://www.amazon.com/s?k=Dephet+Dephet+Italian+Solar+Water+Fountains+Outdoor+Garden+Decor+-+48.4%27%27H+Fountains+and+W" target="_blank" rel="noopener">#10 Dephet 48.4″太阳能</a>（搜索） · <a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+33%22+Tall+Outdoor+Antique+Jar+Water+Fountain%2C+Vintage" target="_blank" rel="noopener">#11 Alpine 33″陶罐</a>（搜索）</div>
+    <div class="aspect-q">卖家寄来的退货标签上没有地址，留的电话打过去是空号 —— Denise，Bumilgar 51.4″（#13/#16），2026-05-06，shopabunda 镜像（同条评价的附带说明） <a class="src-link" href="https://www.amazon.com/dp/B0CFVKJ954" target="_blank" rel="noopener">产品页 ↗</a></div>
   </div>
   <div class="aspect" data-cat="1" tabindex="0" role="button" title="点一下，只显示带“泵噪音”差评的产品">
     <div class="aspect-name">泵噪音</div>
     <div class="aspect-nums"><b>17 款</b> · 21%（去重后 81 款）/ 卡片级 18 款</div>
-    <div class="aspect-ex">例如：#3 Grepatio 5层岩石 · #8 Teamson 38.58″板岩 · #19 Alpine MAZ254</div>
-    <div class="aspect-q">“a very loud water pump that rattles and hums…” —— Jose Villanueva，Teamson 38.58″弧形板岩（#8），2026-01-24，shopabunda 镜像</div>
+    <div class="aspect-ex">例如：<a href="https://www.amazon.com/s?k=Grepatio+Grepatio+Outdoor+5-Tiers+Cascading+Rock+Water+Fountain%2C+Waterfall+Fountain+with+4" target="_blank" rel="noopener">#3 Grepatio 5层岩石</a>（搜索） · <a href="https://www.amazon.com/dp/B08XXXPJND" target="_blank" rel="noopener">#8 Teamson 38.58″板岩</a> · <a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+MAZ254+Outdoor+Floor+Tiered+Vintage+Water+Fountain+w" target="_blank" rel="noopener">#19 Alpine MAZ254</a>（搜索）</div>
+    <div class="aspect-q">“a very loud water pump that rattles and hums…” —— Jose Villanueva，Teamson 38.58″弧形板岩（#8），2026-01-24，shopabunda 镜像 <a class="src-link" href="https://www.amazon.com/dp/B08XXXPJND" target="_blank" rel="noopener">产品页 ↗</a></div>
   </div>
   <div class="aspect" data-cat="2" tabindex="0" role="button" title="点一下，只显示带“静音无水”差评的产品">
     <div class="aspect-name">静音无水</div>
     <div class="aspect-nums"><b>14 款</b> · 17%（去重后 81 款）/ 卡片级 15 款</div>
-    <div class="aspect-ex">例如：#3 Grepatio 5层岩石 · #8 Teamson 38.58″板岩 · #14 Naturefalls 40″</div>
+    <div class="aspect-ex">例如：<a href="https://www.amazon.com/s?k=Grepatio+Grepatio+Outdoor+5-Tiers+Cascading+Rock+Water+Fountain%2C+Waterfall+Fountain+with+4" target="_blank" rel="noopener">#3 Grepatio 5层岩石</a>（搜索） · <a href="https://www.amazon.com/dp/B08XXXPJND" target="_blank" rel="noopener">#8 Teamson 38.58″板岩</a> · <a href="https://www.amazon.com/s?k=Naturefalls+Naturefalls+40%22+Tall+Outdoor+Water+Fountain+and+Waterfalls+-+Large+Garden+Foun" target="_blank" rel="noopener">#14 Naturefalls 40″</a>（搜索）</div>
     <div class="aspect-q">未挖到逐字原话；Ubuy 买家反馈汇总称 #3 Grepatio 出水偏弱（仅作参考，不冒充原话）。</div>
   </div>
   <div class="aspect" data-cat="7" tabindex="0" role="button" title="点一下，只显示带“难清理”差评的产品">
     <div class="aspect-name">难清理</div>
     <div class="aspect-nums"><b>11 款</b> · 14%（去重后 81 款）/ 卡片级 14 款</div>
-    <div class="aspect-ex">例如：#13 Bumilgar 51.4″ · #83 Sunnydaze 菠萝顶3层 · #26 Sphere Curve 39 1/2" High …</div>
-    <div class="aspect-q">“After 4 days I noticed pump was barely pumping so I had to re-do the filter, I had to disassemble the fountain” —— VWJ，Alpine 35″三层（#12），2025-06-08，shopabunda 镜像</div>
+    <div class="aspect-ex">例如：<a href="https://www.amazon.com/dp/B0CFVKJ954" target="_blank" rel="noopener">#13 Bumilgar 51.4″</a> · <a href="https://www.amazon.com/s?k=Sunnydaze+Sunnydaze+3-Tier+Outdoor+Water+Fountain+with+Pineapple+Top+-+Large+Outside+Floor" target="_blank" rel="noopener">#83 Sunnydaze 菠萝顶3层</a>（搜索） · <a href="https://www.amazon.com/s?k=John+Timberland+Sphere+Curve+39+1%2F2%22+High+Large+Modern+Zen+Indoor+Outdoor+Decor+Faux+Stone" target="_blank" rel="noopener">#26 Sphere Curve 39 1/2" High …</a>（搜索）</div>
+    <div class="aspect-q">“After 4 days I noticed pump was barely pumping so I had to re-do the filter, I had to disassemble the fountain” —— VWJ，Alpine 35″三层（#12），2025-06-08，shopabunda 镜像 <a class="src-link" href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+35%22+Tall+3-Tier+Outdoor+Pedestal+Water+Fountain+%E2%80%93+Du" target="_blank" rel="noopener">亚马逊搜索 ↗</a></div>
   </div>
   <div class="aspect" data-cat="8" tabindex="0" role="button" title="点一下，只显示带“尺寸”差评的产品">
     <div class="aspect-name">尺寸</div>
     <div class="aspect-nums"><b>9 款</b> · 11%（去重后 81 款）/ 卡片级 9 款</div>
-    <div class="aspect-ex">例如：#8 Teamson 38.58″板岩 · #10 Dephet 48.4″太阳能 · #27 Autodaya 19.3" H Pedestal …</div>
+    <div class="aspect-ex">例如：<a href="https://www.amazon.com/dp/B08XXXPJND" target="_blank" rel="noopener">#8 Teamson 38.58″板岩</a> · <a href="https://www.amazon.com/s?k=Dephet+Dephet+Italian+Solar+Water+Fountains+Outdoor+Garden+Decor+-+48.4%27%27H+Fountains+and+W" target="_blank" rel="noopener">#10 Dephet 48.4″太阳能</a>（搜索） · <a href="https://www.amazon.com/s?k=Autodaya+Autodaya+19.3%22+H+Pedestal+Outdoor+Water+Fountain+with+LED+Lights+and+Pump%2C+4-Tier" target="_blank" rel="noopener">#27 Autodaya 19.3" H Pedestal …</a>（搜索）</div>
     <div class="aspect-q">未挖到逐字原话；分类口径为“比预期小”，见 #8、#10、#27 三款的差评标签。</div>
   </div>
   <div class="aspect" data-cat="14" tabindex="0" role="button" title="点一下，只显示带“头重脚轻 / 易倒”差评的产品">
     <div class="aspect-name">头重脚轻 / 易倒</div>
     <div class="aspect-nums"><b>4 款</b> · 5%（去重后 81 款）/ 卡片级 4 款</div>
-    <div class="aspect-ex">例如：#12 Alpine 35″三层 · #19 Alpine MAZ254 · #88 John Timberland Farron Rus…</div>
-    <div class="aspect-q">“It has blown over more than once and has cracked.” —— Target 买家，Sunnydaze 46″菠萝款（Top 100 #82/#83 同系列其他型号），2022-09-30，Target 1★（草稿轮次）</div>
+    <div class="aspect-ex">例如：<a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+35%22+Tall+3-Tier+Outdoor+Pedestal+Water+Fountain+%E2%80%93+Du" target="_blank" rel="noopener">#12 Alpine 35″三层</a>（搜索） · <a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+MAZ254+Outdoor+Floor+Tiered+Vintage+Water+Fountain+w" target="_blank" rel="noopener">#19 Alpine MAZ254</a>（搜索） · #88 John Timberland Farron Rus…</div>
+    <div class="aspect-q">“It has blown over more than once and has cracked.” —— Target 买家，Sunnydaze 46″菠萝款（Top 100 #82/#83 同系列其他型号），2022-09-30，Target 1★（草稿轮次） <a class="src-link" href="https://www.target.com/p/sunnydaze-outdoor-2-tier-solar-powered-pineapple-top-water-fountain-with-battery-backup-and-submersible-pump-46-black/-/A-75534194" target="_blank" rel="noopener">来源页 ↗</a></div>
   </div>
   <div class="aspect" data-cat="13" tabindex="0" role="button" title="点一下，只显示带“生锈”差评的产品">
     <div class="aspect-name">生锈</div>
     <div class="aspect-nums"><b>2 款</b> · 2%（去重后 81 款）/ 卡片级 2 款</div>
-    <div class="aspect-ex">例如：#19 Alpine MAZ254 · #58 Alpine Corporation 43" Tal…</div>
-    <div class="aspect-q">“用了 3 周就出现锈斑” —— GoBigRed，Alpine MAZ254（#19），2024-07-03，shopabunda 镜像（同条评价的附带说明）。</div>
+    <div class="aspect-ex">例如：<a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+MAZ254+Outdoor+Floor+Tiered+Vintage+Water+Fountain+w" target="_blank" rel="noopener">#19 Alpine MAZ254</a>（搜索） · <a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+43%22+Tall+Multi-Tier+Waterfall+Fountain+-+Industrial+" target="_blank" rel="noopener">#58 Alpine Corporation 43" Tal…</a>（搜索）</div>
+    <div class="aspect-q">“用了 3 周就出现锈斑” —— GoBigRed，Alpine MAZ254（#19），2024-07-03，shopabunda 镜像（同条评价的附带说明）。 <a class="src-link" href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+MAZ254+Outdoor+Floor+Tiered+Vintage+Water+Fountain+w" target="_blank" rel="noopener">亚马逊搜索 ↗</a></div>
   </div>
   </div>
 
   <h3>最值得看的 10 句买家原话</h3>
   <ol>
-    <li>“after eight days with the fountain running the motor went.” —— <b>Denise</b>，Bumilgar 51.4″（#13/#16），2026-05-06，shopabunda 镜像。同条评价还说：卖家寄来的退货标签上没有地址，留的电话打过去是空号。</li>
-    <li>“Leaking as though intended to be a sieve, the fountain's cracks were too many to keep filling.” —— <b>Palmer</b>，Sunlinua 37″（#17），2024-07-31，shopabunda 镜像。</li>
-    <li>“I have been having to fill it up twice a day and then top it off a third time before going to bed so it will make it throughout the night without burning up the pump.” —— <b>GoBigRed</b>，Alpine MAZ254（#19），2024-07-03，shopabunda 镜像。同条评价还说：用了 3 周就出现锈斑。</li>
-    <li>“the pump is only rated for 1 and a half feet lift. This is a 33″ fountain. No wonder the pump quit.” —— Home Depot 评价（姓名未显示），Alpine 33″ 陶罐（#11），2025-11-11，Home Depot 评价页。</li>
-    <li>“Replaced pump 3 times due to leaks. Don't waste your money. Total scam” —— <b>Slaten Mclelland</b>，Naturefalls 40″（#14），2026-04-24，shopabunda 镜像。</li>
-    <li>“the spray was so high it was squirting water OUT of the basin!” —— <b>Mrs. E.</b>，VIVOHOME 20″ 鸟浴（#1），2026-06-22，shopabunda 镜像。</li>
-    <li>“a very loud water pump that rattles and hums… for $155 save your money and look elsewhere.” —— <b>Jose Villanueva</b>，Teamson 38.58″ 弧形板岩（#8），2026-01-24，shopabunda 镜像。</li>
-    <li>“I have an over $200 item that has basically never worked.” —— <b>Amazon Customer</b>，Dephet 48.4″ 太阳能（#10），2025-09-29，shopabunda 镜像。卖家答应寄替换太阳能板，但从没寄来。</li>
-    <li>“After 4 days I noticed pump was barely pumping so I had to re-do the filter, I had to disassemble the fountain” —— <b>VWJ</b>，Alpine 35″ 三层（#12），2025-06-08，shopabunda 镜像。</li>
-    <li>“leaks under two of the bowls… I managed to resolve the problem by applying silicone to seal the leaks.” —— <b>Chris A</b>，Bumilgar 51.4″（#13/#16），2023-09-23，shopabunda 镜像。</li>
+    <li data-qrank="13">“after eight days with the fountain running the motor went.” —— <b>Denise</b>，Bumilgar 51.4″（#13/#16），2026-05-06，shopabunda 镜像。同条评价还说：卖家寄来的退货标签上没有地址，留的电话打过去是空号。 <a class="src-link" href="https://www.amazon.com/dp/B0CFVKJ954" target="_blank" rel="noopener">产品页 ↗</a></li>
+    <li data-qrank="17">“Leaking as though intended to be a sieve, the fountain's cracks were too many to keep filling.” —— <b>Palmer</b>，Sunlinua 37″（#17），2024-07-31，shopabunda 镜像。 <a class="src-link" href="https://www.amazon.com/s?k=37%22+L+Garden+Outdoor+Water+Fountain%2C+Floor+Standing+5-Tiers+Rock+Natural+Waterfall+Outdoor" target="_blank" rel="noopener">亚马逊搜索 ↗</a></li>
+    <li data-qrank="19">“I have been having to fill it up twice a day and then top it off a third time before going to bed so it will make it throughout the night without burning up the pump.” —— <b>GoBigRed</b>，Alpine MAZ254（#19），2024-07-03，shopabunda 镜像。同条评价还说：用了 3 周就出现锈斑。 <a class="src-link" href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+MAZ254+Outdoor+Floor+Tiered+Vintage+Water+Fountain+w" target="_blank" rel="noopener">亚马逊搜索 ↗</a></li>
+    <li data-qrank="11">“the pump is only rated for 1 and a half feet lift. This is a 33″ fountain. No wonder the pump quit.” —— Home Depot 评价（姓名未显示），Alpine 33″ 陶罐（#11），2025-11-11，Home Depot 评价页。 <a class="src-link" href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+33%22+Tall+Outdoor+Antique+Jar+Water+Fountain%2C+Vintage" target="_blank" rel="noopener">亚马逊搜索 ↗</a></li>
+    <li data-qrank="14">“Replaced pump 3 times due to leaks. Don't waste your money. Total scam” —— <b>Slaten Mclelland</b>，Naturefalls 40″（#14），2026-04-24，shopabunda 镜像。 <a class="src-link" href="https://www.amazon.com/s?k=Naturefalls+Naturefalls+40%22+Tall+Outdoor+Water+Fountain+and+Waterfalls+-+Large+Garden+Foun" target="_blank" rel="noopener">亚马逊搜索 ↗</a></li>
+    <li data-qrank="1">“the spray was so high it was squirting water OUT of the basin!” —— <b>Mrs. E.</b>，VIVOHOME 20″ 鸟浴（#1），2026-06-22，shopabunda 镜像。 <a class="src-link" href="https://www.shopabunda.com/products/vivohome-polyresin-antique-outdoor-copper-garden-bird-bath-and-solar-powered-round-pond-fountain-combo-set" target="_blank" rel="noopener">来源页 ↗</a></li>
+    <li data-qrank="8">“a very loud water pump that rattles and hums… for $155 save your money and look elsewhere.” —— <b>Jose Villanueva</b>，Teamson 38.58″ 弧形板岩（#8），2026-01-24，shopabunda 镜像。 <a class="src-link" href="https://www.amazon.com/dp/B08XXXPJND" target="_blank" rel="noopener">产品页 ↗</a></li>
+    <li data-qrank="10">“I have an over $200 item that has basically never worked.” —— <b>Amazon Customer</b>，Dephet 48.4″ 太阳能（#10），2025-09-29，shopabunda 镜像。卖家答应寄替换太阳能板，但从没寄来。 <a class="src-link" href="https://www.amazon.com/s?k=Dephet+Dephet+Italian+Solar+Water+Fountains+Outdoor+Garden+Decor+-+48.4%27%27H+Fountains+and+W" target="_blank" rel="noopener">亚马逊搜索 ↗</a></li>
+    <li data-qrank="12">“After 4 days I noticed pump was barely pumping so I had to re-do the filter, I had to disassemble the fountain” —— <b>VWJ</b>，Alpine 35″ 三层（#12），2025-06-08，shopabunda 镜像。 <a class="src-link" href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+35%22+Tall+3-Tier+Outdoor+Pedestal+Water+Fountain+%E2%80%93+Du" target="_blank" rel="noopener">亚马逊搜索 ↗</a></li>
+    <li data-qrank="13">“leaks under two of the bowls… I managed to resolve the problem by applying silicone to seal the leaks.” —— <b>Chris A</b>，Bumilgar 51.4″（#13/#16），2023-09-23，shopabunda 镜像。 <a class="src-link" href="https://www.amazon.com/dp/B0CFVKJ954" target="_blank" rel="noopener">产品页 ↗</a></li>
   </ol>
   <h3>草稿轮次新增原话（Top 20 深挖，2026-11-11 13:50–14:05）</h3>
   <p class="cap">草稿轮次按 Top 20 品牌+型号逐款检索 Home Depot / Target / Best Buy / ShopAbunda（亚马逊评价聚合）/ Woot（亚马逊评价镜像）/ cultivationag 评测站。只收能核对的买家原话（带名字/日期/来源）；核实不了的写“未挖到”，不编。本小节是抽查证据，不是全量统计——不给投诉类型算百分比，也不改动上面分类表的频次。</p>
   <h3>#1 VIVOHOME 20″ 鸟浴：另 5 条核实原话</h3>
-  <p class="cap">来源页：ShopAbunda 同款页（型号 VH215-R，聚合亚马逊评价）。Mrs. E. 的喷头那句已在上面 10 句原话里，下面是另外 5 条。</p>
+  <p class="cap">来源页：<a class="src-link" href="https://www.shopabunda.com/products/vivohome-polyresin-antique-outdoor-copper-garden-bird-bath-and-solar-powered-round-pond-fountain-combo-set" target="_blank" rel="noopener">ShopAbunda 同款页 ↗</a>（型号 VH215-R，聚合亚马逊评价）。Mrs. E. 的喷头那句已在上面 10 句原话里，下面是另外 5 条。</p>
   <ol>
-    <li>“As soon as a cloud passes overhead, it chokes and sputters like someone choking on a drink they swallowed the wrong way… There is no battery to store a charge. Again it's 100% solar powered, so the sun is your battery. The first one I got, the pump on the solar panel didn't work… they gave me what I thought was a little more pushback than should have been necessary.” —— <b>Efrem R. Jasso</b>，2026-08-29（无电池、云一过就抽搐；首台泵到货即坏，保修有推诿）。</li>
-    <li>“when it runs full spray it floats and sprays outside the birdbath using all the water… on the second full day it sprays only about 4 inches high and then nothing… 2nd UPDATE: …the pump already stopped working!” —— <b>AVBL2017</b>，2024-04-24（泵漂移喷出盆外，第二天只喷 4 英寸高，之后泵彻底停转）。</li>
-    <li>“after just having it for a year it has HOLES and leaks really bad now… already broken with no way to fix it. I wasn't expecting for it to already be basically useless after only 1 year!” —— <b>Amazon Customer</b>，2026-05-05（不到一年出现破洞、严重漏水）。</li>
-    <li>“After a few months of use the blue painted surface of the ‘bath’ part has steadily been flaking away which causes the solar fountain filter … to be cleaned every few days.” —— <b>S Walker</b>，2026-09-02（几个月后漆面成片剥落、堵塞水泵滤网）。</li>
-    <li>“the water does evaporate or blow away, so I have to fill mine every day or so.” —— <b>William Schroeder</b>，2026-07-04（每天都要加水）。</li>
+    <li data-qrank="1">“As soon as a cloud passes overhead, it chokes and sputters like someone choking on a drink they swallowed the wrong way… There is no battery to store a charge. Again it's 100% solar powered, so the sun is your battery. The first one I got, the pump on the solar panel didn't work… they gave me what I thought was a little more pushback than should have been necessary.” —— <b>Efrem R. Jasso</b>，2026-08-29（无电池、云一过就抽搐；首台泵到货即坏，保修有推诿）。 <a class="src-link" href="https://www.shopabunda.com/products/vivohome-polyresin-antique-outdoor-copper-garden-bird-bath-and-solar-powered-round-pond-fountain-combo-set" target="_blank" rel="noopener">来源页 ↗</a></li>
+    <li data-qrank="1">“when it runs full spray it floats and sprays outside the birdbath using all the water… on the second full day it sprays only about 4 inches high and then nothing… 2nd UPDATE: …the pump already stopped working!” —— <b>AVBL2017</b>，2024-04-24（泵漂移喷出盆外，第二天只喷 4 英寸高，之后泵彻底停转）。 <a class="src-link" href="https://www.shopabunda.com/products/vivohome-polyresin-antique-outdoor-copper-garden-bird-bath-and-solar-powered-round-pond-fountain-combo-set" target="_blank" rel="noopener">来源页 ↗</a></li>
+    <li data-qrank="1">“after just having it for a year it has HOLES and leaks really bad now… already broken with no way to fix it. I wasn't expecting for it to already be basically useless after only 1 year!” —— <b>Amazon Customer</b>，2026-05-05（不到一年出现破洞、严重漏水）。 <a class="src-link" href="https://www.shopabunda.com/products/vivohome-polyresin-antique-outdoor-copper-garden-bird-bath-and-solar-powered-round-pond-fountain-combo-set" target="_blank" rel="noopener">来源页 ↗</a></li>
+    <li data-qrank="1">“After a few months of use the blue painted surface of the ‘bath’ part has steadily been flaking away which causes the solar fountain filter … to be cleaned every few days.” —— <b>S Walker</b>，2026-09-02（几个月后漆面成片剥落、堵塞水泵滤网）。 <a class="src-link" href="https://www.shopabunda.com/products/vivohome-polyresin-antique-outdoor-copper-garden-bird-bath-and-solar-powered-round-pond-fountain-combo-set" target="_blank" rel="noopener">来源页 ↗</a></li>
+    <li data-qrank="1">“the water does evaporate or blow away, so I have to fill mine every day or so.” —— <b>William Schroeder</b>，2026-07-04（每天都要加水）。 <a class="src-link" href="https://www.shopabunda.com/products/vivohome-polyresin-antique-outdoor-copper-garden-bird-bath-and-solar-powered-round-pond-fountain-combo-set" target="_blank" rel="noopener">来源页 ↗</a></li>
   </ol>
   <h3>#7 / #8 Teamson：同品牌同系列其他型号的原话（型号已注明，非 Top 20 精确型号）</h3>
   <ul class="note">
-    <li><b>Home Depot Teamson 36.5″ 多层底座款（FI0030AA，4.4★·116 条评价）：</b>用了一周底部开裂、前两个喷口断断续续“sputter”（2021-08-02，评价人名字在检索片段中未显示）；另有买家称中心水管太短、够不到水泵（多人同诉，卖家补发了水管）；2024-05-13 评价：到货泵就不工作，客服让去网站延保 30 天但网站找不到入口。</li>
-    <li><b>Target Teamson 28.5″ 太阳能款（2025-04-28 已验证购买）：</b>“loud &amp; broken — When we turned it on the whole neighborhood can hear it. A very loud humming/hissing noise.”；2024-09-09：“defective — bought this in April and in Sept the pump is already dead”。</li>
-    <li><b>cultivationag.com Teamson 33.25″ 评测指南整理的缺点（非买家原话）：</b>LED 灯有失灵报告、水泵会堵/磨损需常清理、热天蒸发需常补水。</li>
+    <li><b>Home Depot Teamson 36.5″ 多层底座款（FI0030AA，4.4★·116 条评价）：</b>用了一周底部开裂、前两个喷口断断续续“sputter”（2021-08-02，评价人名字在检索片段中未显示）；另有买家称中心水管太短、够不到水泵（多人同诉，卖家补发了水管）；2024-05-13 评价：到货泵就不工作，客服让去网站延保 30 天但网站找不到入口。 <a class="src-link" href="https://www.homedepot.com/p/reviews/Teamson-Home-36-5-in-Multi-Tier-Pedestal-Water-Fountain-Gray-FI0030AA/302075274/1" target="_blank" rel="noopener">Home Depot 评价页 ↗</a></li>
+    <li><b>Target Teamson 28.5″ 太阳能款（2025-04-28 已验证购买）：</b>“loud &amp; broken — When we turned it on the whole neighborhood can hear it. A very loud humming/hissing noise.”；2024-09-09：“defective — bought this in April and in Sept the pump is already dead”。 <a class="src-link" href="https://www.target.com/p/28-5-34-solar-powered-outdoor-waterfall-fountain-with-two-pots-two-bowls-natural-teamson-home/-/A-84588536" target="_blank" rel="noopener">Target 评价页 ↗</a></li>
+    <li data-qrank="7"><b>cultivationag.com Teamson 33.25″ 评测指南整理的缺点（非买家原话）：</b>LED 灯有失灵报告、水泵会堵/磨损需常清理、热天蒸发需常补水。 <a class="src-link" href="https://cultivationag.com/teamson-home-cascading-bowls-outdoor-water-gardens-fountain-review-guide/" target="_blank" rel="noopener">评测页 ↗</a></li>
   </ul>
   <h3>#2 Alpine 27″ 木桶：评测站整理的缺点（非买家原话）</h3>
   <ul class="note">
-    <li><b>cultivationag.com Alpine TIZ194BZ 评测指南列出的缺点：</b>溅水（水流调大就溅）、热天需频繁加水、可能出现小渗漏；另注“轻质塑料，地面不平会溅得更厉害”。</li>
-    <li><b>Alpine 官方手册故障表（同系列 WCT688 手册）佐证的共性：</b>水位不足会“spews”（喷溅）、水泵异响要拆洗叶轮、绝不能干转。</li>
+    <li data-qrank="2"><b>cultivationag.com Alpine TIZ194BZ 评测指南列出的缺点：</b>溅水（水流调大就溅）、热天需频繁加水、可能出现小渗漏；另注“轻质塑料，地面不平会溅得更厉害”。 <a class="src-link" href="https://cultivationag.com/alpine-corporation-tiz194bz-outdoor-2tier-barrel-pump-water-fountain-review-guide/" target="_blank" rel="noopener">评测页 ↗</a></li>
+    <li data-qrank="2"><b>Alpine 官方手册故障表（同系列 WCT688 手册）佐证的共性：</b>水位不足会“spews”（喷溅）、水泵异响要拆洗叶轮、绝不能干转。 <a class="src-link" href="https://manuals.plus/alpine-corporation/alpine-corporation-wct688-pump-barrel-fountain-owners-manual.pdf" target="_blank" rel="noopener">手册 ↗</a></li>
     <li>本轮未挖到该精确型号的亚马逊 1★ 原话（只挖到评测站整理的缺点清单），不要把评测站的总结当成买家原话。</li>
   </ul>
   <h3>跨品类规律（只写本轮核实到的；型号与 Top 100 卡片不完全一致处已注明）</h3>
   <ul class="note">
-    <li><b>太阳能款通病：云一过就停，电池撑不久。</b>Sunnydaze 46″ 菠萝太阳能款（Top 100 #82/#83 同系列）：Target 2022-09-30 1★：“I purchased the 46″ pineapple two tier fountain in April 2021. It has only worked properly for maybe 2 months of that period. The original solar panel didn't work at all… water seeped into the battery compartment and corroded the entire area… the fountain is kind of flimsy. It has blown over more than once and has cracked.”；2022-04-18：“Solar pump failure — Followed all directions, pump only worked for two days.”；另有“the slightest cloud passing over causes the fountain to stop flowing. There is a battery backup but it requires a manual push of a switch to actuate.”Sunnydaze 郁金香 3 层款（Best Buy，2023-05-19，1★）：“after having the fountain operating for a little over 2 weeks, there's been a MASSIVE amount of paint that has chipped off the fountain/into the water… the pump door continually falling off creates a hazard.”Woot 亚马逊评价镜像（太阳能鸟浴/喷泉，134 条评价、4★）多条同类：电池模式只撑 1–2 小时、“less than a year later and the fountain won't work… solar panel just stopped working after less than one year”；“Had mine two years when it began to leak… the water tank can crack.”</li>
-    <li><b>Alpine 金属款：生锈 + 溅水 + 风吹走水（同品牌另一款 CPS182 43″ 灰色金属多层瀑布款，Home Depot 3.7★·58 条评价；非 Top 20 精确型号）。</b>“Fountain has completely rusted after a year. Looks terrible”；“it spills a lot of water… you having to top off the water frequently. On top of that it was rusting everywhere and started leaking at the bottom barely a year into owning the unit.”；2026-04-19：“Don't use if windy — …a little gust of wind came up … and literally started blowing the falling waterfalls all over the place.”；“Fountain had surface rust showing within days of setting up. Returned for refund”；“The tower leans forward ever so slightly causing it to lose water quickly. It has to be refilled every two days.”</li>
+    <li data-qrank="82"><b>太阳能款通病：云一过就停，电池撑不久。</b>Sunnydaze 46″ 菠萝太阳能款（Top 100 #82/#83 同系列）：Target 2022-09-30 1★：“I purchased the 46″ pineapple two tier fountain in April 2021. It has only worked properly for maybe 2 months of that period. The original solar panel didn't work at all… water seeped into the battery compartment and corroded the entire area… the fountain is kind of flimsy. It has blown over more than once and has cracked.”；2022-04-18：“Solar pump failure — Followed all directions, pump only worked for two days.”；另有“the slightest cloud passing over causes the fountain to stop flowing. There is a battery backup but it requires a manual push of a switch to actuate.”Sunnydaze 郁金香 3 层款（Best Buy，2023-05-19，1★）：“after having the fountain operating for a little over 2 weeks, there's been a MASSIVE amount of paint that has chipped off the fountain/into the water… the pump door continually falling off creates a hazard.”Woot 亚马逊评价镜像（太阳能鸟浴/喷泉，134 条评价、4★）多条同类：电池模式只撑 1–2 小时、“less than a year later and the fountain won't work… solar panel just stopped working after less than one year”；“Had mine two years when it began to leak… the water tank can crack.” <a class="src-link" href="https://www.target.com/p/sunnydaze-outdoor-2-tier-solar-powered-pineapple-top-water-fountain-with-battery-backup-and-submersible-pump-46-black/-/A-75534194" target="_blank" rel="noopener">Target 菠萝款评价页 ↗</a> <a class="src-link" href="https://bestbuy.ugc.bazaarvoice.com/3545syn/11003400/syndicatedreviews.htm?sourcename=serenityhealthhomedecor" target="_blank" rel="noopener">Best Buy 菠萝款评价页 ↗</a> <a class="src-link" href="https://bestbuy.ugc.bazaarvoice.com/3545syn/11010359/syndicatedreviews.htm?sourcename=serenityhealthhomedecor" target="_blank" rel="noopener">Best Buy 郁金香款评价页 ↗</a> <a class="src-link" href="https://tools.woot.com/review/B00JS8HX50?itemid=HG154672A&amp;offerid=70df8291-3477-489d-a9fd-d7bb4f28dd34&amp;filter=3" target="_blank" rel="noopener">Woot 评价镜像 ↗</a></li>
+    <li><b>Alpine 金属款：生锈 + 溅水 + 风吹走水（同品牌另一款 CPS182 43″ 灰色金属多层瀑布款，Home Depot 3.7★·58 条评价；非 Top 20 精确型号）。</b>“Fountain has completely rusted after a year. Looks terrible”；“it spills a lot of water… you having to top off the water frequently. On top of that it was rusting everywhere and started leaking at the bottom barely a year into owning the unit.”；2026-04-19：“Don't use if windy — …a little gust of wind came up … and literally started blowing the falling waterfalls all over the place.”；“Fountain had surface rust showing within days of setting up. Returned for refund”；“The tower leans forward ever so slightly causing it to lose water quickly. It has to be refilled every two days.” <a class="src-link" href="https://www.homedepot.com/p/reviews/Alpine-Corporation-43-in-Gray-Metal-Waterfall-Multi-Tier-Outdoor-Fountain-with-Pump-20-in-L-x-14-in-W-CPS182/305850652/1" target="_blank" rel="noopener">Home Depot 评价页 ↗</a></li>
   </ul>
   <p class="cap"><b>草稿轮次未新增原话的款（核对说明）：</b>草稿轮次对 #4、#5、#6、#10、#11–#20 未找到新的可核实原话——页内已有引文仍是早轮（shopabunda / desertcart 镜像）核实过的，保持不变；草稿的“未挖到”是指本轮次没新增，不是说这些款没有差评。#3、#9 两款两轮都没找到带姓名日期的买家原话，只写汇总来源的说法，不冒充原话。</p>
   <h3>Top 20 各自的主要差评</h3>
   <table>
     <tr><th>排名</th><th>产品</th><th>主要差评</th><th>关键原话（附出处）</th></tr>
-    <tr><td>#1</td><td>VIVOHOME 20″ 鸟浴</td><td>溅水 · 泵短命 · 频繁加水</td><td>Mrs. E.（2026-06-22，shopabunda）：“the spray was so high it was squirting water OUT of the basin!”（另有 5 条核实原话，见上节“草稿轮次新增原话 · #1 VIVOHOME”）</td></tr>
-    <tr><td>#2</td><td>Alpine 27″ 木桶</td><td>漏水 · 溅水 · 频繁加水</td><td>Home Depot（2026-07-29，姓名未显示）：“Fountian worked for 2 weeks. It has been leaking through the pump and loses water everyday.”（评测站整理的缺点清单见上节“#2 Alpine 27″ 木桶”，非买家原话）</td></tr>
-    <tr><td>#3</td><td>Grepatio 5 层岩石</td><td>泵噪音 · 静音无水 · 漏水</td><td>无带姓名日期的买家原话；Ubuy 买家反馈汇总：水泵偏吵、出水偏弱、个别漏水（仅作参考）。</td></tr>
-    <tr><td>#4</td><td>Sunlinua 40″ 树干</td><td>溅水 · 廉价感 · 频繁加水</td><td>Rod Delgado（2025-10-09，shopabunda）：“water tends to splash everywhere and makes a mess around the area where the fountain sits.”</td></tr>
-    <tr><td>#5</td><td>Alpine 40″ 木桶</td><td>漏水 · 溅水 · 频繁加水</td><td>Target 1★ 评价（2024-06-02，姓名未显示）：“Mine is leaking, losing water even when not plugged in.”</td></tr>
-    <tr><td>#6</td><td>Alpine 40″ 岩石</td><td>漏水 · 溅水 · 掉漆</td><td>Annette（2026-09-04，shopabunda）：“the pump has stopped working … one light has gone out … there is a small crack in the bottom &amp; the fountain leaks”</td></tr>
-    <tr><td>#7</td><td>Teamson 33.25″ 碗叠石</td><td>到货缺件 · LED 失灵 · 掉漆</td><td>Amazon Customer（2026-05-03，shopabunda）：“mine arrived missing multiple essential parts — which made it completely unusable right out of the box.”（同系列其他型号的 Home Depot / Target 原话见上节“#7 / #8 Teamson”）</td></tr>
-    <tr><td>#8</td><td>Teamson 38.58″ 弧形板岩</td><td>泵噪音 · 开关灯光 · 掉漆</td><td>Jose Villanueva（2026-01-24，shopabunda）：“a very loud water pump that rattles and hums”（同系列其他型号的 Target 原话见上节“#7 / #8 Teamson”）</td></tr>
-    <tr><td>#9</td><td>Takamota 52.8″</td><td>频繁加水 · 漏水 · 泵短命 · 溅水</td><td>无带姓名日期的买家原话；Ubuy 汇总与榜单提到漏水、水泵动力不足、溅水、需频繁补水（仅作参考）。</td></tr>
-    <tr><td>#10</td><td>Dephet 48.4″ 太阳能</td><td>泵短命 · 客服 · 频繁加水</td><td>Amazon Customer（2025-09-29，shopabunda）：“I have an over $200 item that has basically never worked.”</td></tr>
-    <tr><td>#11</td><td>Alpine 33″ 陶罐</td><td>泵短命 · 漏水 · 客服</td><td>Home Depot（2025-11-11，姓名未显示）：“the pump is only rated for 1 and a half feet lift. This is a 33″ fountain. No wonder the pump quit.”</td></tr>
-    <tr><td>#12</td><td>Alpine 35″ 三层</td><td>泵短命 · 漏水 · 廉价感</td><td>VWJ（2025-06-08，shopabunda）：“After 4 days I noticed pump was barely pumping so I had to re-do the filter”</td></tr>
-    <tr><td>#13</td><td>Bumilgar 51.4″（与 #16 同款）</td><td>漏水 · 泵短命 · 客服</td><td>Chris A（2023-09-23，shopabunda）：“leaks under two of the bowls… I managed to resolve the problem by applying silicone to seal the leaks.”</td></tr>
-    <tr><td>#14</td><td>Naturefalls 40″ 四缸</td><td>漏水 · 泵短命 · 客服</td><td>Slaten Mclelland（2026-04-24，shopabunda）：“Replaced pump 3 times due to leaks. Don't waste your money.”</td></tr>
-    <tr><td>#15</td><td>Aoxun 三层木桶</td><td>泵短命 · 溅水 · 频繁加水</td><td>TikTok Shop（2026-07-31，姓名未显示）：“it was cracked on the bottom barrel.”</td></tr>
-    <tr><td>#16</td><td>Bumilgar 51.4″</td><td>同 #13（同一款 BG3035）</td><td>同 #13：Denise（2026-05-06，shopabunda）：“after eight days with the fountain running the motor went.”</td></tr>
-    <tr><td>#17</td><td>Sunlinua 37″</td><td>漏水 · 静音无水 · 廉价感</td><td>Palmer（2024-07-31，shopabunda）：“Leaking as though intended to be a sieve, the fountain's cracks were too many to keep filling.”</td></tr>
-    <tr><td>#18</td><td>Autodaya 32″ 陶瓷</td><td>漏水 · 到货损坏 · 开关灯光</td><td>J. J（2026-07-19，钴蓝款，shopabunda）：“The fountain is leaking profusely and is completely unusable… it is clearly a piece that was previously repaired”</td></tr>
-    <tr><td>#19</td><td>Alpine MAZ254</td><td>频繁加水 · 静音无水 · 泵短命</td><td>GoBigRed（2024-07-03，shopabunda）：“I have been having to fill it up twice a day… I finally just unplugged it.” 另：3 周即生锈。</td></tr>
-    <tr><td>#20</td><td>Tankana 喷水池</td><td>漏水 · 客服 · 廉价感</td><td>Choirgirl21（2026-02-22，shopabunda）：“I purchased it in October and have already discovered cracks in it… That's far too little use for it to already be cracking”</td></tr>
+    <tr><td>#1</td><td><a href="https://www.amazon.com/s?k=VIVOHOME+VIVOHOME+Bird+Bath+with+Solar+Fountain+for+Outside%2C+Polyresin+Pedestal+Bird+Baths" target="_blank" rel="noopener">VIVOHOME 20″ 鸟浴</a>（搜索）</td><td>溅水 · 泵短命 · 频繁加水</td><td>Mrs. E.（2026-06-22，shopabunda）：“the spray was so high it was squirting water OUT of the basin!”（另有 5 条核实原话，见上节“草稿轮次新增原话 · #1 VIVOHOME”） <a class="src-link" href="https://www.shopabunda.com/products/vivohome-polyresin-antique-outdoor-copper-garden-bird-bath-and-solar-powered-round-pond-fountain-combo-set" target="_blank" rel="noopener">来源页 ↗</a></td></tr>
+    <tr><td>#2</td><td><a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+27%22+Tall+Rustic+Outdoor+2-Tier+Barrel+Pump+Water+Fou" target="_blank" rel="noopener">Alpine 27″ 木桶</a>（搜索）</td><td>漏水 · 溅水 · 频繁加水</td><td>Home Depot（2026-07-29，姓名未显示）：“Fountian worked for 2 weeks. It has been leaking through the pump and loses water everyday.”（评测站整理的缺点清单见上节“#2 Alpine 27″ 木桶”，非买家原话）</td></tr>
+    <tr><td>#3</td><td><a href="https://www.amazon.com/s?k=Grepatio+Grepatio+Outdoor+5-Tiers+Cascading+Rock+Water+Fountain%2C+Waterfall+Fountain+with+4" target="_blank" rel="noopener">Grepatio 5 层岩石</a>（搜索）</td><td>泵噪音 · 静音无水 · 漏水</td><td>无带姓名日期的买家原话；Ubuy 买家反馈汇总：水泵偏吵、出水偏弱、个别漏水（仅作参考）。</td></tr>
+    <tr><td>#4</td><td><a href="https://www.amazon.com/dp/B0F7LSH3CG" target="_blank" rel="noopener">Sunlinua 40″ 树干</a></td><td>溅水 · 廉价感 · 频繁加水</td><td>Rod Delgado（2025-10-09，shopabunda）：“water tends to splash everywhere and makes a mess around the area where the fountain sits.”</td></tr>
+    <tr><td>#5</td><td><a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+40%22+Tall+Outdoor+Floor+Tiered+Rustic+Pump+and+Barrel" target="_blank" rel="noopener">Alpine 40″ 木桶</a>（搜索）</td><td>漏水 · 溅水 · 频繁加水</td><td>Target 1★ 评价（2024-06-02，姓名未显示）：“Mine is leaking, losing water even when not plugged in.”</td></tr>
+    <tr><td>#6</td><td><a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+%7C+40%22+4-Tier+Rock+Floor+Fountain+with+Cascading+Wate" target="_blank" rel="noopener">Alpine 40″ 岩石</a>（搜索）</td><td>漏水 · 溅水 · 掉漆</td><td>Annette（2026-09-04，shopabunda）：“the pump has stopped working … one light has gone out … there is a small crack in the bottom &amp; the fountain leaks”</td></tr>
+    <tr><td>#7</td><td><a href="https://www.amazon.com/dp/B0D3KQR83P" target="_blank" rel="noopener">Teamson 33.25″ 碗叠石</a></td><td>到货缺件 · LED 失灵 · 掉漆</td><td>Amazon Customer（2026-05-03，shopabunda）：“mine arrived missing multiple essential parts — which made it completely unusable right out of the box.”（同系列其他型号的 Home Depot / Target 原话见上节“#7 / #8 Teamson”）</td></tr>
+    <tr><td>#8</td><td><a href="https://www.amazon.com/dp/B08XXXPJND" target="_blank" rel="noopener">Teamson 38.58″ 弧形板岩</a></td><td>泵噪音 · 开关灯光 · 掉漆</td><td>Jose Villanueva（2026-01-24，shopabunda）：“a very loud water pump that rattles and hums”（同系列其他型号的 Target 原话见上节“#7 / #8 Teamson”）</td></tr>
+    <tr><td>#9</td><td><a href="https://www.amazon.com/s?k=Takamota+Takamota+52.8%22+Tall+Outdoor+Water+Fountain+with+Lights%2C+6-Tier+Cascading+Resin+Wa" target="_blank" rel="noopener">Takamota 52.8″</a>（搜索）</td><td>频繁加水 · 漏水 · 泵短命 · 溅水</td><td>无带姓名日期的买家原话；Ubuy 汇总与榜单提到漏水、水泵动力不足、溅水、需频繁补水（仅作参考）。</td></tr>
+    <tr><td>#10</td><td><a href="https://www.amazon.com/s?k=Dephet+Dephet+Italian+Solar+Water+Fountains+Outdoor+Garden+Decor+-+48.4%27%27H+Fountains+and+W" target="_blank" rel="noopener">Dephet 48.4″ 太阳能</a>（搜索）</td><td>泵短命 · 客服 · 频繁加水</td><td>Amazon Customer（2025-09-29，shopabunda）：“I have an over $200 item that has basically never worked.”</td></tr>
+    <tr><td>#11</td><td><a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+33%22+Tall+Outdoor+Antique+Jar+Water+Fountain%2C+Vintage" target="_blank" rel="noopener">Alpine 33″ 陶罐</a>（搜索）</td><td>泵短命 · 漏水 · 客服</td><td>Home Depot（2025-11-11，姓名未显示）：“the pump is only rated for 1 and a half feet lift. This is a 33″ fountain. No wonder the pump quit.”</td></tr>
+    <tr><td>#12</td><td><a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+35%22+Tall+3-Tier+Outdoor+Pedestal+Water+Fountain+%E2%80%93+Du" target="_blank" rel="noopener">Alpine 35″ 三层</a>（搜索）</td><td>泵短命 · 漏水 · 廉价感</td><td>VWJ（2025-06-08，shopabunda）：“After 4 days I noticed pump was barely pumping so I had to re-do the filter”</td></tr>
+    <tr><td>#13</td><td><a href="https://www.amazon.com/dp/B0CFVKJ954" target="_blank" rel="noopener">Bumilgar 51.4″（与 #16 同款）</a></td><td>漏水 · 泵短命 · 客服</td><td>Chris A（2023-09-23，shopabunda）：“leaks under two of the bowls… I managed to resolve the problem by applying silicone to seal the leaks.”</td></tr>
+    <tr><td>#14</td><td><a href="https://www.amazon.com/s?k=Naturefalls+Naturefalls+40%22+Tall+Outdoor+Water+Fountain+and+Waterfalls+-+Large+Garden+Foun" target="_blank" rel="noopener">Naturefalls 40″ 四缸</a>（搜索）</td><td>漏水 · 泵短命 · 客服</td><td>Slaten Mclelland（2026-04-24，shopabunda）：“Replaced pump 3 times due to leaks. Don't waste your money.”</td></tr>
+    <tr><td>#15</td><td><a href="https://www.amazon.com/s?k=Aoxun+Aoxun+3-Tier+Outdoor+Water+Fountain%2C+Wood+Barrel+Cascading+with+Electric+Decorative+" target="_blank" rel="noopener">Aoxun 三层木桶</a>（搜索）</td><td>泵短命 · 溅水 · 频繁加水</td><td>TikTok Shop（2026-07-31，姓名未显示）：“it was cracked on the bottom barrel.”</td></tr>
+    <tr><td>#16</td><td><a href="https://www.amazon.com/dp/B0CFVKJ954" target="_blank" rel="noopener">Bumilgar 51.4″</a></td><td>同 #13（同一款 BG3035）</td><td>同 #13：Denise（2026-05-06，shopabunda）：“after eight days with the fountain running the motor went.”</td></tr>
+    <tr><td>#17</td><td><a href="https://www.amazon.com/s?k=37%22+L+Garden+Outdoor+Water+Fountain%2C+Floor+Standing+5-Tiers+Rock+Natural+Waterfall+Outdoor" target="_blank" rel="noopener">Sunlinua 37″</a>（搜索）</td><td>漏水 · 静音无水 · 廉价感</td><td>Palmer（2024-07-31，shopabunda）：“Leaking as though intended to be a sieve, the fountain's cracks were too many to keep filling.”</td></tr>
+    <tr><td>#18</td><td><a href="https://www.amazon.com/s?k=32%22+H+Ceramic+Outdoor+Water+Fountain%2C+4-Tier+Tropical+Cascading+Waterfall+with+LED%2C+Turquo" target="_blank" rel="noopener">Autodaya 32″ 陶瓷</a>（搜索）</td><td>漏水 · 到货损坏 · 开关灯光</td><td>J. J（2026-07-19，钴蓝款，shopabunda）：“The fountain is leaking profusely and is completely unusable… it is clearly a piece that was previously repaired”</td></tr>
+    <tr><td>#19</td><td><a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+MAZ254+Outdoor+Floor+Tiered+Vintage+Water+Fountain+w" target="_blank" rel="noopener">Alpine MAZ254</a>（搜索）</td><td>频繁加水 · 静音无水 · 泵短命</td><td>GoBigRed（2024-07-03，shopabunda）：“I have been having to fill it up twice a day… I finally just unplugged it.” 另：3 周即生锈。</td></tr>
+    <tr><td>#20</td><td><a href="https://www.amazon.com/dp/B0CPPPQQ9H" target="_blank" rel="noopener">Tankana 喷水池</a></td><td>漏水 · 客服 · 廉价感</td><td>Choirgirl21（2026-02-22，shopabunda）：“I purchased it in October and have already discovered cracks in it… That's far too little use for it to already be cracking”</td></tr>
   </table>
   <p class="cap">上面 Top 20 的“主要差评”只列每款最突出的 2–3 类，完整类型见下方筛选器（按差评类型筛全部 100 款）和各卡片上的“差评：”标签。#3、#9 两款没找到带姓名日期的买家原话，只写了汇总来源的说法，不冒充原话。</p>
   <h3>给 Ofyisof 选品的 5 条教训（从上面差评里提炼）</h3>
@@ -1924,52 +1943,62 @@
   <div class="persona-grid">
     <div class="persona">
       <h4>① 庭院造景房主</h4>
+      <div class="persona-imgs" data-ranks="4,6"></div>
       <p><span class="plabel">是谁：</span>有院子的房主，买 30–45 英寸以上的层叠/岩石款当院子焦点（本榜 30–45 英寸占 51 款，是主力区间）。</p>
       <p><span class="plabel">场景：</span>前院、后院、门廊边，一件大家伙镇场面。</p>
       <p><span class="plabel">买它图什么：</span>造型气派、流水声、水景氛围（推测——从产品类型与“买喷泉为的就是水声”推断）。</p>
       <p><span class="plabel">最在乎：</span>别漏水、别天天加水、泵别几个月就死。</p>
       <p class="pq">“water tends to splash everywhere and makes a mess around the area where the fountain sits.” —— Rod Delgado，Sunlinua 40″树干（#4），2025-10-09，shopabunda 镜像；“I have been having to fill it up twice a day…” —— GoBigRed，Alpine MAZ254（#19），2024-07-03，shopabunda 镜像。</p>
+      <p class="plink">代表产品：<a href="https://www.amazon.com/dp/B0F7LSH3CG" target="_blank" rel="noopener">#4 Sunlinua 40″树干</a> · <a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+40%22+Tall+Outdoor+Floor+Tiered+Rustic+Pump+and+Barrel" target="_blank" rel="noopener">#5 Alpine 40″木桶</a>（搜索） · <a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+%7C+40%22+4-Tier+Rock+Floor+Fountain+with+Cascading+Wate" target="_blank" rel="noopener">#6 Alpine 40″岩石</a>（搜索） ｜ 评价来源：<a class="src-link" href="https://www.amazon.com/dp/B0F7LSH3CG" target="_blank" rel="noopener">Rod Delgado 原话的产品页</a> · <a class="src-link" href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+MAZ254+Outdoor+Floor+Tiered+Vintage+Water+Fountain+w" target="_blank" rel="noopener">GoBigRed 原话的产品页</a>（搜索）</p>
     </div>
     <div class="persona">
       <h4>② 鸟浴花园爱好者</h4>
+      <div class="persona-imgs" data-ranks="1,12"></div>
       <p><span class="plabel">是谁：</span>养花、看鸟的人，买底座鸟浴（#1 VIVOHOME 是全榜销量第 1，约 2,000–3,000/月）。</p>
       <p><span class="plabel">场景：</span>花园一角，鸟来喝水，自己坐着看。</p>
       <p><span class="plabel">买它图什么：</span>鸟浴造型 + 太阳能不用拉线（推测）。</p>
       <p><span class="plabel">最在乎：</span>水别溅出盆、别太轻被风吹倒、漆面别掉进水里堵滤网。</p>
       <p class="pq">“the spray was so high it was squirting water OUT of the basin!” —— Mrs. E.，VIVOHOME 20″鸟浴（#1），2026-06-22，shopabunda 镜像；“the blue painted surface of the ‘bath’ part has steadily been flaking away…” —— S Walker，同款，2026-09-02，ShopAbunda。</p>
+      <p class="plink">代表产品：<a href="https://www.amazon.com/s?k=VIVOHOME+VIVOHOME+Bird+Bath+with+Solar+Fountain+for+Outside%2C+Polyresin+Pedestal+Bird+Baths" target="_blank" rel="noopener">#1 VIVOHOME 20″鸟浴</a>（搜索） · <a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+35%22+Tall+3-Tier+Outdoor+Pedestal+Water+Fountain+%E2%80%93+Du" target="_blank" rel="noopener">#12 Alpine 35″三层</a>（搜索） ｜ 评价来源：<a class="src-link" href="https://www.shopabunda.com/products/vivohome-polyresin-antique-outdoor-copper-garden-bird-bath-and-solar-powered-round-pond-fountain-combo-set" target="_blank" rel="noopener">ShopAbunda VIVOHOME 评价页 ↗</a></p>
     </div>
     <div class="persona">
       <h4>③ 太阳能省电型</h4>
+      <div class="persona-imgs" data-ranks="10,82"></div>
       <p><span class="plabel">是谁：</span>院子里没插座、或不想拉线的人，专挑太阳能款（本榜太阳能风格 6 款，另有不少款附带太阳能水泵）。</p>
       <p><span class="plabel">场景：</span>阳光好的角落，插上就用。</p>
       <p><span class="plabel">买它图什么：</span>不用电、不用布线（推测——从太阳能款的购买选择推断）。</p>
       <p><span class="plabel">最在乎：</span>阴天也能转、电池够用、太阳能板别一年就坏。</p>
       <p class="pq">“As soon as a cloud passes overhead, it chokes and sputters… There is no battery to store a charge.” —— Efrem R. Jasso，VIVOHOME 20″鸟浴（#1），2026-08-29，ShopAbunda；“the slightest cloud passing over causes the fountain to stop flowing.” —— Target 买家，Sunnydaze 46″菠萝款（#82/#83 同系列），2022-09-30，Target 1★。</p>
+      <p class="plink">代表产品：<a href="https://www.amazon.com/s?k=Dephet+Dephet+Italian+Solar+Water+Fountains+Outdoor+Garden+Decor+-+48.4%27%27H+Fountains+and+W" target="_blank" rel="noopener">#10 Dephet 48.4″太阳能</a>（搜索） · <a href="https://www.amazon.com/s?k=Sunnydaze+Sunnydaze+4-Tier+Outdoor+Water+Fountain+with+Pineapple+Top+-+Large+Outside+Floor" target="_blank" rel="noopener">#82 Sunnydaze 菠萝顶</a>（搜索） ｜ 评价来源：<a class="src-link" href="https://www.shopabunda.com/products/vivohome-polyresin-antique-outdoor-copper-garden-bird-bath-and-solar-powered-round-pond-fountain-combo-set" target="_blank" rel="noopener">ShopAbunda ↗</a> · <a class="src-link" href="https://www.target.com/p/sunnydaze-outdoor-2-tier-solar-powered-pineapple-top-water-fountain-with-battery-backup-and-submersible-pump-46-black/-/A-75534194" target="_blank" rel="noopener">Target 菠萝款评价页 ↗</a></p>
     </div>
     <div class="persona">
       <h4>④ 听水声放松型</h4>
+      <div class="persona-imgs" data-ranks="8,7"></div>
       <p><span class="plabel">是谁：</span>买喷泉图水声和夜里灯光氛围的人，放露台、卧室窗外。</p>
       <p><span class="plabel">场景：</span>傍晚开着，听水声、看灯。</p>
       <p><span class="plabel">买它图什么：</span>水声听得见、够 soothing，LED 夜里有效果（“买喷泉为的就是水声”——本页差评分类原话）。</p>
       <p><span class="plabel">最在乎：</span>泵别盖过水声、灯别失灵、水声别几乎听不见。</p>
       <p class="pq">“a very loud water pump that rattles and hums…” —— Jose Villanueva，Teamson 38.58″弧形板岩（#8），2026-01-24，shopabunda 镜像；“one light has gone out” —— Annette，Alpine 40″岩石（#6），2026-09-04，shopabunda 镜像。</p>
+      <p class="plink">代表产品：<a href="https://www.amazon.com/dp/B08XXXPJND" target="_blank" rel="noopener">#8 Teamson 38.58″板岩</a> · <a href="https://www.amazon.com/dp/B0D3KQR83P" target="_blank" rel="noopener">#7 Teamson 33.25″碗叠石</a> ｜ 评价来源：<a class="src-link" href="https://www.amazon.com/dp/B08XXXPJND" target="_blank" rel="noopener">Jose 原话的产品页</a> · <a class="src-link" href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+%7C+40%22+4-Tier+Rock+Floor+Fountain+with+Cascading+Wate" target="_blank" rel="noopener">Annette 原话的产品页</a>（搜索）</p>
     </div>
     <div class="persona">
       <h4>⑤ 精打细算型</h4>
+      <div class="persona-imgs" data-ranks="2,5"></div>
       <p><span class="plabel">是谁：</span>对着价格算耐用度的人，$150–$200 以上也敢买，但要求东西对得起价。</p>
       <p><span class="plabel">场景：</span>下单前看评价，坏了就退，修不好就差评。</p>
       <p><span class="plabel">买它图什么：</span>花大钱买个能用几年的（推测）。</p>
       <p><span class="plabel">最在乎：</span>别到货就坏、别修不起、客服找得到人。</p>
       <p class="pq">“for $155 save your money and look elsewhere.” —— Jose Villanueva，Teamson 38.58″弧形板岩（#8），2026-01-24，shopabunda 镜像；“I have an over $200 item that has basically never worked.” —— Amazon Customer，Dephet 48.4″太阳能（#10），2025-09-29，shopabunda 镜像；Denise（Bumilgar 51.4″，#13，2026-05-06）：退货标签上没有地址，留的电话是空号。</p>
+      <p class="plink">代表产品：<a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+27%22+Tall+Rustic+Outdoor+2-Tier+Barrel+Pump+Water+Fou" target="_blank" rel="noopener">#2 Alpine 27″木桶</a>（搜索） · <a href="https://www.amazon.com/s?k=Alpine+Corporation+Alpine+Corporation+40%22+Tall+Outdoor+Floor+Tiered+Rustic+Pump+and+Barrel" target="_blank" rel="noopener">#5 Alpine 40″木桶</a>（搜索） ｜ 评价来源：<a class="src-link" href="https://www.amazon.com/dp/B08XXXPJND" target="_blank" rel="noopener">Jose 原话的产品页</a> · <a class="src-link" href="https://www.amazon.com/s?k=Dephet+Dephet+Italian+Solar+Water+Fountains+Outdoor+Garden+Decor+-+48.4%27%27H+Fountains+and+W" target="_blank" rel="noopener">Dephet 原话的产品页</a>（搜索） · <a class="src-link" href="https://www.amazon.com/dp/B0CFVKJ954" target="_blank" rel="noopener">Denise 原话的产品页</a></p>
     </div>
   </div>
   <p class="cap">画像与差评的关系：五类人抱怨的东西高度重合——漏水、每天加水、泵短命是所有人的公敌；分歧只在侧重点：鸟浴人群怕溅水和轻，太阳能人群怕阴天停转，听水声人群怕泵盖过水声，精打细算人群怕到货就坏还找不到客服。卖点上反过来写：重量与防溅、泵质保、电池续航写实，是五类人都认的。</p>
 </section>
 </div>
 
-<div class="tabpage" id="tab-about" role="tabpanel" aria-labelledby="tabbtn-about" hidden>
-<section class="panel">
-  <h2 style="margin-top:0">口径：只收落地款</h2>
+
+<footer class="pagefoot">
+  <h3>口径明细</h3>
   <p class="note" style="margin:0">落地款 = 自己立在地面上的庭院喷泉（含底座鸟浴）。以下全部排除：桌面/派对喷泉、壁挂款、太阳能漂浮水泵等水泵配件、溢流槽等配件、室内专用款，以及安装方式无法核实的产品（宁可漏掉、不猜进来）。</p>
   <table style="margin-top:10px">
     <tr><th>处理</th><th>数量</th><th>明细</th></tr>
@@ -1979,23 +2008,13 @@
     <tr><td>因 100 名上限未收</td><td>5 款</td><td>已核实为落地款、但排在 100 名之外的：TOBYUL 48.4 英寸太阳能款、Nathan Cascade 34.5 英寸落地款、SunJet 4 层现代款、Floor Standing LED 款、Sunlinua 5 层树干款（后者与本榜第 4 名树干款疑似同一款，未重复收录）</td></tr>
   </table>
   <p class="cap">本榜 100 款全部是落地款；旧版前 3 名的太阳能漂浮水泵和第 4 名派对喷泉已不在榜内。排名仍是代理方法（购买量级 → Best Seller 徽章 → 亚马逊搜索位置 → 字段完整度），不是官方 BSR 顺序。</p>
-</section>
 
-<section class="panel">
-  <h2 style="margin-top:0">总览</h2>
-  <div class="chips"><span class="chip"><b>35</b> 乡村自然</span> <span class="chip"><b>25</b> 层叠古典</span> <span class="chip"><b>19</b> 现代简约</span> <span class="chip"><b>6</b> 太阳能</span> <span class="chip"><b>6</b> 鸟浴两用</span> <span class="chip"><b>7</b> 雕塑球体</span> <span class="chip"><b>1</b> 铸石古典</span> <span class="chip"><b>1</b> 其他</span></div>
-  <p class="cap">按风格分（共 100 款，全部落地款）。乡村自然 35、层叠古典 25、现代简约 19 占大头；铸石古典只有 1 款（Design Toscano 45 英寸小便童雕塑喷泉）；壁挂和水泵配件两类在本榜是 0——已被口径剔除。</p>
-  <div class="chips"><span class="chip"><b>6</b> 20英寸以下</span> <span class="chip"><b>19</b> 20–30英寸</span> <span class="chip"><b>51</b> 30–45英寸</span> <span class="chip"><b>17</b> 45英寸以上</span> <span class="chip"><b>7</b> 尺寸未核实</span></div>
-  <p class="cap">按高度分。30–45 英寸是主力区间（51 款）；45 英寸以上的大款/落地款有 17 款，可用下方尺寸筛选单独看；20 英寸以下只有 6 款。</p>
-  <div class="chips"><span class="chip"><b>1</b> &lt; $50</span> <span class="chip"><b>4</b> $50–100</span> <span class="chip"><b>14</b> $100–200</span> <span class="chip"><b>24</b> ≥ $200</span> <span class="chip"><b>57</b> 未核实</span></div>
-  <p class="cap">按价格分（亚马逊快照价优先，没有的用非亚马逊商家参考价）。57 款完全没有可核实的价格，下单前必须重新核价。</p>
-  <h2>字段核实情况</h2>
+  <h3>字段核实情况</h3>
   <div class="cov"><span><b>10</b> Amazon 价格</span> <span><b>33</b> 参考价（非亚马逊）</span> <span><b>23</b> 星级</span> <span><b>8</b> 评价数</span> <span><b>30</b> 购买量级</span> <span><b>94</b> 高度</span> <span><b>26</b> 重量</span> <span><b>25</b> FBA 费用</span> <span><b>100</b> 核实图片</span> <span><b>12</b> ASIN</span></div>
   <p class="cap">“参考价（非亚马逊）”指 Wayfair、Target 等其他商家同款的标价，不是亚马逊售价，仅作参考。ASIN 有 12 个是核实过的（本轮图片复核从商品页链接里又确认了 9 个），其余卡片的链接是按品牌+标题生成的亚马逊搜索链接，点进去请再核对是不是同一款。</p>
-</section>
 
-<section>
-  <h2>说明与边界</h2>
+  <details>
+    <summary>说明与边界（点击展开）</summary>
   <div class="warn">
     <b>先看这三句：</b>① 本页不是亚马逊官方 Best Sellers 榜单的原样复制；② 月销量和 FBA 配送费都是<b>预估</b>，不是实测；③ 所有价格都是 2026-11-11 的快照或第三方参考价，<b>下单前必须重新核实</b>。
   </div>
@@ -2011,8 +2030,9 @@
     <li><b>数据修正记录（本轮）。</b>① Sphere Curve 39 1/2 英寸落地款：旧数据高度误记为 2.0 英寸（把分数 1/2 当成了高度），已按标题修正为 39.5 英寸。② Tankana 18 英寸 bubbler：标题写明 18″L×18″W×11.5″H，高度应为 11.5 英寸（旧数据取了尺寸最大值 18 英寸），已修正。③ 旧管道的标题高度正则漏掉了单引号、大写 Inch 等写法，本轮按标题补填 14 款高度：XBrand 菠萝顶款 51 英寸、Alpine DIG100XS 水罐款 32 英寸、Sunnydaze 戏水雕塑款 40 英寸、Gardenfans 40H 款 40 英寸、Dephet 48.4 英寸太阳能款、Athena 27 英寸木桶款、YI 40 英寸木桶款、33.5 英寸层叠碗款、40.5 英寸 4 层款、Sunnydaze 菠萝顶 52/51 英寸两款、Sunnydaze 板岩款 49 英寸、地中海款 50 英寸、Manneken Pis 雕塑款 45 英寸。④ 仍有 6 款高度未核实（#3、#21、#23、#38、#44、#56，标题和备注里都没有高度）。</li>
     <li><b>未核实与待办。</b>星级 76 款未核实、评价数 92 款未核实、高度 6 款未核实、重量 74 款未核实、图片 0 款未核实（100 款全部有核实主图）。最需要补的一步是在浏览器里逐一打开亚马逊详情页，核对当前价格、星级、评价数、尺寸重量和官方 BSR 排名——本页给的是可检索的清单和初步筛选，不是最终结论。</li>
   </ul>
-</section>
-</div>
+
+  </details>
+</footer>
 
 
 </div>
@@ -2066,13 +2086,14 @@
   var aspects=Array.prototype.slice.call(document.querySelectorAll('.aspect[data-cat]'));
   function syncAspects(){ var v=fComplaint.value; aspects.forEach(function(a){ a.classList.toggle('on', a.dataset.cat===v); }); }
   aspects.forEach(function(a){
-    a.addEventListener('click', function(){
+    a.addEventListener('click', function(e){
+      if(e.target.closest('a')) return;
       fComplaint.value=(fComplaint.value===a.dataset.cat)?'':a.dataset.cat;
       if(window.__showTab) window.__showTab('catalog');
       apply();
       document.getElementById('grid').scrollIntoView({behavior:'smooth', block:'start'});
     });
-    a.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); a.click(); } });
+    a.addEventListener('keydown', function(e){ if(e.target.closest('a')) return; if(e.key==='Enter'||e.key===' '){ e.preventDefault(); a.click(); } });
   });
   [fStyle,fSize,fPrice,fStars,fSort,fComplaint].forEach(function(el){ el.addEventListener('change',apply); });
   fSearch.addEventListener('input',apply);
@@ -2087,7 +2108,7 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ document
 
 <script>
 (function(){
-  var tabs={catalog:'tab-catalog',reviews:'tab-reviews',personas:'tab-personas',about:'tab-about'};
+  var tabs={catalog:'tab-catalog',reviews:'tab-reviews',personas:'tab-personas'};
   var btns=Array.prototype.slice.call(document.querySelectorAll('.tabbtn'));
   var tabsBar=document.querySelector('.tabs');
   function syncSticky(){
@@ -2129,6 +2150,34 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ document
   showTab(tabs[start]?start:'catalog',false);
   syncSticky();
   window.__showTab=showTab;
+})();
+</script>
+
+
+<script>
+(function(){
+  function cardImg(rank){
+    var c=document.querySelector('.card[data-rank="'+rank+'"] .thumb img');
+    return c?c.src:null;
+  }
+  document.querySelectorAll('li[data-qrank]').forEach(function(li){
+    var src=cardImg(li.getAttribute('data-qrank'));
+    if(!src) return;
+    var im=document.createElement('img');
+    im.className='qthumb'; im.src=src; im.alt='产品图'; im.loading='lazy';
+    im.addEventListener('click',function(){ if(window.openFull) openFull(src); });
+    li.insertBefore(im, li.firstChild);
+  });
+  document.querySelectorAll('.persona-imgs[data-ranks]').forEach(function(box){
+    box.getAttribute('data-ranks').split(',').forEach(function(r){
+      var src=cardImg(r.trim());
+      if(!src) return;
+      var im=document.createElement('img');
+      im.src=src; im.alt='产品图'; im.loading='lazy';
+      im.addEventListener('click',function(){ if(window.openFull) openFull(src); });
+      box.appendChild(im);
+    });
+  });
 })();
 </script>
 
