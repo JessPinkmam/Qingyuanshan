@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>喷泉大小件对比校验 · 亚马逊美国站（2026-11-10）</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; background: #f4f1ea; color: #2b2620; line-height: 1.7; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 24px 18px 60px; }
+  .top { background: #fffdf8; border: 1px solid #e3dcc9; border-radius: 14px; padding: 24px 24px 18px; }
+  .top h1 { margin: 0 0 6px; font-size: 23px; line-height: 1.4; }
+  .top .sub { color: #8a7f6a; font-size: 13px; margin: 0 0 14px; }
+  .top p { font-size: 14px; margin: 8px 0; }
+  .grade { display: inline-block; font-size: 11px; padding: 1px 8px; border-radius: 12px; margin-left: 4px; vertical-align: middle; font-weight: normal; white-space: nowrap; }
+  .grade.ok { background: #e2ecdc; color: #3d6b2f; }
+  .grade.est { background: #f3e3c2; color: #8a6410; }
+  .grade.todo { background: #ece7db; color: #6d6353; }
+  h2 { font-size: 19px; margin: 34px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #d8cfb8; }
+  h3 { font-size: 16px; margin: 20px 0 8px; }
+  .card { background: #fffdf8; border: 1px solid #e3dcc9; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px; }
+  .warn { background: #fdf3e3; border: 1px solid #e8cfa0; border-radius: 10px; padding: 14px 16px; font-size: 14px; }
+  .good { background: #edf3e8; border: 1px solid #c4d6b8; border-radius: 10px; padding: 14px 16px; font-size: 14px; }
+  .bad { background: #fbeeea; border: 1px solid #e5b8ae; border-radius: 10px; padding: 14px 16px; font-size: 14px; }
+  .verdict { background: #f0ead9; border-left: 5px solid #b98a2f; border-radius: 8px; padding: 16px 18px; font-size: 15px; }
+  .note { font-size: 13px; color: #8a7f6a; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; background: #fffdf8; }
+  th, td { border: 1px solid #ddd5c2; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f0ead9; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr.hl td { background: #f0ead9; font-weight: bold; }
+  td.neg { color: #9a3b2e; font-weight: bold; }
+  td.pos { color: #3d6b2f; font-weight: bold; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .rowline { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-size: 14px; margin-bottom: 10px; }
+  .rowline span.lbl { min-width: 90px; }
+  input[type=number] { width: 110px; padding: 5px 8px; font-size: 14px; border: 1px solid #ddd5c2; border-radius: 6px; background: #fff; }
+  button { font-size: 13px; padding: 5px 12px; border-radius: 16px; border: 1px solid #c9bfa4; background: #fffdf8; cursor: pointer; }
+  button.on { background: #b98a2f; color: #fff; border-color: #b98a2f; }
+  button:hover { border-color: #b98a2f; }
+  .seg { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+  ul { margin: 6px 0; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  .kpi { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 12px 0; }
+  .kpi .cell { background: #fffdf8; border: 1px solid #e3dcc9; border-radius: 10px; padding: 12px; text-align: center; }
+  .kpi .cell .t { font-size: 12px; color: #8a7f6a; }
+  .kpi .cell .v { font-size: 20px; font-weight: bold; font-variant-numeric: tabular-nums; }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+  .barwrap { position: relative; margin: 10px 0 4px; padding-top: 20px; }
+  .bar { display: flex; height: 36px; border-radius: 6px; overflow: hidden; border: 1px solid #ddd5c2; }
+  .bar .seg { height: 100%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 12px; font-weight: bold; white-space: nowrap; overflow: hidden; font-variant-numeric: tabular-nums; }
+  .marker { position: absolute; top: 0; bottom: 0; border-left: 2px dashed #9a3b2e; }
+  .markerlbl { position: absolute; top: 0; transform: translateX(-50%); font-size: 11px; color: #9a3b2e; font-weight: bold; white-space: nowrap; }
+  a { color: #8a5a00; word-break: break-all; }
+  @media (max-width: 640px) {
+    .grid2 { grid-template-columns: 1fr; }
+    .kpi { grid-template-columns: repeat(2, 1fr); }
+    .top h1 { font-size: 20px; }
+    table { font-size: 13px; }
+    .bar .seg { font-size: 0; }
+    .markerlbl { font-size: 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <h1>喷泉大小件对比校验</h1>
+    <p class="sub">亚马逊美国站 · 大件户外喷泉（100×40×25cm 外箱）对比桌面喷泉（29×18×19cm 外箱）· 数据截至 2026-11-10</p>
+    <p>这页只回答一个问题：<b>大件更高的售价，能不能变成更高的实际利润？</b>两个产品用同一套口径算到底：每件利润、盈亏平衡点、销量情景、首批资金。每个数字后面都标了证据等级：<span class="grade ok">已验证</span> 是两个以上独立来源对得上的；<span class="grade est">估算</span> 是从已验证数字算出来的，但里面含一个假设输入；<span class="grade todo">待验证</span> 是还没查到的，不能当事实用。出厂价是假设，不是报价。</p>
+    <p class="note">请用浏览器打开本页（Chrome / Safari / Edge 均可）。Muse 文件预览里输入框点不动，不是页面坏了。所有计算都在本机进行，不联网、不上传。</p>
+  </div>
+
+  <h2>两个产品与尺寸分档</h2>
+  <div class="card">
+    <div style="overflow-x:auto"><table>
+      <thead><tr><th>产品</th><th>外箱尺寸</th><th>尺寸分档校验</th><th>计费重</th><th>FBA 配送费（2026 非旺季）</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>大件户外喷泉</b><br>目标售价 $199 / $229</td>
+          <td>100×40×25cm<br>39.37×15.75×9.84 英寸<br>实重 20kg 以上<span class="grade todo">待验证</span></td>
+          <td><b>大号大件</b>：最长边 39.37 英寸，超过小号大件 37 英寸上限；限 59×33×33 英寸、50 磅以内、长加围长 130 英寸以内——本箱 90.6 英寸，符合。<span class="grade ok">已验证</span></td>
+          <td>体积重 44 磅，实重 44.09 磅，取大者 <b>45 磅</b></td>
+          <td class="num"><b>$26.98</b><br>($9.35 + 44×$0.38) × 1.035 燃油附加</td>
+        </tr>
+        <tr>
+          <td><b>桌面喷泉</b><br>目标售价 $39.99 / $44.99</td>
+          <td>29×18×19cm<br>11.42×7.48×7.09 英寸<br>用户实测 2026-11-10</td>
+          <td><b>大号标准</b>：三边 11.42 / 7.48 / 7.09 英寸，全在 18 / 14 / 8 英寸限内。<span class="grade ok">已验证</span></td>
+          <td>体积重 4.35 磅，取整 <b>5 磅</b></td>
+          <td class="num"><b>$7.88</b><br>($6.97 + 8×$0.08) × 1.035 燃油附加</td>
+        </tr>
+      </tbody>
+    </table></div>
+    <p class="note">50 磅红线：大件打包后 50 磅整仍是大号大件 $28.95，51 磅起跳超大档 $38.63（+$9.68）。<span class="grade ok">已验证</span> 2027 年费率：亚马逊 2026-11-05 公布，2027-01-15 生效，大号大件 $9.88 + $0.39/磅（45 磅 $27.99），大号标准 $7.16 + $0.08/4oz（5 磅 $8.07）。Q1 2027 上架按 2027 年费率算才对，本页默认口径仍是 2026 年费率，2027 年的数在下面单独列出。</p>
+  </div>
+
+  <h2>输入清单：每个数从哪来</h2>
+  <div class="card">
+    <div style="overflow-x:auto"><table>
+      <thead><tr><th>输入</th><th class="num">大件</th><th class="num">桌面</th><th>来源与日期</th><th>等级</th></tr></thead>
+      <tbody>
+        <tr><td>目标售价</td><td class="num">$199 / $229</td><td class="num">$39.99 / $44.99</td><td>大件：39 英寸树脂喷泉在售价带约 $150–$300，中位约 $199；桌面：LED 桌面款中位价 $39.99（GOSSI、Ferrisland、Kalona 均为 $39.99，2026-11-10 镜像价）</td><td><span class="grade ok">已验证</span></td></tr>
+        <tr><td>出厂价</td><td class="num">$80（默认）<br>$60 / $120</td><td class="num">$12（默认）<br>$6</td><td>没有实报价，都是假设。大件：1688 大号喷泉挂价 ¥870–¥1,128（约 $122–$158）；桌面：1688 树脂款 ¥75–¥105（约 $10.50–$14.70）</td><td><span class="grade todo">假设</span></td></tr>
+        <tr><td>佣金</td><td class="num">15%</td><td class="num">15%</td><td>Lawn and Garden / Home and Kitchen</td><td><span class="grade ok">已验证</span></td></tr>
+        <tr><td>关税</td><td class="num">37.5%</td><td class="num">37.5%</td><td>HTS 8413.70.20（Conair Corp. v. United States, 2005）；Section 301 清单 1 是 25%，加 2026-07-24 起的 12.5%；MFN 免税；按出厂价计</td><td><span class="grade ok">已验证</span></td></tr>
+        <tr><td>头程海运加目的港</td><td class="num">$18.75 / 件</td><td class="num">$6.15 / 件</td><td>拼箱 $95–$220/CBM（DTFU、Dantful、Sino-shipping，2026-11）加 $2–$4 目的港杂费；大件 0.1 CBM，桌面 0.00992 CBM。桌面 100 件只有 0.99 CBM，拼箱最低收费 2 CBM，海运按 2 CBM 算 $1.90–$4.40/件</td><td><span class="grade ok">已验证</span></td></tr>
+        <tr><td>每单固定清关费</td><td class="num">$400 / 单</td><td class="num">$400 / 单</td><td>报关 $150–$250 + ISF $40–$75 + 单次 bond $60–$150 + MPF $34.58，合计 $286–$511/单，默认取 $400（DTFU，2026-10）；按首批 100 件摊 $4.00/件</td><td><span class="grade ok">已验证</span></td></tr>
+        <tr><td>包装费（非 SIPP）</td><td class="num">$4.04 / 件</td><td class="num">$0</td><td>标准尺寸不收包装费（包装费只针对小号大件/大号大件）；大件 45 磅档 $4.04（Seller Central SIPP 费表，2026-01-15 起）。SIPP 认证后大件 $0，桌面大号标准 FBA 费 −$0.23/件</td><td><span class="grade ok">已验证</span></td></tr>
+        <tr><td>入仓分仓费</td><td class="num">$6.00 / 件</td><td class="num">$0.57 / 件</td><td>最小分仓中值：大号大件 45 磅 $5.50–$6.50，大号标准 3–5 磅 $0.38–$0.76（Seller Central 入仓分仓费表）；新卖家首单 $400 额度可抵，亚马逊优化分仓 $0</td><td><span class="grade ok">已验证</span></td></tr>
+        <tr><td>仓储</td><td class="num">$1.98 / 月</td><td class="num">$0.27 / 月</td><td>大件超大件档 $0.56/立方英尺/月 × 3.53 立方英尺（1–9 月，10–12 月 $1.40）；桌面标准档 $0.78/立方英尺/月 × 0.35 立方英尺（1–9 月，10–12 月 $2.40）。181 天起加收滞销附加费</td><td><span class="grade ok">已验证</span></td></tr>
+        <tr><td>退货率 / 无法再售比例</td><td class="num">10% / 50%</td><td class="num">10% / 50%</td><td>无本类目可信平均退货率，两个数都是假设；Lawn and Garden 退货处理费起征线 7.7%，超阈部分大件 45 磅 $20.82/件、桌面 5 磅 $5.40/件，已计入</td><td><span class="grade todo">假设</span></td></tr>
+        <tr><td>广告（ACOS）</td><td class="num">15%</td><td class="num">15%</td><td>新品起量期假设；关键词出价参考 solar fountain $0.82（卖家精灵反查，非亚马逊实时价）</td><td><span class="grade todo">假设</span></td></tr>
+        <tr><td>存放月数</td><td class="num">2 个月</td><td class="num">2 个月</td><td>默认口径，用于仓储和退货摊销</td><td><span class="grade est">估算</span></td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">默认口径（除非另有说明）：2026 年非旺季费率 + 3.5% 燃油附加，首批各 100 件，存放 2 个月，退货率 10%、其中一半无法再售，ACOS 15%。</p>
+  </div>
+
+  <h2>简易测算：改售价和出厂价，结果实时变</h2>
+  <div class="card">
+    <div class="grid2">
+      <div>
+        <h3 style="margin-top:0">大件户外喷泉</h3>
+        <div class="rowline"><span class="lbl">售价 $</span><input type="number" id="priceL" value="199" min="100" max="400" step="1">
+          <span class="seg"><button data-pl="199" class="on">$199</button><button data-pl="229">$229</button></span></div>
+        <div class="rowline"><span class="lbl">出厂价 $</span><input type="number" id="costL" value="80" min="30" max="200" step="1">
+          <span class="seg"><button data-cl="60">$60</button><button data-cl="80" class="on">$80</button><button data-cl="120">$120</button></span></div>
+        <p>每件净利润：<b id="mL" style="font-size:20px">—</b>　利润率：<b id="mrL">—</b></p>
+        <p class="note">最高可承受出厂价：<b id="beCL">—</b>（超过就亏）　最低可承受售价：<b id="bePL">—</b>（低于就亏）</p>
+      </div>
+      <div>
+        <h3 style="margin-top:0">桌面喷泉</h3>
+        <div class="rowline"><span class="lbl">售价 $</span><input type="number" id="priceS" value="39.99" min="15" max="80" step="0.01">
+          <span class="seg"><button data-ps="39.99" class="on">$39.99</button><button data-ps="44.99">$44.99</button></span></div>
+        <div class="rowline"><span class="lbl">出厂价 $</span><input type="number" id="costS" value="12" min="3" max="30" step="1">
+          <span class="seg"><button data-cs="6">$6</button><button data-cs="12" class="on">$12</button></span></div>
+        <p>每件净利润：<b id="mS" style="font-size:20px">—</b>　利润率：<b id="mrS">—</b></p>
+        <p class="note">最高可承受出厂价：<b id="beCS">—</b>（超过就亏）　最低可承受售价：<b id="bePS">—</b>（低于就亏）</p>
+      </div>
+    </div>
+    <p class="note">其他输入固定为上面输入清单的默认值（头程含固定清关费按 100 件摊销，关税 37.5%，仓储 2 个月，退货率 10%，ACOS 15%）。</p>
+  </div>
+
+  <h2>每件的账（默认口径，广告和退货之后）</h2>
+  <div class="card">
+    <div style="overflow-x:auto"><table>
+      <thead><tr><th>每件成本项</th><th class="num">大件（$199 / 出厂 $80）</th><th class="num">桌面（$39.99 / 出厂 $12）</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>售价</td><td class="num">$199.00</td><td class="num">$39.99</td><td></td></tr>
+        <tr><td>佣金 15%</td><td class="num">−$29.85</td><td class="num">−$6.00</td><td>已验证</td></tr>
+        <tr><td>FBA 配送费（2026）</td><td class="num">−$26.98</td><td class="num">−$7.88</td><td>已验证；2027 年分别为 $27.99 / $8.07</td></tr>
+        <tr><td>出厂价</td><td class="num">−$80.00</td><td class="num">−$12.00</td><td>假设，未实报过价</td></tr>
+        <tr><td>关税 37.5%（按出厂价）</td><td class="num">−$30.00</td><td class="num">−$4.50</td><td>已验证</td></tr>
+        <tr><td>头程加目的港（含固定费摊销）</td><td class="num">−$22.75</td><td class="num">−$10.15</td><td>海运加目的港，另含固定清关费按 100 件摊 $4.00/件</td></tr>
+        <tr><td>包装费（非 SIPP）</td><td class="num">−$4.04</td><td class="num">$0.00</td><td>标准尺寸不收包装费；SIPP 认证后大件 $0，桌面 FBA −$0.23/件</td></tr>
+        <tr><td>入仓分仓费</td><td class="num">−$6.00</td><td class="num">−$0.57</td><td>已验证；首单 $400 额度可抵</td></tr>
+        <tr><td>仓储（2 个月）</td><td class="num">−$3.96</td><td class="num">−$0.54</td><td>已验证</td></tr>
+        <tr><td>退货摊销（10%）</td><td class="num">−$10.82</td><td class="num">−$2.77</td><td>假设：退货率 ×（损失的 FBA 费 + $5 退款处理 + 无法再售比例 × 已付成本）+ 超 7.7% 部分处理费</td></tr>
+        <tr><td>广告（ACOS 15%）</td><td class="num">−$29.85</td><td class="num">−$6.00</td><td>假设</td></tr>
+        <tr class="hl"><td>每件净利润</td><td class="num neg">−$45.25</td><td class="num neg">−$10.42</td><td></td></tr>
+        <tr class="hl"><td>每件净利润率（净利润 ÷ 售价）</td><td class="num neg">−22.7%</td><td class="num neg">−26.1%</td><td>百分比口径：利润是负的，利润率也是负的</td></tr>
+        <tr><td>广告和退货之前的利润</td><td class="num neg">−$4.58（−2.3%）</td><td class="num neg">−$1.65（−4.1%）</td><td>只扣佣金、FBA、出厂价、关税、头程、包装费、分仓费、仓储</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">2027 年费率下（其他输入不变）：大件每件 −$46.36，桌面每件 −$10.63。</p>
+  </div>
+
+  <h2>成本占售价比：每一块钱花在哪</h2>
+  <div class="card">
+    <p style="margin-top:0">同一张账，换成百分比看。每个成本都除以售价：<b>全部成本占售价比 + 净利润率 = 100%</b>。大件是 122.7% + (−22.7%) = 100%，桌面是 126.1% + (−26.1%) = 100%。成本超过 100%，就是每卖一件要倒贴。</p>
+    <h3 style="margin-top:0">大件户外喷泉（售价 $199，出厂 $80）—— 成本合计 122.7%</h3>
+    <div class="barwrap">
+      <div class="marker" style="left:81.5%"></div><div class="markerlbl" style="left:81.5%">售价 100%</div>
+      <div class="bar">
+        <div class="seg" style="width:12.2%;background:#b98a2f">15.0%</div>
+        <div class="seg" style="width:11.0%;background:#7a9e7e">13.6%</div>
+        <div class="seg" style="width:32.8%;background:#8a6d4b">40.2%</div>
+        <div class="seg" style="width:12.3%;background:#c08552">15.1%</div>
+        <div class="seg" style="width:9.3%;background:#6b8e9e">11.4%</div>
+        <div class="seg" style="width:1.7%;background:#a8a08a"></div>
+        <div class="seg" style="width:2.5%;background:#d8cfb8"></div>
+        <div class="seg" style="width:1.6%;background:#e0b96f"></div>
+        <div class="seg" style="width:4.4%;background:#c96a5a"></div>
+        <div class="seg" style="width:12.2%;background:#7d7468">15.0%</div>
+      </div>
+    </div>
+    <p class="note">条形总长 = 全部成本占售价比（122.7%）；虚线是售价 100% 的位置，虚线以右就是亏损部分（−22.7%，合 $45.25/件）。最大的一块是出厂价 40.2%，其次是佣金和广告各 15.0%。</p>
+    <h3>桌面喷泉（售价 $39.99，出厂 $12）—— 成本合计 126.1%</h3>
+    <div class="barwrap">
+      <div class="marker" style="left:79.3%"></div><div class="markerlbl" style="left:79.3%">售价 100%</div>
+      <div class="bar">
+        <div class="seg" style="width:11.9%;background:#b98a2f">15.0%</div>
+        <div class="seg" style="width:15.6%;background:#7a9e7e">19.7%</div>
+        <div class="seg" style="width:23.8%;background:#8a6d4b">30.0%</div>
+        <div class="seg" style="width:8.9%;background:#c08552">11.3%</div>
+        <div class="seg" style="width:20.1%;background:#6b8e9e">25.4%</div>
+        <div class="seg" style="width:0%;background:#a8a08a"></div>
+        <div class="seg" style="width:1.1%;background:#d8cfb8"></div>
+        <div class="seg" style="width:1.1%;background:#e0b96f"></div>
+        <div class="seg" style="width:5.5%;background:#c96a5a"></div>
+        <div class="seg" style="width:11.9%;background:#7d7468">15.0%</div>
+      </div>
+    </div>
+    <p class="note">条形总长 = 全部成本占售价比（126.1%）；虚线以右是亏损部分（−26.1%，合 $10.42/件）。最大的一块是出厂价 30.0%，第二是头程 25.4%——桌面款的头程比 FBA（19.7%）还贵，是小件独有的问题。</p>
+    <div style="overflow-x:auto"><table>
+      <thead><tr><th>成本项</th><th class="num">大件 $</th><th class="num">大件占售价比</th><th class="num">桌面 $</th><th class="num">桌面占售价比</th></tr></thead>
+      <tbody>
+        <tr><td><span class="dot" style="background:#b98a2f"></span>佣金 15%</td><td class="num">$29.85</td><td class="num">15.0%</td><td class="num">$6.00</td><td class="num">15.0%</td></tr>
+        <tr><td><span class="dot" style="background:#7a9e7e"></span>FBA 配送费</td><td class="num">$26.98</td><td class="num">13.6%</td><td class="num">$7.88</td><td class="num">19.7%</td></tr>
+        <tr><td><span class="dot" style="background:#8a6d4b"></span>出厂价</td><td class="num">$80.00</td><td class="num">40.2%</td><td class="num">$12.00</td><td class="num">30.0%</td></tr>
+        <tr><td><span class="dot" style="background:#c08552"></span>关税 37.5%（按出厂价）</td><td class="num">$30.00</td><td class="num">15.1%</td><td class="num">$4.50</td><td class="num">11.3%</td></tr>
+        <tr><td><span class="dot" style="background:#6b8e9e"></span>头程加目的港（含固定费摊销）</td><td class="num">$22.75</td><td class="num">11.4%</td><td class="num">$10.15</td><td class="num">25.4%</td></tr>
+        <tr><td><span class="dot" style="background:#a8a08a"></span>包装费（非 SIPP）</td><td class="num">$4.04</td><td class="num">2.0%</td><td class="num">$0.00</td><td class="num">0.0%</td></tr>
+        <tr><td><span class="dot" style="background:#d8cfb8"></span>入仓分仓费</td><td class="num">$6.00</td><td class="num">3.0%</td><td class="num">$0.57</td><td class="num">1.4%</td></tr>
+        <tr><td><span class="dot" style="background:#e0b96f"></span>仓储（2 个月）</td><td class="num">$3.96</td><td class="num">2.0%</td><td class="num">$0.54</td><td class="num">1.4%</td></tr>
+        <tr><td><span class="dot" style="background:#c96a5a"></span>退货摊销（10%）</td><td class="num">$10.82</td><td class="num">5.4%</td><td class="num">$2.77</td><td class="num">6.9%</td></tr>
+        <tr><td><span class="dot" style="background:#7d7468"></span>广告（ACOS 15%）</td><td class="num">$29.85</td><td class="num">15.0%</td><td class="num">$6.00</td><td class="num">15.0%</td></tr>
+        <tr class="hl"><td>成本合计</td><td class="num">$244.25</td><td class="num">122.7%</td><td class="num">$50.41</td><td class="num">126.1%</td></tr>
+        <tr class="hl"><td>每件净利润率</td><td class="num neg">−$45.25</td><td class="num neg">−22.7%</td><td class="num neg">−$10.42</td><td class="num neg">−26.1%</td></tr>
+        <tr><td>校验：成本占售价比 + 净利润率</td><td class="num" colspan="2">100.0%</td><td class="num" colspan="2">100.0%</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">百分比按默认口径算（2026 年费率，首批 100 件，存放 2 个月，退货率 10%，ACOS 15%）。四舍五入到 0.1%，个别行加总可能差 0.1 个百分点。包装费桌面是 $0（标准尺寸不收），所以桌面那条里没有包装费这一段。上面两个条形图的颜色和这张表的色点一一对应。</p>
+  </div>
+
+  <h2>情景对比：改售价和出厂价</h2>
+  <div class="card">
+    <div style="overflow-x:auto"><table>
+      <thead><tr><th>情景</th><th class="num">大件每件净利润</th><th class="num">大件利润率</th><th class="num">桌面每件净利润</th><th class="num">桌面利润率</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>大件 $199 / 出厂 $60</td><td class="num neg">−$16.37</td><td class="num neg">−8.2%</td><td class="num"></td><td class="num"></td><td>$60 是最好情况，仍未实报过价</td></tr>
+        <tr><td>大件 $199 / 出厂 $80（默认）</td><td class="num neg">−$45.25</td><td class="num neg">−22.7%</td><td class="num"></td><td class="num"></td><td></td></tr>
+        <tr><td>大件 $229 / 出厂 $60</td><td class="num pos">+$4.63</td><td class="num pos">+2.0%</td><td class="num"></td><td class="num"></td><td>大件唯一转正的组合</td></tr>
+        <tr><td>大件 $229 / 出厂 $80</td><td class="num neg">−$24.25</td><td class="num neg">−10.6%</td><td class="num"></td><td class="num"></td><td></td></tr>
+        <tr><td>桌面 $39.99 / 出厂 $6</td><td class="num"></td><td class="num"></td><td class="num neg">−$1.76</td><td class="num neg">−4.4%</td><td>$6 只适合简单款</td></tr>
+        <tr><td>桌面 $39.99 / 出厂 $12（默认）</td><td class="num"></td><td class="num"></td><td class="num neg">−$10.42</td><td class="num neg">−26.1%</td><td></td></tr>
+        <tr><td>桌面 $44.99 / 出厂 $6</td><td class="num"></td><td class="num"></td><td class="num pos">+$1.74</td><td class="num pos">+3.9%</td><td>桌面唯一转正的组合</td></tr>
+        <tr><td>桌面 $44.99 / 出厂 $12</td><td class="num"></td><td class="num"></td><td class="num neg">−$6.92</td><td class="num neg">−15.4%</td><td></td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">其他输入均为默认口径。加上 SIPP 认证和首单分仓抵免：桌面 $39.99/$6 亏 $0.91，$44.99/$6 赚 $2.59；200 件起订（固定清关费摊到 $2/件）：桌面 $39.99/$12 亏 $8.32，$39.99/$6 赚 $0.34。50 件小单头程摊到约 $17.30/件，桌面 $39.99/$12 约亏 $17.93/件。</p>
+  </div>
+
+  <h2>盈亏平衡点</h2>
+  <div class="card">
+    <div class="kpi">
+      <div class="cell"><div class="t">大件最高可承受出厂价（$199 售价）</div><div class="v">$48.66</div></div>
+      <div class="cell"><div class="t">大件最低可承受售价（$80 成本）</div><div class="v">$263.64</div></div>
+      <div class="cell"><div class="t">桌面最高可承受出厂价（$39.99 售价）</div><div class="v">$4.78</div></div>
+      <div class="cell"><div class="t">桌面最低可承受售价（$12 成本）</div><div class="v">$54.88</div></div>
+    </div>
+    <p class="note">按默认其他假设算。换一档：大件 $229 售价时最高可承受出厂价 $63.21；桌面 $44.99 售价时最高可承受出厂价 $7.21。拿工厂实报价回来，先对这两个数。</p>
+  </div>
+
+  <h2>销量预估：新品上市前 6 个月能卖多少</h2>
+  <div class="card">
+    <p style="margin-top:0">新品 0 评价起步，头几个月不可能接近在售款的量。下面的数是按类比款反推的<span class="grade est">估算</span>，不是预测——每一档都写了依据。旺季爬坡期（1–3 月）和稳定期（4–6 月）分开算，因为 Q1 上架正好爬坡进春夏旺季。</p>
+    <h3 style="margin-top:0">类比款在卖多少</h3>
+    <div style="overflow-x:auto"><table>
+      <thead><tr><th>产品</th><th class="num">上月购买</th><th>评价</th><th>来源</th></tr></thead>
+      <tbody>
+        <tr><td>Alpine CPS182 43 英寸喷泉（户外独立喷泉畅销第一）</td><td class="num">200+ 件</td><td>3.9★</td><td>亚马逊品类页快照（约 2026-05，旺季）</td></tr>
+        <tr><td>Alpine WIN582 22 英寸 3 层岩石喷泉</td><td class="num">1K+ 件</td><td>4.5★</td><td>同上</td></tr>
+        <tr><td>Alpine MAZ254 38 英寸复古多层喷泉</td><td class="num">400+ 件</td><td>—</td><td>同上</td></tr>
+        <tr><td>Cheng Pin 38 英寸错层石墙喷泉 B0CX4X9L7B（非大牌，最接近新品处境）</td><td class="num">50+ 件</td><td>4.4★ / 91 条</td><td>镜像站 2026-11-09 抓取</td></tr>
+        <tr><td>Bumilgar 35.4 英寸螺旋喷泉 B0CH35SYKQ</td><td class="num">已售罄</td><td>4.1★ / 30 条</td><td>镜像站 2026-10-31 抓取，$199.97</td></tr>
+        <tr><td>HoMedics Silver Springs B000QTUJXS（桌面款头部）</td><td class="num">500+ 件/周（约 2,000 件/月）</td><td>4.1★ / 44,492 条</td><td>镜像站 2026-11-09 抓取，FBA，$24</td></tr>
+        <tr><td>Alpine WCT202 11 英寸桌面喷泉</td><td class="num">500+ 件</td><td>—</td><td>亚马逊品类页快照（约 2026-05）</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">上面是有评价的老款的量，不是新品能直接拿到的量。Alpine 是大牌，几百到几千条评价；Cheng Pin 这种非大牌、91 条评价的款每月 50+ 件，才是新品最现实的对标天花板。</p>
+    <h3>新品月销量预估（件/月）</h3>
+    <div style="overflow-x:auto"><table>
+      <thead><tr><th>情景</th><th class="num">大件爬坡 1–3 月</th><th class="num">大件稳定 4–6 月</th><th class="num">大件稳定期月利润</th><th class="num">桌面爬坡 1–3 月</th><th class="num">桌面稳定 4–6 月</th><th class="num">桌面稳定期月利润</th></tr></thead>
+      <tbody>
+        <tr><td>悲观</td><td class="num">3</td><td class="num">8</td><td class="num neg">−$552 / 月</td><td class="num">8</td><td class="num">20</td><td class="num neg">−$248 / 月</td></tr>
+        <tr><td>基准</td><td class="num">8</td><td class="num">25</td><td class="num neg">−$1,131 / 月</td><td class="num">20</td><td class="num">50</td><td class="num neg">−$521 / 月</td></tr>
+        <tr><td>乐观</td><td class="num">15</td><td class="num">50</td><td class="num neg">−$1,765 / 月</td><td class="num">40</td><td class="num">120</td><td class="num neg">−$1,010 / 月</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">月利润按该情景的广告占比算（悲观 20%、基准 15%、乐观 10%）。依据：大件稳定期基准 25 件/月 = Cheng Pin 50+ 件/月的一半（新品无评价、非大牌，取一半）；乐观 50 件/月 = 追平 Cheng Pin；悲观 8 件/月 = 约六分之一。桌面稳定期基准 50 件/月 = 头部 HoMedics 约 2,000 件/月的 2.5%；乐观 120 件/月 = 约 6%；悲观 20 件/月 = 1%。爬坡期大件约是稳定期的三分之一，桌面约是稳定期的四成（0–10 条评价、广告还在学习期、Q1 还没进旺季）。<span class="grade est">估算</span></p>
+    <p class="note">前 6 个月合计（基准，爬坡 3 个月 + 稳定 3 个月）：大件共卖约 99 件，合计 −$4,479；桌面共卖约 210 件，合计 −$2,188。<span class="grade est">估算</span></p>
+    <h3>季节</h3>
+    <p>户外喷泉搜索量在 2–4 月见顶、春夏成交最多（Google Trends 与行业报告一致），Q1 上架正好爬坡进旺季；但 Q1 本身（1–3 月）还不是成交高峰，爬坡期别按旺季的量算。桌面款带礼品属性，11–12 月和春季相对好，全年比户外平稳。<span class="grade est">估算</span></p>
+    <p><b>关键一句：销量救不了单件亏损。</b>按默认假设，大件每件亏 $45.25，稳定期卖 25 件/月就是每月亏约 $1,131；桌面每件亏 $10.42，卖 50 件/月每月亏约 $521——量越大亏得越多。先把单件利润算正，再谈销量。</p>
+  </div>
+
+  <h2>首批备货资金（各 100 件，基准情景）</h2>
+  <div class="card">
+    <div style="overflow-x:auto"><table>
+      <thead><tr><th></th><th class="num">大件户外喷泉</th><th class="num">桌面喷泉</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>前期资金（出厂价 + 关税 + 头程 + 包装费 + 分仓费）</td><td class="num">$14,279</td><td class="num">$2,722</td><td>大件约是桌面的 5.2 倍</td></tr>
+        <tr><td>月销售额（稳定期）</td><td class="num">$4,975</td><td class="num">$2,000</td><td>月销量 × 售价</td></tr>
+        <tr><td>月净利润（稳定期）</td><td class="num neg">−$1,131</td><td class="num neg">−$521</td><td>月销量 × 每件净利润</td></tr>
+        <tr><td>回本月数</td><td class="num">回不了本</td><td class="num">回不了本</td><td>月净利润为负</td></tr>
+        <tr><td>首批库存可卖</td><td class="num">4.0 个月</td><td class="num">2.0 个月</td><td>首批件数 ÷ 月销量</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">前期资金不含 FBA 配送费（按单结算）和广告费（按周结算）。亚马逊账期约 14 天滚动结算，回款不含在内。翻盘情形参考：大件 $229 / 出厂 $60 时每件赚 $4.63，稳定期 25 件/月约赚 $116/月，但前期资金约 $11,529，回本仍需约 100 个月——单件利润太薄，靠销量回本不现实。</p>
+  </div>
+
+  <h2>结论：条件式判断</h2>
+  <div class="card">
+    <div class="verdict" id="verdict">按默认假设（大件 $199 / 出厂 $80，桌面 $39.99 / 出厂 $12，ACOS 15%，退货率 10%），<b>两款都不赚钱，先不要备货</b>。大件每件亏 $45.25，桌面每件亏 $10.42。先拿工厂实报价，再对盈亏平衡点。</div>
+    <ul>
+      <li><b>大件更优，当且仅当：</b>出厂价压到 $48.66 以内（$199 售价），或售价提到 $229 且出厂价压到 $63.21 以内。满足时大件每件赚 $0–$4.63（$199 压到盈亏平衡成本时为 $0，$229/$60 时为 +$4.63），稳定期 25 件/月约赚 $0–$116/月。但即使转正，回本仍极慢——单件利润太薄。</li>
+      <li><b>桌面更优，当且仅当：</b>出厂价压到 $4.78 以内（$39.99 售价），或售价提到 $44.99 且出厂价压到 $7.21 以内。满足时桌面每件赚 $1.74（$44.99/$6），稳定期 50 件/月约赚 $87/月。桌面的优势不在单件利润，在资金：同样 100 件前期资金只要 $2,722，是大件的约五分之一，试错成本低得多。</li>
+      <li><b>两款都不做，当：</b>工厂报价落在 1688 挂牌带（大件约 $122–$158，桌面树脂款约 $10.50–$14.70）——大件 $199 售价每件亏约 $49–$66，$229 也亏约 $24–$40；桌面 $39.99/$12 每件亏 $10.42。这是最可能的结果，除非报价谈下来。</li>
+      <li><b>只看资金占用，桌面赢；只看单件利润天花板，大件赢。</b>大件 $229/$60 的每件利润（+$4.63）高于桌面任何已算出的组合（最高 +$1.74），但大件要先压约 $14,279 的前期资金，桌面只要约 $2,722。</li>
+    </ul>
+  </div>
+
+  <h2>备货前必须核实的事</h2>
+  <div class="card">
+    <ul>
+      <li>工厂实报价：大件和桌面各一款，含泵、LED、ETL 认证、出口包装——这是最敏感的一个数，直接决定结论。</li>
+      <li>打包后实重实测：大件外箱到底多少公斤，卡不卡 50 磅线（51 磅起跳超大档，配送费 +$9.68）。</li>
+      <li>货代或报关行确认 HTS 编码（8413.70.20）和 37.5% 关税；同时确认 2026-11-10 到期的关税休战有没有带来税率变化。</li>
+      <li>货代实报头程价（拼箱或整柜），按 0.1 CBM / 0.00992 CBM 算（桌面 100 件只有 0.99 CBM，拼箱最低收 2 CBM）。</li>
+      <li>Seller Central Fee Preview 按 2027 年费率核算配送费（2027-01-15 生效）。</li>
+      <li>先打样确认：树脂厚度、泵噪音、漏水、包装防摔（大件退货一件沉没约 $115）。</li>
+      <li>桌面外箱确认就是 29×18×19cm（工厂出货按这个盒子走，别换回大盒子）。</li>
+      <li>SIPP 认证：蝴蝶款自测 17 次跌落（桌面 FBA 费 −$0.23/件，大件包装费归零），玻璃款问 ISTA-6A 实验室报价。</li>
+    </ul>
+  </div>
+
+  <h2>风险清单</h2>
+  <div class="card">
+    <div style="overflow-x:auto"><table>
+      <thead><tr><th>风险</th><th>影响</th><th>什么会改变决策</th></tr></thead>
+      <tbody>
+        <tr><td>出厂价高于假设</td><td>大件最致命。$120 的报价下，$199 售价每件亏约 $73，$229 也亏约 $48（广告前）。<span class="grade est">估算</span></td><td>拿到工厂实报价再定。报价超过盈亏平衡出厂价，大件直接不做。</td></tr>
+        <tr><td>50 磅重量红线</td><td>51 磅起跳超大档，配送费 $28.95 跳到 $38.63（+$9.68）。<span class="grade ok">已验证</span></td><td>称准打包后实重。实测同类 39 英寸树脂款产品约 24–25 磅，打包后约 30 磅的话红线还远；用户说的 20kg 未核实。<span class="grade todo">待验证</span></td></tr>
+        <tr><td>退货</td><td>大件一件退货沉没约 $115（出厂价 + 关税 + 头程 + 包装费 + 分仓费，$60 成本口径）；退货率 10%、一半无法再售时，每卖一件摊约 $9–$11。<span class="grade est">估算</span></td><td>退货率超 15% 或无法再售比例超 70%，大件的利润基本被吃光。包装防摔和说明书（先加水再通电）是能控制的部分。</td></tr>
+        <tr><td>2027 年费用调整</td><td>2027-01-15 起大号大件 $9.88 + $0.39/磅，大件 45 磅配送费 $27.99；大号标准 $7.16 + $0.08/4oz，桌面 5 磅 $8.07（只比 2026 年贵 $0.19）。<span class="grade ok">已验证</span></td><td>上架前在 Seller Central Fee Preview 里按 2027 年费率核算一次。</td></tr>
+        <tr><td>关税政策变化</td><td>2026-11-10 美中关税休战到期；178 项 Section 301 豁免延期到 2027-01-09，但不含泵喷泉。当前 37.5% 仍适用，未见直接加税文件。<span class="grade ok">已验证</span></td><td>下单前让货代或报关行按 HTS 8413.70.20 确认一遍税率。</td></tr>
+        <tr><td>库存滞销</td><td>仓储本身便宜（大件约 $2/月），但 181 天起加收滞销附加费；Q4 仓储费翻 2.5 倍。<span class="grade ok">已验证</span></td><td>户外旺季是 3–6 月，Q1 上架赶得上；别在 Q4 压大货。</td></tr>
+        <tr><td>资金占用</td><td>同样 100 件，大件前期资金约是桌面的 5.2 倍（$14,279 对 $2,722）。<span class="grade est">估算</span></td><td>手头紧的时候，大件首单本身就是风险。桌面款资金压力小，但它不赚钱，省下的钱不是赚到的钱。</td></tr>
+        <tr><td>新品无评价</td><td>同类在售款都有几十到几万条评价，新品 0 评价起量慢，广告 ACOS 会高于老品。<span class="grade ok">已验证</span></td><td>广告预算按 ACOS 20% 以上的悲观档先算，跑起来再降。</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <p class="foot">数据截至 2026-11-10。来源：Amazon Seller Central 2026 与 2027 年费率表、入仓分仓费表、SIPP 费表；DTFU / Dantful / Sino-shipping 海运价（2026-10/11）；Conair Corp. v. United States, 29 Ct. Int'l Trade 888 (2005)；1688 公开挂价；亚马逊及镜像站同类产品售价（镜像抓取或搜索片段，不是实时亚马逊价）。费用以 Seller Central 为准，下单前再核算一次。出厂价、退货率、ACOS、月销量为假设或估算，见各行标注。</p>
+
+</div>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var fmt = function (n) { return (n < 0 ? "-$" : "$") + Math.abs(n).toFixed(2); };
+  var fmtPct = function (n) { return (n * 100).toFixed(1) + "%"; };
+  // Fixed defaults from the inputs table (2026 non-peak, 100 units, 2 months storage, 10% returns, 50% unsellable, 15% ACOS)
+  var DEF = {
+    L: { freight: 22.75, tariff: 37.5, fba: 26.98, storeMo: 1.98, months: 2, ret: 10, uns: 50, acos: 15, pack: 4.04, place: 6.00, retProc: 20.82 },
+    S: { freight: 10.15, tariff: 37.5, fba: 7.88, storeMo: 0.27, months: 2, ret: 10, uns: 50, acos: 15, pack: 0, place: 0.57, retProc: 5.40 }
+  };
+  function pnl(price, cost, d) {
+    var referral = price * 0.15;
+    var tariffAmt = cost * d.tariff / 100;
+    var storage = d.storeMo * d.months;
+    var ret = d.ret / 100 * (d.fba + 5 + (d.uns / 100) * (cost + tariffAmt + d.freight + d.pack + d.place))
+      + Math.max(0, d.ret / 100 - 0.077) * d.retProc;
+    var ads = d.acos / 100 * price;
+    return price - referral - d.fba - cost - tariffAmt - d.freight - d.pack - d.place - storage - ret - ads;
+  }
+  function breakeven(price, cost, d) {
+    var r = d.ret / 100, u = d.uns / 100, t = d.tariff / 100, a = d.acos / 100;
+    var denomC = (1 + t) * (1 + r * u);
+    var retProc = Math.max(0, r - 0.077) * d.retProc;
+    var maxCost = (price * (0.85 - a) - d.fba * (1 + r) - (d.freight + d.pack + d.place) * (1 + r * u) - d.storeMo * d.months - 5 * r - retProc) / denomC;
+    var rhs = d.fba * (1 + r) + (d.freight + d.pack + d.place) * (1 + r * u) + d.storeMo * d.months + 5 * r + retProc + cost * (1 + t) * (1 + r * u);
+    var minPrice = rhs / (0.85 - a);
+    return { maxCost: maxCost, minPrice: minPrice };
+  }
+  function render() {
+    var pL = parseFloat($("priceL").value) || 0, cL = parseFloat($("costL").value) || 0;
+    var pS = parseFloat($("priceS").value) || 0, cS = parseFloat($("costS").value) || 0;
+    var mL = pnl(pL, cL, DEF.L), mS = pnl(pS, cS, DEF.S);
+    var bL = breakeven(pL, cL, DEF.L), bS = breakeven(pS, cS, DEF.S);
+    $("mL").textContent = fmt(mL);
+    $("mL").style.color = mL < 0 ? "#9a3b2e" : "#3d6b2f";
+    $("mS").textContent = fmt(mS);
+    $("mS").style.color = mS < 0 ? "#9a3b2e" : "#3d6b2f";
+    $("mrL").textContent = fmtPct(mL / pL);
+    $("mrS").textContent = fmtPct(mS / pS);
+    $("beCL").textContent = fmt(bL.maxCost);
+    $("bePL").textContent = fmt(bL.minPrice);
+    $("beCS").textContent = fmt(bS.maxCost);
+    $("bePS").textContent = fmt(bS.minPrice);
+  }
+  var inputs = document.querySelectorAll("input[type=number]");
+  inputs.forEach(function (el) { el.addEventListener("input", render); el.addEventListener("change", render); });
+  document.querySelectorAll("[data-pl]").forEach(function (b) {
+    b.addEventListener("click", function () { $("priceL").value = b.getAttribute("data-pl"); document.querySelectorAll("[data-pl]").forEach(function (x) { x.classList.toggle("on", x === b); }); render(); });
+  });
+  document.querySelectorAll("[data-cl]").forEach(function (b) {
+    b.addEventListener("click", function () { $("costL").value = b.getAttribute("data-cl"); document.querySelectorAll("[data-cl]").forEach(function (x) { x.classList.toggle("on", x === b); }); render(); });
+  });
+  document.querySelectorAll("[data-ps]").forEach(function (b) {
+    b.addEventListener("click", function () { $("priceS").value = b.getAttribute("data-ps"); document.querySelectorAll("[data-ps]").forEach(function (x) { x.classList.toggle("on", x === b); }); render(); });
+  });
+  document.querySelectorAll("[data-cs]").forEach(function (b) {
+    b.addEventListener("click", function () { $("costS").value = b.getAttribute("data-cs"); document.querySelectorAll("[data-cs]").forEach(function (x) { x.classList.toggle("on", x === b); }); render(); });
+  });
+  render();
+})();
+</script>
+</body>
+</html>
