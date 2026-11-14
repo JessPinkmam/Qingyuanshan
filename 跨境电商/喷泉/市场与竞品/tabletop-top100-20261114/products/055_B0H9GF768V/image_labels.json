@@ -1,0 +1,74 @@
+{
+  "products/055_B0H9GF768V/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "RIVEK BUDDHA FOUNTAIN Fountain, planter & night lamp in one Top planter Bonsai included,oraddyourown small plant Golden meditating Buddha Calmfocalpointforanyroom Three-tier cascade Gentle,soothingtrickleofwater Color-changing night lamp Warm glow from the lower bowl",
+    "edge_white_ratio": 0.105,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ff8974644f216608ff00641bbed1eed42b777f42520a28ee33aefc2babfb0c7b"
+  },
+  "products/055_B0H9GF768V/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "NIGHT LAMP Doubles as a night lamp A warm glowforevenings, meditation and bedtime",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f9cd1ae7ea17f5c33119ea86e78e9c321e61573a02a02930c068277da7279b6c"
+  },
+  "products/055_B0H9GF768V/附图/04.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "SIZE & SCALE Made to stand out on a table or desk 16 in 41cm Height 16.1in Width 9.4 in Depth 8.7in 5.9 in phone Weight 5.5lb Top fits4 inpot 41 ×24 ×22cm, 2.5 kg. Heightincludesthe bonsai.",
+    "edge_white_ratio": 1.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "04baad6c5030394255bf1562775bceff15249190c61879a37444f905682ff6be"
+  },
+  "products/055_B0H9GF768V/附图/05.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "DUAL-USE TOP PLANTER Style the top your way Bonsai included Or add your own plant Readytodisplay,noplantcare The opening fits a standard 4 in (10 cm) nursery pot Succulent Pothos Luckybamboo",
+    "edge_white_ratio": 1.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ce6fc83164a87a0356285f691bb74871103c17776d40cb75a934237d5f12ef97"
+  },
+  "products/055_B0H9GF768V/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "COLOR-CHANGINGLED One fountain, many moods The light in the lower bowl changes color on its own Warmgold Coolblue Violet",
+    "edge_white_ratio": 0.006,
+    "method": "local_ocr_and_image_background",
+    "sha256": "38c4f7b8f51e78c5f4ae2b947f3905f558be50a317d1bdfc60b5fb303f3eba0d"
+  },
+  "products/055_B0H9GF768V/附图/07.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "WHAT'SINTHEBOX Everything you need Artificialbonsaiinpot Sitsinthetopplanter ETL-LISTED FountainwithBuddha Pump & picture manual Built-in color-changing night lamp and back Submersiblepumpwithcleartubeand US cover plug",
+    "edge_white_ratio": 1.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b6db9e1ce27de22371605dd36274f3c654aa32e07ee7743cd903b995d99f4913"
+  },
+  "products/055_B0H9GF768V/附图/08.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "Easy 3-Step Pump Setup Push-fitconnections·Thesamepicturemanual isinthebox Attachthecleartubetothepump THEN Keeptheflowstopperinsidethetube(arrow) Fill & switch on Jointhelightcabletothepumpcable Push the plugs together and tighten securely Fill withwateruntilthepump Placethepumpinside,closetheback isfullycovered Then plug in and enjoy the cover flow Leadthecableoutasshown,thenfitthecover Never run the pump dry.Top up every few days",
+    "edge_white_ratio": 0.989,
+    "method": "local_ocr_and_image_background",
+    "sha256": "27938483af4b6c14b14d8d7cad9b22ece51ade923bd0f990ebfbfe13f1b3fbc8"
+  },
+  "products/055_B0H9GF768V/附图/09.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "WHY RIVEK More than a fountain Typical Buddha Rivek tabletop fountain Top planter for a real plant X Artificial bonsaiincluded X Night lamp Color-changing Single color Waterflow 3-tier cascade 1-2basins Height 16 in 9-12in",
+    "edge_white_ratio": 0.985,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b590a0410df5b97a28de25e3959c29f0b2be59c8e2b1af4813278faa57d0b164"
+  }
+}

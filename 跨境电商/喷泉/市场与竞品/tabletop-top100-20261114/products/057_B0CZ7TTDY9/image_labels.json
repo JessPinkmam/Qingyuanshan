@@ -1,0 +1,74 @@
+{
+  "products/057_B0CZ7TTDY9/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b3562f61a820bbb4c58feec95522980a56a137a976637ff4107ac1e87a6e37a6"
+  },
+  "products/057_B0CZ7TTDY9/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.005,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8a76561a6dfe4c0af2c1f918ff1603af33fcc3495a215d662d4fe571ee353992"
+  },
+  "products/057_B0CZ7TTDY9/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.028,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f880adcab2e784908bd6c42f8da95f4d1515eb32b0e5ba8a24dcf551da6b278d"
+  },
+  "products/057_B0CZ7TTDY9/附图/05.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "9.45 inch 5.32 inch 8.66 inch",
+    "edge_white_ratio": 0.953,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c04ae162b1f861cf151453cf65e9820fce0cbd36206fabcdf817351e5e6654a5"
+  },
+  "products/057_B0CZ7TTDY9/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.002,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d374ce31012fe2c575b1226953d5101508183aaa56e867a13ee45811d6fb8873"
+  },
+  "products/057_B0CZ7TTDY9/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "4f2e9f4f793e6f4c67c55c1c0059130291d39342acfaaf5c46660c5587de8b96"
+  },
+  "products/057_B0CZ7TTDY9/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b9a317db6e35f25c2278400f98ec93dc719dc686d03ef3bc18782746cb008e0f"
+  },
+  "products/057_B0CZ7TTDY9/附图/09.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.894,
+    "method": "local_ocr_and_image_background",
+    "sha256": "722e7acbb65f637c55d972a3e2f09850a91ea4f00c66bb2ec201e52f4ba10ac5"
+  }
+}

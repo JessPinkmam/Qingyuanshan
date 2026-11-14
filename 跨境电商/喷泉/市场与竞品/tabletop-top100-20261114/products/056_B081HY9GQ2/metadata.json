@@ -1,0 +1,117 @@
+{
+  "asin": "B081HY9GQ2",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/81GPL3zbijL._AC_UL600_SR600,400_.jpg",
+  "rank": 56,
+  "title": "Nature's Mark 11\" Tall Golden Tiered Bowl Fountain | with Color Changing LED Lights and Adapter",
+  "url": "https://www.amazon.com/Natures-Mark-Changing-Fountain-Adapter/dp/B081HY9GQ2/ref=zg_bs_g_3735981_d_sccl_6/142-4700496-1670833?psc=1",
+  "captured_at": "2026-11-14T07:39:22.454Z",
+  "images": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/81GPL3zbijL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71OnMUp58vL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61-arimO-nL._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61gRgZTk9AL._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61WhjMdQeBL._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/616M6VLTUNL._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71aufG+S17L._AC_SL1500_.jpg"
+    }
+  ],
+  "videos": [],
+  "errors": [],
+  "page_title": "11\" Tall Golden Tiered Bowl Fountain",
+  "aplus": [
+    {
+      "alt": "logo title",
+      "section": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/a9d5d8b6-81f1-45ca-ab53-02fe0484fc8d.__CR0,37,1224,367_PT0_SX600_V1___.png"
+    }
+  ],
+  "gallery_expected": 7,
+  "assets": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/81GPL3zbijL._AC_SL1500_.jpg",
+      "path": "products/056_B081HY9GQ2/主图/01.jpg",
+      "status": "downloaded",
+      "bytes": 178933,
+      "sha256": "ab7662f709d2077a34a16093d9d1ccbcc23d984b843f16c18ca9ac94ed4b2e91"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71OnMUp58vL._AC_SL1500_.jpg",
+      "path": "products/056_B081HY9GQ2/附图/02.jpg",
+      "status": "downloaded",
+      "bytes": 135424,
+      "sha256": "63c5db316e53014428a112167c9b476de31dfc45846b209fe36e645eca5a70ce"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61-arimO-nL._AC_SL1000_.jpg",
+      "path": "products/056_B081HY9GQ2/附图/03.jpg",
+      "status": "downloaded",
+      "bytes": 70192,
+      "sha256": "e5d753b95be486215cb745feaa9811d03c126ed56c966a91b64daf9bafc3a33e"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61gRgZTk9AL._AC_SL1000_.jpg",
+      "path": "products/056_B081HY9GQ2/附图/04.jpg",
+      "status": "downloaded",
+      "bytes": 70884,
+      "sha256": "1e5d053f8493a0a0426d34e00b36c0fba51c965b481b9c6a844f7c6e0bff2f74"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61WhjMdQeBL._AC_SL1000_.jpg",
+      "path": "products/056_B081HY9GQ2/附图/05.jpg",
+      "status": "downloaded",
+      "bytes": 70059,
+      "sha256": "e93b47dae6cc38b716a537b112c7a653d9848041d61bfe87e694f31d11560547"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/616M6VLTUNL._AC_SL1000_.jpg",
+      "path": "products/056_B081HY9GQ2/附图/06.jpg",
+      "status": "downloaded",
+      "bytes": 71206,
+      "sha256": "e3e76d4d8720779928a293319a8e168bd051fc0a9bc3f23387da171ed581e7b3"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71aufG+S17L._AC_SL1500_.jpg",
+      "path": "products/056_B081HY9GQ2/附图/07.jpg",
+      "status": "downloaded",
+      "bytes": 102243,
+      "sha256": "969691689063d9433cc07faaa61b3a581f450525dcd892f3af49680d0a1bf2ed"
+    },
+    {
+      "alt": "logo title",
+      "section": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/a9d5d8b6-81f1-45ca-ab53-02fe0484fc8d.__CR0,37,1224,367_PT0_SX600_V1___.png",
+      "role": "aplus",
+      "path": "products/056_B081HY9GQ2/A+/01.jpg",
+      "status": "downloaded",
+      "bytes": 13194,
+      "sha256": "a0a022f703b6e19f88c945b3e6b519f5c490432d1af647f77f93cfceb5b12557"
+    }
+  ]
+}
