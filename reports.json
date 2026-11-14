@@ -2,6 +2,22 @@
   "schema_version": 1,
   "reports": [
     {
+      "id": "tabletop-fountain-media-top100",
+      "title": "桌面喷泉 Top 100 · 商品图片与视频素材库 · 2026-11-14",
+      "path": "跨境电商/喷泉/市场与竞品/amazon-tabletop-fountain-media-top100.html",
+      "domain": "跨境电商",
+      "category": "喷泉",
+      "topic": "市场与竞品",
+      "tags": [
+        "喷泉",
+        "桌面",
+        "竞品分析"
+      ],
+      "summary": "100 款商品的主图、附图、A+ 和视频分类目录。",
+      "updated_at": "2026-11-14",
+      "legacy_paths": []
+    },
+    {
       "id": "outdoor-fountain-top100",
       "title": "亚马逊美国户外喷泉 Top 100 · 落地款目录 · 2026-11-11",
       "path": "跨境电商/喷泉/市场与竞品/amazon-outdoor-fountain-top100.html",
