@@ -1,0 +1,74 @@
+{
+  "products/039_B0H6WYFLXQ/附图/02.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "ELEVATESHOMEDECOR Bring Style Home, Enrich Every Space",
+    "edge_white_ratio": 0.375,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f6842af2b426502081e5392d50cc6dba53754a50c776656645c9d034d6b9444e"
+  },
+  "products/039_B0H6WYFLXQ/附图/03.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "REDUCESWORKSTRESS Ease the Pressure, Keep Ideas Flowing",
+    "edge_white_ratio": 0.48,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3745c4361ae6950f884b2bbac1c57bcd4c7ce0bd1ca6a1754abef04de9c8e172"
+  },
+  "products/039_B0H6WYFLXQ/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "MEDITATION&MINDFULNESS Quiet the Mind, Find Your Balance",
+    "edge_white_ratio": 0.197,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7a25ed76a8e50ab4291e0b409755aaa00acc8ae5ca8980b4ecc8bf46564f6d2d"
+  },
+  "products/039_B0H6WYFLXQ/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "PROMOTESRELAXATION Drift Into Serenity, Smoothe Your Soul",
+    "edge_white_ratio": 0.183,
+    "method": "local_ocr_and_image_background",
+    "sha256": "87d4e092168527aa8637c9ee68712dc108029fa3c16c5feed19b4cfe42b4f40f"
+  },
+  "products/039_B0H6WYFLXQ/附图/06.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "TABLETOP WATERFOUNTAIN Wealth·Good Luck·Health 25cm/9.8\" 20.5cm/8.1 20.5cm/8.1\"",
+    "edge_white_ratio": 0.532,
+    "method": "local_ocr_and_image_background",
+    "sha256": "39004778306cfb3bdcdbb0a679f25789de2b1a9acdc2fd33c4a4e7a235e4b2b1"
+  },
+  "products/039_B0H6WYFLXQ/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.216,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3bd334992949991ea5e4ab38cb30f61474782d9182cdba676eacc44ba4232018"
+  },
+  "products/039_B0H6WYFLXQ/附图/08.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.302,
+    "method": "local_ocr_and_image_background",
+    "sha256": "79571dcc7f2a2876ef0a2a13961627b6d010703d12b389f0abb85c0d20df7fc1"
+  },
+  "products/039_B0H6WYFLXQ/附图/09.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.354,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f6852733cc2e3c580864507394a412396e0fa8147919e963628baf0053fb0b60"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "products/037_B0BLS8L85Y/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.252,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c17cf3da5e29ce3ba32435881164e68850e8e87eb0b367147e2d03dac8470fc8"
+  },
+  "products/037_B0BLS8L85Y/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Soothing running water Realistic stone moss Warm-colored LED lights",
+    "edge_white_ratio": 0.297,
+    "method": "local_ocr_and_image_background",
+    "sha256": "88dbaaaea49222c1a53aa9fad1a998d7e719a5438d70e7bd0f7bff12836bcf83"
+  },
+  "products/037_B0BLS8L85Y/附图/04.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "9.45 in 6.50 in 8.27 in",
+    "edge_white_ratio": 0.941,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ee6822515e64e5402f3d8f462391622c9ae379054c2e2f054bb7ac301e230f5b"
+  },
+  "products/037_B0BLS8L85Y/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Perfect For 2 HOMERELAXATION BEDROOMSLEEPAID 3 WORKSPACEFOCUS SOOTHINGPORCH",
+    "edge_white_ratio": 0.076,
+    "method": "local_ocr_and_image_background",
+    "sha256": "63bb9065b6c83310ad85db829b916fe3bfbbaba00fc0370868f57386dc5f69ff"
+  },
+  "products/037_B0BLS8L85Y/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.188,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c77e7e2ed50651b49af3ed60e396e8634dfd27d222ccdf1d88a6f5ff98c0d29a"
+  },
+  "products/037_B0BLS8L85Y/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.168,
+    "method": "local_ocr_and_image_background",
+    "sha256": "0b2db62de1fb9584309dd98acf17ced1d7e597e57e405506375b638de9d5a167"
+  },
+  "products/037_B0BLS8L85Y/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "16f25dffe0c7d6411c66967da7b36d65bb608c95d86947ef11b424116b2f8e02"
+  }
+}

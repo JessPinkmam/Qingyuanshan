@@ -1,0 +1,56 @@
+{
+  "products/038_B0FJQLC436/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.133,
+    "method": "local_ocr_and_image_background",
+    "sha256": "64544c4fd8a42c26e13d90c8c38869fc6eed3a846eaa8b05170f724af57bf63e"
+  },
+  "products/038_B0FJQLC436/附图/03.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "The product itself does not come with green plantsso users need to plant them by themselves. 9.84 in lphone16Pro 6.49 in 5.9 in",
+    "edge_white_ratio": 0.902,
+    "method": "local_ocr_and_image_background",
+    "sha256": "95fefa8ff0c3bb5d860f8c9e6cf0c73658cb4bbc20076e0e6bcddd656f732b1b"
+  },
+  "products/038_B0FJQLC436/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.172,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2591efe098f1411541a4edf0aa701e94f9de527ed658b640117dd96305d1670b"
+  },
+  "products/038_B0FJQLC436/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "紫",
+    "edge_white_ratio": 0.011,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7d441d1165dd167577771f4eb05c80613aa9820b2bfa360142d85a2583cd2913"
+  },
+  "products/038_B0FJQLC436/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.008,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2e4d3eef29d083f557aae9a70132d8f4bbd72a71b04e3d10a2e9aac0ddeac8d5"
+  },
+  "products/038_B0FJQLC436/附图/07.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.584,
+    "method": "local_ocr_and_image_background",
+    "sha256": "95947317c11d616368ac503661bf32f5488ddd44e8c3026807296d3726ff4030"
+  }
+}
