@@ -1,0 +1,38 @@
+{
+  "products/085_B09PNNT3SF/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "8.25 inch H 5.5inch W",
+    "edge_white_ratio": 0.909,
+    "method": "local_ocr_and_image_background",
+    "sha256": "962e6570b2ea3f3b7d0aba36f6caf664dec9cd24af168fd916289d3992c30ad9"
+  },
+  "products/085_B09PNNT3SF/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.174,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e63b8b56ff118156783e282fa7f7051ee1bf27f5572da0cb57624a164ee01f0b"
+  },
+  "products/085_B09PNNT3SF/附图/04.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "Loading",
+    "edge_white_ratio": 0.931,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5161d7bc7cc48e7956176f96c97660daef0ae21ebfdeb60c1a5601f64d25f5c1"
+  },
+  "products/085_B09PNNT3SF/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.155,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3c64b29ddadbae9ffcbdb6d3ff18b75ebd626d061752a89460872f1b098f7555"
+  }
+}

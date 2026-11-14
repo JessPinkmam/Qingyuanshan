@@ -1,0 +1,65 @@
+{
+  "products/087_B0G3PT7FLX/附图/02.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "Includedpebbles forextrastability 13.0in Three-tieredwaterfall, sereneZenambiance 7.6in Total length: 78in 7.6in IronGreyHeronDesign",
+    "edge_white_ratio": 0.876,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5cdb991eefb9a430baf4fb4b9c2e07a09529c6f5227c5e2e704fdd839cca39b2"
+  },
+  "products/087_B0G3PT7FLX/附图/03.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "Waterflowregulator: Can adjust the size of thewater flow. Suction cup: Adsorbstheproductand prevents excessive vibration. Inletforwater absorption: Connected to the product via a rubbertube.",
+    "edge_white_ratio": 0.925,
+    "method": "local_ocr_and_image_background",
+    "sha256": "0be0c24a06c029255b0a7439ed5ebfc078d99f6fcdc91c0c87f0fc645b00db85"
+  },
+  "products/087_B0G3PT7FLX/附图/04.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "Loading",
+    "edge_white_ratio": 0.931,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5161d7bc7cc48e7956176f96c97660daef0ae21ebfdeb60c1a5601f64d25f5c1"
+  },
+  "products/087_B0G3PT7FLX/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.07,
+    "method": "local_ocr_and_image_background",
+    "sha256": "65ea849f7797383cd9ea143a6c5a7dcea1d213ab7efe019d8077f4c76e1031f5"
+  },
+  "products/087_B0G3PT7FLX/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.068,
+    "method": "local_ocr_and_image_background",
+    "sha256": "86bc7d849b5debd9d3abd92cb5c7f01da8d671e6f35d8b0209c6394c95e566c7"
+  },
+  "products/087_B0G3PT7FLX/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d299937e2effebd136969002e3475f5f660a6aec9ae8792f096e07e4405541d0"
+  },
+  "products/087_B0G3PT7FLX/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.044,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ccc87896b7cc02149011d00cd035a4c4e1d716367f0b442db457e246edf0f97e"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "products/086_B08CDLJ7WC/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Ceramic tabletop fountain S .5 inch 8.3 inch W",
+    "edge_white_ratio": 0.932,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c2a92deda5db00ef6ab0f7a8e6c6cc3fbc473739ecf982dd3d560e19c5c8347b"
+  },
+  "products/086_B08CDLJ7WC/附图/03.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.486,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d2391e82443a9483cbb2164e33910c83d20341dc55b7870cd6d6a438c8155051"
+  },
+  "products/086_B08CDLJ7WC/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "ARWINSTEORI",
+    "edge_white_ratio": 0.019,
+    "method": "local_ocr_and_image_background",
+    "sha256": "a64e0ac102e76f76602b236a5372a7096b05e0bba6d4af31a8417e042eaa793e"
+  },
+  "products/086_B08CDLJ7WC/附图/05.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "Loading",
+    "edge_white_ratio": 0.931,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5161d7bc7cc48e7956176f96c97660daef0ae21ebfdeb60c1a5601f64d25f5c1"
+  }
+}
