@@ -1,0 +1,56 @@
+{
+  "products/046_B0H38C34ZG/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "DECORATIVE& FUNCTIONAL Handcrafted Look Soft LED Light SoothingWaterFlow Durable Resin Natural-Inspired Decor",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3ff45e02519b99dccada84d75e11f96c8f9e5be5867085d4770828daef3efea6"
+  },
+  "products/046_B0H38C34ZG/附图/03.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "Stone-look Waterfall Fountain Addacalm,naturalaccenttoyour spacewith thisindoorrockwaterfall fountain.Crafted from durable resin, itfeaturesrealisticstone textures, botanical details,soft LED lighting,and a handcrafted-inspired look thatbrings a peaceful decorative touch to any room. The quiet pump creates a gentle cascading-water sound,perect for relaxation,meditation,reading,working, yoga,or creating a soothingindoor atmosphere.Itscompacttabletop designfitsbeautifully on desks,shelves, nightstands, living rooms, bedrooms, offices,and meditation corners. Please Note: Addenoughwaterbeforeuse.lfwater flow isweak,adjust the pump position andkeepit fullysubmerged.Refill water regularly and clean mineral buildup when needed for smooth operation.",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "bcabe08311e321d7a6d5a2a2aa53d6ce6206bce8a4f7d0026187209ddd453840"
+  },
+  "products/046_B0H38C34ZG/附图/04.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Product Dimensions Compact tabletop sizefor desks,shelves, and relaxing indoor spaces. Height \"6 Width 6\" Length9.25\"",
+    "edge_white_ratio": 0.002,
+    "method": "local_ocr_and_image_background",
+    "sha256": "522987f634b29b6fdf08aecd28c06d3c0e96705d4d8abf2db77e19d8e9cd9da7"
+  },
+  "products/046_B0H38C34ZG/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3d03cc40bea7f17ed7dbe67f911c5dcc9872b9c2a2f7f96445d50623a91091c4"
+  },
+  "products/046_B0H38C34ZG/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "美 THEKINFOLKMON THISISHOME",
+    "edge_white_ratio": 0.151,
+    "method": "local_ocr_and_image_background",
+    "sha256": "9bb193fa7644cddf6eb5ec3665256a1cd8dae91daf265e05953a89f418d54375"
+  },
+  "products/046_B0H38C34ZG/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2e82ff915700b2a8f3aac48bd0d2f78310712a97346de35992ec2bc5313c420c"
+  }
+}

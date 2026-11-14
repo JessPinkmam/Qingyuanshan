@@ -1,0 +1,47 @@
+{
+  "products/047_B0DF94WHDX/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "umbra",
+    "edge_white_ratio": 0.087,
+    "method": "local_ocr_and_image_background",
+    "sha256": "20da6bab0386de6326d71e2df6ccbf79875c67c89e69fb4f4b706cd6bbc595cc"
+  },
+  "products/047_B0DF94WHDX/附图/03.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "12 %2\" (32cm) 5 2%5\" (14 cm) 3 3%4\" (9.5 cm) umbra 4 V2\" (11 cm)",
+    "edge_white_ratio": 0.968,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8c226ed8829df84fa5e3f423871be6e9998ff665ce52abee122118b92b934986"
+  },
+  "products/047_B0DF94WHDX/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Modern tabletop water fountain provides instant relaxation with the soothing sounds of babbling water. Removable cup can be used for storage, plants,accessories and more. umbra",
+    "edge_white_ratio": 0.073,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7bc4002c1a83eadbec87f4b4091630f29b4f4331c8bcf2bfc26de0b377e8839c"
+  },
+  "products/047_B0DF94WHDX/附图/05.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Made of recycled Eco Friendly Finish plastic and wood fiber. Powered by USB plug umbra with on/off switch.",
+    "edge_white_ratio": 0.529,
+    "method": "local_ocr_and_image_background",
+    "sha256": "89cee92a57eb79d3f8be976c592064fa73498d639b46834bd488377dcd489509"
+  },
+  "products/047_B0DF94WHDX/附图/06.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Max. Fill Min. Fill Pumpruns quietly for5ohours umbra when filled to max water line.",
+    "edge_white_ratio": 0.61,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b152932c33ca13f662d4e5c22763818629047d5490a91cdbbca1fb649f7dd7b9"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "products/048_B0GXDRGG83/附图/02.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "Loading",
+    "edge_white_ratio": 0.931,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5161d7bc7cc48e7956176f96c97660daef0ae21ebfdeb60c1a5601f64d25f5c1"
+  },
+  "products/048_B0GXDRGG83/附图/03.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "CompactTabletopSize ↑10.6inch 9inch 6.7inch",
+    "edge_white_ratio": 0.263,
+    "method": "local_ocr_and_image_background",
+    "sha256": "62fe2f77b88817ff912ba5fab8714c238e6789d67d0ddbdd091359589ed5c2b8"
+  },
+  "products/048_B0GXDRGG83/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "FOCUS Work-Life PLANI Balance EXECUTE TakeABreak WithoutLeavingYourDesk Relax Improve Reduce Better YourMind Focus Stress Sleep",
+    "edge_white_ratio": 0.062,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cf81af21572eb99f12229829a689f092cdda770d7ee3f6857e4f3532ff31d01a"
+  },
+  "products/048_B0GXDRGG83/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "As A Calming Background for Yoga & Meditation",
+    "edge_white_ratio": 0.268,
+    "method": "local_ocr_and_image_background",
+    "sha256": "511bcc990d96b5acd0dd3b0d04c15cf9defcab1f7045ab89394f797d886410a0"
+  },
+  "products/048_B0GXDRGG83/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Warm LED Illumination Creates a cozy and peaceful atmosphere",
+    "edge_white_ratio": 0.009,
+    "method": "local_ocr_and_image_background",
+    "sha256": "da25e1705d7785d3cb9d85c5b0365fb8808395e0072a1be18ccb7f7d25c92098"
+  },
+  "products/048_B0GXDRGG83/附图/07.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "Packing List: Water Fountain Pump&Led Light Water Tank Easy to Install",
+    "edge_white_ratio": 0.006,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5f35868b3a2413d4fb568122220be1e17763eb2542c1ec5789641ee7b4b74ddb"
+  },
+  "products/048_B0GXDRGG83/附图/08.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "Simple 1-Minute Installation No tools required. WaterFlow Adjustment Knob 厂 InsertLEDbeadintotheholeof thefountainbody Connectthewaterpumptothewaterpipe of thefountainbody 3 Fill thebasewithwater And then plug n play.",
+    "edge_white_ratio": 0.668,
+    "method": "local_ocr_and_image_background",
+    "sha256": "495b4a5256933ce9f243aa3679f0de01e6071bfc223cec0b827c3a5559244ad0"
+  },
+  "products/048_B0GXDRGG83/附图/09.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "WHEREITISPLACED: 1. Entryway / Foyer Console Table 2. Home Office Desk 3.LivingRoom Side Tables / Mantel 4.Bedroom Nightstand Which Occasions: 5:DailyWFH&Meditation 6: Social Gatherings & Hosting Guests 7:Commercial&Wellness Spaces: Spa centers, yoga studios, psychological counselingrooms,and reception areas in high-end officebuildings.",
+    "edge_white_ratio": 0.078,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e3dda0000c8951c9e75750caac3e10e0c30997d49c59612ffb140d6607a81f0f"
+  }
+}
