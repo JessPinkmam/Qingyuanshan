@@ -1,0 +1,56 @@
+{
+  "products/012_B09R3PM9RL/附图/02.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.592,
+    "method": "local_ocr_and_image_background",
+    "sha256": "11d3b8d3719c78b0993bbba9484f0809c3da573dbbc25b75dbb3b92251cac276"
+  },
+  "products/012_B09R3PM9RL/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "As a Decoration in Your Room",
+    "edge_white_ratio": 0.022,
+    "method": "local_ocr_and_image_background",
+    "sha256": "303bbe5bf347d8476ffbd5e6ce401d4bb99b8fd9e1b51e7e0e93ffc29ab0f591"
+  },
+  "products/012_B09R3PM9RL/附图/04.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.436,
+    "method": "local_ocr_and_image_background",
+    "sha256": "90a2ab26a196b25085f99345e78c7bdc80dadff77e3f9ed0ba5cc0682080261e"
+  },
+  "products/012_B09R3PM9RL/附图/05.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.414,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d0da1bfc78fcf5cfc347c85410ad7f576863576a021564197b814990304d01b0"
+  },
+  "products/012_B09R3PM9RL/附图/06.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "Size of Colored Water Fountain 10.23 in 8.07 in 8.07 in",
+    "edge_white_ratio": 0.772,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3399ba295641dc8a313c28526a2f1b8033ba2fb30dc0c6d2de284dd65cf26173"
+  },
+  "products/012_B09R3PM9RL/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.034,
+    "method": "local_ocr_and_image_background",
+    "sha256": "97c9cfd726f94ce4f21caec3ec503b193496d24062cabacabf44d8af0b4c2643"
+  }
+}

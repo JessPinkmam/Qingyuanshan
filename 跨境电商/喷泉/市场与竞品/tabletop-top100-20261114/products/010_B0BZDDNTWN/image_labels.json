@@ -1,0 +1,65 @@
+{
+  "products/010_B0BZDDNTWN/附图/02.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "X No River Rocks X No LED Light",
+    "edge_white_ratio": 0.865,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8d2f588dc7e304321f6baf10aee9c7124d773e9461bfaf3b0fec9ae93e481622"
+  },
+  "products/010_B0BZDDNTWN/附图/03.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "5 DifferentInstallations forDifferentEffects",
+    "edge_white_ratio": 0.556,
+    "method": "local_ocr_and_image_background",
+    "sha256": "93fbfb382ed9bbac00824401ff2169b62a9746fa694a56e87bf74d9ed391ae0e"
+  },
+  "products/010_B0BZDDNTWN/附图/04.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Water Sounds Like a Lovely, Burbling Creek Ifyou like thesound of running water, you canremove the bottomcup.",
+    "edge_white_ratio": 0.544,
+    "method": "local_ocr_and_image_background",
+    "sha256": "64b322c3702aac5a370c972c1d7562b64d21aaa9fbff6606f5eae02800a852c4"
+  },
+  "products/010_B0BZDDNTWN/附图/05.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "UPGRADEDSPLASH-PROOFDESIGN Look for the flow restrictor inside the tubing VS JOINDATAT Others Pre-installedflowrestrictorinside tubing No flow restrictor inside tubing Splash-free guaranteed Causes water splashing",
+    "edge_white_ratio": 0.645,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d0da9378cc801ddfbc284ad48dd98a4b6956c22c13b02ee72e7efc655af6d0dc"
+  },
+  "products/010_B0BZDDNTWN/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Sleep More Peacefully",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "682cafaa03a6ccf44c8b8494cc05d272721c113ef48b16cbcc70cb68cd76bc57"
+  },
+  "products/010_B0BZDDNTWN/附图/07.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "7.5in/ 19CM 5.0in/ 12.8 CM 6.2in/ 15.7 CM",
+    "edge_white_ratio": 0.833,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b3d03217cdb5fced4e21f3ccc8d813026e9b22c13606162c97c37b25c16e02d8"
+  },
+  "products/010_B0BZDDNTWN/附图/08.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "Perfect for your living room, bedroom, office, yoga etc.",
+    "edge_white_ratio": 0.467,
+    "method": "local_ocr_and_image_background",
+    "sha256": "268661a8da8e60dc3841ffc4ce1284386cbf5dccd051d47dd04bf126072f77be"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "products/011_B0CFDX5KKF/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.031,
+    "method": "local_ocr_and_image_background",
+    "sha256": "9b9504a93dcdd3bcb3257ee7ea298f9c616de663e6f07821ec0441bf10d38914"
+  },
+  "products/011_B0CFDX5KKF/附图/03.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "The water flows downlayerby layer, playing a melodious rhythm like a natural stream. Fourlayersofwaterflow. The pebbles as decorations add an extra touch of elegance. Redmetal flowers thatneverwither addbeautyto life.",
+    "edge_white_ratio": 0.83,
+    "method": "local_ocr_and_image_background",
+    "sha256": "9f2e00a8c8dee76b37d3991bd76e5ed7ae113fbbc5ff0d9c99bb8d22d1c5917a"
+  },
+  "products/011_B0CFDX5KKF/附图/04.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "11.02in 8.46in",
+    "edge_white_ratio": 0.969,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8d4146bc9060f19a6343fbef74d1e5934bedb7bc812ea954682bf8c79a6b3dd8"
+  },
+  "products/011_B0CFDX5KKF/附图/05.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "Loading",
+    "edge_white_ratio": 0.931,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5161d7bc7cc48e7956176f96c97660daef0ae21ebfdeb60c1a5601f64d25f5c1"
+  },
+  "products/011_B0CFDX5KKF/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.081,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6eacb946ddffd823aa6d54e295469872fbac33cb9a5a1df83e07ef0b9f244492"
+  },
+  "products/011_B0CFDX5KKF/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "de32f750202ec4e6c0bd818f106aae2e5673932a2628c5a196a1f7d9f168fd8f"
+  },
+  "products/011_B0CFDX5KKF/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.087,
+    "method": "local_ocr_and_image_background",
+    "sha256": "96b8403beecc81a045d6b317d5ddcd78ca2128cc89c0ccac5392a96e124e9635"
+  },
+  "products/011_B0CFDX5KKF/附图/09.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.752,
+    "method": "local_ocr_and_image_background",
+    "sha256": "82c285d4dcff5b89920b5a4a33e6cc4e5f197fe381c14202d72fda76883e2f52"
+  }
+}
