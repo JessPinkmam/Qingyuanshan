@@ -1,0 +1,47 @@
+{
+  "products/027_B0B3WQDV6T/附图/02.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "The Array of Changing Color Lights",
+    "edge_white_ratio": 0.769,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1e26a70009a1fa01d4648acb62008fd44007d8931bd98e94b74dd9b8afc4e229"
+  },
+  "products/027_B0B3WQDV6T/附图/03.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "6.9inch 3.1inch 9inch 6.8inch",
+    "edge_white_ratio": 0.956,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3179e9b44800799d8dd43a6b7624bb6860eca2d03b6b1c3d715d30870a4643dc"
+  },
+  "products/027_B0B3WQDV6T/附图/04.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.42,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5c1955ad035b8b79a65ea76f5356839fddcbd727467a2e0f7c1996a5704f90ee"
+  },
+  "products/027_B0B3WQDV6T/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.01,
+    "method": "local_ocr_and_image_background",
+    "sha256": "4da93bbf05d3fd943d683fe26f3380d8e41a92d3ab4bc4af29ed695217a501f8"
+  },
+  "products/027_B0B3WQDV6T/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3f6a7b25258aef0791de7d5ad0274ea1e6e9cf7a996d45f435d035af1767a854"
+  }
+}

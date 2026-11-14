@@ -1,0 +1,74 @@
+{
+  "products/026_B0GV7J4JQY/附图/02.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "Loading",
+    "edge_white_ratio": 0.931,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5161d7bc7cc48e7956176f96c97660daef0ae21ebfdeb60c1a5601f64d25f5c1"
+  },
+  "products/026_B0GV7J4JQY/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.132,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7e4dd72ce5e4cbfa6fa8c352929e694738d3c041e36bd3a1f8f3430652dcf37f"
+  },
+  "products/026_B0GV7J4JQY/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Zen Oasis at Home Serene Lotus Design Color-changing Ultra-Quiet Operation Stress Relief",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2ededce84cb739b5d7ca7d359754d5d3beb0376bacca19529344321bb3d9e601"
+  },
+  "products/026_B0GV7J4JQY/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Perfect for Any Space Home Office Meditation Room Living Space",
+    "edge_white_ratio": 0.201,
+    "method": "local_ocr_and_image_background",
+    "sha256": "71f113183f93ca91e089c33333eba1b5fce7474418163edba8248f15f1e5e1a7"
+  },
+  "products/026_B0GV7J4JQY/附图/06.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "ldeal Gift Choice Bring positive energy and relaxation to your loved ones",
+    "edge_white_ratio": 0.331,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cc48411236ff38684267244b87c5bff4c2a0e58781b4fa844b6fe8f29fd0e3d1"
+  },
+  "products/026_B0GV7J4JQY/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Ultra-Quiet Operation Premium submersible pump with soothing white noise",
+    "edge_white_ratio": 0.138,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c11839ca76127901ba76b3bea7295ded97b785a8838bb961c3eefac24cf323bb"
+  },
+  "products/026_B0GV7J4JQY/附图/08.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "Easy Setup & Maintenance Lotus Fountain Warm Background Quiet Water USB River Stone Bassin Pump",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "398ffeabd31871843950b6d7d257346e00201830a6e27c5fe61ccd24f5e1bcb5"
+  },
+  "products/026_B0GV7J4JQY/附图/09.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "0a2a3558167d6a6c563a2039813c7cb59c863fa9758198b40fca8ef6510a0ce3"
+  }
+}
