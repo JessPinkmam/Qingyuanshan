@@ -1,0 +1,47 @@
+{
+  "products/005_B0FPPK9YDY/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Restore calm during your busy day ULTRAQUIETPUMP Focus instead on the sound of light rain or a gentle stream. SPLASH RESISTANTPAD Minimizes unwanted splashing &enriches the soundquality. SET THEMOOD Choosebetween7cloud colors, creating a magnificent sky.",
+    "edge_white_ratio": 0.02,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2c81cb18f3b54f16a36f1028ab3372128d79ff54048a19f6e11a05425cffdbc0"
+  },
+  "products/005_B0FPPK9YDY/附图/03.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "9.5\" Measuresurface 8hour auto toensurefit shutoff 7.5' ChooseFrom2IncludedSplashResistantPads Default Option 2 Multiplelayers .Singlelayer .Highersoundvolume ·Lowersoundvolume Soundslike'directrainintoapond Soundslike'softerrainintoamossybog' ·Bestused1.5to8feetaway ·Bestused1.5to3feetaway",
+    "edge_white_ratio": 0.475,
+    "method": "local_ocr_and_image_background",
+    "sha256": "95b8e77f7c6d44020d0f603373f15b7b230f6a7d00bb1a51046e68412224254f"
+  },
+  "products/005_B0FPPK9YDY/附图/04.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "Key Features 7 Calming Colors 5 Brightness Levels Fully Assembled Power Plug withUSB-A connection",
+    "edge_white_ratio": 0.357,
+    "method": "local_ocr_and_image_background",
+    "sha256": "63a6f078f16acbba516e5168bded1f4987a83cf12303714862c127399a4bd143"
+  },
+  "products/005_B0FPPK9YDY/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Studies find benefits of a relaxing environment PauseandReset SleepBetterwith the your Mind sound of light rain",
+    "edge_white_ratio": 0.104,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3de37323f63cc87659ab833fe945f695302ff806715d96f06466248f36a26a11"
+  },
+  "products/005_B0FPPK9YDY/附图/06.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "HOW TOCLEAN Simply lift&hold thebasinlid up to access&clean the inside. Washusing asoftclothwithhotwater and asplashofwhitevinegar. Rinsepump&itsfilterperiodically tokeepclean. Ifneeded,remove tape&gently liftpumpupfor easieraccess(careful notto detachwatertubes.) Twistoffouter&inner cloud to access waterholes. Remove debris/ unclog asneeded (tool included.)",
+    "edge_white_ratio": 0.18,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d92d914a3e19d372902147e960e79ce200b1383f26f90b8e1c1ce04c93455917"
+  }
+}

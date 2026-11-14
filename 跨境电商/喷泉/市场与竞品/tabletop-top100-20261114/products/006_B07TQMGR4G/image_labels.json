@@ -1,0 +1,74 @@
+{
+  "products/006_B07TQMGR4G/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Product Dimensions Height 10.2 inches Width 7.5 inches Length 8.3 inches",
+    "edge_white_ratio": 0.126,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b9119c369de1394d77cbd5112ce4c51e4e25e7d5cb21f9b89996036d87c2abe7"
+  },
+  "products/006_B07TQMGR4G/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "THE KINFOLK HOME ATELIERAMOUR",
+    "edge_white_ratio": 0.052,
+    "method": "local_ocr_and_image_background",
+    "sha256": "aca59992fcdb6c569d711085cfe6578da0ef362ed6502aa319c3d0a42ac5629f"
+  },
+  "products/006_B07TQMGR4G/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.02,
+    "method": "local_ocr_and_image_background",
+    "sha256": "001cbb5034276e3d9cbf28ee1a7b2fd7f5ad4b34a5838dfd216ab13c5a28a3a8"
+  },
+  "products/006_B07TQMGR4G/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Relaxing Water Fountain Bring Calm to Your Space Soothing Relaxation RGBLED Light 爱 Ultra Quiet Easy Setup Bedroom Office LivingRoom Meditation",
+    "edge_white_ratio": 0.082,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3e8ea658a901a92201cf2335a11bec1f7709676e27d092ce122e2703ce29022d"
+  },
+  "products/006_B07TQMGR4G/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "feafcc6851a306c962aac5d1b7958e247bffb7f565101e44ab4a72945a157d76"
+  },
+  "products/006_B07TQMGR4G/附图/07.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "SIMPLE TO SETUP & MAINTAIN",
+    "edge_white_ratio": 0.343,
+    "method": "local_ocr_and_image_background",
+    "sha256": "78974a4597945aeb152e6fcec3b7a73fa13c1a5e5f3f4e11e1ae9ea3a83a1214"
+  },
+  "products/006_B07TQMGR4G/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": " tranquil sounds increases relaxation corded power supply on/offswitch",
+    "edge_white_ratio": 0.005,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6b0a8cc127ceddffceb710d83ac3cc6093a4a5ecdbf1f7a9c0f73631621f9359"
+  },
+  "products/006_B07TQMGR4G/附图/09.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.922,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cc0e87cf18eae63959f751607c2912768c6ade934a5d3a88e3dec1b209390208"
+  }
+}
