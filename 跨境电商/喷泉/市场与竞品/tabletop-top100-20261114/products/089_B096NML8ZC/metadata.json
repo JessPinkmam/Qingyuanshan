@@ -1,0 +1,101 @@
+{
+  "asin": "B096NML8ZC",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/71UrG48P-hS._AC_UL300_SR300,200_.jpg",
+  "rank": 89,
+  "title": "Handunmi 15.7\" H 4-Tier Indoor Tabletop Waterfall Fountain with LED Lights Desktop Fountains Calming Sound for Home Office Decor (15.7ihch)",
+  "url": "https://www.amazon.com/Handunmi-Tabletop-Waterfall-Fountain-Fountains/dp/B096NML8ZC/ref=zg_bs_g_3735981_d_sccl_89/142-4700496-1670833?psc=1",
+  "captured_at": "2026-11-14T07:49:36.896Z",
+  "images": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/71UrG48P-hS._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61U1I89-ImS._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71VpqaRTmFS._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71dgJowouKS._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61OBDpXf7bS._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61D0LiJXeSS._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61skx64n06S._AC_SL1000_.jpg"
+    }
+  ],
+  "videos": [],
+  "errors": [],
+  "page_title": "15.7\" H 4-Tier Indoor Tabletop Waterfall Fountain with LED Lights Desktop Fountains Calming Sound for Home Office Decor (15.7ihch)",
+  "aplus": [],
+  "gallery_expected": 7,
+  "assets": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/71UrG48P-hS._AC_SL1000_.jpg",
+      "path": "products/089_B096NML8ZC/主图/01.jpg",
+      "status": "downloaded",
+      "bytes": 152947,
+      "sha256": "d271549273a28a9afc1e38ec5360aacd6e5e8f94cf15bf3aa0ffdc01ac816653"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61U1I89-ImS._AC_SL1000_.jpg",
+      "path": "products/089_B096NML8ZC/附图/02.jpg",
+      "status": "downloaded",
+      "bytes": 99525,
+      "sha256": "1ded5961124c310fd05e408354fced8a2d519cfacb36cbd212efb3495493b755"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71VpqaRTmFS._AC_SL1000_.jpg",
+      "path": "products/089_B096NML8ZC/附图/03.jpg",
+      "status": "downloaded",
+      "bytes": 150573,
+      "sha256": "06e20caf0e623f0e3013d26b4e41de556f55aa80f5cd6ccd815c14e15d66af32"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71dgJowouKS._AC_SL1000_.jpg",
+      "path": "products/089_B096NML8ZC/附图/04.jpg",
+      "status": "downloaded",
+      "bytes": 159482,
+      "sha256": "37053eaec7c2b9e67059bab1c653774711d261650fd334d16da75528a3926afb"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61OBDpXf7bS._AC_SL1000_.jpg",
+      "path": "products/089_B096NML8ZC/附图/05.jpg",
+      "status": "downloaded",
+      "bytes": 105326,
+      "sha256": "c5536754ced8177d7419ff20000dd669edbda437bf5f8cfac8ccc5c38b8f70c3"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61D0LiJXeSS._AC_SL1000_.jpg",
+      "path": "products/089_B096NML8ZC/附图/06.jpg",
+      "status": "downloaded",
+      "bytes": 74409,
+      "sha256": "37d7550a7e52e6b6e538c227cd2a344dfd7928803766cb08ecf6bf6f0786a68b"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61skx64n06S._AC_SL1000_.jpg",
+      "path": "products/089_B096NML8ZC/附图/07.jpg",
+      "status": "downloaded",
+      "bytes": 63372,
+      "sha256": "8dff0fd2bb9f1ecb6186fe9af8a7394c26c4f4d3af91f13d20495095e00cfd52"
+    }
+  ]
+}

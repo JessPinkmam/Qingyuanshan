@@ -1,0 +1,65 @@
+{
+  "products/090_B0H54SZQ5J/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "18cm/7inch DESGMOMY 17.5cm/6.9inch 17.5cm/6.9inch",
+    "edge_white_ratio": 0.908,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f129122acf7598fc79b1aaa0d5587907c820c1b6e70011c868da912e6c6b0e7e"
+  },
+  "products/090_B0H54SZQ5J/附图/03.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Flowing water Crystal-clear material DESGMOMY MatteBlackBase",
+    "edge_white_ratio": 0.85,
+    "method": "local_ocr_and_image_background",
+    "sha256": "36dcce6a5dc1df7a1479ccc8dfe3de15f46f29eb9a07bb5f6cf65ce88f5bf63c"
+  },
+  "products/090_B0H54SZQ5J/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Elevate Your Workspace A perfect aesthetic addition to your desk.",
+    "edge_white_ratio": 0.259,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e70004886bb3eb4a0edb8fe8b9f96dfb1265acb9da8c8714b107b8e522ada309"
+  },
+  "products/090_B0H54SZQ5J/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Perfect for Meditation Create a peaceful oasis and relieve daily stress.",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2b469ba768d6404eb07ceb784289210eb5017f9928e76a387fb047d72e6f2e97"
+  },
+  "products/090_B0H54SZQ5J/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Ultra-Quiet Operation Gentle natural water sound with zero distracting noise. DESGMOMIY",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3d85d25bc211e3e8963008b45ce802cdef7b44db3d52262fb057cdd91219ecd8"
+  },
+  "products/090_B0H54SZQ5J/附图/07.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "Versatile for Any Space DESGMOMIY Bedroom StudyRoom Living Room",
+    "edge_white_ratio": 0.509,
+    "method": "local_ocr_and_image_background",
+    "sha256": "0e7d6897d74401e5d87f7f05e8acb18aa0bd02d12c9c4b4927ca0587e9cf3ae1"
+  },
+  "products/090_B0H54SZQ5J/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Aesthetic Lifestyle Elevate your interior taste and enjoy relaxing moments.",
+    "edge_white_ratio": 0.148,
+    "method": "local_ocr_and_image_background",
+    "sha256": "59f2443b61b8fb1ad7a777b08af261cf70e76d098b1ef008cbaaa63c36dc7242"
+  }
+}

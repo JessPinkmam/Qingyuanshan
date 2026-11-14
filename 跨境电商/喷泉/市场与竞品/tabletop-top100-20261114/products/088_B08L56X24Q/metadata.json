@@ -1,0 +1,103 @@
+{
+  "asin": "B08L56X24Q",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/51VVJ1F3DtL._AC_UL300_SR300,200_.jpg",
+  "rank": 88,
+  "title": "Glass Ball Replacement for Indoor Tabletop Fountain Waterfall 5cm",
+  "url": "https://www.amazon.com/qidobip-Replacement-Tabletop-Fountain-Waterfall/dp/B08L56X24Q/ref=zg_bs_g_3735981_d_sccl_88/142-4700496-1670833?psc=1",
+  "captured_at": "2026-11-14T07:49:36.896Z",
+  "images": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/51VVJ1F3DtL._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61kHJDQvtaL._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/6190cpBIpXL._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71dKXTHMRUL._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61hROBD7hkL._AC_SL1000_.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "creator": "Seller",
+      "description": "video thumbnail",
+      "duration": "0:15",
+      "product_asin": "B08L56X24Q",
+      "related_asins": "B08L56X24Q",
+      "title": "Tabletop Fountain with Fish Tank",
+      "url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/7c18ed7a-1d3d-4767-b234-384f0d998c84/default.jobtemplate.hls.m3u8",
+      "vendor": "KZH"
+    }
+  ],
+  "errors": [],
+  "page_title": "Glass Ball Replacement for Indoor Tabletop Fountain Waterfall 5cm",
+  "aplus": [],
+  "gallery_expected": 5,
+  "assets": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/51VVJ1F3DtL._AC_SL1000_.jpg",
+      "path": "products/088_B08L56X24Q/主图/01.jpg",
+      "status": "downloaded",
+      "bytes": 40356,
+      "sha256": "c7fe584bcf502f5b5d512b5d88e511ae53a3f02c26f94663211074978c71ee68"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61kHJDQvtaL._AC_SL1000_.jpg",
+      "path": "products/088_B08L56X24Q/附图/02.jpg",
+      "status": "downloaded",
+      "bytes": 82764,
+      "sha256": "a3100b5a2c2a5ad0a7c186d90a1893df2ba9116a2f2f218c4ef5272f4737dc51"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/6190cpBIpXL._AC_SL1000_.jpg",
+      "path": "products/088_B08L56X24Q/附图/03.jpg",
+      "status": "downloaded",
+      "bytes": 95553,
+      "sha256": "21aa1030eab3945f5ed4ec58437c3fbb7a02ae1a71f47108745d1ccb9a1c17a7"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71dKXTHMRUL._AC_SL1000_.jpg",
+      "path": "products/088_B08L56X24Q/附图/04.jpg",
+      "status": "downloaded",
+      "bytes": 122298,
+      "sha256": "89e6e8b93c31027761899e4084360fa6df9744336fd790bc2255c5444cf65b58"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61hROBD7hkL._AC_SL1000_.jpg",
+      "path": "products/088_B08L56X24Q/附图/05.jpg",
+      "status": "downloaded",
+      "bytes": 98747,
+      "sha256": "47d66983b242a8edfa4ec746add4ad5101faa9158e10d3cb7178be9f636bede6"
+    },
+    {
+      "creator": "Seller",
+      "description": "video thumbnail",
+      "duration": "0:15",
+      "product_asin": "B08L56X24Q",
+      "related_asins": "B08L56X24Q",
+      "title": "Tabletop Fountain with Fish Tank",
+      "url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/7c18ed7a-1d3d-4767-b234-384f0d998c84/default.jobtemplate.hls.m3u8",
+      "vendor": "KZH",
+      "role": "video",
+      "path": "products/088_B08L56X24Q/视频/01.mp4",
+      "status": "downloaded",
+      "bytes": 3031245,
+      "sha256": "a844e609ee0582de4a1666c2745eb954a0011ab2d57bb05b3471ae3bfe8e9fc5"
+    }
+  ]
+}
