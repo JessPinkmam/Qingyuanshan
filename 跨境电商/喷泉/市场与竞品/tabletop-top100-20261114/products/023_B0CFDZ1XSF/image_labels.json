@@ -1,0 +1,56 @@
+{
+  "products/023_B0CFDZ1XSF/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.227,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cb3ecc7031e3e11333f70b486d73ac940b1f4fb6b4a74956f0ade35ec65e63d5"
+  },
+  "products/023_B0CFDZ1XSF/附图/03.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "DIY and plant your favorite green plants.",
+    "edge_white_ratio": 0.918,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f37d32fac2c795af49e5206a715acc54cd51bc9d87dde5c78bfbe66ca2062db5"
+  },
+  "products/023_B0CFDZ1XSF/附图/04.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "The product itself does not come with green plantsso users need to plant them by themselves. 9.9 in 5.5 in 5.5 in",
+    "edge_white_ratio": 0.981,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c310d06c744e9b758d02889ab0a2e77a6f98efa76e854d0aa853b3b3973f62a3"
+  },
+  "products/023_B0CFDZ1XSF/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.225,
+    "method": "local_ocr_and_image_background",
+    "sha256": "05f108f29bd3654b7ca75df657d8b34dd864e633e8ca38b609352554ce54ebdc"
+  },
+  "products/023_B0CFDZ1XSF/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.105,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3b9cfb59008a5ffaaa0a03b26b56fbdb3fdaa5c7277839293856ad6c56adc138"
+  },
+  "products/023_B0CFDZ1XSF/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.043,
+    "method": "local_ocr_and_image_background",
+    "sha256": "dea1715d99005a7d31d094c51aec4010482d248e80cffd580077aeab42fa5961"
+  }
+}

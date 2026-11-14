@@ -1,0 +1,47 @@
+{
+  "products/022_B09G63YXMV/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Ceramicfountain 7.45 inch H 7.85 inch W",
+    "edge_white_ratio": 0.929,
+    "method": "local_ocr_and_image_background",
+    "sha256": "fe84bb05f0a16c35a5b8fdfcc295a248c3ffd19e3bb1f2952c0f06fd2fd87fba"
+  },
+  "products/022_B09G63YXMV/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.19,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3d0f8550be3c764a40519faa27708f8715f016a2dad21a329be8368581540012"
+  },
+  "products/022_B09G63YXMV/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Company Les Miserable",
+    "edge_white_ratio": 0.236,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8b458f96ee9d3a0766f5be0e3ecfe77bb6c5f98f13a44352af49838bd2b3d92a"
+  },
+  "products/022_B09G63YXMV/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "2024|June 06 》JUN《 2024",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "59b8a0e80aa75bca9958f971c025a5dacae6fa1c005be702b43ceec37154ce32"
+  },
+  "products/022_B09G63YXMV/附图/06.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.558,
+    "method": "local_ocr_and_image_background",
+    "sha256": "42493db4cf08c47d5924a7f441751c4dcd00289e1c1fa6a507a36add9a64ccce"
+  }
+}

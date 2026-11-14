@@ -1,0 +1,101 @@
+{
+  "asin": "B0B4DDGHRR",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/81Ce3AtvxxL._AC_UL600_SR600,400_.jpg",
+  "rank": 24,
+  "title": "Amootek Tabletop Fountain Relaxing Tabletop Waterfall Fountain with Natural River Rocks & Color-Changing LED Lights - Indoor Zen Office/Home Decor Water Feature, 6.3\"x 5.12\"x 8.66\"",
+  "url": "https://www.amazon.com/Waterfall-Fountain-Tabletop-Decorated-Colorful/dp/B0B4DDGHRR/ref=zg_bs_g_3735981_d_sccl_24/142-4700496-1670833?psc=1",
+  "captured_at": "2026-11-14T07:31:09.119Z",
+  "images": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/81Ce3AtvxxL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71OqkDta12L._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/81TiPBdj4ML._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71fXGyMhh5L._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/81RGinE7SiL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71qIc1vrmxL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/818D+5Wz-LL._AC_SL1500_.jpg"
+    }
+  ],
+  "videos": [],
+  "errors": [],
+  "page_title": "Tabletop Fountain Relaxing Tabletop Waterfall Fountain with Natural River Rocks & Color-Changing LED Lights - Indoor Zen Office/Home Decor Water Feature, 6.3\"x 5.12\"x 8.66\"",
+  "aplus": [],
+  "gallery_expected": 7,
+  "assets": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/81Ce3AtvxxL._AC_SL1500_.jpg",
+      "path": "products/024_B0B4DDGHRR/主图/01.jpg",
+      "status": "downloaded",
+      "bytes": 297578,
+      "sha256": "84a5e73e70e01c62b832bdb842e96482c8bd7b630ed057fca522c3b700a48842"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71OqkDta12L._AC_SL1500_.jpg",
+      "path": "products/024_B0B4DDGHRR/附图/02.jpg",
+      "status": "downloaded",
+      "bytes": 214083,
+      "sha256": "fc9cf641c78418408fa7caa90c6a723e276352cf1d204975b72570c2e93b4d65"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/81TiPBdj4ML._AC_SL1500_.jpg",
+      "path": "products/024_B0B4DDGHRR/附图/03.jpg",
+      "status": "downloaded",
+      "bytes": 267385,
+      "sha256": "45b1fa34fc56d8a00389f614a3e5b4253c1753a9c04a59e7ab852a3fe2a78e49"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71fXGyMhh5L._AC_SL1500_.jpg",
+      "path": "products/024_B0B4DDGHRR/附图/04.jpg",
+      "status": "downloaded",
+      "bytes": 199184,
+      "sha256": "cc911a91923d659cc009d8cd2170864a26f9ea2cb7000962b61cfb63946a65e5"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/81RGinE7SiL._AC_SL1500_.jpg",
+      "path": "products/024_B0B4DDGHRR/附图/05.jpg",
+      "status": "downloaded",
+      "bytes": 401264,
+      "sha256": "fdc7a09f2152d66eda32929c0a1d808cb7c8c1441a53fde226b28f86804d7b4d"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71qIc1vrmxL._AC_SL1500_.jpg",
+      "path": "products/024_B0B4DDGHRR/附图/06.jpg",
+      "status": "downloaded",
+      "bytes": 244148,
+      "sha256": "c1757f2b5e885523f3c447999e93002f54fb1bdf8be6861f719173916bcc3dfc"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/818D+5Wz-LL._AC_SL1500_.jpg",
+      "path": "products/024_B0B4DDGHRR/附图/07.jpg",
+      "status": "downloaded",
+      "bytes": 322663,
+      "sha256": "d550fd570e9764a983b74bb5a831f0cd49c67edf3f2b069973fede4aa2f2b951"
+    }
+  ]
+}
