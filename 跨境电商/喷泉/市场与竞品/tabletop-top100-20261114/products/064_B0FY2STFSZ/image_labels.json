@@ -1,0 +1,65 @@
+{
+  "products/064_B0FY2STFSZ/附图/02.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.476,
+    "method": "local_ocr_and_image_background",
+    "sha256": "4a0ae18f3f7be889a47e832a116b87913da6dd6ae654f2b25caa5222a9d297ec"
+  },
+  "products/064_B0FY2STFSZ/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "ArtisticDesign  Promotes Relaxation ? SoothingWaterFlow Natural River Rocks",
+    "edge_white_ratio": 0.037,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f93fab325e1c0f30ab34b5ea3aaefb25026c234a7da2151e8ec00cabacb8dde6"
+  },
+  "products/064_B0FY2STFSZ/附图/04.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "CASCADINGWATER LED LIGHTS ECO-FRIENDLY",
+    "edge_white_ratio": 0.811,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6d57131c4b0d7899416a8b5c3890e3cd22d62364a24426cd47ea10c02f651d19"
+  },
+  "products/064_B0FY2STFSZ/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "a5b132a8a8dea4431bfaf495735c1560b4753ef5cf0dde48c867dba8f4cc807f"
+  },
+  "products/064_B0FY2STFSZ/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.053,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d57ab9a52ae21578d49fff8a781832e50fdcaa31b3ad208be6b6daca4d60f01a"
+  },
+  "products/064_B0FY2STFSZ/附图/07.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.539,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5cdf32341137c7870c7dca64492066b740122a917a602a91466ea35818548828"
+  },
+  "products/064_B0FY2STFSZ/附图/08.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.968,
+    "method": "local_ocr_and_image_background",
+    "sha256": "4fee9480a0a5ae37384582f2c38eff61dfb0d4ca6d72cb100935b18c9ce855be"
+  }
+}

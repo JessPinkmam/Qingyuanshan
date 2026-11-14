@@ -1,0 +1,56 @@
+{
+  "products/065_B0GGZ721LR/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "COMPACTTABLETOPSIZE Designed for desks, shelves & side tables Compact Size 8.8 in 4.7in 6.3 in",
+    "edge_white_ratio": 0.275,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3d2915579001ec352f24b3f87d0af028b1ee47ac4616072a386639b86ea7524d"
+  },
+  "products/065_B0GGZ721LR/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Close-up View Natural Feel Soothing Light Bright Rocks",
+    "edge_white_ratio": 0.118,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6cb504af948675d118b2881c3fa3697b7d6f112767269d6bd2ec1a4081158171"
+  },
+  "products/065_B0GGZ721LR/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Thoughtful Upgrade Equippedwitha switch,making it more convenientforyou touse.",
+    "edge_white_ratio": 0.107,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cb5aa0e8ad043f46753407f6a97821e88faed0b6854bc4339f56ea369cd1c74f"
+  },
+  "products/065_B0GGZ721LR/附图/05.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "SUITABLE FORA VARIETYOF SCENARIOS ·Office ·Bedroom · Living room ·Garden",
+    "edge_white_ratio": 0.465,
+    "method": "local_ocr_and_image_background",
+    "sha256": "420a303383e78bdfcd393914331f88a379732a4dee3b9b9c9bc384d44b8c2bd1"
+  },
+  "products/065_B0GGZ721LR/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "A LittleMoment of Calm K Gentle Water Sounds · Soft Ambient Lighting Soothing Water Sounds Soft Ambient Lighting Create a Relaxing Space",
+    "edge_white_ratio": 0.212,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7b7a4b3ba33ac2f0205fc56f6a2a2b9d90042d765c12b3791486ed6882172434"
+  },
+  "products/065_B0GGZ721LR/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Packaged with Perfection Withpremiummaterials and meticulous craftsmanship the unboxing experience is as breathtaking as the gift itself. TabletopFountains Bringasenseof innerpeace",
+    "edge_white_ratio": 0.239,
+    "method": "local_ocr_and_image_background",
+    "sha256": "77110a1c2536e14af58e6887b6212158922513421212e8e086da3953b71bc215"
+  }
+}

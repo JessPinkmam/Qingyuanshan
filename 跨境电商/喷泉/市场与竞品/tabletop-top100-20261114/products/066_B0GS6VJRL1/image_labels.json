@@ -1,0 +1,65 @@
+{
+  "products/066_B0GS6VJRL1/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "16.5 cm/6.5 in 18cm/7.09in",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "525d37989ec4e4ec1eceee1d1d4302fe65940931f0a5f21e381a6ccf8df584d5"
+  },
+  "products/066_B0GS6VJRL1/附图/03.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "There is a 5-centimeter crystal ball in the middle of the product. Water flows out from the middle and drives the crystal ball to roll. The bottom basin is designed in the shape of a treasure basin, symbolizing the accumulation of wealth",
+    "edge_white_ratio": 0.535,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c131918e41174b2a2fa4d27f5b40309c058b2bd124223e4a7a7fdb2e5281d688"
+  },
+  "products/066_B0GS6VJRL1/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Good gifts for relatives and friends GRAND OPENING LGO",
+    "edge_white_ratio": 0.022,
+    "method": "local_ocr_and_image_background",
+    "sha256": "94666734516e88e25838225571d18921fb7cb9ffc71f70531e6643aeea4404a0"
+  },
+  "products/066_B0GS6VJRL1/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.163,
+    "method": "local_ocr_and_image_background",
+    "sha256": "9437403e5ead22744e499c0b04aabd3cfdb2c08c52b3746f43c2bb80deda4ced"
+  },
+  "products/066_B0GS6VJRL1/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.058,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3adf58adf6808dae87a1c5c5d0e84b03204dea01355245f067207ebd3db4ce86"
+  },
+  "products/066_B0GS6VJRL1/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e0b4f68f4198108d1ba93511297d9ad90766c4f7189ae19c3cbeda4f79ffb4b6"
+  },
+  "products/066_B0GS6VJRL1/附图/08.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "Removetheproductpackagingandtake outalltheaccessoriesinside. Thereisapowerplug，anextrawaterpump (agift) a crystalball,apartofthe productwithwiresandthewaterpump connectedtoit,andabasinatthebottom. Takethepartoftheproductwiththewire andthewaterpump,pullthewireoutof theslot,andplacetheupperpartofthe productonthebottombasin. Thenplacethecrystalballontop,and connecttheUSBinterfaceofthewireto theplug.Nowtheproductisready. Thenfilltheproductwithwater completely,andfinallyturnonthe power.Theproductwillthenoperate normally. Specialattention: Afterinstallingtheproduct,you mustfirstfillitwithwaterand thenturnonthepower.",
+    "edge_white_ratio": 0.435,
+    "method": "local_ocr_and_image_background",
+    "sha256": "03625e8256a465eac873e6e79379051ad8f0d2a1727566ec0b8f246d2d858675"
+  }
+}
