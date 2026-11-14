@@ -1,0 +1,47 @@
+{
+  "products/017_B0DF5C1HL7/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "height 25cm/9.84in width 13cm/5.12in length 13cm/5.12in",
+    "edge_white_ratio": 0.053,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8703f69f28acb8f5caba55d7372c7d6b0e1ed39025b898caf57069e7993cc857"
+  },
+  "products/017_B0DF5C1HL7/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.098,
+    "method": "local_ocr_and_image_background",
+    "sha256": "0331c0c0bf2b55194d940601bfd22d5819fd6953a4ca1acfca62f038144c6a8e"
+  },
+  "products/017_B0DF5C1HL7/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.02,
+    "method": "local_ocr_and_image_background",
+    "sha256": "16e49a4d37a941af8705acf9932c0fef8f5447d204771eb04512b5495d26fe1a"
+  },
+  "products/017_B0DF5C1HL7/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "CALMING TABLETOP FOUNTAIN Soothing WaterSound ArtisanMetalCraft Serene Space Accent",
+    "edge_white_ratio": 0.019,
+    "method": "local_ocr_and_image_background",
+    "sha256": "0511d63637d7b3d5c709cfcd2b3b5f8e9d1fff6b1d7cbfd353082e92389e15af"
+  },
+  "products/017_B0DF5C1HL7/附图/06.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "The water flows down layer by layer, playing a melodious rhythm like a natural stream. Three layers of Delicatemetalbutterfly ornament addsvividvitality. cascadingwate flow. Eternalmetallotusbloom Naturalpolishedpebbles thatneverfades. with soft glowing LED light.",
+    "edge_white_ratio": 0.933,
+    "method": "local_ocr_and_image_background",
+    "sha256": "aeab30356e5e8a3b1e7f9a02ccfef2e894e8e12a0709720c145d67d3b3d1a56a"
+  }
+}

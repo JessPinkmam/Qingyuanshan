@@ -1,0 +1,65 @@
+{
+  "products/016_B0G7XFXKYL/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "your moment of calm UNWIND WITH THE SOOTHING SOUND OF FLOWINGWATER. TABLETOP FOUNTAIN-A STYLISH ACCENT FOR ANY DECOR",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f8f2dce7c94e39449d5622e3679f3a457432dcf9f30144ee40c8f795ae4238dc"
+  },
+  "products/016_B0G7XFXKYL/附图/03.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "everything you need to unwind TRANQUIL CALMING LED WATERSOUNDS LIGHT RUNSFOR QUIETBUILT-IN HOURS PUMP TOPFILL EASYTO DESIGN CLEAN WATERWILLNATURALLYEVAPORATE DURING USE,CHECK PERIODICALLY AND REFILLASNEEDED.",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6de858433d68a2a4f8131364b6d3473eefd091786542f575f0c4bd6dd58fd79d"
+  },
+  "products/016_B0G7XFXKYL/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "metal votive-inspired style ENHANCE YOUR INTERIOR WITH A SOPHISTICATED GLOWAND TIMELESS DECORATIVEAPPEAL.",
+    "edge_white_ratio": 0.026,
+    "method": "local_ocr_and_image_background",
+    "sha256": "a6863f1ad66cc9261fb26463a0d361c92683e47300ea8e073e0f91b517869c4a"
+  },
+  "products/016_B0G7XFXKYL/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "create a cozy,relaxing nook WITH SOOTHING,FLOWING WATERS THAT FILL YOUR SPACEWITHTRANQUIL SOUNDS,EASING STRESSANDTENSION.",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "94fbb014757eb130ca38c1b80d881d76f4ccb711a97d5a7174872c84e6456ad2"
+  },
+  "products/016_B0G7XFXKYL/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "a perfect addition toyourhome or office",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "786612f7993517cb5a1fd93366d7b8bdf99a4d9db458f09ed6acf47d8466daf3"
+  },
+  "products/016_B0G7XFXKYL/附图/07.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "tabletop size & easy setup FITS ANYWHERE.JUST FILL WITH WATER &PLUGIN. 4.64″",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c697f71e5c26a6709436e37fced92ab0bbe45e1447688f7ffcd73bb9996095ac"
+  },
+  "products/016_B0G7XFXKYL/附图/08.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "elevateyourspace CHOOSETHEDESIGNTHATSPEAKSTOYOUR STYLE",
+    "edge_white_ratio": 0.691,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b7b3bbf30dfb21b5ffae3cbbf850fc3efe521c934741c8c7bf9d71a13e285849"
+  }
+}

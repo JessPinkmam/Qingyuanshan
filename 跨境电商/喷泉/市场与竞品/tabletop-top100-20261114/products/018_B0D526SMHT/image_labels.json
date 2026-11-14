@@ -1,0 +1,65 @@
+{
+  "products/018_B0D526SMHT/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "AboutSize 5.8inch 8.5inch 2.55inch 3.8inch 6.2inch",
+    "edge_white_ratio": 0.033,
+    "method": "local_ocr_and_image_background",
+    "sha256": "10e46e2267ca6b06ceb2de454687d85ff40dd218e674900fa68a8579ef562d48"
+  },
+  "products/018_B0D526SMHT/附图/03.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Colorful Light",
+    "edge_white_ratio": 0.95,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b4edfc634da076487961bed7cc003a012696fa0c24cdfcb5b7a5bd6daaf86053"
+  },
+  "products/018_B0D526SMHT/附图/04.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Package Includes Water pump Rockery Base Pebble",
+    "edge_white_ratio": 0.795,
+    "method": "local_ocr_and_image_background",
+    "sha256": "a4498a566164c63a93a6b62d1b015181c4abcc82b9a349e55725e978622052b9"
+  },
+  "products/018_B0D526SMHT/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.021,
+    "method": "local_ocr_and_image_background",
+    "sha256": "be19de9963eeee1625b634c0be0ebceb2dfc7224e724f8a9ba2d70e9dde6a29d"
+  },
+  "products/018_B0D526SMHT/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "业",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1505ffb01b6cd4dd7d8c235c4a4926aec5b008392c4498b33b0c1f8417637405"
+  },
+  "products/018_B0D526SMHT/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1a7633f8c0c7f267eecb8c2ea4d3308176fa6893c471cf6fdb0a87c6ffcf1206"
+  },
+  "products/018_B0D526SMHT/附图/08.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "MoMA 1914 MoMA atfe antt",
+    "edge_white_ratio": 0.492,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e5cf20ebfdef46f9d588e03b20d62c604f0370b7daebc6af6cae407f2c59fbc5"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "asin": "B0D526SMHT",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/81PYxtK7aCL._AC_UL600_SR600,400_.jpg",
+  "rank": 18,
+  "title": "Tabletop Fountain Indoor Waterfall Rock Fountain LED-Lights Water Feature Waterfall for Modern Home and Office Indoor Decoration",
+  "url": "https://www.amazon.com/Tabletop-Fountain-Waterfall-LED-Lights-Decoration/dp/B0D526SMHT/ref=zg_bs_g_3735981_d_sccl_18/142-4700496-1670833?psc=1",
+  "captured_at": "2026-11-14T07:29:33.836Z",
+  "images": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/81PYxtK7aCL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/813FxjyaiWL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/81MLXDQrNUL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71Si7241FTL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/81zEuofjDvL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/812Cu1h9dSL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/819aTFs1eAL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/815R3UKw3lL._AC_SL1500_.jpg"
+    }
+  ],
+  "videos": [],
+  "errors": [],
+  "page_title": "Tabletop Fountain Indoor Waterfall Rock Fountain LED-Lights Water Feature Waterfall for Modern Home and Office Indoor Decoration",
+  "aplus": [],
+  "gallery_expected": 8,
+  "assets": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/81PYxtK7aCL._AC_SL1500_.jpg",
+      "path": "products/018_B0D526SMHT/主图/01.jpg",
+      "status": "downloaded",
+      "bytes": 332412,
+      "sha256": "05e129f8c8e3ab71e539ace6893c899d97eea1af84b2f2cabdd8d6844014250e"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/813FxjyaiWL._AC_SL1500_.jpg",
+      "path": "products/018_B0D526SMHT/附图/02.jpg",
+      "status": "downloaded",
+      "bytes": 299399,
+      "sha256": "10e46e2267ca6b06ceb2de454687d85ff40dd218e674900fa68a8579ef562d48"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/81MLXDQrNUL._AC_SL1500_.jpg",
+      "path": "products/018_B0D526SMHT/附图/03.jpg",
+      "status": "downloaded",
+      "bytes": 441797,
+      "sha256": "b4edfc634da076487961bed7cc003a012696fa0c24cdfcb5b7a5bd6daaf86053"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71Si7241FTL._AC_SL1500_.jpg",
+      "path": "products/018_B0D526SMHT/附图/04.jpg",
+      "status": "downloaded",
+      "bytes": 218968,
+      "sha256": "a4498a566164c63a93a6b62d1b015181c4abcc82b9a349e55725e978622052b9"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/81zEuofjDvL._AC_SL1500_.jpg",
+      "path": "products/018_B0D526SMHT/附图/05.jpg",
+      "status": "downloaded",
+      "bytes": 259953,
+      "sha256": "be19de9963eeee1625b634c0be0ebceb2dfc7224e724f8a9ba2d70e9dde6a29d"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/812Cu1h9dSL._AC_SL1500_.jpg",
+      "path": "products/018_B0D526SMHT/附图/06.jpg",
+      "status": "downloaded",
+      "bytes": 306175,
+      "sha256": "1505ffb01b6cd4dd7d8c235c4a4926aec5b008392c4498b33b0c1f8417637405"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/819aTFs1eAL._AC_SL1500_.jpg",
+      "path": "products/018_B0D526SMHT/附图/07.jpg",
+      "status": "downloaded",
+      "bytes": 263596,
+      "sha256": "1a7633f8c0c7f267eecb8c2ea4d3308176fa6893c471cf6fdb0a87c6ffcf1206"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/815R3UKw3lL._AC_SL1500_.jpg",
+      "path": "products/018_B0D526SMHT/附图/08.jpg",
+      "status": "downloaded",
+      "bytes": 252316,
+      "sha256": "e5cf20ebfdef46f9d588e03b20d62c604f0370b7daebc6af6cae407f2c59fbc5"
+    }
+  ]
+}
