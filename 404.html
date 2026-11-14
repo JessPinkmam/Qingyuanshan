@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>查找报告 · Research Hub</title>
+  <link rel="stylesheet" href="/Qingyuanshan/assets/hub.css">
+</head>
+<body>
+  <main class="not-found">
+    <h1>查找报告</h1>
+    <p id="message">正在查询报告的新位置…</p>
+    <a href="/Qingyuanshan/">返回调研知识库</a>
+  </main>
+  <script>
+    async function redirectArchivedReport() {
+      const basePath = location.pathname.startsWith('/Qingyuanshan/') ? '/Qingyuanshan/' : '/';
+      const baseUrl = new URL(basePath, location.origin);
+      try {
+        const oldPath = decodeURIComponent(location.pathname.slice(basePath.length));
+        const response = await fetch(new URL('reports.json', baseUrl));
+        if (!response.ok) throw new Error('Catalog request failed');
+        const catalog = await response.json();
+        const report = catalog.reports.find(item => item.legacy_paths?.includes(oldPath));
+        if (report) {
+          const target = new URL(report.path.split('/').map(encodeURIComponent).join('/'), baseUrl);
+          target.search = location.search;
+          target.hash = location.hash;
+          location.replace(target.href);
+          return;
+        }
+      } catch {
+        document.getElementById('message').textContent = '暂时无法查询目录，请从知识库首页查找报告。';
+        return;
+      }
+      document.getElementById('message').textContent = '这个地址没有对应的报告，请从知识库首页查找。';
+    }
+    redirectArchivedReport();
+  </script>
+</body>
+</html>

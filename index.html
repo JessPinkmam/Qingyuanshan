@@ -1,377 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>维维和威威 · 清源山徒步指南</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
-<style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f7f5f0;color:#333;line-height:1.6}
-  .hero{background:linear-gradient(135deg,#2d5a3d 0%,#4a8b5c 60%,#6aa84f 100%);color:#fff;padding:44px 20px 34px;text-align:center}
-  .hero h1{font-size:1.7em;margin-bottom:6px;letter-spacing:1px}
-  .hero .date{opacity:.9;font-size:.95em}
-  .hero .meta{margin-top:10px;font-size:.85em;opacity:.85}
-  .wrap{max-width:860px;margin:0 auto;padding:0 16px 60px}
-  .card{background:#fff;border-radius:14px;box-shadow:0 2px 12px rgba(0,0,0,.07);padding:20px;margin:18px 0}
-  .card h2{font-size:1.15em;color:#2d5a3d;margin-bottom:12px;border-left:4px solid #6aa84f;padding-left:10px}
-  #map{height:480px;border-radius:14px;box-shadow:0 2px 12px rgba(0,0,0,.1)}
-  .map-note{font-size:.8em;color:#888;margin-top:8px}
-  .tabs{display:flex;gap:10px;margin:14px 0}
-  .tab{flex:1;text-align:center;padding:12px 6px;border-radius:12px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.06);cursor:pointer;border:2px solid transparent;transition:.2s}
-  .tab.active{border-color:#6aa84f;background:#f0f7f0}
-  .tab .t{font-weight:700;font-size:1em}
-  .tab .d{font-size:.78em;color:#888;margin-top:2px}
-  #routeCard .level{color:#e8912d;font-size:.9em}
-  #routeCard ol{margin:10px 0 6px 22px}
-  #routeCard ol li{margin:4px 0}
-  .back{font-size:.85em;color:#666;background:#f7f5f0;border-radius:8px;padding:8px 12px;margin-top:8px}
-  .returnbox{font-size:.9em;background:#fff8e6;border:1px dashed #e8a93d;border-radius:8px;padding:10px 12px;margin-top:10px}
-  .seg{margin-top:10px;font-size:.85em}
-  .seg summary{cursor:pointer;color:#2d5a3d;font-weight:700;padding:6px 0}
-  .seg table{width:100%;border-collapse:collapse;margin-top:6px}
-  .seg th,.seg td{padding:6px 8px;border-bottom:1px solid #eee;text-align:left}
-  .seg th{background:#f0f7f0;color:#2d5a3d}
-  .seg .tot{font-weight:700;background:#f7f5f0}
-  .seg .note{font-size:.8em;color:#999;margin-top:6px}
-  .tl .row{display:flex;gap:12px;padding:9px 0;border-bottom:1px dashed #eee;font-size:.92em}
-  .tl .row:last-child{border:none}
-  .tl .time{flex:0 0 52px;font-weight:700;color:#2d5a3d}
-  .chips{display:flex;flex-wrap:wrap;gap:8px}
-  .chip{background:#f0f7f0;border:1px solid #cfe3cf;border-radius:20px;padding:6px 13px;font-size:.85em;cursor:pointer;transition:.15s}
-  .chip:hover{background:#2d5a3d;color:#fff;border-color:#2d5a3d}
-  .photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
-  .photo-card{border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.08);cursor:pointer;background:#fff}
-  .photo-card img{width:100%;height:110px;object-fit:cover;display:block}
-  .photo-card .cap{padding:8px 10px;font-size:.82em}
-  .photo-card .cap b{display:block;font-size:.95em}
-  .photo-card .tip{color:#888;font-size:.85em;margin-top:2px}
-  .pack{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:.9em}
-  .pack label{background:#f7f5f0;border-radius:8px;padding:9px 12px;cursor:pointer;display:flex;gap:8px;align-items:center}
-  .pack input{accent-color:#2d5a3d;width:16px;height:16px}
-  .info{font-size:.92em}
-  .info p{margin:6px 0}
-  .info b{color:#2d5a3d}
-  .pop-img{width:100%;max-width:220px;border-radius:8px;margin-bottom:6px;display:block}
-  .pop-tip{background:#fff8e6;border-radius:6px;padding:6px 8px;margin-top:6px;font-size:.85em}
-  .footer{text-align:center;color:#999;font-size:.8em;padding:24px 0 10px}
-  @media(max-width:560px){.pack{grid-template-columns:1fr}#map{height:380px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="按领域、品类和研究方向检索调研报告与交互工具。">
+  <title>Research Hub · 调研知识库</title>
+  <link rel="stylesheet" href="assets/hub.css">
+  <script src="assets/hub.js" defer></script>
 </head>
 <body>
-<div class="hero">
-  <h1>🌿 维维和威威 · 清源山徒步</h1>
-  <div class="date">2026年10月11日（周日）· 官方推荐路线</div>
-  <div class="meta">5A景区 · 主峰约500米 · 无索道 · 两条路线均大山门进、千手检票处出</div>
-</div>
-<div class="wrap">
-
-  <div class="card">
-    <h2>🗺️ 交互地图</h2>
-    <div id="map"></div>
-    <div class="map-note">🟢绿线=上山路线 · 🔴红线=下山路线 · 灰色虚线=返程（千手检票处→大山门）· 点击标记看景点介绍 · 景点位置为示意</div>
-  </div>
-
-  <div class="card">
-    <h2>🥾 选择路线</h2>
-    <div class="tabs">
-      <div class="tab active" id="tab-half" onclick="selectRoute('halfday')">
-        <div class="t">🌤️ 半日轻松游</div><div class="d">约6–8公里 · 4–5小时</div>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="调研知识库首页">Research Hub</a>
+      <a class="source-link" href="https://github.com/JessPinkmam/Qingyuanshan">GitHub 仓库 ↗</a>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <h1 id="page-title">调研知识库</h1>
+        <p>从领域到品类，再到具体研究方向，找到下一份需要的报告。</p>
+      </section>
+      <form id="search-form" class="filters" aria-label="搜索与筛选报告">
+        <fieldset id="filter-fields" disabled>
+          <legend class="sr-only">报告筛选条件</legend>
+          <div class="search-field">
+            <label for="search">搜索报告</label>
+            <input id="search" type="search" placeholder="标题、内容或标签，例如喷泉、利润、租房" autocomplete="off">
+          </div>
+          <div class="filter-row">
+            <div>
+              <label for="domain">大领域</label>
+              <select id="domain"><option value="">全部领域</option></select>
+            </div>
+            <div>
+              <label for="category">品类 / 管理分类</label>
+              <select id="category"><option value="">全部分类</option></select>
+            </div>
+            <div>
+              <label for="topic">研究方向</label>
+              <select id="topic"><option value="">全部方向</option></select>
+            </div>
+            <button id="clear-filters" class="clear-button" type="button">清空筛选</button>
+          </div>
+        </fieldset>
+      </form>
+      <div class="results-header">
+        <h2>报告目录</h2>
+        <output id="result-count" aria-live="polite">正在读取目录…</output>
       </div>
-      <div class="tab" id="tab-full" onclick="selectRoute('fullday')">
-        <div class="t">🏔️ 一日登山游</div><div class="d">约11–13公里 · 7–9小时</div>
+      <div id="load-error" class="notice" role="alert" hidden>
+        <p>目录读取失败，请重试。</p>
+        <button id="retry" class="clear-button" type="button">重新加载</button>
       </div>
-    </div>
-    <div id="routeCard"></div>
+      <p id="empty-state" class="notice" hidden>没有符合条件的报告，请调整关键词或清空筛选。</p>
+      <section id="reports" class="report-grid" aria-label="报告列表"></section>
+    </main>
+    <footer>
+      <a href="https://github.com/JessPinkmam/Qingyuanshan/blob/main/README.md">分类说明与归档约定</a>
+      <a href="reports.json">结构化索引</a>
+    </footer>
   </div>
-
-  <div class="card">
-    <h2>⏰ 行程时间规划</h2>
-    <div class="tl" id="timeline"></div>
-  </div>
-
-  <div class="card">
-    <h2>📍 景点快速导航 <span style="font-size:.75em;color:#888">（点击定位）</span></h2>
-    <div class="chips" id="chips"></div>
-  </div>
-
-  <div class="card">
-    <h2>📸 打卡机位</h2>
-    <div class="photo-grid" id="photoGrid"></div>
-  </div>
-
-  <div class="card">
-    <h2>🎒 出发前检查</h2>
-    <div class="pack" id="pack"></div>
-  </div>
-
-  <div class="card info">
-    <h2>ℹ️ 实用信息</h2>
-    <p><b>门票：</b>约70元/人；检票口：大山门/老君/千手 7:00–17:30，齐云售票处（南少林/北门旁）8:00–17:00</p>
-    <p><b>验票口说明：</b>大山门设<b>售票口</b>；老君验票口在泉山路（910环岛往众妙之门方向）<b>只验票不售票</b>——请先在大山门或线上买好票</p>
-    <p><b>进出：</b>两条路线都是<b>大山门进、千手检票处出</b>；出园后沿山路步行约15分钟返回大山门取车</p>
-    <p><b>天气：</b>10月11日晴，17–31°C，紫外线很强——遮阳帽/防晒必备</p>
-    <p><b>午餐：</b>半日游可在欧阳书院茶室小憩；一日游建议自带干粮，天湖边野餐</p>
-    <p><b>咨询：</b>+86-595-22777675（景区咨询电话）</p>
-    <p><b>日出日落：</b>06:32 / 18:12，请在天黑前下山</p>
-  </div>
-
-  <div class="footer">祝维维和威威玩得开心 🧡 · 地图数据 © 高德 · 景点照片为网络示意参考<br><a href="bijiashan.html" style="color:#4a8b5c">🥾 笔架山桫椤谷徒步路线</a> · <a href="zimaoshan.html" style="color:#4a8b5c">🟣 紫帽山徒步指南</a> · <a href="weilandacheck.html" style="color:#4a8b5c">🎈 维维的威兰达提车清单</a></div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
-<script>
-// ---- WGS-84 -> GCJ-02 ----
-function w2g(lat,lng){
-  var a=6378245.0, ee=0.00669342162296594323, pi=Math.PI;
-  function tf(x){var r=x*pi/180.0,s=r;for(var i=0;i<3;i++)s=r+0.006*sin(s);return s;}
-  function sin(x){return Math.sin(x);}
-  var dLat=tf(lat), dLng=tf(lng);
-  var radLat=dLat/180.0*pi, magic=sin(radLat);
-  magic=1-ee*magic*magic;
-  var sqrtMagic=Math.sqrt(magic);
-  dLat=(dLat*180.0)/((a*(1-ee))/(magic*sqrtMagic)*pi);
-  dLng=(dLng*180.0)/(a/sqrtMagic*Math.cos(radLat)*pi);
-  return [lat+dLat, lng+dLng];
-}
-function g(pts){return pts.map(function(p){var c=w2g(p[0],p[1]);return [c[0],c[1]];});}
-function rev(a){return a.slice().reverse();}
-
-// ---- 景点 ----
-var SPOTS = {
-  dashanmen:   { name:'大山门', icon:'🎫', gate:true, pos:[24.93268,118.60617], img:'img/southGate.jpg',
-    desc:'景区南大门（泉山路）。标志性"清源山"牌坊；老君/千手检票口 7:00–17:30；门票约70元/人；有停车场，节假日车位紧张。' },
-  laojuncheck:{ name:'老君验票口', icon:'🎟️', pos:[24.93500,118.60685],
-    desc:'泉山路上的验票口（只验票、不售票），在910环岛（圆盘）往众妙之门方向；持票在此验票进入老君岩景区。门票请在大山门售票口或线上购买。' },
-  zhongmiaozhimen:{ name:'众妙之门', icon:'🚪', pos:[24.93580,118.60705],
-    desc:'「众妙之门，玄之又玄」出自《道德经》；大山门上行道旁的门坊景观，取道家意境。' },
-  laojunyan:  { name:'老君岩', icon:'🗿', pos:[24.94027,118.60810], img:'img/laojunyan.jpg', photo:true,
-    ptip:'石像正面经典机位，早上顺光、人少好拍 📸',
-    desc:'镇山之宝。宋代老子石雕坐像，高5.63米，中国现存年代最早、最大的道教石雕，全国重点文保。' },
-  yuanyuandongtian:{ name:'元元洞天', icon:'🕳️', pos:[24.94055,118.60795],
-    desc:'明代汪旦辟刻"元元洞天"四字；老君岩畔洞壑，与"众妙之门"一脉道家意境。' },
-  jianlongtai:{ name:'见龙台', icon:'🐉', pos:[24.94075,118.60780],
-    desc:'取《易经》"见龙在田"之意；山道旁观景台。' },
-  qianshouyan:{ name:'千手岩', icon:'🙏', pos:[24.94085,118.60767], img:'img/qianshouyan.jpg',
-    desc:'观音寺，山间古刹；弘一法师舍利塔即安放在岩畔。' },
-  hongyita:   { name:'弘一法师舍利塔', icon:'🕯️', pos:[24.94100,118.60750], img:'img/hongyita.jpg',
-    desc:'弘一法师（李叔同）圆寂后，舍利塔安放于千手岩畔；塔旁岩壁刻有其临终绝笔"悲欣交集"四字。' },
-  mituoyan:   { name:'弥陀岩', icon:'🏯', pos:[24.94202,118.60788], img:'img/mituoyan.jpg', photo:true,
-    ptip:'元代古刹，红墙黛瓦适合古风人像 📸',
-    desc:'始建于元至正二十四年（1364年），福建省首批省级文保单位；附近有弥陀瀑布。（部分游览路线亦写作"弥勒岩"。）' },
-  dafozi:     { name:'大佛字', icon:'✏️', pos:[24.94600,118.60790],
-    desc:'摩崖大字石刻；登山道旁的书法景观。' },
-  jiangjunshi:{ name:'将军石', icon:'🗿', pos:[24.94800,118.60760],
-    desc:'天然巨石，形似将军披甲而立；登山道旁一景。' },
-  zicuihu:    { name:'紫翠湖', icon:'🏞️', pos:[24.94400,118.60900],
-    desc:'山间湖泊，湖光山色；半日游的折返点一带。' },
-  gaoshifeng: { name:'高士峰', icon:'⛰️', pos:[24.94550,118.60850],
-    desc:'山峰；登高望远，俯瞰泉州城。' },
-  chaoyunyan: { name:'巢云岩', icon:'☁️', pos:[24.94450,118.60775],
-    desc:'明代《闽书》所载"三十六岩洞"之一；"巢云"意为云雾栖止之岩。' },
-  diyishan:   { name:'第一山刻碑', icon:'✍️', pos:[24.94250,118.60780], img:'img/diyishan.jpg',
-    desc:'宋代大书法家米芾题刻"第一山"；清源山历代摩崖石刻近700方，多聚集于这一带山道旁。' },
-  ouyangshuyuan:{ name:'欧阳书院', icon:'🍵', pos:[24.94310,118.60790], img:'img/ouyangshuyuan.jpg', photo:true,
-    ptip:'书院茶室，露台观景极佳，适合小憩 📸',
-    desc:'山间书院，现作茶室使用；露台处视野开阔，是徒步中途休憩看景的好地方。' },
-  bixiaoyan:  { name:'碧霄岩 · 三世佛', icon:'☸️', pos:[24.94279,118.60767], img:'img/bixiaoyan.jpg',
-    desc:'全国罕见的元代藏传佛教石雕：崖壁三世佛（过去/现在/未来佛），藏汉风格交融。' },
-  ruixiangyan:{ name:'瑞像岩', icon:'🪷', pos:[24.94338,118.60810], img:'img/ruixiangyan.jpg',
-    desc:'摩崖造像群；"瑞像"意为祥瑞之像，石刻题记丰富。' },
-  nantaiyan:  { name:'南台岩', icon:'⛩️', pos:[24.95225,118.60123], img:'img/nantaiyan.jpg', photo:true,
-    ptip:'观景平台看泉州湾和城市全景 📸',
-    desc:'山顶道观群，可俯瞰泉州湾；有餐厅可补给午餐。16:00–17:00有免费太极教学。' },
-  xieyunting: { name:'撷云亭', icon:'🏠', pos:[24.95380,118.60180],
-    desc:'山顶观景亭；"撷云"即摘云，登高远眺。' },
-  yudayou:    { name:'俞大猷练胆石', icon:'🪨', pos:[24.95520,118.60250],
-    desc:'明代抗倭名将俞大猷（泉州晋江人）曾在此练胆习武，后世立石纪念。' },
-  huruquan:   { name:'虎乳泉（孔泉）', icon:'💧', pos:[24.95620,118.60300], img:'img/huruquan.jpg',
-    desc:'"泉州"之名的由来——山多泉眼故名"泉山"，泉州即源于此泉。' },
-  peak:       { name:'清源洞 · 主峰', icon:'⛰️', pos:[24.95720,118.60350], img:'img/peak.jpg', photo:true,
-    ptip:'主峰观景台，泉州城景最佳点，适合登顶合影 📸',
-    desc:'清源山主峰，海拔约500米；清源洞为观泉州城景最佳点。' },
-  baizhangping:{ name:'百丈坪', icon:'🌄', pos:[24.95460,118.60550],
-    desc:'山间平旷之地；下山道旁的休憩点。' },
-  tianhu:     { name:'天湖', icon:'🏞️', pos:[24.95206,118.60754], img:'img/tianhu.jpg', photo:true,
-    ptip:'环湖步道，湖面倒影适合拍倒影和野餐照 📸',
-    desc:'山顶湖泊，环湖步道约1公里；湖畔草地适合野餐小憩。' },
-  shizhiyan:  { name:'势至岩', icon:'🪨', pos:[24.93980,118.60700],
-    desc:'明代《闽书》"三十六岩洞"之一；与弥陀岩、观音岩并称，皆为西方三圣道场。' },
-  qianshoumen:{ name:'山门（千手检票处）', icon:'🎫', gate:true, pos:[24.93900,118.60650],
-    desc:'千手岩一侧的检票出口；两条官方路线均由此出园，出园后步行约15分钟返回大山门。' },
-  xinanmen:   { name:'齐云售票处', icon:'🎫', gate:true, pos:[24.92229,118.60778],
-    desc:'齐云山公路东段的售票处，8:00–17:00；买票后往南约200米到北门检票进入。导航搜"齐云售票处"。' }
-};
-function S(k){var s=SPOTS[k];return s.pos;}
-
-// ---- 路段（WGS-84）----
-var CLIMB = [[24.93268,118.60617],[24.93423,118.60660],[24.93580,118.60705],[24.93748,118.60752],[24.93912,118.60788],[24.93999,118.60801]];
-var UP_NANTAI = [[24.94800,118.60760],[24.94950,118.60600],[24.95080,118.60350],[24.95180,118.60200],[24.95225,118.60123]];
-var RETURN = [[24.93900,118.60650],[24.93600,118.60630],[24.93400,118.60620],[24.93268,118.60617]];
-var GFS_DIYI = [[24.94550,118.60850],[24.94400,118.60820],[24.94250,118.60780]];
-
-// ---- 路线 ----
-var ROUTES = {
-  halfday: {
-    name:'半日轻松游', tag:'约6–8公里 · 4–5小时', level:'★★☆☆☆ 轻松', splitKey:'gaoshifeng',
-    desc:'官方半日路线：大山门进、千手检票处出，覆盖老君岩、舍利塔、紫翠湖等精华，节奏从容。',
-    line: CLIMB.concat([S('laojunyan'),S('yuanyuandongtian'),S('jianlongtai'),S('qianshouyan'),S('hongyita'),S('mituoyan'),S('zicuihu'),S('gaoshifeng')]).concat(GFS_DIYI).concat([S('qianshouyan'),S('shizhiyan'),S('qianshoumen')]),
-    order:['dashanmen','zhongmiaozhimen','laojunyan','yuanyuandongtian','jianlongtai','hongyita','mituoyan','zicuihu','gaoshifeng','diyishan','qianshouyan','shizhiyan','qianshoumen'],
-    timeline:[
-      ['8:00','大山门入园 → 众妙之门'],
-      ['8:30','老君岩（宋代老子石雕）📸 → 元元洞天 → 见龙台'],
-      ['9:30','弘一法师舍利塔 → 弥陀岩 📸'],
-      ['10:30','紫翠湖 → 高士峰（折返下行）'],
-      ['11:30','第一山刻碑 → 欧阳书院小憩 📸'],
-      ['12:30','千手岩 → 势至岩 → 千手检票处出园'],
-      ['13:00','↩️ 返程：步行约15分钟回大山门']
-    ]
-  },
-  fullday: {
-    name:'一日登山游', tag:'约11–13公里 · 7–9小时', level:'★★★★☆ 挑战', splitKey:'peak',
-    desc:'官方一日路线：登顶清源洞主峰，串起南台岩、天湖、俞大猷练胆石等全山精华，体力要求较高。',
-    line: CLIMB.concat([S('laojunyan'),S('yuanyuandongtian'),S('jianlongtai'),S('qianshouyan'),S('hongyita'),S('mituoyan'),S('dafozi'),S('jiangjunshi')]).concat(UP_NANTAI).concat([S('xieyunting'),S('yudayou'),S('huruquan'),S('peak'),S('baizhangping'),S('tianhu'),S('zicuihu'),S('gaoshifeng'),S('chaoyunyan'),S('diyishan'),S('qianshouyan'),S('shizhiyan'),S('qianshoumen')]),
-    order:['dashanmen','zhongmiaozhimen','laojunyan','yuanyuandongtian','jianlongtai','hongyita','mituoyan','dafozi','jiangjunshi','nantaiyan','xieyunting','yudayou','huruquan','peak','baizhangping','tianhu','zicuihu','gaoshifeng','chaoyunyan','diyishan','qianshouyan','shizhiyan','qianshoumen'],
-    timeline:[
-      ['7:30','大山门入园 → 众妙之门 → 老君岩 📸'],
-      ['8:30','元元洞天 → 见龙台 → 弘一法师舍利塔'],
-      ['9:30','弥陀岩 📸 → 大佛字 → 将军石'],
-      ['10:30','南台岩 → 撷云亭 → 俞大猷练胆石'],
-      ['11:30','虎乳泉 → 清源洞（主峰）📸'],
-      ['12:30','百丈坪 → 天湖环湖 📸（午餐：自带干粮）'],
-      ['14:00','紫翠湖 → 高士峰 → 巢云岩 → 第一山'],
-      ['15:30','欧阳书院小憩 📸 → 千手岩 → 势至岩 → 千手检票处出园'],
-      ['16:00','↩️ 返程：步行约15分钟回大山门']
-    ]
-  }
-};
-
-// ---- 分段里程/时间（估算）：[起点key,终点key,公里,分钟] ----
-var SEG_HALFDAY = [
-  ['dashanmen','zhongmiaozhimen',0.8,10],
-  ['zhongmiaozhimen','laojunyan',1.1,15],
-  ['laojunyan','yuanyuandongtian',0.1,5],
-  ['yuanyuandongtian','jianlongtai',0.1,5],
-  ['jianlongtai','hongyita',0.1,5],
-  ['hongyita','mituoyan',0.3,5],
-  ['mituoyan','zicuihu',0.6,15],
-  ['zicuihu','gaoshifeng',0.4,10],
-  ['gaoshifeng','diyishan',0.9,15],
-  ['diyishan','qianshouyan',0.5,10],
-  ['qianshouyan','shizhiyan',0.3,5],
-  ['shizhiyan','qianshoumen',0.3,5],
-  ['qianshoumen','dashanmen',1.5,25]
-];
-var SEG_FULLDAY = [
-  ['dashanmen','zhongmiaozhimen',0.6,10],
-  ['zhongmiaozhimen','laojunyan',0.8,15],
-  ['laojunyan','yuanyuandongtian',0.1,5],
-  ['yuanyuandongtian','jianlongtai',0.1,5],
-  ['jianlongtai','hongyita',0.1,5],
-  ['hongyita','mituoyan',0.2,5],
-  ['mituoyan','dafozi',0.9,15],
-  ['dafozi','jiangjunshi',0.4,10],
-  ['jiangjunshi','nantaiyan',1.5,30],
-  ['nantaiyan','xieyunting',0.4,5],
-  ['xieyunting','yudayou',0.3,5],
-  ['yudayou','huruquan',0.2,5],
-  ['huruquan','peak',0.2,5],
-  ['peak','baizhangping',0.7,15],
-  ['baizhangping','tianhu',0.7,15],
-  ['tianhu','zicuihu',1.8,35],
-  ['zicuihu','gaoshifeng',0.3,5],
-  ['gaoshifeng','chaoyunyan',0.3,5],
-  ['chaoyunyan','diyishan',0.4,10],
-  ['diyishan','qianshouyan',0.4,5],
-  ['qianshouyan','shizhiyan',0.3,5],
-  ['shizhiyan','qianshoumen',0.2,5],
-  ['qianshoumen','dashanmen',1.2,20]
-];
-var SEGMENTS = {halfday:SEG_HALFDAY, fullday:SEG_FULLDAY};
-
-// ---- 地图 ----
-var map = L.map('map').setView(w2g(24.945,118.6065), 13);
-var vec = L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}',{subdomains:'1234',attribution:'© 高德'});
-var sat = L.tileLayer('https://webst0{s}.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}',{subdomains:'1234',attribution:'© 高德'});
-vec.addTo(map);
-L.control.layers({'🗺️ 标准':vec,'🛰️ 卫星':sat}).addTo(map);
-
-var markers = {}, upLine = null, downLine = null, retLine = null;
-function splitIndex(line, key){
-  var p = S(key);
-  for(var i=0;i<line.length;i++){
-    if(Math.abs(line[i][0]-p[0])<1e-9 && Math.abs(line[i][1]-p[1])<1e-9) return i;
-  }
-  return Math.floor(line.length/2);
-}
-Object.keys(SPOTS).forEach(function(k){
-  var s = SPOTS[k], c = w2g(s.pos[0], s.pos[1]);
-  var html = '<div style="text-align:center"><div style="font-size:22px;line-height:1">'+s.icon+'</div>'+
-    '<div style="font-size:11px;font-weight:700;color:#fff;background:rgba(45,90,61,.85);border-radius:8px;padding:1px 7px;margin-top:1px;white-space:nowrap">'+s.name+'</div></div>';
-  var m = L.marker([c[0],c[1]],{icon:L.divIcon({html:html,className:'',iconSize:null})}).addTo(map);
-  var pop = '<b>'+s.icon+' '+s.name+'</b><br><span style="font-size:.88em">'+s.desc+'</span>';
-  if(s.img) pop = '<img class="pop-img" src="'+s.img+'">' + pop;
-  if(s.ptip) pop += '<div class="pop-tip">📷 '+s.ptip+'</div>';
-  m.bindPopup(pop,{maxWidth:240});
-  markers[k] = m;
-});
-map.fitBounds(L.latLngBounds(Object.keys(SPOTS).map(function(k){var c=w2g(SPOTS[k].pos[0],SPOTS[k].pos[1]);return [c[0],c[1]];})).pad(0.12));
-function flyTo(k){var s=SPOTS[k],c=w2g(s.pos[0],s.pos[1]);map.flyTo([c[0],c[1]],16,{duration:1});setTimeout(function(){markers[k].openPopup();},1100);}
-
-// ---- 路线 ----
-var cur = 'halfday';
-function selectRoute(k){
-  cur = k;
-  document.getElementById('tab-half').classList.toggle('active', k==='halfday');
-  document.getElementById('tab-full').classList.toggle('active', k==='fullday');
-  var r = ROUTES[k];
-  if(upLine) map.removeLayer(upLine);
-  if(downLine) map.removeLayer(downLine);
-  if(retLine) map.removeLayer(retLine);
-  var si = splitIndex(r.line, r.splitKey);
-  upLine = L.polyline(g(r.line.slice(0,si+1)),{color:'#2d8a4e',weight:5,opacity:.9}).addTo(map);
-  downLine = L.polyline(g(r.line.slice(si)),{color:'#d33f2e',weight:5,opacity:.9}).addTo(map);
-  retLine = L.polyline(g(RETURN),{color:'#999',weight:4,opacity:.85,dashArray:'8,8'}).addTo(map);
-  map.fitBounds(upLine.getBounds().extend(downLine.getBounds()).pad(0.12));
-  var ol = r.order.map(function(key,i){return '<li>'+SPOTS[key].icon+' '+SPOTS[key].name+'</li>';}).join('');
-  var segs = SEGMENTS[k];
-  var rows = segs.map(function(s){
-    return '<tr><td>'+SPOTS[s[0]].icon+' '+SPOTS[s[0]].name+' → '+SPOTS[s[1]].icon+' '+SPOTS[s[1]].name+'</td><td>约'+s[2]+'公里</td><td>约'+s[3]+'分钟</td></tr>';
-  }).join('');
-  var tD = segs.reduce(function(a,s){return a+s[2];},0).toFixed(1);
-  var tM = segs.reduce(function(a,s){return a+s[3];},0);
-  var tMt = '约'+Math.floor(tM/60)+'小时'+(tM%60? tM%60+'分钟':'');
-  var segHtml = '<details class="seg" open><summary>📏 分段路程明细</summary>'+
-    '<table><tr><th>分段</th><th>距离</th><th>步行</th></tr>'+rows+
-    '<tr class="tot"><td>合计（含返程）</td><td>约'+tD+'公里</td><td>'+tMt+'</td></tr></table>'+
-    '<div class="note">距离/时间为估算值：山路按约3公里/小时、公路约4公里/小时；不含各景点停留游览时间，仅供参考。</div></details>';
-  document.getElementById('routeCard').innerHTML =
-    '<p><b>'+r.name+'</b> · '+r.tag+' <span class="level">'+r.level+'</span></p>'+
-    '<p style="font-size:.9em;color:#666">'+r.desc+'</p>'+
-    '<ol>'+ol+'</ol>'+
-    '<div class="returnbox">↩️ <b>返程路线：</b>山门（千手检票处）→ 沿山路步行约15分钟 → 大山门（取车/返程）。地图上灰色虚线即返程走向。</div>'+
-    segHtml;
-  document.getElementById('timeline').innerHTML =
-    r.timeline.map(function(t){return '<div class="row"><span class="time">'+t[0]+'</span><span>'+t[1]+'</span></div>';}).join('');
-}
-
-// ---- 导航 chips ----
-document.getElementById('chips').innerHTML =
-  Object.keys(SPOTS).map(function(k){return '<span class="chip" onclick="flyTo(\''+k+'\')">'+SPOTS[k].icon+' '+SPOTS[k].name+'</span>';}).join('');
-
-// ---- 打卡 ----
-document.getElementById('photoGrid').innerHTML =
-  Object.keys(SPOTS).filter(function(k){return SPOTS[k].photo;}).map(function(k){
-    var s=SPOTS[k];
-    return '<div class="photo-card" onclick="flyTo(\''+k+'\')"><img src="'+s.img+'"><div class="cap"><b>'+s.icon+' '+s.name+'</b><div class="tip">'+s.ptip+'</div></div></div>';
-  }).join('');
-
-// ---- 打包清单 ----
-var PACK=['2L水/人','干粮+水果','防晒霜+遮阳帽','登山鞋/防滑鞋','雨具（备用）','充电宝','纸巾/湿巾','小药包（创可贴）'];
-document.getElementById('pack').innerHTML =
-  PACK.map(function(p,i){return '<label><input type="checkbox"> '+p+'</label>';}).join('');
-
-selectRoute('halfday');
-</script>
 </body>
 </html>

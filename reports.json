@@ -4,7 +4,7 @@
     {
       "id": "outdoor-fountain-top100",
       "title": "亚马逊美国户外喷泉 Top 100 · 落地款目录 · 2026-11-11",
-      "path": "amazon-outdoor-fountain-top100.html",
+      "path": "跨境电商/喷泉/市场与竞品/amazon-outdoor-fountain-top100.html",
       "domain": "跨境电商",
       "category": "喷泉",
       "topic": "市场与竞品",
@@ -14,12 +14,15 @@
         "差评分析"
       ],
       "summary": "落地款目录、销量预估、差评与购买用户画像。",
-      "updated_at": "2026-11-11"
+      "updated_at": "2026-11-11",
+      "legacy_paths": [
+        "amazon-outdoor-fountain-top100.html"
+      ]
     },
     {
       "id": "outdoor-fountain-guide",
       "title": "亚马逊户外大喷泉 · 款式与选购交互指南",
-      "path": "outdoor-fountain-guide.html",
+      "path": "跨境电商/喷泉/款式与选型/outdoor-fountain-guide.html",
       "domain": "跨境电商",
       "category": "喷泉",
       "topic": "款式与选型",
@@ -29,12 +32,15 @@
         "选购指南"
       ],
       "summary": "款式、在售产品、材质、动力与空间适配。",
-      "updated_at": "2026-11-10"
+      "updated_at": "2026-11-10",
+      "legacy_paths": [
+        "outdoor-fountain-guide.html"
+      ]
     },
     {
       "id": "tabletop-fountain-reviews",
       "title": "Table Top Fountain · 差评分门别类（图文版）",
-      "path": "tabletop-fountain-bad-reviews.html",
+      "path": "跨境电商/喷泉/用户与差评/tabletop-fountain-bad-reviews.html",
       "domain": "跨境电商",
       "category": "喷泉",
       "topic": "用户与差评",
@@ -44,12 +50,15 @@
         "差评分析"
       ],
       "summary": "18 款产品的差评分类、产品改进方向及论坛反馈。",
-      "updated_at": "2026-11-07"
+      "updated_at": "2026-11-07",
+      "legacy_paths": [
+        "tabletop-fountain-bad-reviews.html"
+      ]
     },
     {
       "id": "fountain-profit-decision",
       "title": "喷泉大小件选品与利润对比工具 · 亚马逊美国站（2026-11-10）",
-      "path": "fountain-large-vs-tabletop-decision-tool.html",
+      "path": "跨境电商/喷泉/成本与利润/fountain-large-vs-tabletop-decision-tool.html",
       "domain": "跨境电商",
       "category": "喷泉",
       "topic": "成本与利润",
@@ -59,12 +68,15 @@
         "选品"
       ],
       "summary": "调整成本和销量假设，对比利润、盈亏平衡与资金回收。",
-      "updated_at": "2026-11-10"
+      "updated_at": "2026-11-10",
+      "legacy_paths": [
+        "fountain-large-vs-tabletop-decision-tool.html"
+      ]
     },
     {
       "id": "fountain-size-comparison",
       "title": "喷泉大小件对比校验 · 亚马逊美国站（2026-11-10）",
-      "path": "fountain-size-comparison-check.html",
+      "path": "跨境电商/喷泉/成本与利润/fountain-size-comparison-check.html",
       "domain": "跨境电商",
       "category": "喷泉",
       "topic": "成本与利润",
@@ -74,12 +86,15 @@
         "FBA"
       ],
       "summary": "核对尺寸分档、数据来源、成本与首批备货资金。",
-      "updated_at": "2026-11-11"
+      "updated_at": "2026-11-11",
+      "legacy_paths": [
+        "fountain-size-comparison-check.html"
+      ]
     },
     {
       "id": "fountain-size-control",
       "title": "桌面喷泉：亚马逊尺寸控制",
-      "path": "fountain-amazon-size-control.html",
+      "path": "跨境电商/喷泉/包装与物流/fountain-amazon-size-control.html",
       "domain": "跨境电商",
       "category": "喷泉",
       "topic": "包装与物流",
@@ -89,12 +104,15 @@
         "包装物流"
       ],
       "summary": "FBA 尺寸、配送费估算、包装标识与摔箱测试。",
-      "updated_at": "2026-11-01"
+      "updated_at": "2026-11-01",
+      "legacy_paths": [
+        "fountain-amazon-size-control.html"
+      ]
     },
     {
       "id": "fountain-intellectual-property",
       "title": "喷泉五款 · 版权与亚马逊在售核查报告（2026-11-08 / 落地款 2026-11-10）",
-      "path": "喷泉两款-版权与亚马逊核查报告-20261108.html",
+      "path": "跨境电商/喷泉/品牌与知识产权/喷泉两款-版权与亚马逊核查报告-20261108.html",
       "domain": "跨境电商",
       "category": "喷泉",
       "topic": "品牌与知识产权",
@@ -104,12 +122,15 @@
         "竞品分析"
       ],
       "summary": "五款产品的在售链接、知识产权核查与利润重算。",
-      "updated_at": "2026-11-10"
+      "updated_at": "2026-11-10",
+      "legacy_paths": [
+        "喷泉两款-版权与亚马逊核查报告-20261108.html"
+      ]
     },
     {
       "id": "fountain-trademarks",
       "title": "聚泉阁 喷泉商标",
-      "path": "juquange-fountain-trademark.html",
+      "path": "跨境电商/喷泉/品牌与知识产权/juquange-fountain-trademark.html",
       "domain": "跨境电商",
       "category": "喷泉",
       "topic": "品牌与知识产权",
@@ -119,12 +140,15 @@
         "品牌"
       ],
       "summary": "品牌候选、USPTO 检索及商标名称核查。",
-      "updated_at": "2026-10-27"
+      "updated_at": "2026-10-27",
+      "legacy_paths": [
+        "juquange-fountain-trademark.html"
+      ]
     },
     {
       "id": "outdoor-figurine-lights",
       "title": "Outdoor Figurine Lights 畅销拆解 · Amazon Best Sellers",
-      "path": "outdoor-figurine-lights-bestsellers.html",
+      "path": "跨境电商/Light/市场与选品/outdoor-figurine-lights-bestsellers.html",
       "domain": "跨境电商",
       "category": "Light",
       "topic": "市场与选品",
@@ -134,12 +158,15 @@
         "选品"
       ],
       "summary": "畅销造型、选品元素、产品筛选及选品公式生成器。",
-      "updated_at": "2026-11-01"
+      "updated_at": "2026-11-01",
+      "legacy_paths": [
+        "outdoor-figurine-lights-bestsellers.html"
+      ]
     },
     {
       "id": "earrings-selection",
       "title": "耳环选品全链路：市场调研 → 选品 → 上架 → 推广",
-      "path": "amazon-earrings-xuanpin.html",
+      "path": "跨境电商/耳环/市场与选品/amazon-earrings-xuanpin.html",
       "domain": "跨境电商",
       "category": "耳环",
       "topic": "市场与选品",
@@ -149,12 +176,15 @@
         "选品"
       ],
       "summary": "从市场调研、选品、Listing 到推广，含评论分析与合规方向。",
-      "updated_at": "2026-11-13"
+      "updated_at": "2026-11-13",
+      "legacy_paths": [
+        "amazon-earrings-xuanpin.html"
+      ]
     },
     {
       "id": "earrings-profit",
       "title": "耳环纯利润模板：钱分几类，又流向哪里",
-      "path": "amazon-earrings-profit-template.html",
+      "path": "跨境电商/耳环/成本与利润/amazon-earrings-profit-template.html",
       "domain": "跨境电商",
       "category": "耳环",
       "topic": "成本与利润",
@@ -164,12 +194,15 @@
         "现金流"
       ],
       "summary": "订单资金分类、支出时间线和交互利润计算器。",
-      "updated_at": "2026-11-03"
+      "updated_at": "2026-11-03",
+      "legacy_paths": [
+        "amazon-earrings-profit-template.html"
+      ]
     },
     {
       "id": "earrings-advertising",
       "title": "耳环投放透视：流量从哪里来，到哪里成交",
-      "path": "amazon-earrings-ads-overview.html",
+      "path": "跨境电商/耳环/广告与流量/amazon-earrings-ads-overview.html",
       "domain": "跨境电商",
       "category": "耳环",
       "topic": "广告与流量",
@@ -179,12 +212,15 @@
         "流量渠道"
       ],
       "summary": "流量渠道、转化路径、预算分配与投放节奏。",
-      "updated_at": "2026-11-03"
+      "updated_at": "2026-11-03",
+      "legacy_paths": [
+        "amazon-earrings-ads-overview.html"
+      ]
     },
     {
       "id": "amazon-selection-methodology",
       "title": "亚马逊选品方法论",
-      "path": "amazon-xuanpin-fangfalun.html",
+      "path": "跨境电商/通用选品/选品方法/amazon-xuanpin-fangfalun.html",
       "domain": "跨境电商",
       "category": "通用选品",
       "topic": "选品方法",
@@ -194,12 +230,15 @@
         "方法论"
       ],
       "summary": "选品框架、案例、评分器及测款方法。",
-      "updated_at": "2026-11-13"
+      "updated_at": "2026-11-13",
+      "legacy_paths": [
+        "amazon-xuanpin-fangfalun.html"
+      ]
     },
     {
       "id": "amazon-selection-training",
       "title": "亚马逊选品与市场调研：新手带教方案",
-      "path": "amazon-xuanpin-daijiao.html",
+      "path": "跨境电商/通用选品/新手带教/amazon-xuanpin-daijiao.html",
       "domain": "跨境电商",
       "category": "通用选品",
       "topic": "新手带教",
@@ -209,12 +248,15 @@
         "新手入门"
       ],
       "summary": "选品流程、利润测算、候选清单及报告草稿生成。",
-      "updated_at": "2026-10-30"
+      "updated_at": "2026-10-30",
+      "legacy_paths": [
+        "amazon-xuanpin-daijiao.html"
+      ]
     },
     {
       "id": "qingyuanshan-hiking",
       "title": "维维和威威 · 清源山徒步指南",
-      "path": "index.html",
+      "path": "旅行徒步/泉州徒步/清源山/index.html",
       "domain": "旅行徒步",
       "category": "泉州徒步",
       "topic": "清源山",
@@ -223,13 +265,16 @@
         "清源山",
         "徒步"
       ],
-      "summary": "三条路线、高德交互地图、景点导航与出发检查。现有网站首页。",
-      "updated_at": "2026-10-16"
+      "summary": "三条路线、高德交互地图、景点导航与出发检查。",
+      "updated_at": "2026-10-16",
+      "legacy_paths": [
+        "index.html"
+      ]
     },
     {
       "id": "zimaoshan-hiking",
       "title": "紫帽山徒步指南 | 晋江第一高峰",
-      "path": "zimaoshan.html",
+      "path": "旅行徒步/泉州徒步/紫帽山/zimaoshan.html",
       "domain": "旅行徒步",
       "category": "泉州徒步",
       "topic": "紫帽山",
@@ -239,12 +284,15 @@
         "徒步"
       ],
       "summary": "推荐路线、景点、行程建议与装备清单。",
-      "updated_at": "2026-10-12"
+      "updated_at": "2026-10-12",
+      "legacy_paths": [
+        "zimaoshan.html"
+      ]
     },
     {
       "id": "bijiashan-hiking",
       "title": "笔架山桫椤谷徒步路线",
-      "path": "bijiashan.html",
+      "path": "旅行徒步/泉州徒步/笔架山/bijiashan.html",
       "domain": "旅行徒步",
       "category": "泉州徒步",
       "topic": "笔架山",
@@ -254,12 +302,15 @@
         "徒步"
       ],
       "summary": "登科桥进谷环线、自驾落点、实拍参考与出发清单。",
-      "updated_at": "2026-10-11"
+      "updated_at": "2026-10-11",
+      "legacy_paths": [
+        "bijiashan.html"
+      ]
     },
     {
       "id": "home-buying-renovation",
       "title": "买房装修避坑指南 · 先算清，再下定，再装好",
-      "path": "maifang-zhuangxiu-bikeng.html",
+      "path": "生活决策/居住与装修/买房与装修/maifang-zhuangxiu-bikeng.html",
       "domain": "生活决策",
       "category": "居住与装修",
       "topic": "买房与装修",
@@ -269,12 +320,15 @@
         "预算规划"
       ],
       "summary": "买房总账、看房清单、装修预算、施工流程与验收。",
-      "updated_at": "2026-11-12"
+      "updated_at": "2026-11-12",
+      "legacy_paths": [
+        "maifang-zhuangxiu-bikeng.html"
+      ]
     },
     {
       "id": "renting-guide",
       "title": "租房避坑指南：从找房到退租，一步都不踩坑",
-      "path": "renting-pitfalls-guide.html",
+      "path": "生活决策/居住与装修/租房/renting-pitfalls-guide.html",
       "domain": "生活决策",
       "category": "居住与装修",
       "topic": "租房",
@@ -284,12 +338,15 @@
         "合同"
       ],
       "summary": "风险自测、房租预算、验房、合同与退租押金。",
-      "updated_at": "2026-11-04"
+      "updated_at": "2026-11-04",
+      "legacy_paths": [
+        "renting-pitfalls-guide.html"
+      ]
     },
     {
       "id": "weilanda-delivery-checklist",
       "title": "🎈 维维的威兰达提车清单",
-      "path": "weilandacheck.html",
+      "path": "生活决策/汽车/提车检查/weilandacheck.html",
       "domain": "生活决策",
       "category": "汽车",
       "topic": "提车检查",
@@ -299,7 +356,10 @@
         "提车检查"
       ],
       "summary": "提车前准备与交车检查项目。",
-      "updated_at": "2026-10-16"
+      "updated_at": "2026-10-16",
+      "legacy_paths": [
+        "weilandacheck.html"
+      ]
     }
   ]
 }
