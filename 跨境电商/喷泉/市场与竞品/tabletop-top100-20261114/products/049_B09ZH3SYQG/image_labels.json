@@ -1,0 +1,74 @@
+{
+  "products/049_B09ZH3SYQG/附图/02.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "WATERFALLFOUNTAIN",
+    "edge_white_ratio": 0.418,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f98c612fe448a0ef1902aefb1663f7d39d8bbb41c15736ab1132424bc488afdb"
+  },
+  "products/049_B09ZH3SYQG/附图/03.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "9.3\" 4.1 5.9″",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ed35593691234243674c334d17737a007ed4be7f54ee0a41b1b12fab9c63a7da"
+  },
+  "products/049_B09ZH3SYQG/附图/04.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "MINI WATERFALL MAGIC FIND YOURCALM Haobos Fountain:More Than Just Flowing Water",
+    "edge_white_ratio": 0.69,
+    "method": "local_ocr_and_image_background",
+    "sha256": "84a140206ff19afd472c5b88b438befaa41c834652591af49968892c0c1f9ddd"
+  },
+  "products/049_B09ZH3SYQG/附图/05.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "CASCADING TRANQUILITY Zen Easig Versatility and Decoration Easy Operation Maintenance Calming Atmosphere Versatile Placements",
+    "edge_white_ratio": 0.019,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7f5d8c6af1e323e850efe2f190c2f27a0c47ca99daf7ad9a062076843a5f02c5"
+  },
+  "products/049_B09ZH3SYQG/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "GIFT IDEA THOUGHTFUL RELAXING JOYFUL",
+    "edge_white_ratio": 0.014,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1bb6cc9be955b469d36c39e47840ac84a838870a861c07210e5e372dbea680fb"
+  },
+  "products/049_B09ZH3SYQG/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.279,
+    "method": "local_ocr_and_image_background",
+    "sha256": "72c659e4c0fa2775b7a2f202dbd811a91a24fa319aabad86ed9f889ae2ce6d6d"
+  },
+  "products/049_B09ZH3SYQG/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.191,
+    "method": "local_ocr_and_image_background",
+    "sha256": "85d2ad36724453d76bc98f6f7c8b7aacdc2ca0ea0aa93a8421dede2dcbdc1db2"
+  },
+  "products/049_B09ZH3SYQG/附图/09.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.342,
+    "method": "local_ocr_and_image_background",
+    "sha256": "a990f8b3d09f94ad01be9349ea3772a14a5e9b8d17d1ccd0968977c9d09abd87"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "products/050_B0B4N55FCV/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Perfectsize for your living room orhometabletopasadecor. 10\" 5.9″ 6.7",
+    "edge_white_ratio": 0.023,
+    "method": "local_ocr_and_image_background",
+    "sha256": "831884f3e466c77d4245e2451642fa4a812a5fddc7dedb403ef5e85f11611fbb"
+  },
+  "products/050_B0B4N55FCV/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Unique Feature.Come with a pot to grow a small plant on the fountain.And self-circulating system can supply water to plants (auto watering).",
+    "edge_white_ratio": 0.039,
+    "method": "local_ocr_and_image_background",
+    "sha256": "dbedd3d1db609c5f789df2f6eaa7a2f6e74f7825bdb6d61882581fe185d3ddc3"
+  },
+  "products/050_B0B4N55FCV/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Bring soothing nature indoors. Fountain waterfall provides soothing water sound and meditation/zen atmosphere",
+    "edge_white_ratio": 0.029,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3324a267549c9a12a53b81cea725956d0e5ee16c712ccf944fcaf3a6b923fec3"
+  },
+  "products/050_B0B4N55FCV/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Easy to set up.You can set it up in minutes with the manualand then enjoy the natural feeling indoors.",
+    "edge_white_ratio": 0.014,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c10d8f0331decd4bd2ee08128defda626d51a2f8aa1f4968ff83e1c55a8d4db6"
+  },
+  "products/050_B0B4N55FCV/附图/06.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.836,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c2b5c07246146328ac336f12939c11a4319e8fcce6cc93cd4efde239d342b1ea"
+  },
+  "products/050_B0B4N55FCV/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.004,
+    "method": "local_ocr_and_image_background",
+    "sha256": "bfa5f83f1499a0fbd4c1b6c9bd73db5c75c41d5234fccc197837a364aa5b07d3"
+  },
+  "products/050_B0B4N55FCV/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "DIY and plant yourfavorite green plants.",
+    "edge_white_ratio": 0.114,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1ce5abd221e3e43e6dd262b1846be9d919f1fa6ea158e17bf592663f2777a281"
+  },
+  "products/050_B0B4N55FCV/附图/09.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "DIY Green Plant Cultivation Warm-Colored LED Lights Soothing Water Flow",
+    "edge_white_ratio": 0.131,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b5d576265060c92660b76eb56d671863657332d96cd3fba9f8722b88ee743875"
+  }
+}

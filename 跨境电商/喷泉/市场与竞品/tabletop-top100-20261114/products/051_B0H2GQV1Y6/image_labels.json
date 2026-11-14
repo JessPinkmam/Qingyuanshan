@@ -1,0 +1,74 @@
+{
+  "products/051_B0H2GQV1Y6/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "E",
+    "edge_white_ratio": 0.202,
+    "method": "local_ocr_and_image_background",
+    "sha256": "884d8a755d1d2068c29eec2d5f544f7bfac688ec939434414a89d3f7997a1fec"
+  },
+  "products/051_B0H2GQV1Y6/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Stress Relief & Meditation Meditation Yoga Reading Spa",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d8aae7d77ae5ae4fd3ee61ee120979f090001051ada41901323506f69f3d9b10"
+  },
+  "products/051_B0H2GQV1Y6/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "KINGSYARD",
+    "edge_white_ratio": 0.048,
+    "method": "local_ocr_and_image_background",
+    "sha256": "bfd77bcdbbf14d106be958646bdd0304c76568d9c943d52e30b09e24f35a044a"
+  },
+  "products/051_B0H2GQV1Y6/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Soothe Work Pressure KINGSYARD Stay Focused & Relaxed",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "056f2f8cc8742b16f67a72c8912dfe6d76a3b779a97923d5f89f6b174baca921"
+  },
+  "products/051_B0H2GQV1Y6/附图/06.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Wild West Cowboy Style Water Feature Fits Farmhouse,Zen & Modern Decor",
+    "edge_white_ratio": 0.341,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e7f8a7a0c8e71ca20d3274f7f4e2197d63908ee810a8f3498f5aa467aa71efd0"
+  },
+  "products/051_B0H2GQV1Y6/附图/07.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Mini Size For Any Desk KINGSYARD 22.5cm 21.2cm 16.5cm",
+    "edge_white_ratio": 0.359,
+    "method": "local_ocr_and_image_background",
+    "sha256": "332c5055a1e0ce4bf01bbde7f040baa6ce5a409518be2099c4ded042cf786dd1"
+  },
+  "products/051_B0H2GQV1Y6/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Perfect For Every Corner KINGSYARD Meditation Bedroom Study Work",
+    "edge_white_ratio": 0.002,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b97d6554f1af3c93e5df80e93dd4e499dca5b48b29ff3c235464abde5f6c1207"
+  },
+  "products/051_B0H2GQV1Y6/附图/09.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "House Warming Gifts KINGSYARD For New Home",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6c2ae75aae91f9586379fb7071b6df68f51d611f545ab701fa3eb15be2d661f6"
+  }
+}
