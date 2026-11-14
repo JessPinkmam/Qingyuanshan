@@ -1,0 +1,56 @@
+{
+  "products/068_B0FKMG958V/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "RGBCOLORFULLED NIGHTLIGHT THECOLOR-CHANGING FUNCTIONCREATESA ROMANTIC ANDWARMATMOSPHERE. red blue green NOTE:WHENUSING,THEAMOUNTOFWATERSHOULDNOTBELESSTHAN2OOML",
+    "edge_white_ratio": 0.233,
+    "method": "local_ocr_and_image_background",
+    "sha256": "92dac45a85d607bda2404ca85a6fcc0b8ed16e6a810b2c404d07a8fa93a9d52a"
+  },
+  "products/068_B0FKMG958V/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "EssentialoilCanBeAdded Add 5-8 dropsofyour favorite essentialoil,and it will instantly releasea delicatefragrance,filling thespacewithacharmingaroma.",
+    "edge_white_ratio": 0.056,
+    "method": "local_ocr_and_image_background",
+    "sha256": "0e70069fc03e1b21a307f7fcedd6ca2d86f253dc5353f5da891425b5991d2b0d"
+  },
+  "products/068_B0FKMG958V/附图/04.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Display of Product Details Handmade,each product pattern is slightly different LEDLightBeads HighEfficiency&EnergySaving ProductAccessories UsingSUS304,NoRust",
+    "edge_white_ratio": 0.79,
+    "method": "local_ocr_and_image_background",
+    "sha256": "827c8c8dcf50acaad2a624b29a72c318907aebec35407af1ec75297ada4e65c7"
+  },
+  "products/068_B0FKMG958V/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "The size of the water column of thisfountain lamp iscontrolled by the largeand small switches on the water pump Highflow Lowflow",
+    "edge_white_ratio": 0.073,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1a3a0dde83fe2ad03ada544e373fa056cf90ef4213dc29a48f70baabf63c392a"
+  },
+  "products/068_B0FKMG958V/附图/06.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "PRODUCTSIZE BEAUTIFULDECORATIONFORMANY OCCASIONS 4.65 in 5.75 in",
+    "edge_white_ratio": 0.438,
+    "method": "local_ocr_and_image_background",
+    "sha256": "469112ffd024ee60c5a94a9fd1edd8720cc3d80512ace877573c9be43cb13e75"
+  },
+  "products/068_B0FKMG958V/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "WHY CHOOSE THIS PRODUCT? SUPER SPLASH NIGHT 700ML QUIET RESISTANT LIGHT CAPACITY DESIGN DESIGNS",
+    "edge_white_ratio": 0.046,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e773da8864bd10ddd19a7cc45dc60e994f21ed73d5b30847d823cfa9412d7472"
+  }
+}

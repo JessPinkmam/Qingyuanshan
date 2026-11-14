@@ -1,0 +1,74 @@
+{
+  "products/067_B07BM7DJ6P/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "10 Inch Width 19 1nch Height 6 Inch Basc",
+    "edge_white_ratio": 0.908,
+    "method": "local_ocr_and_image_background",
+    "sha256": "60bc466c5660f62a7a6ce43b39c74895fde2709713112760b3ace2e30955d1d3"
+  },
+  "products/067_B07BM7DJ6P/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "WLESS",
+    "edge_white_ratio": 0.17,
+    "method": "local_ocr_and_image_background",
+    "sha256": "abb13d0db2eff0616e19ca9f35c43d826cf98a84494fdd07b069f60132083fa3"
+  },
+  "products/067_B07BM7DJ6P/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f21ca11eb06b637e7c36c16b3fde13f8d7cdc8e224c51e9bb51221e65ff61c56"
+  },
+  "products/067_B07BM7DJ6P/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "741a590773127deef2de0b3366592cb166f73dcd00ff40c25b0a33281c841fa9"
+  },
+  "products/067_B07BM7DJ6P/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c8be3c20fd547bfba837ec8454d8f13c1bb59829da05f09e3ed2f75f0da449f3"
+  },
+  "products/067_B07BM7DJ6P/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3d1105882e3ab3da3f70e0f85137d500e5da699b25208bc9d42ba4ff559aa6d2"
+  },
+  "products/067_B07BM7DJ6P/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "WLESS",
+    "edge_white_ratio": 0.17,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3f18b27a0aa3f1d08eb1470fefb8b8a2b75ee929acb5b42fca90adf4ca4dc6ee"
+  },
+  "products/067_B07BM7DJ6P/附图/09.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.002,
+    "method": "local_ocr_and_image_background",
+    "sha256": "a8c86667528ed90bd0864591e358210e0fbdba48680b35a68e44d20e2546a08b"
+  }
+}

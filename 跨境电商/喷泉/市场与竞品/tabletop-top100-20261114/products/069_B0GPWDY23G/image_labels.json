@@ -1,0 +1,47 @@
+{
+  "products/069_B0GPWDY23G/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.074,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5190635d132ee353501a41abc634c4eecf111cfa48df354700c8038b2114ae66"
+  },
+  "products/069_B0GPWDY23G/附图/03.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "Simple Installation Steps Step Step 2 Connectthehosetothepump Fillthebasewithwater Step3 Step 4 Placethewaterfountainontothebase Plug in the pump andplacethecrystalballatop",
+    "edge_white_ratio": 0.61,
+    "method": "local_ocr_and_image_background",
+    "sha256": "764ecd0521c2fbbc8a2b9d7b26623db72fc1c42facd1686315e6956f7ce3cea1"
+  },
+  "products/069_B0GPWDY23G/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Rotating Crystal Ball Reflectssoft LED glowintodancingripples WaterfallStructure Waterglidesdownstepbystep, creatinglayeredreflections Murmuring Stream Createasereneatmosphere withtranquilwatersounds",
+    "edge_white_ratio": 0.148,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d393cc53070254581a75b209616b040818463a6b7776590199fa0d0e80dc291a"
+  },
+  "products/069_B0GPWDY23G/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Low-NoisePump Enablespeaceful and continuouswatermovement AdjustableFlowSpeed Perfectlysuityourmood Enhancetherollingball'sbeauty withcolorchanges",
+    "edge_white_ratio": 0.08,
+    "method": "local_ocr_and_image_background",
+    "sha256": "879e7f67351fc3857dc0606917919a8cbda89b38aede6636f321ff50864c3815"
+  },
+  "products/069_B0GPWDY23G/附图/06.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "ProductDimensions 11.5 57\" Cord Length 8.5#",
+    "edge_white_ratio": 0.82,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3bfc48fc7923a976bb19b8b43877256bda8ff9d2ddac63b7dbcf086081ee78e2"
+  }
+}
