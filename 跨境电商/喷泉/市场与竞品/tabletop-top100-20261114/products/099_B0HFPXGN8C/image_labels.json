@@ -1,0 +1,74 @@
+{
+  "products/099_B0HFPXGN8C/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e3d3e53ab47c96d2ca8edb51b230aa3eadc536556a50c829559830e86037358c"
+  },
+  "products/099_B0HFPXGN8C/附图/03.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Product TheSetIncludes Parameters Rockery Base 8.46inch 6.30inch 5.12inch waterpump Pebble",
+    "edge_white_ratio": 0.134,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cf47102912330ada28b4e5ce90779833d933c1ab8ffbdb19f509a2f352176690"
+  },
+  "products/099_B0HFPXGN8C/附图/04.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Colorful Light",
+    "edge_white_ratio": 0.932,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8e1595ed28f42a9931deb800ff6db5fd747be4437b9ec5f892331b3573caff7a"
+  },
+  "products/099_B0HFPXGN8C/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.002,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f7a497e800402af95a8162aa61edfae3bf38d9d01cfdf63bd8a6871e05cbe6ee"
+  },
+  "products/099_B0HFPXGN8C/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.014,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b116561788dc5f6c9257fe05a07129a137a5d0bc052fd07e990d79bbc50f9d3c"
+  },
+  "products/099_B0HFPXGN8C/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Zen & Rest Zen & Rest Night Serenity",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6dce66cb92a9e638b6891e71ebaccef30610994a9b390a8fd55c92610daaf8cf"
+  },
+  "products/099_B0HFPXGN8C/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.229,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1cb52183f16d062e035576655388c0d510d1880a114e677148fb97c23ec26035"
+  },
+  "products/099_B0HFPXGN8C/附图/09.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.005,
+    "method": "local_ocr_and_image_background",
+    "sha256": "57deb72e92ec6e5abf4ede61c7435f97b48059dcbc8ce650a480bbee2ab57bb3"
+  }
+}

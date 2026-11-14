@@ -1,0 +1,47 @@
+{
+  "products/097_B0GLGBB7FC/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Product Dimensions Exact Size for Tabletop Placement Height:45.5cm / 17.91\" Length:25cm / 9.84\" Width:20cm /7.87\"",
+    "edge_white_ratio": 0.882,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6b44043c1d94086c9a8a78737f48e54240a563ce0d55329aa0c795af45566685"
+  },
+  "products/097_B0GLGBB7FC/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Versatile Placement Fit for Home & Outdoor Use Indoor Home Decor Outdoor Garden Decor",
+    "edge_white_ratio": 0.091,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b0cb09a9962ad2af4170437f9ee6525c43e4d46e30431bac6d89f1dee90a30bf"
+  },
+  "products/097_B0GLGBB7FC/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Premium Material Durable Resin Construction High-Density Resin Lifelike Stone Waterproof & & Pottery Texture Wear-Resistant",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "eb4511a7dea3d8c7ba60268c42e95a3f0d0a9c519e3658c2a71e06cb9aee22d3"
+  },
+  "products/097_B0GLGBB7FC/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Core Functions Relax & Decorate Your Space Circulating WaterFlow Warm LED White Noise Ambient Relaxation Light",
+    "edge_white_ratio": 0.013,
+    "method": "local_ocr_and_image_background",
+    "sha256": "79c5f106d58edac77e3a42a4286a14964019b7cc84ab3e2c46913e24ee157141"
+  },
+  "products/097_B0GLGBB7FC/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "中",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "fad67d31d820fa8f7500360f6c11b0f19fcd111ef93912fba38d444dd860785e"
+  }
+}
