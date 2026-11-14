@@ -1,0 +1,56 @@
+{
+  "products/095_B0HDS1YK1P/附图/02.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "WHAT'SINCLUDED 1.6IN X1 5.9IN TABLETOPFOUNTAIN ASSEMBLYGUIDE X1 MANUALX1",
+    "edge_white_ratio": 0.88,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e406916649279d1766d36366a74ee832fdd87301c89a1236ed4f2da51f1b0cce"
+  },
+  "products/095_B0HDS1YK1P/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.147,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e48d0662c5f8e28fe185f8ecaf7de5aa80287782230e2127b21ec00623b96df8"
+  },
+  "products/095_B0HDS1YK1P/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.055,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8d682d13ffe56ebb5e73b16c3dee793737ef5d3c0012b02bc5425be9fbaab6f6"
+  },
+  "products/095_B0HDS1YK1P/附图/05.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "Thoughtful Details, Tranquil Vibes CRAFTED FOR PEACEAND BEAUTY",
+    "edge_white_ratio": 0.813,
+    "method": "local_ocr_and_image_background",
+    "sha256": "962d93cff957f45678fd81a8b22d8b016c40fa520e4d573dcb99bef87a850ef3"
+  },
+  "products/095_B0HDS1YK1P/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Create a Calm Workspace Relaxing WaterSound Gentleflowingwater creates a soothing atmosphere. Stress Relief Decor Apeacefuldeskaccent forworkbreaks,focus, andunwinding. Compact Zen Accent Perfectforoffice desks,studycorners, andbedside spaces.",
+    "edge_white_ratio": 0.157,
+    "method": "local_ocr_and_image_background",
+    "sha256": "baaddb37b898f41adad90f28ab6d3b441c4cede89c660355426699706da9902e"
+  },
+  "products/095_B0HDS1YK1P/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "A Thoughtful Gift of Calm Palm-sized serenity for home or office. KINFOLK",
+    "edge_white_ratio": 0.105,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5d025320a7c532e9c891418c5da77571102b084f69c4c242ce4066a1fc9cdd73"
+  }
+}

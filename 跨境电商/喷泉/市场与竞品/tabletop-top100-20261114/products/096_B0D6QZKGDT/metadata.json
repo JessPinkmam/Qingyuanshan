@@ -1,0 +1,103 @@
+{
+  "asin": "B0D6QZKGDT",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/61WcqQ8HdTL._AC_UL300_SR300,200_.jpg",
+  "rank": 96,
+  "title": "Generic Indoor Water Feature Tabletop Ceramic Fountain Home Kitchen Office Decoration Modern Design Style (Black)",
+  "url": "https://www.amazon.com/Generic-Feature-Tabletop-Fountain-Decoration/dp/B0D6QZKGDT/ref=zg_bs_g_3735981_d_sccl_96/142-4700496-1670833?psc=1",
+  "captured_at": "2026-11-14T07:53:15.230Z",
+  "images": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/61WcqQ8HdTL._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61DPmawVPuL._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/51oc58-YI-L._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61cfE2UcOnL._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/51gqX9noUUL._AC_SL1000_.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "creator": "Seller",
+      "description": "video thumbnail",
+      "duration": "0:24",
+      "product_asin": "B0D6QZKGDT",
+      "related_asins": "B0D6QZKGDT",
+      "title": "glass ball fountain",
+      "url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/33e37a99-57d4-4358-b0f7-678bac730d9f/default.vertical.jobtemplate.hls.m3u8",
+      "vendor": "Gogo Decor"
+    }
+  ],
+  "errors": [],
+  "page_title": "Indoor Water Feature Tabletop Ceramic Fountain Home Kitchen Office Decoration Modern Design Style (Black)",
+  "aplus": [],
+  "gallery_expected": 5,
+  "assets": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/61WcqQ8HdTL._AC_SL1000_.jpg",
+      "path": "products/096_B0D6QZKGDT/主图/01.jpg",
+      "status": "downloaded",
+      "bytes": 67453,
+      "sha256": "f3bdf9cfeb8aca8d9faf681dbb2e6005d0905b61aa65d97c76f833eb48211698"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61DPmawVPuL._AC_SL1000_.jpg",
+      "path": "products/096_B0D6QZKGDT/附图/02.jpg",
+      "status": "downloaded",
+      "bytes": 69918,
+      "sha256": "f59b52575e8e03fc29a7dd43a233e0c9dc19e82eeb247838be4083dc6a7c770d"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/51oc58-YI-L._AC_SL1000_.jpg",
+      "path": "products/096_B0D6QZKGDT/附图/03.jpg",
+      "status": "downloaded",
+      "bytes": 45124,
+      "sha256": "50b58e4ba617c24208cfec8fb8c9ad1510918cf57f0609ae623763f9d6543e5e"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61cfE2UcOnL._AC_SL1000_.jpg",
+      "path": "products/096_B0D6QZKGDT/附图/04.jpg",
+      "status": "downloaded",
+      "bytes": 84060,
+      "sha256": "649e68199038ed1e322581c266b4d7aafb60a122e08e6e4d60d5df73e8bf65df"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/51gqX9noUUL._AC_SL1000_.jpg",
+      "path": "products/096_B0D6QZKGDT/附图/05.jpg",
+      "status": "downloaded",
+      "bytes": 49254,
+      "sha256": "6010ae87d0f050bff50e53bac9da35e42736e4d2fd82b31fbe20d3f660ad1ada"
+    },
+    {
+      "creator": "Seller",
+      "description": "video thumbnail",
+      "duration": "0:24",
+      "product_asin": "B0D6QZKGDT",
+      "related_asins": "B0D6QZKGDT",
+      "title": "glass ball fountain",
+      "url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/33e37a99-57d4-4358-b0f7-678bac730d9f/default.vertical.jobtemplate.hls.m3u8",
+      "vendor": "Gogo Decor",
+      "role": "video",
+      "path": "products/096_B0D6QZKGDT/视频/01.mp4",
+      "status": "downloaded",
+      "bytes": 1522670,
+      "sha256": "0a2dc37680112b2634565871b218f67a7c1249af70b1e761fc04195a13e2f4d6"
+    }
+  ]
+}

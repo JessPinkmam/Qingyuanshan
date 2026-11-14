@@ -1,0 +1,203 @@
+{
+  "asin": "B0HDS1YK1P",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/71Ik3Xa3WFL._AC_UL300_SR300,200_.jpg",
+  "rank": 95,
+  "title": "Tabletop Water Fountain, Mini Zen Garden Indoor Waterfall for Desk | 3D-Printed Basin, Natural Bamboo Spout, USB Pump, Rockery, Lotus Beads, Greenery, Office, Living Room, Bedroom",
+  "url": "https://www.amazon.com/Tabletop-Fountain-Waterfall-3D-Printed-Greenery/dp/B0HDS1YK1P/ref=zg_bs_g_3735981_d_sccl_95/142-4700496-1670833?psc=1",
+  "captured_at": "2026-11-14T07:53:15.230Z",
+  "images": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/71Ik3Xa3WFL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71ks8PohuxL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71lqlSigEdL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71rpKeYgMXL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/81rm6Wd7m3L._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71DoOblk7xL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71do7nBNmAL._AC_SL1500_.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "creator": "Seller",
+      "description": "video thumbnail",
+      "duration": "0:18",
+      "product_asin": "B0HDS1YK1P",
+      "related_asins": "B0HDS1YK1P",
+      "title": "Tabletop Water Fountain, Mini Zen Garden Indoor Waterfall for Desk",
+      "url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/71f1242e-a141-41d3-bc2d-313afe7ced43/default.jobtemplate.hls.m3u8",
+      "vendor": "Weizong"
+    }
+  ],
+  "errors": [],
+  "page_title": "Tabletop Water Fountain, Mini Zen Garden Indoor Waterfall for Desk",
+  "aplus": [
+    {
+      "alt": "zen garden desk tabletop",
+      "section": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/a16b34cc-4d65-4664-8ea2-bdb873995354.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+    },
+    {
+      "alt": "zen garden desk tabletop",
+      "section": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/7e92a50e-1645-431b-a010-610eebec3862.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+    },
+    {
+      "alt": "zen garden desk tabletop",
+      "section": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/87040cf6-3ebe-41cc-94d6-3ba9fe4be8a4.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+    },
+    {
+      "alt": "zen garden desk tabletop",
+      "section": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/29050bc1-9c71-41f9-875d-bfde4e85b9df.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+    },
+    {
+      "alt": "zen garden desk tabletop",
+      "section": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/151056bc-1661-49c1-91a3-f3d1a58e756e.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+    }
+  ],
+  "gallery_expected": 7,
+  "assets": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/71Ik3Xa3WFL._AC_SL1500_.jpg",
+      "path": "products/095_B0HDS1YK1P/主图/01.jpg",
+      "status": "downloaded",
+      "bytes": 223900,
+      "sha256": "fb71c918fccad963dac4170e06ef7a27a6db751b54efc5ecf0357d0a70c2234d"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71ks8PohuxL._AC_SL1500_.jpg",
+      "path": "products/095_B0HDS1YK1P/附图/02.jpg",
+      "status": "downloaded",
+      "bytes": 212825,
+      "sha256": "e406916649279d1766d36366a74ee832fdd87301c89a1236ed4f2da51f1b0cce"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71lqlSigEdL._AC_SL1500_.jpg",
+      "path": "products/095_B0HDS1YK1P/附图/03.jpg",
+      "status": "downloaded",
+      "bytes": 148291,
+      "sha256": "e48d0662c5f8e28fe185f8ecaf7de5aa80287782230e2127b21ec00623b96df8"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71rpKeYgMXL._AC_SL1500_.jpg",
+      "path": "products/095_B0HDS1YK1P/附图/04.jpg",
+      "status": "downloaded",
+      "bytes": 158750,
+      "sha256": "8d682d13ffe56ebb5e73b16c3dee793737ef5d3c0012b02bc5425be9fbaab6f6"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/81rm6Wd7m3L._AC_SL1500_.jpg",
+      "path": "products/095_B0HDS1YK1P/附图/05.jpg",
+      "status": "downloaded",
+      "bytes": 261341,
+      "sha256": "962d93cff957f45678fd81a8b22d8b016c40fa520e4d573dcb99bef87a850ef3"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71DoOblk7xL._AC_SL1500_.jpg",
+      "path": "products/095_B0HDS1YK1P/附图/06.jpg",
+      "status": "downloaded",
+      "bytes": 217682,
+      "sha256": "baaddb37b898f41adad90f28ab6d3b441c4cede89c660355426699706da9902e"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71do7nBNmAL._AC_SL1500_.jpg",
+      "path": "products/095_B0HDS1YK1P/附图/07.jpg",
+      "status": "downloaded",
+      "bytes": 190743,
+      "sha256": "5d025320a7c532e9c891418c5da77571102b084f69c4c242ce4066a1fc9cdd73"
+    },
+    {
+      "alt": "zen garden desk tabletop",
+      "section": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/a16b34cc-4d65-4664-8ea2-bdb873995354.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+      "role": "aplus",
+      "path": "products/095_B0HDS1YK1P/A+/01.jpg",
+      "status": "downloaded",
+      "bytes": 181285,
+      "sha256": "214e9528cebd3c2b75a2768dd333f78f81d50beff0c20a5251847b415d3c77d4"
+    },
+    {
+      "alt": "zen garden desk tabletop",
+      "section": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/7e92a50e-1645-431b-a010-610eebec3862.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+      "role": "aplus",
+      "path": "products/095_B0HDS1YK1P/A+/02.jpg",
+      "status": "downloaded",
+      "bytes": 209817,
+      "sha256": "58e02380258979611c7bf292d5845c2a64a06f4fbad218c8a6966fd1141a19d4"
+    },
+    {
+      "alt": "zen garden desk tabletop",
+      "section": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/87040cf6-3ebe-41cc-94d6-3ba9fe4be8a4.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+      "role": "aplus",
+      "path": "products/095_B0HDS1YK1P/A+/03.jpg",
+      "status": "downloaded",
+      "bytes": 289139,
+      "sha256": "0104969bc5a10ef4fea992e612af11438938e8e44ac01efff2bf41fcac88d644"
+    },
+    {
+      "alt": "zen garden desk tabletop",
+      "section": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/29050bc1-9c71-41f9-875d-bfde4e85b9df.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+      "role": "aplus",
+      "path": "products/095_B0HDS1YK1P/A+/04.jpg",
+      "status": "downloaded",
+      "bytes": 296584,
+      "sha256": "2a9da9026a331537734377c93fdaac263e64890384ebe05e53bd33e33bbe4401"
+    },
+    {
+      "alt": "zen garden desk tabletop",
+      "section": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/151056bc-1661-49c1-91a3-f3d1a58e756e.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+      "role": "aplus",
+      "path": "products/095_B0HDS1YK1P/A+/05.jpg",
+      "status": "downloaded",
+      "bytes": 304904,
+      "sha256": "2ead8064adf2a37f23fa14e75127d40deb4fcab1495041197b15982ffa93afad"
+    },
+    {
+      "creator": "Seller",
+      "description": "video thumbnail",
+      "duration": "0:18",
+      "product_asin": "B0HDS1YK1P",
+      "related_asins": "B0HDS1YK1P",
+      "title": "Tabletop Water Fountain, Mini Zen Garden Indoor Waterfall for Desk",
+      "url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/71f1242e-a141-41d3-bc2d-313afe7ced43/default.jobtemplate.hls.m3u8",
+      "vendor": "Weizong",
+      "role": "video",
+      "path": "products/095_B0HDS1YK1P/视频/01.mp4",
+      "status": "downloaded",
+      "bytes": 1250646,
+      "sha256": "fa7851deb259b5925d956107a7ae8bca26053cf1bbd5343822b06bfe1f945a23"
+    }
+  ]
+}

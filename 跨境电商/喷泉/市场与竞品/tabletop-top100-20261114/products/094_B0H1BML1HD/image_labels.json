@@ -1,0 +1,56 @@
+{
+  "products/094_B0H1BML1HD/附图/02.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Soothing Sound of Water, Not the Sound of Motor Relaxing Adjustableflow flowing water withsteadystream Quietpumpfor 4-colorauto peaceful use changing light Lownoise waterpump",
+    "edge_white_ratio": 0.316,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cb4f0879b26d83701b813b84ad0f71a3340b3fd88e833fa86f95411b0ed34d67"
+  },
+  "products/094_B0H1BML1HD/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Don't worry about the water Leak-Resistant spilling out. Base 9.3in LSYON at 100 IELXOUmX 5.9in 8.2in",
+    "edge_white_ratio": 0.03,
+    "method": "local_ocr_and_image_background",
+    "sha256": "293f271ae12501ce09454b7282c508c712b2e570c9fdbbd9f9d698e6229d6e4e"
+  },
+  "products/094_B0H1BML1HD/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "SWITCH ITOFF WITHOUT CRAWLING UNDER THE DESK R",
+    "edge_white_ratio": 0.068,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d52f8af0963c4321f898694ffe8289dea3028c6263456acf29bc5ecf8054394b"
+  },
+  "products/094_B0H1BML1HD/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "A Stylish Accent for Any Small Space OfficeDesk BedroomNightstand Living Room Shelf Meditation Coner KINFOLK THE KINFOLKHOME Office Desk Bedroom Meditation Corner",
+    "edge_white_ratio": 0.028,
+    "method": "local_ocr_and_image_background",
+    "sha256": "fe841a6399bf589e01927c222d9bc2f66bfc90da0029bf294e587c3fb2083fa4"
+  },
+  "products/094_B0H1BML1HD/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Turn Everyday Moments into Relaxing Rituals",
+    "edge_white_ratio": 0.011,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cabd01edc6064f4c68767eeb9a25ee9499931f9d15af26d4da36338b89d15a18"
+  },
+  "products/094_B0H1BML1HD/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Meaningful Gifts for Everyday Peace Tabletop Water Fountain Craateapeaeefaloment ay.cbere ForYyu",
+    "edge_white_ratio": 0.097,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c8ae16f6fa55a8cc5974a5cb17631c3484c4c2086f4fcf1109c7b95a67559df6"
+  }
+}

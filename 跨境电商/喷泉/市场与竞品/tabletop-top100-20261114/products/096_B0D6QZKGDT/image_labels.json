@@ -1,0 +1,38 @@
+{
+  "products/096_B0D6QZKGDT/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "OND SS Take ItEasy",
+    "edge_white_ratio": 0.006,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f59b52575e8e03fc29a7dd43a233e0c9dc19e82eeb247838be4083dc6a7c770d"
+  },
+  "products/096_B0D6QZKGDT/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "30 Take IEasy",
+    "edge_white_ratio": 0.057,
+    "method": "local_ocr_and_image_background",
+    "sha256": "50b58e4ba617c24208cfec8fb8c9ad1510918cf57f0609ae623763f9d6543e5e"
+  },
+  "products/096_B0D6QZKGDT/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "T 2 The best preparation",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "649e68199038ed1e322581c266b4d7aafb60a122e08e6e4d60d5df73e8bf65df"
+  },
+  "products/096_B0D6QZKGDT/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6010ae87d0f050bff50e53bac9da35e42736e4d2fd82b31fbe20d3f660ad1ada"
+  }
+}
