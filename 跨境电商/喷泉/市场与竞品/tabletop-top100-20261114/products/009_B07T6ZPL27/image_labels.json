@@ -1,0 +1,56 @@
+{
+  "products/009_B07T6ZPL27/附图/02.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.483,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3076880a807e322920d42d72e48e508ab70bc3a13698999847c34425fd4a957c"
+  },
+  "products/009_B07T6ZPL27/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.085,
+    "method": "local_ocr_and_image_background",
+    "sha256": "a7fe5ce66e98f97c54aca44ed613693813138b8164f81137c0e6974a5fcffc44"
+  },
+  "products/009_B07T6ZPL27/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.155,
+    "method": "local_ocr_and_image_background",
+    "sha256": "09e073f5948394aa6f875cdb01e45289bc0f70231ef1d54b952bbbbd54daef9a"
+  },
+  "products/009_B07T6ZPL27/附图/05.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.541,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b4381aa5a33af002887c79e4360e09bccb4fda5a7cc3b6d0731bc0b2f5d7c1d0"
+  },
+  "products/009_B07T6ZPL27/附图/06.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "PRODUCTSIZE Perfect For Your Desk or Coffee Table 27CM JAN 17.5CM 23CM",
+    "edge_white_ratio": 0.284,
+    "method": "local_ocr_and_image_background",
+    "sha256": "23be58dfb114c89ed75c993ba44041ac708e937be24adb1d86a7d992b9232caf"
+  },
+  "products/009_B07T6ZPL27/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.015,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c6f2bbf6f0ee94c1375e0832b49dc7485692c0ca1cb984a3adc6eefd6364e6c9"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "products/008_B00488V9MI/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.041,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b5b745e5c42eea2b4c8e04ea70b718e9ba472dd3f24cdb2f1b2d2997bcbce661"
+  },
+  "products/008_B00488V9MI/附图/03.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "dimensions waterfall fountain measures 7\"LX5\"W×11\"H (L18xW13xH28cm) the perfect size for your home decor 11” (28 cm) height 7\"(18 cm)length",
+    "edge_white_ratio": 0.944,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1281c9af3edd83d17f33641fcb5bc9d41119083266e58046c4d8ea3f81633273"
+  },
+  "products/008_B00488V9MI/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Rainforest Fountain with cool white LED lights Polystone natural looking aged barkfountain with dramatic lighted elements offers a peaceful ambiance for any space",
+    "edge_white_ratio": 0.149,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1ce94fc0ff037ff9818daaa2aa81af1a9da35097fc9bd7a0515617afa2021ea2"
+  },
+  "products/008_B00488V9MI/附图/05.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "durably built skillfully crafted Polystone to provide long lasting usetolastalifetime",
+    "edge_white_ratio": 0.711,
+    "method": "local_ocr_and_image_background",
+    "sha256": "09594356df33b1e84ffb287d1c3f302a5f1d14ad90f3c8bc29f62864836cf997"
+  },
+  "products/008_B00488V9MI/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "LED lights with a cool white glow soothe your space with therelaxingsounds ofwater flowing",
+    "edge_white_ratio": 0.109,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d2fb37fa3b4d0c037207ea61f48770cac8e167936628b4e78bc75d37aa37353c"
+  },
+  "products/008_B00488V9MI/附图/07.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.735,
+    "method": "local_ocr_and_image_background",
+    "sha256": "dde82b76aafdb42d482e226dc4c69b66843146431cce1fcc8d28abcd1a38adfe"
+  },
+  "products/008_B00488V9MI/附图/08.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.806,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c6cbcabf295ebae321d060b60bddb0cc1dbe14a0a43f9b13396b81599400a4d9"
+  },
+  "products/008_B00488V9MI/附图/09.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.364,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1cbe63cd71305c08caa4286bcf780ff71e20eecb5e71fba66f0246f2ef32bc30"
+  },
+  "products/008_B00488V9MI/附图/10.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.678,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d91b2a226618522dbe671e515c738538d6a62a982c715bf3f7d18f9bd4ac9b62"
+  },
+  "products/008_B00488V9MI/附图/11.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "Alpine. CORPORATION ALPINECORPORATIONISAU.S.BASEDCOMPANY OURPRODUCTSARESHIPPEDQUICKLYFROM AMAZON'SWAREHOUSES. OURCUSTOMERSERVICEISFAST,RELIABLE, ANDSUPPORTEDBYDEDICATEDTEAMSIN THEUS,ENSURINGEXCEPTIONAL CUSTOMERSATISFACTION.",
+    "edge_white_ratio": 0.375,
+    "method": "local_ocr_and_image_background",
+    "sha256": "67590db7fbbe588344f5bcfb2a29c5af9ad47e5f024cf954fe699694d17eb119"
+  }
+}

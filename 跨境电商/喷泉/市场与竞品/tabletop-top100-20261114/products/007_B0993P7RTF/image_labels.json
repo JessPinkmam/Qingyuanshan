@@ -1,0 +1,56 @@
+{
+  "products/007_B0993P7RTF/附图/02.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Warm LED Lighting WarmLED Lighting Nighttime Ambiance Nighttime Ambiance Gentle Glow",
+    "edge_white_ratio": 0.902,
+    "method": "local_ocr_and_image_background",
+    "sha256": "4dfe55c1eb4494c1a44a92a58444a7af61b344bc6056edbf3c611b6dcb665e8e"
+  },
+  "products/007_B0993P7RTF/附图/03.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "DurableResinBuild DurableResinBuild NaturalStoneLook DecorativePebbles",
+    "edge_white_ratio": 0.861,
+    "method": "local_ocr_and_image_background",
+    "sha256": "02fb09ba1b1e8cae87603ffeb2678a7e55dc69a1e1610063d4354cba3a111555"
+  },
+  "products/007_B0993P7RTF/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.108,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b815d2f948bf899aa4d4176d2dd255ad2cd09beeeed03e2e391d861a74ad7813"
+  },
+  "products/007_B0993P7RTF/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "506829eff76d4ac9b2aa0ca730373d346f32e63b9fe46e47db0661e216fccabb"
+  },
+  "products/007_B0993P7RTF/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.042,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cbfcee95c83ee0cd2dd75b68fc8d0d7c572f09aba51f8748c1a15fb4d8463755"
+  },
+  "products/007_B0993P7RTF/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.043,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6baf8e452a5b01b5b4a21b07d9c7ffe335987c939ca92a8921fb597ddb8b1303"
+  }
+}
