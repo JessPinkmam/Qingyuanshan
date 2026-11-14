@@ -1,0 +1,65 @@
+{
+  "products/020_B0DGTH28YY/附图/02.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "RelaxingDesktop Built-inLEDlights and circulating Fountain pumpcreateapeacefulatmosphere",
+    "edge_white_ratio": 0.401,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1ee5b1ccd44c44f106ee9cd6e0f639f07d98171cce366722b8dc48edd18e5c9c"
+  },
+  "products/020_B0DGTH28YY/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "increases relaxation tranquil sounds USBpowercable easyoperation",
+    "edge_white_ratio": 0.003,
+    "method": "local_ocr_and_image_background",
+    "sha256": "34f6b69ac1e5767c66284e92a9e63b38c903706c83137a6317c18fdb204dca0e"
+  },
+  "products/020_B0DGTH28YY/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": ".。 Drown Out the Noise Createapeacefulworkspaceandboost yourproductivitywithsoothingwater sounds.",
+    "edge_white_ratio": 0.146,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6849524899a192a9156c4d642e26fc8e289ded65bf3db3bfc2760bc2619bc196"
+  },
+  "products/020_B0DGTH28YY/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Deepen Your Practice Avisual and auditoryanchor for mindfulness and yoga.",
+    "edge_white_ratio": 0.24,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3c326beea40a65e93d4578df1383e89eb12a45a744d9eda1d8465aea620b7db1"
+  },
+  "products/020_B0DGTH28YY/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Serene Night Light Purple LED glow creates a calming atmosphere for better sleep.",
+    "edge_white_ratio": 0.011,
+    "method": "local_ocr_and_image_background",
+    "sha256": "96f3471e6b1b67aa2973adfa538e28dfa0c9c400a6fe6141c4c593a57f6406d9"
+  },
+  "products/020_B0DGTH28YY/附图/07.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.8,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e97f63a02b7890d283c9bb0dd5d2f85f4c30827a3dbc7297fce323f771ef7b01"
+  },
+  "products/020_B0DGTH28YY/附图/08.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "7.5\" 5.0″ 6.1\" compact desktop design Ideal foryourofficeorliving room",
+    "edge_white_ratio": 0.087,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3ae435ebe833e714c7df050a964346037d4bd8dee443e4fc9e6bbf8d4d7d0724"
+  }
+}

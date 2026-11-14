@@ -1,0 +1,65 @@
+{
+  "products/019_B09ZJWYW3C/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.161,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c9f587b5327af84557946c7ac00a95bb2e5dc4417980860da557a67b1e05b767"
+  },
+  "products/019_B09ZJWYW3C/附图/03.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "9.6in 7.1in 7.1in",
+    "edge_white_ratio": 0.963,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7e443cfbe65207ad5e2246ae72e12ad4b7a1bfa6dec9a3ad049206b0aa41353b"
+  },
+  "products/019_B09ZJWYW3C/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "High Strength LED Lights Stone Adornment",
+    "edge_white_ratio": 0.283,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c62024f217aab1faf8037138e929adb09664b3e823cdd50ce316855cfad8c407"
+  },
+  "products/019_B09ZJWYW3C/附图/05.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.332,
+    "method": "local_ocr_and_image_background",
+    "sha256": "895e69aef9b6451d5c07e5b5bb1a4b9b9faa4df24f47a6bde80ca4907dd8b0b8"
+  },
+  "products/019_B09ZJWYW3C/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.251,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7073bb8696710a299a7e6dc201eeba3d8408c021672a0f5e9a21cff68bbb9563"
+  },
+  "products/019_B09ZJWYW3C/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "a8258d33c2da2aeb86f80808d8f166253d086bdbb8c07521c078d57e9582cd89"
+  },
+  "products/019_B09ZJWYW3C/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.071,
+    "method": "local_ocr_and_image_background",
+    "sha256": "567af37aff7a1de849f0f6ca781f488e48ded1609e7fce64ec4bfd65449bf028"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "products/021_B0FYQ23XMV/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "ON/OFFSwitch WaterPump Plug 7.48in/ 19CM 5.12in/13CM 6.18in/ 15.7CM",
+    "edge_white_ratio": 0.95,
+    "method": "local_ocr_and_image_background",
+    "sha256": "52d6b3ebc1a9e140bb1233b706880566380b940627b90c8a2ea5a102baf264c6"
+  },
+  "products/021_B0FYQ23XMV/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.183,
+    "method": "local_ocr_and_image_background",
+    "sha256": "95316ed87a37ecc92dc4d19555c510de16fc15c4618be63b0696d0fc9e645bcb"
+  },
+  "products/021_B0FYQ23XMV/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "O",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "00e04b7f72ef6ac60c9afb555ff01d3c0f9957275657838d2df995ab6bad6f92"
+  },
+  "products/021_B0FYQ23XMV/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.152,
+    "method": "local_ocr_and_image_background",
+    "sha256": "0cb0ca9609d50c8d636245e779bce8d05155009096cf9af1329637b0481dcc0f"
+  },
+  "products/021_B0FYQ23XMV/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "8",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5ee3c4997f92f8f6072d6f5101c86c23d9f0eb9e82ebcf6521d389c4003e4ed0"
+  },
+  "products/021_B0FYQ23XMV/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.01,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d424a420cdf68443b1c9687f1ca78bd6f1a2e26484e5c43d55646408a4e2404c"
+  }
+}
