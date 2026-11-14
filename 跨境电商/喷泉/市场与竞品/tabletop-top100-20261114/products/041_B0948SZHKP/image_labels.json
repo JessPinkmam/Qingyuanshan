@@ -1,0 +1,92 @@
+{
+  "products/041_B0948SZHKP/附图/02.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "ELEGANT HOME DECOR",
+    "edge_white_ratio": 0.307,
+    "method": "local_ocr_and_image_background",
+    "sha256": "57fc0a9f343c556395e52c5dc132dc3527ff3a9996a62c891e1fb403075a0bb0"
+  },
+  "products/041_B0948SZHKP/附图/03.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "de-stress anytime Add a calming,zen-inspired touch to any room.",
+    "edge_white_ratio": 0.348,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ccb124a33e3254e6c9525778f1ed88fed34011e653d072d54740e94567c29913"
+  },
+  "products/041_B0948SZHKP/附图/04.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.84,
+    "method": "local_ocr_and_image_background",
+    "sha256": "164627d2ac6400f1adfea9b263c4bc13a99470c7e01cfa139217654269e8f0d7"
+  },
+  "products/041_B0948SZHKP/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.266,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3e0531f7ff8f7bdd3e5547e2039d9f61b7fe0b60525ee77f9edb8b97a0118508"
+  },
+  "products/041_B0948SZHKP/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "SLEEP IN SERENITY 7.590",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "fee9dbc52a228c43fa49b58e80215982623b0c20ad4c58ecc6b2b6ca614e060c"
+  },
+  "products/041_B0948SZHKP/附图/07.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Convenient tabletop size Perfect for your deskor coffee table. 10.6in/27cm 7.8in/20cm 7.8in/20cm",
+    "edge_white_ratio": 0.439,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6aa6e58ecb390558bb53caf6bf0588e17fd6a000dea008c0767e92315977ac7d"
+  },
+  "products/041_B0948SZHKP/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Perfect Gift for Any Occasion Brings Peace & Joy to Loved Ones",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "440b35e6ba73922884f20deac171af7f3e3be32617bbb8378366ea264a0c9341"
+  },
+  "products/041_B0948SZHKP/附图/09.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "WaterSpeedAdjustment STEP1: STEP2: STEP3: STEP1: STEP2: STEP3: InstalltheLEDLight AttachPump&AdjustFlow AddWater&Unwind",
+    "edge_white_ratio": 0.793,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ed1b6433eede3bc247a00b92d1871ca88499d271384376a5272125ec6607288a"
+  },
+  "products/041_B0948SZHKP/附图/10.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "ZEN HARMONY Modern Desktop Serenity",
+    "edge_white_ratio": 0.502,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1890801581da8d52e56ffba53479ce7a126c8d256ca5f38cf95c12d97f67cd8f"
+  },
+  "products/041_B0948SZHKP/附图/11.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "Front Back",
+    "edge_white_ratio": 0.874,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e192dbcee8184d52c87e2e1e8920c6a88b32a3a15d58c738967a55eedba0dfd8"
+  }
+}

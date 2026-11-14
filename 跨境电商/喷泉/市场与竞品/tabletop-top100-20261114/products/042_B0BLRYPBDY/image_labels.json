@@ -1,0 +1,65 @@
+{
+  "products/042_B0BLRYPBDY/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.098,
+    "method": "local_ocr_and_image_background",
+    "sha256": "0e69b6f2c7ab8752bf6e73825fde961a30849c8c8c4ff32f80c75e642c19a600"
+  },
+  "products/042_B0BLRYPBDY/附图/03.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "9.25 in 6.25 in 8.27 in",
+    "edge_white_ratio": 0.996,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8544ee77b6fb1cea878e0417e73eaba7bca5f9f02564979c79570f9f942c92f7"
+  },
+  "products/042_B0BLRYPBDY/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "LED warm--colored lights ayerwaterflow River stone decoration",
+    "edge_white_ratio": 0.179,
+    "method": "local_ocr_and_image_background",
+    "sha256": "80ba55b2cb42acb0bf83980bd0f2c7e2c01e9d47480b9547dd3d35439005a8d1"
+  },
+  "products/042_B0BLRYPBDY/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "8",
+    "edge_white_ratio": 0.158,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8ebff8b8beec52260df05cdd84b02393856f41633bcda7ce63cef07bfcbeb98e"
+  },
+  "products/042_B0BLRYPBDY/附图/06.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.399,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2cf51064ae2e2104c7526a7e676ad391be783dd47fd56d3e4032b70b3265f31e"
+  },
+  "products/042_B0BLRYPBDY/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.126,
+    "method": "local_ocr_and_image_background",
+    "sha256": "41f526a30d79b2d0a39c60f649f7c7229bc8d3ded4c15d3bc2ac6d5c3a0b99d4"
+  },
+  "products/042_B0BLRYPBDY/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.202,
+    "method": "local_ocr_and_image_background",
+    "sha256": "a57a5c5fe2b67c71609a9769bd439e92dce50341a5a90935eec35d8d3d222593"
+  }
+}
