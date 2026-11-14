@@ -1,0 +1,56 @@
+{
+  "products/045_B07TNJPK7P/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "U",
+    "edge_white_ratio": 0.032,
+    "method": "local_ocr_and_image_background",
+    "sha256": "625abb9600034800dd9b9cf7cf52dd21b1a4f719dabb581410acacb3b833cb9d"
+  },
+  "products/045_B07TNJPK7P/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.004,
+    "method": "local_ocr_and_image_background",
+    "sha256": "156d108c79df6be9dff382f46d05c8b8a544311f629745e340bdaafdacaacd7b"
+  },
+  "products/045_B07TNJPK7P/附图/04.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Product Size 9.1\" (ESTIMATED) 7.1\" (ESTIMATED) 7.1\" (ESTIMATED)",
+    "edge_white_ratio": 0.714,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cb7f3960be812f3021b342990030ccfc9887967bd1715e7385f98acd46ad14d6"
+  },
+  "products/045_B07TNJPK7P/附图/05.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Ferrisland Indoor Bird Fountain Bring Nature Home Soothing Relaxation SoftLED Light Built-in WaterPump Perfect for 己 AnyRoom Soothing LED Light AdjustableWaterFlow QuietSubmersible Pump Complete Set",
+    "edge_white_ratio": 0.476,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f28fab70ba51ec5c72482b987c191b3c198370ecb8e0b9195154dc7b9e92ce7d"
+  },
+  "products/045_B07TNJPK7P/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.11,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8786f41abce77da2256d93a70a2d208f1bae34764d523fce826f419312f3d51e"
+  },
+  "products/045_B07TNJPK7P/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "42a3b808b9d8087ff8b86016c190ebdcd692a874eae7194315d656459ac383a9"
+  }
+}

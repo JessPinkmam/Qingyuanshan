@@ -1,0 +1,65 @@
+{
+  "products/043_B0FBLCGYZP/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "HighQuality Madeofsturdyresin and lightweightand durableforlasting long.",
+    "edge_white_ratio": 0.063,
+    "method": "local_ocr_and_image_background",
+    "sha256": "aed76ff2c9f7c43dda116972353eb51fe7d0549b71df9b5f6c5456829018f80e"
+  },
+  "products/043_B0FBLCGYZP/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "LEDcolored lights Theproductisequippedwithcolorful lights,which addsasenseofatmosphere. Green Blue",
+    "edge_white_ratio": 0.19,
+    "method": "local_ocr_and_image_background",
+    "sha256": "dee5d0b159c6da44be7842a9eccd1ca223e4f6cfff784a67f249bc1fff6f089e"
+  },
+  "products/043_B0FBLCGYZP/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Gurgling Water Sound Naturalflowingwater",
+    "edge_white_ratio": 0.005,
+    "method": "local_ocr_and_image_background",
+    "sha256": "242570387cb02cba813068c72ae5ee4baed15f36b8e51fc30938be267be62ba8"
+  },
+  "products/043_B0FBLCGYZP/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Living room Bedroom Bathroom Office",
+    "edge_white_ratio": 0.066,
+    "method": "local_ocr_and_image_background",
+    "sha256": "4f44a33026dd457aede20223d6671e23109fc99b1f64851fe4910b31eb6a2464"
+  },
+  "products/043_B0FBLCGYZP/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Product details",
+    "edge_white_ratio": 0.102,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cecb0adf4ed016ef73bfdabaf0e5b4f096eb9b40c53a862bd6af2f8564a151fe"
+  },
+  "products/043_B0FBLCGYZP/附图/07.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.347,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e93274210f8dd2dfb41273b13047db54d611b2510bbd2f6ae521f4788a5cbf35"
+  },
+  "products/043_B0FBLCGYZP/附图/08.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "Simple installation Connectthewaterpumpto thehose Put thewaterpump into therockery 3 Addwaterto thefrontpool until the Plug itinand you can useit waterflowsto theback andfloodsthepump",
+    "edge_white_ratio": 0.532,
+    "method": "local_ocr_and_image_background",
+    "sha256": "809fa0eac5496b8d4e5b7f16aa8c434dc53856178c1e5a0b82931fbcba8e83b5"
+  }
+}

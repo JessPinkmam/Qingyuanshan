@@ -1,0 +1,65 @@
+{
+  "products/044_B0BZMJ4N4P/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.263,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f6708ec3496c07e1cf39f181060422c2ae33f74f7fc86c7bc65d5a6c26361679"
+  },
+  "products/044_B0BZMJ4N4P/附图/03.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "10.04\" 6.5\" 8.27\"",
+    "edge_white_ratio": 0.925,
+    "method": "local_ocr_and_image_background",
+    "sha256": "26b71ac3cceb8ea77db8136eebf6278c23d281f31fcf19a5169e11c84b1d60df"
+  },
+  "products/044_B0BZMJ4N4P/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.245,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cf7045c2e15904d0a4c69e75bca4d05a69af37b1457ea83aded50f1324200395"
+  },
+  "products/044_B0BZMJ4N4P/附图/05.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.455,
+    "method": "local_ocr_and_image_background",
+    "sha256": "bc94ab4a2d3cbafd52beb417d514c909b5f33dc58f0f033e120e796258e0109a"
+  },
+  "products/044_B0BZMJ4N4P/附图/06.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "口",
+    "edge_white_ratio": 0.894,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b6422efcf5848409f12462179b6651fd0e6e57774698fba99d557b2dfd9d5e74"
+  },
+  "products/044_B0BZMJ4N4P/附图/07.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.909,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8be8c55442787561b2add330a1b722a7973964f585ea3cbf3e22cacb7ae21a3a"
+  },
+  "products/044_B0BZMJ4N4P/附图/08.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.896,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6e5cc2dca76d6cfc83ca044471df4bf499e9af92f53a98f06b8084c9a41f2cfb"
+  }
+}
