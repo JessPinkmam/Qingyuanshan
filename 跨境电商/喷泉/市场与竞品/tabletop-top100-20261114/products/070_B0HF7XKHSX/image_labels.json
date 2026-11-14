@@ -1,0 +1,56 @@
+{
+  "products/070_B0HF7XKHSX/附图/02.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Gentle Ice-Like Flow SoftLED Texture Glow",
+    "edge_white_ratio": 0.466,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c74aafea464619c164a5f7ff84fa0c5d1d7463be54d22bdee89462bd8c569781"
+  },
+  "products/070_B0HF7XKHSX/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Elevate Your Entryway ModernDecorforAny Tabletop",
+    "edge_white_ratio": 0.008,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ae39d1158ee821398292e66bdec5f677deb7b5548116d0ba2c82d76729dd1304"
+  },
+  "products/070_B0HF7XKHSX/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "LowNoise Tabletop Fountain GentleWaterSound,Natural WhiteNoise",
+    "edge_white_ratio": 0.092,
+    "method": "local_ocr_and_image_background",
+    "sha256": "76a064ef302064d2a7f4cb9ddd364ca4ec8145c2b9799aa8ad083408f2e0e81e"
+  },
+  "products/070_B0HF7XKHSX/附图/05.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Focus & Relax Peaceful Water Sounds for Work & Study",
+    "edge_white_ratio": 0.38,
+    "method": "local_ocr_and_image_background",
+    "sha256": "0e180d3465d885d1e21f5452db78d716857be983a9d921ef6c43a990c29f1b28"
+  },
+  "products/070_B0HF7XKHSX/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "EveningRelaxation Soft Glow&CalmingFlow",
+    "edge_white_ratio": 0.002,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e51c02ef05975b2d2ad8cc18b32d1795688772e11f66f099c591a7cf0cd63dce"
+  },
+  "products/070_B0HF7XKHSX/附图/07.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Size Information 4.13 inch（10.5 cm) 5.12inch(13cm) 5.12 inch(13 cm)",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1c61488d3c90776b22baaa694a5ad556f706a9b49c773549eb1a4d4a6daae43f"
+  }
+}

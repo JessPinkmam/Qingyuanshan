@@ -1,0 +1,47 @@
+{
+  "products/072_B0B4NCRK9D/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Perfect size for your living roomor home tabletop as a decor. 9.84\" 5.9″ 6.5″",
+    "edge_white_ratio": 0.139,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d8e4ddb579fc5989e9235bf124d6ce1bab0d14f38cc09bc27384016479789951"
+  },
+  "products/072_B0B4NCRK9D/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Bring soothing nature indoors. Fountain waterfall provides soothing water sound and meditation/zen atmosphere.",
+    "edge_white_ratio": 0.036,
+    "method": "local_ocr_and_image_background",
+    "sha256": "885642dc975f2d633ce0db98c9ff5e8f12702c99bf03c618e4e0552853c08af5"
+  },
+  "products/072_B0B4NCRK9D/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Easy to set up.You can set it up in minuteswith the manual and then enjoy the natural feeling indoors.",
+    "edge_white_ratio": 0.168,
+    "method": "local_ocr_and_image_background",
+    "sha256": "af13471f1587aee5eaf5cc04821d0a7acaeee3d1ef07935d270066d922d6a227"
+  },
+  "products/072_B0B4NCRK9D/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Unique Feature.Come with a potto grow asmall planton the fountain.And self-circulating system can supply water to plants(auto watering)",
+    "edge_white_ratio": 0.136,
+    "method": "local_ocr_and_image_background",
+    "sha256": "bb58e215a383e55cce595bb847cda9c1a08cf19df55fc24c17ff690e02ac9bbe"
+  },
+  "products/072_B0B4NCRK9D/附图/06.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.652,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1cb1491fe944267fc904c6fff48cf151c75c7bc9d5fd96a529f4f6bd723d6371"
+  }
+}

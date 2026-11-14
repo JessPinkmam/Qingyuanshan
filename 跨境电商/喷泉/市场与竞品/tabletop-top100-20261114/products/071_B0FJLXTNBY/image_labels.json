@@ -1,0 +1,65 @@
+{
+  "products/071_B0FJLXTNBY/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "64de55284766a2c3f7a661b201e80798ab3481e2c0d6134c436da252fe89138b"
+  },
+  "products/071_B0FJLXTNBY/附图/03.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "The product itself does not come with green plants So users need to plant, them by themselves. 10.3 in 5.9 in 6.69 in",
+    "edge_white_ratio": 0.973,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1a93641032d22cf9ec3cc57806361179b4cbc45c66a3b49b72d5a8427c14966a"
+  },
+  "products/071_B0FJLXTNBY/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7a8b952c76bb6ba862de58d038aa37aa13ed9143f03ce3d6e887bec4f1643a3f"
+  },
+  "products/071_B0FJLXTNBY/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.036,
+    "method": "local_ocr_and_image_background",
+    "sha256": "292eec67a4953bdbd73baa3b755f8e3c9f1adaed3405a32b0c1c9b457b9abfec"
+  },
+  "products/071_B0FJLXTNBY/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ba4a61da5d3c6876bd40cd9fcd761360e63b6aca9d076f8c9b8c5c48b3a64dc4"
+  },
+  "products/071_B0FJLXTNBY/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "LEDWarm-Colored Lights GentleFlowingWater INPUT:100-240V~50/60HZ0.25AMAX OUTPUT:5.0V0.2A 1.0W Low-voltage Safe Water Pump",
+    "edge_white_ratio": 0.171,
+    "method": "local_ocr_and_image_background",
+    "sha256": "89094a0ca3be3b458ba7acfd0129d6cf565c5f89d5521f15e7d0bcfc390323e4"
+  },
+  "products/071_B0FJLXTNBY/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "620af9005d3bcfa2f0785fb617bf52bc7de03e489586a3590bbce3e6a3ce2d41"
+  }
+}
