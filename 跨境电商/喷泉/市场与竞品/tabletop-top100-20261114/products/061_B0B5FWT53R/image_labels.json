@@ -1,0 +1,83 @@
+{
+  "products/061_B0B5FWT53R/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Perfect size for your living roomor home tabletop as a decor. 10\" 5.9\" 5.9\"",
+    "edge_white_ratio": 0.11,
+    "method": "local_ocr_and_image_background",
+    "sha256": "503d59be398befb412e901baca6ac3fd0f2b750d05d8b4ef9e961c4a64102c58"
+  },
+  "products/061_B0B5FWT53R/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Retro Stump Shape Indoor Fountain With exquisite handmade detail&nice soft lighting Enhance your room surroundings.",
+    "edge_white_ratio": 0.094,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b79b88e7d88982f52f57f87b6a28cfff55bf257a43db5c07ba0aa2a60a3725c7"
+  },
+  "products/061_B0B5FWT53R/附图/04.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Raindrop water flow sound bring a charming sceneary to your room.",
+    "edge_white_ratio": 0.542,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d229f859053e4c51397facf16cd0a2437e6d6ba4f8eb9e33d2a46e9f95dbf767"
+  },
+  "products/061_B0B5FWT53R/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Easy to set up.Corded 110v us power supply,You can set it up in minutes with the manualand then enjoy the natural feeling indoors.",
+    "edge_white_ratio": 0.101,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c60c76de817d120d25b0a68a05152ad40b5a2c75cf71824cdf53bf1a716b316f"
+  },
+  "products/061_B0B5FWT53R/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.078,
+    "method": "local_ocr_and_image_background",
+    "sha256": "950662dcb24c942b684d815df43fa3d9337329e86ce1d8c54a443e5f76648282"
+  },
+  "products/061_B0B5FWT53R/附图/07.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.709,
+    "method": "local_ocr_and_image_background",
+    "sha256": "0c6535ec9dcabff685bf4e8276871cadcc4913ea50df80e67021122f196360fa"
+  },
+  "products/061_B0B5FWT53R/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.002,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f4ec01494640a02feb6a556ff796f3a20511c0d918064ea232cdaf63888a9f20"
+  },
+  "products/061_B0B5FWT53R/附图/09.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.656,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2d6bbcbf73dcc0ec79cb426163bb35dea84cb250a3639d9b047d7eff6d4de05e"
+  },
+  "products/061_B0B5FWT53R/附图/10.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "10\" 5.9\" 5.9\"",
+    "edge_white_ratio": 0.93,
+    "method": "local_ocr_and_image_background",
+    "sha256": "558833536857b2af9172f73740ed9aa2e5a662ac1f64681825f31c5bc6a07e23"
+  }
+}

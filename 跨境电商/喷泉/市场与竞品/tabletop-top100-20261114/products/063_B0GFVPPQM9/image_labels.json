@@ -1,0 +1,56 @@
+{
+  "products/063_B0GFVPPQM9/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.119,
+    "method": "local_ocr_and_image_background",
+    "sha256": "13f349ad6e3dcdba1fee3f3b5da8ea8eedcc40bc79db5a0929030246e8c4a613"
+  },
+  "products/063_B0GFVPPQM9/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "GentleFlowOfWater LED WarmLight DurableResinMaterial River Stone Decoration",
+    "edge_white_ratio": 0.238,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d02d042cfeb22239e26f2a81a102139b5297f42acf63201750ecc0fa24039a78"
+  },
+  "products/063_B0GFVPPQM9/附图/04.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "12.99 IN 5.51 IN 9.06 IN",
+    "edge_white_ratio": 0.893,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e05b4b6ad4ccf8515f58d192b06051c30f0318b4a7a34b424f83010ae235ff53"
+  },
+  "products/063_B0GFVPPQM9/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.066,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7f6eff77fa5ce9647270a5d9d4fae950fadf2291b20d158d75b3935c7a362e9b"
+  },
+  "products/063_B0GFVPPQM9/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.229,
+    "method": "local_ocr_and_image_background",
+    "sha256": "01149d0b441ea70c568d4b859968f147ef8d0d0a13a7f997e7c950b474490b04"
+  },
+  "products/063_B0GFVPPQM9/附图/07.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.479,
+    "method": "local_ocr_and_image_background",
+    "sha256": "a05599bc8ddf44e51007cdc6a9e43dc2080f058b7c9d73309ab564ae86884dbb"
+  }
+}
