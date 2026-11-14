@@ -1,0 +1,56 @@
+{
+  "products/084_B0H38FD71T/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "True Tabletop Size 8.3in H 6.3inW×6.3in D Phone",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1906059b2c578d08d7db130731c79c75ccb294afed10326f090bf949a79ce480"
+  },
+  "products/084_B0H38FD71T/附图/03.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Relax AtYourDesk SoftWater Flow + Gentle LED Light",
+    "edge_white_ratio": 0.332,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7cac89dacdefa1c57c409a42bca14c4373908414bda1c10e8d96d62b147c0c21"
+  },
+  "products/084_B0H38FD71T/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Quiet WaterFlow Tabletop Relaxation, Right at Home",
+    "edge_white_ratio": 0.131,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f17910bbae21497a5252ded6dafac635af153b35376c18c119b37a16b93948e2"
+  },
+  "products/084_B0H38FD71T/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Take a Break Bring Calm to Your Workspace Take aBreak",
+    "edge_white_ratio": 0.205,
+    "method": "local_ocr_and_image_background",
+    "sha256": "fb39f27c55abf97868a8ed98a246d3d73ed33a534dcc02a5442c9621cd6c8349"
+  },
+  "products/084_B0H38FD71T/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Smooth water flow Multi-level composition Relaxing visual effect For a calm",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ef1509d71e3817a5fb3d11a505dae7564a9f2f14e61692d67a46cd3234a5d301"
+  },
+  "products/084_B0H38FD71T/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Cozy Gifts, Quiet Moments Tabletop Fountain for Relaxing Days",
+    "edge_white_ratio": 0.004,
+    "method": "local_ocr_and_image_background",
+    "sha256": "646e12af2c55b3b2d8339af33e35967dfa52fa1c05413b90806b105131453820"
+  }
+}

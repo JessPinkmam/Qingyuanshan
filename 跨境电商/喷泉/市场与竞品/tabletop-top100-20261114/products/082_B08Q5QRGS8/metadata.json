@@ -1,0 +1,101 @@
+{
+  "asin": "B08Q5QRGS8",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/51R+bDohsCL._AC_UL300_SR300,200_.jpg",
+  "rank": 82,
+  "title": "Nature's Mark 10\" H Crackled Glass Light Show Tabletop Water Fountain with Natural River Rocks and Color Changing LED Lights (Cordless)",
+  "url": "https://www.amazon.com/Natures-Mark-Crackled-Tabletop-Fountain/dp/B08Q5QRGS8/ref=zg_bs_g_3735981_d_sccl_82/142-4700496-1670833?psc=1",
+  "captured_at": "2026-11-14T07:48:32.250Z",
+  "images": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/51R+bDohsCL._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/51lNcglU+HL._AC_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/51NcB+RojQL._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61TbZ5UQwkL._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61+2Fd6LFzL._AC_SL1000_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71aufG+S17L._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/51uCUFau6vL._AC_.jpg"
+    }
+  ],
+  "videos": [],
+  "errors": [],
+  "page_title": "Nature's Mark 10\" H Crackled Glass Light Show Tabletop Water Fountain with Natural River Rocks and Color Changing LED Lights (Cordless)",
+  "aplus": [],
+  "gallery_expected": 7,
+  "assets": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/51R+bDohsCL._AC_SL1000_.jpg",
+      "path": "products/082_B08Q5QRGS8/主图/01.jpg",
+      "status": "downloaded",
+      "bytes": 31664,
+      "sha256": "5453dbc0caa68b4cc9150fd69b5ae12585193588226227b3896d7bc903ace43e"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/51lNcglU+HL._AC_.jpg",
+      "path": "products/082_B08Q5QRGS8/附图/02.jpg",
+      "status": "downloaded",
+      "bytes": 28385,
+      "sha256": "49f47819d6037cbdf8a1ddff1665a907b7c80aff73f92d870493450452bdb12f"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/51NcB+RojQL._AC_SL1000_.jpg",
+      "path": "products/082_B08Q5QRGS8/附图/03.jpg",
+      "status": "downloaded",
+      "bytes": 33994,
+      "sha256": "c017ea59adb510be12e88d5d37a1934b0a1ac92cae393cea65f224a2b85cfd40"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61TbZ5UQwkL._AC_SL1000_.jpg",
+      "path": "products/082_B08Q5QRGS8/附图/04.jpg",
+      "status": "downloaded",
+      "bytes": 59752,
+      "sha256": "281501cf1aa2ab225e7df93e452d1673163d80136e58965f342e8f12f97b136e"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61+2Fd6LFzL._AC_SL1000_.jpg",
+      "path": "products/082_B08Q5QRGS8/附图/05.jpg",
+      "status": "downloaded",
+      "bytes": 65799,
+      "sha256": "fb004d4c86d48ba05539c65052c17c784b1baf09a97c1b72c545ff5d3becd4f5"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71aufG+S17L._AC_SL1500_.jpg",
+      "path": "products/082_B08Q5QRGS8/附图/06.jpg",
+      "status": "downloaded",
+      "bytes": 102243,
+      "sha256": "969691689063d9433cc07faaa61b3a581f450525dcd892f3af49680d0a1bf2ed"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/51uCUFau6vL._AC_.jpg",
+      "path": "products/082_B08Q5QRGS8/附图/07.jpg",
+      "status": "downloaded",
+      "bytes": 46217,
+      "sha256": "19a95508a234a6455be3330646e8288ca482797a0e0af924006c58f9f9606e21"
+    }
+  ]
+}

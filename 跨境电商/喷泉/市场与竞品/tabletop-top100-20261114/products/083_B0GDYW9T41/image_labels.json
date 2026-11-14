@@ -1,0 +1,74 @@
+{
+  "products/083_B0GDYW9T41/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.014,
+    "method": "local_ocr_and_image_background",
+    "sha256": "242afb79425fe84e61af20e0ff4221f17d351cede56d4124869fada7df598675"
+  },
+  "products/083_B0GDYW9T41/附图/03.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Your Oasis of Calm, Perfectly Sized Height: 13 inch Depth: 5.5inch Width: 9 inch Whisper-quiet flow, fade-resistant craftsmanship, and a compact design for any space.",
+    "edge_white_ratio": 0.78,
+    "method": "local_ocr_and_image_background",
+    "sha256": "555619c7118b68d254b03dba3d6f1393f6ba35653050d67e5f1c091dd07658d8"
+  },
+  "products/083_B0GDYW9T41/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.293,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7d1f4a564664e90d1960e46ae6bdd80ca4c06ff5629bfccd9059fbec44c11909"
+  },
+  "products/083_B0GDYW9T41/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Soothing Cascade & Light Experience the tranquil flow and warm ambient glow, designed for ultimate relaxation.",
+    "edge_white_ratio": 0.075,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7167b649ee6979bc9a96dd584662bbe7dc623e4f638521a14bd4ae1e28780ebb"
+  },
+  "products/083_B0GDYW9T41/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "MINIMALIST ARCHITECTURE THEARTOFFORM MATERIALDESIGN",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "9b4fb38a3b1b43627b8d231d30a1de615b6b6581dd736f9e91b30e3a3a98c39f"
+  },
+  "products/083_B0GDYW9T41/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d1d2cba15f6efd72abc522e851af8f5ce069d716370b8fb46b31527d4e96a15c"
+  },
+  "products/083_B0GDYW9T41/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Nature, Reimagined Crafted from high-quality resin and meticulously hand-painted to capture the authentic texture of aged bark.",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "4ae83b090045d7964586ee63c6cdf2e6ab781eb48ecccfffa3c5bef13c2f4bed"
+  },
+  "products/083_B0GDYW9T41/附图/09.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.03,
+    "method": "local_ocr_and_image_background",
+    "sha256": "36360288a1de5f87ab3845f4b0fbc30a30193f798a291251e7fbaa5977c83a27"
+  }
+}
