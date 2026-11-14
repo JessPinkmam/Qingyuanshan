@@ -1,0 +1,74 @@
+{
+  "products/092_B09L82Z2CY/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.033,
+    "method": "local_ocr_and_image_background",
+    "sha256": "09850338a4d38fa2f717b07377b7b7461130b87ed91f87b3fe8ba2f3ed7adcbf"
+  },
+  "products/092_B09L82Z2CY/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Relax, Relieve Stress, Purify the air. A Unique humidifier, gift or table decor.",
+    "edge_white_ratio": 0.004,
+    "method": "local_ocr_and_image_background",
+    "sha256": "469637afa39bbc051cd5d368eea65be0f83a57904e5c8846bb8fe7ab63bbae9f"
+  },
+  "products/092_B09L82Z2CY/附图/04.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "28cm/11inch 15cm/5.9inch 20cm/7.87inch",
+    "edge_white_ratio": 0.936,
+    "method": "local_ocr_and_image_background",
+    "sha256": "64e0c35b34fae29ced7f186c4eac5ba275153cc6121615ce6872579f5451db4c"
+  },
+  "products/092_B09L82Z2CY/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.026,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2cd08bdd48d00d8bf9a18f15ddc643f02b4928c29885d292dce86122e2035577"
+  },
+  "products/092_B09L82Z2CY/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.101,
+    "method": "local_ocr_and_image_background",
+    "sha256": "fdd252987e99969eb86e2042b18748a56824533de3d3ea752891cc98d51dc310"
+  },
+  "products/092_B09L82Z2CY/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.118,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6288dac72f96fe5fab81b6c196be6d3c38a6226f66e5c1f3e18b9f02a7475341"
+  },
+  "products/092_B09L82Z2CY/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.038,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d1f85f4aa363e868450e59eebad001137408862056ba9fef236283bd3fa3b3d6"
+  },
+  "products/092_B09L82Z2CY/附图/09.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "238",
+    "edge_white_ratio": 0.036,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8aaab15c923db0d068d16ad08488bdd4685b0365d103eb14109e1cf87ceaca9f"
+  }
+}

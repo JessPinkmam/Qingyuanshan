@@ -1,0 +1,56 @@
+{
+  "products/093_B08GJLJ79X/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "11inch /28cm 8inch/20.5cm",
+    "edge_white_ratio": 0.882,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2f96e3ea5c1e8899265a1e01f6048fac14cc5b9db7e13d9f4b0353466ed61d10"
+  },
+  "products/093_B08GJLJ79X/附图/03.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Invite Serenity Inward The gentle cascade of water creates a peaceful sanctuary for meditation and deep relaxation. Ultra-Quiet Compact Hand-Crafted Pump Desktop Size Resin",
+    "edge_white_ratio": 0.405,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1ac6f91f16f501b3189471e92d31d57e2bf66d4ff433e95e9aa57e72fb137c3c"
+  },
+  "products/093_B08GJLJ79X/附图/04.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Adjustable WaterFlow Simple Plug-and- Play Setup Exquisite Artisan Details Meticulously hand-carved from stordy, lightweight resin to bring lasting tranquility to your space.",
+    "edge_white_ratio": 0.347,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6b5b1be2bb05c2824b7674fa959035a75b84a689c62cf55b997fe001597d1084"
+  },
+  "products/093_B08GJLJ79X/附图/05.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "Harmony for Any Space Enhance Restful Sleep Deepen Mindful Practice Cultivate a Calm Focus",
+    "edge_white_ratio": 0.305,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2ba78b280d171e219ce9d7b2cd7cd0f25c7a646600cfe645be7ee50bf41fbea3"
+  },
+  "products/093_B08GJLJ79X/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.003,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c9232cde5c60a333e110cf943773735be219e389013e3517699aae245c9a5f30"
+  },
+  "products/093_B08GJLJ79X/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.255,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ae1d12ff378fa0488d4ba50ce0f69bf25fdeb0fa0a7b3f10d56974ef06fa9320"
+  }
+}
