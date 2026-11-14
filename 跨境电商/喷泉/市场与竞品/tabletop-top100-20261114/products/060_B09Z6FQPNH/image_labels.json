@@ -1,0 +1,56 @@
+{
+  "products/060_B09Z6FQPNH/附图/02.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.307,
+    "method": "local_ocr_and_image_background",
+    "sha256": "19a02d65d32c09c63f4a83450e16dfca0aaee5daab54a240138c0832b4cf67bb"
+  },
+  "products/060_B09Z6FQPNH/附图/03.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "15.7in 10.2in 10.2in",
+    "edge_white_ratio": 0.938,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8434fcf3e1377ebae8a932792b005dc476df51f485df0c740e7c8fd1066fbb06"
+  },
+  "products/060_B09Z6FQPNH/附图/04.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.783,
+    "method": "local_ocr_and_image_background",
+    "sha256": "76f16dc83598ee01dacb6c6eb189e3f9504077ff8ae2d30f882d249f584bf660"
+  },
+  "products/060_B09Z6FQPNH/附图/05.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.773,
+    "method": "local_ocr_and_image_background",
+    "sha256": "619cb8d2e93ab07999fb90666b663ede64509b62ca8f33c6f41af39da48c461b"
+  },
+  "products/060_B09Z6FQPNH/附图/06.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.911,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7382e64288c2893f768b61712c7bb606791e45961f24ca3c710ce155f1be1c87"
+  },
+  "products/060_B09Z6FQPNH/附图/07.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.555,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cc6a0a1b22b7137b1e2ce243f55578619235a1a8ba3500b23e20da87e75cced6"
+  }
+}

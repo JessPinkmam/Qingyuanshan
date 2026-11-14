@@ -1,0 +1,65 @@
+{
+  "products/059_B002NU32N2/附图/02.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "Loading",
+    "edge_white_ratio": 0.931,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5161d7bc7cc48e7956176f96c97660daef0ae21ebfdeb60c1a5601f64d25f5c1"
+  },
+  "products/059_B002NU32N2/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "ASOFTGLOW. AQUIETER EVENING. Warm-white lightbrings the cascading mirror to life afterdark.",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "bea4d79dc7aef7fa63866bc28693dd0f99fb7e7808be4037d0375d42b7119982"
+  },
+  "products/059_B002NU32N2/附图/04.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "TALLIMPACT. SLIMFOOTPRINT 72 in.H 183cm A floor-to-eye-levelwaterfall designed tofitneatly against the wall. 10in.W 25cm 24in.L 61cm",
+    "edge_white_ratio": 0.009,
+    "method": "local_ocr_and_image_background",
+    "sha256": "541dcc4a2d24df299377ea7407f314143cfc3b850dd278f24b6efd02bb88fc25"
+  },
+  "products/059_B002NU32N2/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "REFLECTION INMOTION Acontinuoussheetof water transforms the mirror into a living focal point.",
+    "edge_white_ratio": 0.081,
+    "method": "local_ocr_and_image_background",
+    "sha256": "67b053096099cf55822a9ff5a483a617d69e9f2c5b03dcb6cac3dcbea22ae560"
+  },
+  "products/059_B002NU32N2/附图/06.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "MODERNDETAILS NATURALCALM. MIRRORWATERFALL RIVER STONESINCLUDED WARM-WHITELIGHT",
+    "edge_white_ratio": 0.386,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cfa813637bffcc5ff3c29fdaf51155b2a4d3626af0541d48f768bd42a043808a"
+  },
+  "products/059_B002NU32N2/附图/07.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "2 3 ASSEMBLE ADDSTONES&WATER PLUGIN&ENJOY",
+    "edge_white_ratio": 0.031,
+    "method": "local_ocr_and_image_background",
+    "sha256": "62ae062a9a5e237f988d125b16eced61ee114856b6ae3963faecb165b72c02bc"
+  },
+  "products/059_B002NU32N2/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "LIVINGROOM ONEFOUNTAIN. FOURWAYSTO TRANSFORM A ROOM. ENTRYWAY HOME OFFICE WELLNESSSPACE CALMER ABRIGHTER MIND TOMORROW",
+    "edge_white_ratio": 0.122,
+    "method": "local_ocr_and_image_background",
+    "sha256": "720b2c4367b3eec3f6fd311360fd630748064c534d53ea955036af9ea9054531"
+  }
+}
