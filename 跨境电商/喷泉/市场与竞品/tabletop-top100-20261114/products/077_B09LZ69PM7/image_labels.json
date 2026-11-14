@@ -1,0 +1,56 @@
+{
+  "products/077_B09LZ69PM7/附图/02.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.721,
+    "method": "local_ocr_and_image_background",
+    "sha256": "a3ce974a57435fe5b33cbaca4abe1fc238723826981b3c85004af4d0c125aa7f"
+  },
+  "products/077_B09LZ69PM7/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "30",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "bcd7b92dd414d70df1dd7a34364a3f72f83bbad057919e7473332304aa33e1a5"
+  },
+  "products/077_B09LZ69PM7/附图/04.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "33cm 3inch/ 人人！ 9.5inch/ 24cm",
+    "edge_white_ratio": 0.926,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8430a6880d8eb2bede1be1390d0a5c8c33302aad5433fa0458105f894b2e299e"
+  },
+  "products/077_B09LZ69PM7/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "df43373c6328530f753523da21e5c773e7f25ab4bb39b71a328379c6e220432a"
+  },
+  "products/077_B09LZ69PM7/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "814d7e2d348f0e61bbc57d215cde6f6eeb507f098ffa7e30701ef863c2ee476f"
+  },
+  "products/077_B09LZ69PM7/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "28d5865269191a0254cfaf4c98303f5c25cb7ff58b3d04eaefceccabdc83273d"
+  }
+}

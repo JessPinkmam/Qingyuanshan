@@ -1,0 +1,74 @@
+{
+  "products/078_B0GF7RV62C/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "9.5\"/ 24cm 5.2\"/13cm 5.3\"/13.5cm",
+    "edge_white_ratio": 0.887,
+    "method": "local_ocr_and_image_background",
+    "sha256": "29123d8b340d984a197433483b06975e20db9476bfcd7379d8dbfbc0f21e7e19"
+  },
+  "products/078_B0GF7RV62C/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "OFFICE DESK RELAXATION Quiet Water Sound, Focused Mind WORKSPACEDECOR",
+    "edge_white_ratio": 0.125,
+    "method": "local_ocr_and_image_background",
+    "sha256": "57b38bd4700eba8a90f558783f686ea8f9294dd8008b92efa650f0516dfed454"
+  },
+  "products/078_B0GF7RV62C/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "ZEN HOMEDECOR Serene Flowing Water, Peaceful Corner CALMING AMBIENCE",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ce89d06fd16bdb47f28c88f7b4d5299a0a61627f9646e66b75c5fd8e39df69f6"
+  },
+  "products/078_B0GF7RV62C/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "EVENINGRELAXATION SoftGlow&GentleWaterFlow NIGHT AMBIENCE",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "870f6d46f5eb6a9bce2116e65dee98ef8948a3edafa909d00b5b4693db29676a"
+  },
+  "products/078_B0GF7RV62C/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "TABLETOP WATER FOUNTAIN Calming Flow for Home & Office RELAXING ATMOSPHERE",
+    "edge_white_ratio": 0.053,
+    "method": "local_ocr_and_image_background",
+    "sha256": "360b8ebcfb04fd884877327195019f890ad1cf6ac1b50e65c83d8532a3ab9763"
+  },
+  "products/078_B0GF7RV62C/附图/07.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "ACRYLICLEAVES&METALFINISH Clear Green Foliage with Painted Metal Buds TranslucentAcrylic PaintedMetalDetails",
+    "edge_white_ratio": 0.824,
+    "method": "local_ocr_and_image_background",
+    "sha256": "933ecddbe5859bc6fac9a379a385836bf2cf141bc098dd64319ff3fbf03300cb"
+  },
+  "products/078_B0GF7RV62C/附图/08.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "Premium Craftsmanship & Details Glossy Lotus Leaves Polished Pebbles Sturdy BlackBasin ArtisticBudDecoration",
+    "edge_white_ratio": 0.89,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f6594a30d39c114c6a586b0ed5141d1f066a8ec85ff4fa432530b5442bb12eff"
+  },
+  "products/078_B0GF7RV62C/附图/09.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "MULTI-SCALETABLETOPDECOR Perfectfor Living Room,Office,Bedroom &Entryway LivingRoom OfficeDesk ZenCorner",
+    "edge_white_ratio": 0.55,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b207e85e10e2dd9ecea389af23424cae7260c9b7d84acf02ea33eb67b7f7bf0d"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "products/076_B07H2FGW6T/附图/02.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "REJUVENATEYOURSPACE Create a calming atmosphere with our elegant tabletop fountain.",
+    "edge_white_ratio": 0.394,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c2b83c64bc341e11fc1e9ff5947769daf91268c55f71d69a749dda747f68bc3f"
+  },
+  "products/076_B07H2FGW6T/附图/03.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.881,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f74eb860d5d1cd90358916cb8ab360fad9234dd6a8e2b4e9e2560e1602b471a6"
+  },
+  "products/076_B07H2FGW6T/附图/04.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "INDOORBLISS Enjoy the calming presence of our fountain inside your home, idealforrelaxationandmeditation. OUTDOORSERENITY Bring nature'ssoothingsoundstoyour outdoor areas, creatingasereneandstylishenvironment.",
+    "edge_white_ratio": 0.469,
+    "method": "local_ocr_and_image_background",
+    "sha256": "aa3b01fc95413d27b3545b3f5c315067f23aba95c36b8b8428e6ae0d485472fb"
+  },
+  "products/076_B07H2FGW6T/附图/05.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "LEDLIGHTSBRING YOUR FOUNTAIN TO LIFE Brighten up your fountain with LED lighting.",
+    "edge_white_ratio": 0.362,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b5c20254e98232e9f5461f88cc409363c054e128937837dd8ddaae4d51f86a35"
+  },
+  "products/076_B07H2FGW6T/附图/06.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "PERFECTROOMACCENT Transform any room into a relaxing oasis.",
+    "edge_white_ratio": 0.49,
+    "method": "local_ocr_and_image_background",
+    "sha256": "4a136fddfb1218bc82bcd272f2de13bd1c34a559ed7a857cab9d959e4a001441"
+  },
+  "products/076_B07H2FGW6T/附图/07.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "WHAT'SINTHEBOX? 8.3\" Low-Voltage Energy 11 Water Fountain Power Adapter",
+    "edge_white_ratio": 0.999,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d4041cf0bcc335e274b682cc9f057308d6b84eb3dd7862f496913ea4f1cb1010"
+  },
+  "products/076_B07H2FGW6T/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "ENCHANTYOURSPACE WITHLIGHTANDFLOW",
+    "edge_white_ratio": 0.277,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b91d4b99319011018a6530feee96fc099ff9c15e2a3e5db9a8759dfe8bd1a710"
+  }
+}
