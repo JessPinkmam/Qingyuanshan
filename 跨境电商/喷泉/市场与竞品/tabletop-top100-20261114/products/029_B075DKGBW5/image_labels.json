@@ -1,0 +1,65 @@
+{
+  "products/029_B075DKGBW5/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.018,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e6ae7eb696d17cf31312bfb83e1071a21823e7b284b77227e89abd0790437182"
+  },
+  "products/029_B075DKGBW5/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Add charm and relaxation fo any space wifh our lighted water founfain.",
+    "edge_white_ratio": 0.062,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c31fdf3430c790f022b513bd34e6e5de59e8037d4c665bca0f79b654343f2a68"
+  },
+  "products/029_B075DKGBW5/附图/04.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "Simple Installation Just connect fhe LED light and wafer pump fo fhe included power adapfer.",
+    "edge_white_ratio": 0.011,
+    "method": "local_ocr_and_image_background",
+    "sha256": "99c790f9de7178189a4f135340cfcb67bae2dd6ae0520db780e25452426a929b"
+  },
+  "products/029_B075DKGBW5/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Rock Texfure LED Lights Steady Current",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1c18240e6a3df3dac629101ef7f5121ccd6dd03a6ab09a46da166a917c6d03ad"
+  },
+  "products/029_B075DKGBW5/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "9f9acdcf7320ea5d5c938298d09e42e5c4d3539367e7bc4b148f8bce7de0bac8"
+  },
+  "products/029_B075DKGBW5/附图/07.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "AC-ACADAPTOR MODEL0:JXA-12V020 OUTPUT:12VAC0.30A UL MADEIN CHINA",
+    "edge_white_ratio": 0.704,
+    "method": "local_ocr_and_image_background",
+    "sha256": "33a65e12d611799d909393bacb2de88ac28e301dcfba24f1dedad9bb1e527dca"
+  },
+  "products/029_B075DKGBW5/附图/08.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "15.5\" 7.5\" 10.5\"",
+    "edge_white_ratio": 0.93,
+    "method": "local_ocr_and_image_background",
+    "sha256": "301a427535aaf4f7b8f21b1333419b994be2497847d2c7ac0905d306108907f3"
+  }
+}

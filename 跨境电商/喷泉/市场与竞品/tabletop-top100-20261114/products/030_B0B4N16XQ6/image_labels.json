@@ -1,0 +1,74 @@
+{
+  "products/030_B0B4N16XQ6/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.006,
+    "method": "local_ocr_and_image_background",
+    "sha256": "28be30583dd44af04fb2e8ff8ee82feba8b8c856a95416e012f427b94a31bdb7"
+  },
+  "products/030_B0B4N16XQ6/附图/03.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "Bring soothing nature indoors. Reconnect with life-giving water to enchance your surroundings.",
+    "edge_white_ratio": 0.021,
+    "method": "local_ocr_and_image_background",
+    "sha256": "0749acc31955715666712688736d55ddff419ef468944ca0962c881c50fab244"
+  },
+  "products/030_B0B4N16XQ6/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Resin Material Stone decoration",
+    "edge_white_ratio": 0.111,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3e17bb55f0ae6c9c1d25d5936d71d0a079bcce6e200d674720e5bb739eafb522"
+  },
+  "products/030_B0B4N16XQ6/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Automatic Water Pump.A quiet built-in submersible water pump helps keep it free of algae build ·dn-",
+    "edge_white_ratio": 0.073,
+    "method": "local_ocr_and_image_background",
+    "sha256": "daf8bb3074d525f4eafc5aad315086c87c78ff2905f506bf3fddc9177f73a39b"
+  },
+  "products/030_B0B4N16XQ6/附图/06.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.668,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e781aa1fe6a402688d708da8d2723df44323926f1055ff6568ba8eb2b66cf6bd"
+  },
+  "products/030_B0B4N16XQ6/附图/07.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "10.43 in 4.8 in Compare with beverage cans 5.12 in 7.08 in",
+    "edge_white_ratio": 1.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2ad37246865e9392e3fa84e3b70be90924004856bc4b12efba877d33032a2886"
+  },
+  "products/030_B0B4N16XQ6/附图/08.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.396,
+    "method": "local_ocr_and_image_background",
+    "sha256": "61a87cabcc3ecdb9dedb645e8a42826cd31910980f04813071224d0508c9bd90"
+  },
+  "products/030_B0B4N16XQ6/附图/09.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Easy to set up. You can set it up in minutes with the manualand then enjoy the natural feeling indoors.",
+    "edge_white_ratio": 0.02,
+    "method": "local_ocr_and_image_background",
+    "sha256": "9b9e17b1f8688da7edde55a133041e1691bd747b4c47ea7e7e70237125406479"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "asin": "B0HC41DRLS",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/71U8SmIbLEL._AC_UL600_SR600,400_.jpg",
+  "rank": 28,
+  "title": "Tabletop Water Fountain，3-Tier Indoor Waterfall with LED Light，Indoor Zen Relaxation Water Feature for Home Office Decor Gift",
+  "url": "https://www.amazon.com/Tabletop-Fountain%EF%BC%8C3-Tier-Waterfall-Light%EF%BC%8CIndoor-Relaxation/dp/B0HC41DRLS/ref=zg_bs_g_3735981_d_sccl_28/142-4700496-1670833?psc=1",
+  "captured_at": "2026-11-14T07:32:21.925Z",
+  "images": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/71U8SmIbLEL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71w9xy9zmGL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71M9PEluT8L._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71yusfu4+-L._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71Xnvb1C+YL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71mJSz1YzmL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71tlSicDCiL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71ziDW0Kp2L._AC_SL1500_.jpg"
+    }
+  ],
+  "videos": [],
+  "errors": [],
+  "page_title": "Tabletop Water Fountain，3-Tier Indoor Waterfall with LED Light，Indoor Zen Relaxation Water Feature for Home Office Decor Gift",
+  "aplus": [],
+  "gallery_expected": 8,
+  "assets": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/71U8SmIbLEL._AC_SL1500_.jpg",
+      "path": "products/028_B0HC41DRLS/主图/01.jpg",
+      "status": "downloaded",
+      "bytes": 219954,
+      "sha256": "594e727d4d7a7ca720363b8d70fe48e02f003ba3fd3d736e0a10557f7c2c0197"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71w9xy9zmGL._AC_SL1500_.jpg",
+      "path": "products/028_B0HC41DRLS/附图/02.jpg",
+      "status": "downloaded",
+      "bytes": 238760,
+      "sha256": "6823554b3c35ab4120fa02130566891c63f294679078295982ebd758fe0b2768"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71M9PEluT8L._AC_SL1500_.jpg",
+      "path": "products/028_B0HC41DRLS/附图/03.jpg",
+      "status": "downloaded",
+      "bytes": 218800,
+      "sha256": "df451a2643580d6165f31276a44465c76bb9b787b4450001ca7e53f35184bb66"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71yusfu4+-L._AC_SL1500_.jpg",
+      "path": "products/028_B0HC41DRLS/附图/04.jpg",
+      "status": "downloaded",
+      "bytes": 211648,
+      "sha256": "7637c3779d600677c171e974f82bfc7fa12bfd27300d450c6533c07acae81829"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71Xnvb1C+YL._AC_SL1500_.jpg",
+      "path": "products/028_B0HC41DRLS/附图/05.jpg",
+      "status": "downloaded",
+      "bytes": 235164,
+      "sha256": "6b2cb0537331de97c7fba539dd72164c762deccf72e0582767f52e604e5afdd8"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71mJSz1YzmL._AC_SL1500_.jpg",
+      "path": "products/028_B0HC41DRLS/附图/06.jpg",
+      "status": "downloaded",
+      "bytes": 198057,
+      "sha256": "c4025bed461d8d37dcb8bcadca9348f2215eee266913e93dc2c0d8d42a61abae"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71tlSicDCiL._AC_SL1500_.jpg",
+      "path": "products/028_B0HC41DRLS/附图/07.jpg",
+      "status": "downloaded",
+      "bytes": 189020,
+      "sha256": "d12ccdbcb47d7de4ffd4a2156c19fb99c9410f015e7ec4fde38c0295e88b5024"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71ziDW0Kp2L._AC_SL1500_.jpg",
+      "path": "products/028_B0HC41DRLS/附图/08.jpg",
+      "status": "downloaded",
+      "bytes": 168298,
+      "sha256": "2bcffe09ca83101b9a6cbacae21069f4fa5c9c28cd84789fadb204bb1bffc9d1"
+    }
+  ]
+}

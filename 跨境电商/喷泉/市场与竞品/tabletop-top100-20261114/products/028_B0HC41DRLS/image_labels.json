@@ -1,0 +1,65 @@
+{
+  "products/028_B0HC41DRLS/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Product TheSetIncludes Parameters 9.84inch The mainbody of the decorative piece Backcover Pumps and power cables 5.51inch",
+    "edge_white_ratio": 0.135,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6823554b3c35ab4120fa02130566891c63f294679078295982ebd758fe0b2768"
+  },
+  "products/028_B0HC41DRLS/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Applicable Steps 01 02 03 05 06",
+    "edge_white_ratio": 0.12,
+    "method": "local_ocr_and_image_background",
+    "sha256": "df451a2643580d6165f31276a44465c76bb9b787b4450001ca7e53f35184bb66"
+  },
+  "products/028_B0HC41DRLS/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.009,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7637c3779d600677c171e974f82bfc7fa12bfd27300d450c6533c07acae81829"
+  },
+  "products/028_B0HC41DRLS/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "D",
+    "edge_white_ratio": 0.019,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6b2cb0537331de97c7fba539dd72164c762deccf72e0582767f52e604e5afdd8"
+  },
+  "products/028_B0HC41DRLS/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.1,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c4025bed461d8d37dcb8bcadca9348f2215eee266913e93dc2c0d8d42a61abae"
+  },
+  "products/028_B0HC41DRLS/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d12ccdbcb47d7de4ffd4a2156c19fb99c9410f015e7ec4fde38c0295e88b5024"
+  },
+  "products/028_B0HC41DRLS/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "THE SILENT EVENING 1 CERAMIC TRADITION",
+    "edge_white_ratio": 0.003,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2bcffe09ca83101b9a6cbacae21069f4fa5c9c28cd84789fadb204bb1bffc9d1"
+  }
+}
