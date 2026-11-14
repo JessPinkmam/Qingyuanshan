@@ -1,0 +1,74 @@
+{
+  "products/032_B0CDLJZVBP/附图/02.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "9.45\" 6.5\" 8.27\"",
+    "edge_white_ratio": 0.935,
+    "method": "local_ocr_and_image_background",
+    "sha256": "9ff5a686993d92f7879beb54b0214eb758980b680ceb63b846f99bec7facb5d0"
+  },
+  "products/032_B0CDLJZVBP/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.115,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7e77ba7256af77827aed3f1aee9d2f84fb161a8fd171731a2c3ea80ae18da99d"
+  },
+  "products/032_B0CDLJZVBP/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.292,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d0ba347c57cce3427bce610ba8cdc3ace90acc518f0c6191647365e377f2a669"
+  },
+  "products/032_B0CDLJZVBP/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.11,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1df6e5818f9feb98974c2e03e4bfb9e5df64582176c3fe10d922dc852f9271e7"
+  },
+  "products/032_B0CDLJZVBP/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.205,
+    "method": "local_ocr_and_image_background",
+    "sha256": "452ca283442d56309c3b4376b7df9cb49096b44b18263d6d7e4a6172505b1d90"
+  },
+  "products/032_B0CDLJZVBP/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "051a348d1dc891fedf731d81fa39f1f6bf9217e10b95b97ef11cb7fc7da417e0"
+  },
+  "products/032_B0CDLJZVBP/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "45cc00fb7cc812dbbcc5fbd56a3a4327602d17cb5ac03c13d47dd08732a08475"
+  },
+  "products/032_B0CDLJZVBP/附图/09.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.161,
+    "method": "local_ocr_and_image_background",
+    "sha256": "498008df7e3a266f217b5549a77a8835b99ccce9d88f53b46176683d30e3a5e8"
+  }
+}

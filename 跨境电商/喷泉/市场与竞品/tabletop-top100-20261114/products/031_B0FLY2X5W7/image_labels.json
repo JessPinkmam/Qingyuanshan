@@ -1,0 +1,65 @@
+{
+  "products/031_B0FLY2X5W7/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Specifications & Dimensions 9.06\" (23cm) 7.24\"(18.4cm) 7.24\" (18.4cm) Dimensions: 7.24\" (L) × 7.24\" (W) × 9.06\" (H) (18.4x18.4x23 cm) Wonderful Whispers of gift pick Water Weight: 1.57 Ibs (0.71 kg)",
+    "edge_white_ratio": 0.613,
+    "method": "local_ocr_and_image_background",
+    "sha256": "4b95fd8bcf1387f25c4d6481b5a97e533b1f9bc7e06593be1b8e095a6350b3ad"
+  },
+  "products/031_B0FLY2X5W7/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.008,
+    "method": "local_ocr_and_image_background",
+    "sha256": "818f490c1592842af98133147480a4aa86bef3019addb28114bbee92ab78811d"
+  },
+  "products/031_B0FLY2X5W7/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.214,
+    "method": "local_ocr_and_image_background",
+    "sha256": "77a99eb67021a1f829bf76672e98da9c969a45410ec231642cc8e3ab497b0dd7"
+  },
+  "products/031_B0FLY2X5W7/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.002,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d28fdf92cc49f2913406d00a89cc8a61e7cb236a99b1c6efbb37164ae8ecf17c"
+  },
+  "products/031_B0FLY2X5W7/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.002,
+    "method": "local_ocr_and_image_background",
+    "sha256": "9423545586307ea010abceaf341186bc09293b6e9d28a7b391365e64bfb24108"
+  },
+  "products/031_B0FLY2X5W7/附图/07.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.871,
+    "method": "local_ocr_and_image_background",
+    "sha256": "84988235a357c4c7f190228924802c24500d9b184cd1bac6a4f1d012e3d8e709"
+  },
+  "products/031_B0FLY2X5W7/附图/08.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.879,
+    "method": "local_ocr_and_image_background",
+    "sha256": "33f0c51aebdb6b6cdc30a1b1790a71cd7468aa8efa3c3446711ba34ec47607f8"
+  }
+}
