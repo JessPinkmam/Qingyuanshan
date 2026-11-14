@@ -1,0 +1,38 @@
+{
+  "products/034_B01NBX47AR/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.217,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ca457d5f469b482bfc55d1a87328081dba0eef326aed171c884b190e1dfbf4a0"
+  },
+  "products/034_B01NBX47AR/附图/03.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "5.8\"H 4.3\"W 4.6\"L",
+    "edge_white_ratio": 0.89,
+    "method": "local_ocr_and_image_background",
+    "sha256": "23383ec5a30835a0ab4e87d1f2d1d8831f1d0b5b74175af1e0eebd8d52c91f22"
+  },
+  "products/034_B01NBX47AR/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.136,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c113194cda6b362840378b8f205a3474ae04ffa862d9eaabccacc7aecd6d3cc1"
+  },
+  "products/034_B01NBX47AR/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "7cf4e9aaa282c596544bdd41708f84bf7a7aae832f75b985f03e7f8cb67bdab5"
+  }
+}

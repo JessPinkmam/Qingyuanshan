@@ -1,0 +1,103 @@
+{
+  "asin": "B01NBX47AR",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/71XQH9axEcL._AC_UL300_SR300,200_.jpg",
+  "rank": 34,
+  "title": "Nature's Mark 6\"Tall Cascading Bowl and Brick LED Table-top Fountain | Adapter Included",
+  "url": "https://www.amazon.com/Newport-Coast-Cascading-Brick-Fountain/dp/B01NBX47AR/ref=zg_bs_g_3735981_d_sccl_34/142-4700496-1670833?psc=1",
+  "captured_at": "2026-11-14T07:33:21.259Z",
+  "images": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/71XQH9axEcL._AC_SL1294_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/81528fse6mL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61aMlYWRiBL._AC_SL1195_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61Q+ie5VieL._AC_SL1195_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/614xMAIx69L._AC_SL1195_.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "creator": "Seller",
+      "description": "video thumbnail",
+      "duration": "0:18",
+      "product_asin": "B01NBX47AR",
+      "related_asins": "B01NBX47AR",
+      "title": "Nature&#39;s Mark Cascading Bowl and Brick LED Fountain",
+      "url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/518eeb61-b596-42d6-8be0-6ecaf965f836/default.jobtemplate.hls.m3u8",
+      "vendor": "Nature&#39;s Mark"
+    }
+  ],
+  "errors": [],
+  "page_title": "6\"Tall Cascading Bowl and Brick LED Table-top Fountain",
+  "aplus": [],
+  "gallery_expected": 5,
+  "assets": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/71XQH9axEcL._AC_SL1294_.jpg",
+      "path": "products/034_B01NBX47AR/主图/01.jpg",
+      "status": "downloaded",
+      "bytes": 112794,
+      "sha256": "287baa792be466746cd81aa5872351bb5d79beee991a9b54658efe971a206f88"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/81528fse6mL._AC_SL1500_.jpg",
+      "path": "products/034_B01NBX47AR/附图/02.jpg",
+      "status": "downloaded",
+      "bytes": 207020,
+      "sha256": "ca457d5f469b482bfc55d1a87328081dba0eef326aed171c884b190e1dfbf4a0"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61aMlYWRiBL._AC_SL1195_.jpg",
+      "path": "products/034_B01NBX47AR/附图/03.jpg",
+      "status": "downloaded",
+      "bytes": 68646,
+      "sha256": "23383ec5a30835a0ab4e87d1f2d1d8831f1d0b5b74175af1e0eebd8d52c91f22"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61Q+ie5VieL._AC_SL1195_.jpg",
+      "path": "products/034_B01NBX47AR/附图/04.jpg",
+      "status": "downloaded",
+      "bytes": 94615,
+      "sha256": "c113194cda6b362840378b8f205a3474ae04ffa862d9eaabccacc7aecd6d3cc1"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/614xMAIx69L._AC_SL1195_.jpg",
+      "path": "products/034_B01NBX47AR/附图/05.jpg",
+      "status": "downloaded",
+      "bytes": 118589,
+      "sha256": "7cf4e9aaa282c596544bdd41708f84bf7a7aae832f75b985f03e7f8cb67bdab5"
+    },
+    {
+      "creator": "Seller",
+      "description": "video thumbnail",
+      "duration": "0:18",
+      "product_asin": "B01NBX47AR",
+      "related_asins": "B01NBX47AR",
+      "title": "Nature&#39;s Mark Cascading Bowl and Brick LED Fountain",
+      "url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/518eeb61-b596-42d6-8be0-6ecaf965f836/default.jobtemplate.hls.m3u8",
+      "vendor": "Nature&#39;s Mark",
+      "role": "video",
+      "path": "products/034_B01NBX47AR/视频/01.mp4",
+      "status": "downloaded",
+      "bytes": 1155991,
+      "sha256": "03f0a4a3f5de32e6b81207ca6b721bde2f703674fa7f5017d2c9a4f3ce9ded1b"
+    }
+  ]
+}

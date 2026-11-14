@@ -1,0 +1,74 @@
+{
+  "products/036_B0GY8TCCMJ/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "28cm/11in 15cm/5.9in 20cm/7.9in",
+    "edge_white_ratio": 0.886,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8c7a83a1abe3499c78526cd19cd9a8e53c50cff2e0dcd11c918acf3ebcbf5394"
+  },
+  "products/036_B0GY8TCCMJ/附图/03.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.806,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2026d1d075a7d1fc5427f16821fe2d4f50786718e11007157b164c530656791f"
+  },
+  "products/036_B0GY8TCCMJ/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.023,
+    "method": "local_ocr_and_image_background",
+    "sha256": "394f57349c35d714f7a87355b388c9c8526d25893379b7131dd8d8fa1bb978da"
+  },
+  "products/036_B0GY8TCCMJ/附图/05.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.553,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e089d293bac56087cb983a7a1ebfc48eec6d43265dbc7c02df7217ad21338ab5"
+  },
+  "products/036_B0GY8TCCMJ/附图/06.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.841,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cf7001ea77e227a68408de70ec60147ca867f426d1d0eb058a6da8ec7b6c79cc"
+  },
+  "products/036_B0GY8TCCMJ/附图/07.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "CAUTION HK-200 Wth Use",
+    "edge_white_ratio": 0.588,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3829afa019bde56dd54f38f04b28f77e9c933f9cb5150ff9e3c605146b3996e5"
+  },
+  "products/036_B0GY8TCCMJ/附图/08.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.848,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b51b02c003092b13e846ff66ce5d66cf894abb9d2ce3a63b51cc80962386772f"
+  },
+  "products/036_B0GY8TCCMJ/附图/09.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.781,
+    "method": "local_ocr_and_image_background",
+    "sha256": "aef689c6e0682fd909fba570a297defaafa17711e3245a19be7071a158fc52c7"
+  }
+}

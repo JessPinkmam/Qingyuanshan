@@ -1,0 +1,65 @@
+{
+  "products/035_B0FH6Z64K5/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Find Your Flow Transform your space into a sanctuaryof calm with soothing watersoundsand ambient light.",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "21f4baee0497f182cb20c78e11af773a533f19b6f54e994fcb71072e5571f438"
+  },
+  "products/035_B0FH6Z64K5/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Crafted for Calm ORIGIN TEXTURE LEDAMBIENCE",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "64629e22570c338e5c658d8d4a460280288dc4f01296a731ef1026deade4e6b6"
+  },
+  "products/035_B0FH6Z64K5/附图/04.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "ArtfulDecor, OrganicComfort A stunning zen element that also gently adjusts airhumidityforamorecomfortableenvironment.",
+    "edge_white_ratio": 0.659,
+    "method": "local_ocr_and_image_background",
+    "sha256": "bdefc2fdfd1037c711be3a4d5aa04ce3dd604c35c08eef27eabcf3c46965c1e7"
+  },
+  "products/035_B0FH6Z64K5/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "70d5ae5190c8321b6c98fc798af39d73b5f9f19b18e63fa52b1254da47b9328a"
+  },
+  "products/035_B0FH6Z64K5/附图/06.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Convenient Tabletop Size Perfectforyourdeskorcoffeetable 10.24 in/ 26CM 6.89 in/ 17.5CM 9.06in/23CM",
+    "edge_white_ratio": 0.719,
+    "method": "local_ocr_and_image_background",
+    "sha256": "def421993196b6bd82c77075f06e879ae0c4bb71fad3294aa85577b2633dd913"
+  },
+  "products/035_B0FH6Z64K5/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "茶",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6f182637b3fc820e157e9fafd1e5379718b8bfe278a5a8d485789ff499caf7f7"
+  },
+  "products/035_B0FH6Z64K5/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "bdb5d8b2b7660667ad9f6c126d437a691062480b5957304ce854709887d513cf"
+  }
+}
