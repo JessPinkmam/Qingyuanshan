@@ -1,0 +1,56 @@
+{
+  "products/080_B0H4PBN9C2/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "PRODUCT SIZE Height: 13.4\"(34cm) Wide:12.6\"(32cm)",
+    "edge_white_ratio": 0.817,
+    "method": "local_ocr_and_image_background",
+    "sha256": "0197edb9718e1d3a05215d7990a44d547531d4ded1569ab9ab16c744faf63760"
+  },
+  "products/080_B0H4PBN9C2/附图/03.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "WHATS IN THE BOX? Bowl*1 Slate with Support Strap *1 WaterDisperser*1 Rock Tray*1 Rocks *1 Water Pump*1",
+    "edge_white_ratio": 0.772,
+    "method": "local_ocr_and_image_background",
+    "sha256": "eef8370ab43658bab8d86cdfee1180226d8452875d6c31c9d85f5ec8824a3340"
+  },
+  "products/080_B0H4PBN9C2/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "LIGHTTABLEWATERFALL The water pump carries light and can emit through the middle of the disc",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c83babfd8e885ed72e49bb97be5342666d3c25fc3565dbdd581a901eba5ff801"
+  },
+  "products/080_B0H4PBN9C2/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "RELAXINGWATERFLOW Water trickles from slate to rocks mimic the sounds of a small waterfall adding ambianceanywhere you need to adda relaxing touch",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8bb139c0a3294786515e5445bcf67c00b0eb31365541a96952301c06c430aedb"
+  },
+  "products/080_B0H4PBN9C2/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "NATURESLATE TABLEWATERFALL Our products contain natural slate. Slate can vary to a large degree and that individuality is what is considered to be unique and inherent to the beauty of the natural product as no two are exactly alike.",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "15b49df1eb7378fb8ca3ca806cbf5c80c362fb1a57321e2659ab35909ef1306f"
+  },
+  "products/080_B0H4PBN9C2/附图/07.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "MULTISCENEDISPLAY",
+    "edge_white_ratio": 0.418,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cad46883377ee650d7d037a1745adcdf8996db4d65e28539518184d0ea546600"
+  }
+}

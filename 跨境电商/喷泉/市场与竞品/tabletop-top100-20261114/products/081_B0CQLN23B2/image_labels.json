@@ -1,0 +1,56 @@
+{
+  "products/081_B0CQLN23B2/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Feel Nature in Life Breathe inserenity of nature with Moss Air.Transform your space into a lush, green sanctuary.",
+    "edge_white_ratio": 0.268,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2ab4ff19497492f7662cba0f6f22db2a5dfb1dd8b4aeedfbba19e91edcb12529"
+  },
+  "products/081_B0CQLN23B2/附图/03.jpg": {
+    "category": "安装维护图",
+    "confidence": "中",
+    "reason": "OCR 检出安装或维护说明",
+    "ocr_text": "Healing inNature Reconnect with nature, rejuvenate your spirit. Discover the healing power of Moss Air.",
+    "edge_white_ratio": 0.002,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6a442e160991115adefafc5066b4e9152698be80466a33301d6ac3af78235f8b"
+  },
+  "products/081_B0CQLN23B2/附图/04.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "MossforUs Moss filters out fine dust, and converts carbon dioxide into oxygen, providing a fresher and greener living environment. MossforEarth Thegreatpowersofmosshelpus ashumans and great benefits for us humans but for our natural environment also",
+    "edge_white_ratio": 0.907,
+    "method": "local_ocr_and_image_background",
+    "sha256": "261d430852ffbff925630d39deb2fab578d3c6c0d4904634f6ee1d83c65e4de1"
+  },
+  "products/081_B0CQLN23B2/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "A mm Indoor Quiet humidity control *Use tap or mineral water Mood Plant lighting purification",
+    "edge_white_ratio": 0.103,
+    "method": "local_ocr_and_image_background",
+    "sha256": "eaf2e534e008bf174e4fbb92159c3ea4740fb83d42fcfc3370b96c168d0e1745"
+  },
+  "products/081_B0CQLN23B2/附图/06.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Water Capacity:320ml ·Spray Amount:4oml/hr ·Mode:Humidifier/ Terrarium ·Auto Stop Water Level Sensor ·Color 9.9″ 4.3″",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "73a3b5ede4799124b3e696fe95e4bdad44fc3b5385a6e573f9f45ae3b40dd8eb"
+  },
+  "products/081_B0CQLN23B2/附图/07.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "In the Box (components) Mossair Moss filter Cottonfilter Magneticball USB-C",
+    "edge_white_ratio": 0.915,
+    "method": "local_ocr_and_image_background",
+    "sha256": "57a7dd9ecef4796870cf9800f0bc7c7129c218074c30e03905f704d116ba7683"
+  }
+}

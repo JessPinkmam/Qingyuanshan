@@ -1,0 +1,56 @@
+{
+  "products/079_B0FLXYQQYN/附图/02.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Specifications & Dimensions 10.24\"(26cm) 8.27\" (21cm) 6.5\"(16.5cm) Dimensions: 8.27\"(L) ×6.50\"(W)× 10.24\"(H) (21 x 16.5 x26 cm) Wonderful Whispers of gift pick Water Weight: 2.09 Ibs(0.95 kg)",
+    "edge_white_ratio": 0.613,
+    "method": "local_ocr_and_image_background",
+    "sha256": "bc40f27763849ca7acd66f73691cfa29b930c5c1f876baa6db463b479e56ba42"
+  },
+  "products/079_B0FLXYQQYN/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.251,
+    "method": "local_ocr_and_image_background",
+    "sha256": "49f6b5d587d06c1403d69365e33fd9c71a3f83f463d96442b30918abbb928097"
+  },
+  "products/079_B0FLXYQQYN/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.082,
+    "method": "local_ocr_and_image_background",
+    "sha256": "4efbadd123b1e5cbd2080f4ed6d05df76e57f7a679b089b49f18a73c96cca7e3"
+  },
+  "products/079_B0FLXYQQYN/附图/05.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.566,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8b614c34093ea5bc83a1a3b085886cd86dd0cd0361a765ab64f57cca37c7070d"
+  },
+  "products/079_B0FLXYQQYN/附图/06.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.901,
+    "method": "local_ocr_and_image_background",
+    "sha256": "47c2f55650e5c7ad1605446d10db8e18cf918b98ac402bde63876dbfab3ac883"
+  },
+  "products/079_B0FLXYQQYN/附图/07.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.802,
+    "method": "local_ocr_and_image_background",
+    "sha256": "eea669b3e7f68386e490890ba701c818572833d24056ccb8ed3a2a9d807d6d42"
+  }
+}
