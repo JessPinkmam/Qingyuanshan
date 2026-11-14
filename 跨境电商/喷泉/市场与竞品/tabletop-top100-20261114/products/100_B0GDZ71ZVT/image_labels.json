@@ -1,0 +1,74 @@
+{
+  "products/100_B0GDZ71ZVT/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.018,
+    "method": "local_ocr_and_image_background",
+    "sha256": "4ff57bf6cc47f9d2d3c68b889f344986195bc63ae33e4157f9e3be812bc4743e"
+  },
+  "products/100_B0GDZ71ZVT/附图/03.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Product Dimensions 9\"W×5.5\"D×13\"H Weight: 2.87 Ib Splash-Proof Design 13\" H Fade-ResistantFinish Promotes Relaxation 9\"W √5.5\"D",
+    "edge_white_ratio": 0.116,
+    "method": "local_ocr_and_image_background",
+    "sha256": "0846ce151ba9db8814fc993e71b64dbf3758393b57cdfc3ebb403277a101d782"
+  },
+  "products/100_B0GDZ71ZVT/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "MakeHome More Calming Warmlightandflowingwaterfor reading,working,andrelaxing.",
+    "edge_white_ratio": 0.263,
+    "method": "local_ocr_and_image_background",
+    "sha256": "4c60f842473099c823480619ee1db54749c41fe65be2b11504da6f5fbbe2fbd5"
+  },
+  "products/100_B0GDZ71ZVT/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.048,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5c7536ea409ccaac83ad495923a75b418d79d087f6ce9d891d710375721f2745"
+  },
+  "products/100_B0GDZ71ZVT/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.102,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ec4bd6ee8d10f09927b0d39c72492bf2594b5c3b296d19536fe7c29b4b240264"
+  },
+  "products/100_B0GDZ71ZVT/附图/07.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.451,
+    "method": "local_ocr_and_image_background",
+    "sha256": "092c10ff5c0a075235da35ef6292ec155ccb2d7b24b1a05bc05d2a11694b69d8"
+  },
+  "products/100_B0GDZ71ZVT/附图/08.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.611,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2fa79618d6aab066413028d07e4af4937e26d8b6b403d742ee36fbe54261ba39"
+  },
+  "products/100_B0GDZ71ZVT/附图/09.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.61,
+    "method": "local_ocr_and_image_background",
+    "sha256": "8c3112cc915379a31b49383b2e5f67afbfefd3e268218f6dd8f5cf0edd823a90"
+  }
+}
