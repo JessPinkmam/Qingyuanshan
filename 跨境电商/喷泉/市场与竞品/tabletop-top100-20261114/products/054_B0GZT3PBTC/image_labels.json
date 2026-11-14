@@ -1,0 +1,65 @@
+{
+  "products/054_B0GZT3PBTC/附图/02.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "Loading",
+    "edge_white_ratio": 0.931,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5161d7bc7cc48e7956176f96c97660daef0ae21ebfdeb60c1a5601f64d25f5c1"
+  },
+  "products/054_B0GZT3PBTC/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Reliable Resin Construction Realistic Stone-like Look Long-lasting Performance Lightweight for Easy Movement Weather Resistance",
+    "edge_white_ratio": 0.018,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ddc99aab05cae2cad51663028e903b94d3faf2166d97826d33f4d98740c7c031"
+  },
+  "products/054_B0GZT3PBTC/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Modern Desktop Decor Bring Natural Beauty Indoors",
+    "edge_white_ratio": 0.202,
+    "method": "local_ocr_and_image_background",
+    "sha256": "465519d2dd10aba2c0a30c003d419fc5c8b4f2e93fc11c373b709016fe708417"
+  },
+  "products/054_B0GZT3PBTC/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Zen Rock Garden Water Fountain Captures the essence of stacked natural stones for a tranquil home",
+    "edge_white_ratio": 0.225,
+    "method": "local_ocr_and_image_background",
+    "sha256": "be5f32610a4824e98bd2756914faa30f15590cc024efb4ccce5dae89749e24e8"
+  },
+  "products/054_B0GZT3PBTC/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Product Information Weight: 1.10 Ibs H:6.89\" W:7.28\" L:10.04\"",
+    "edge_white_ratio": 0.055,
+    "method": "local_ocr_and_image_background",
+    "sha256": "9901c876e41eab01f3775297335f69d4ceab85ac566be89c7445e9449149c083"
+  },
+  "products/054_B0GZT3PBTC/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Built-in LED Interior pump keeps water flow,just plug in. Mimic the sound of a gently trickling stream.",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f9124e15f6eeaf7983215273804653eec640fe545e8cefb021a55eb34f69d86a"
+  },
+  "products/054_B0GZT3PBTC/附图/08.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 1.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "fccd616f0aacf131487704769b70083cd92518d396e0f1330d8a9c595240d47c"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "products/052_B0CD7KVZ9Y/附图/02.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "Loading",
+    "edge_white_ratio": 0.931,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5161d7bc7cc48e7956176f96c97660daef0ae21ebfdeb60c1a5601f64d25f5c1"
+  },
+  "products/052_B0CD7KVZ9Y/附图/03.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "7.09 in / 18 cm 6.45 in /16.4 cm 5.12 in / 13 cm 5.12 in / 13 cm 2.92 in / 7.44 cm Note:Mobile phone as sizereference,notincluded.",
+    "edge_white_ratio": 0.93,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e1a034ebc761b3b539ac724cd04c5902d271fa426c18a5f4cfafc67e701b310d"
+  },
+  "products/052_B0CD7KVZ9Y/附图/04.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.445,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ad2bc9f6d729044e356cb98b87a103a6c63eca090f338022f7ee284b28ec5cb7"
+  },
+  "products/052_B0CD7KVZ9Y/附图/05.jpg": {
+    "category": "功能细节图",
+    "confidence": "中",
+    "reason": "OCR 检出功能、材质或结构说明",
+    "ocr_text": "Power support: 110V Submersible pumps",
+    "edge_white_ratio": 0.793,
+    "method": "local_ocr_and_image_background",
+    "sha256": "d19c07d9a631172e256d474f09dd415e09caf79b7e8b5c4367dc0df4bbfbd7d9"
+  },
+  "products/052_B0CD7KVZ9Y/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.064,
+    "method": "local_ocr_and_image_background",
+    "sha256": "6cbcd7eb9a1635710a5bc358f0619e7d72369068472ee5b34e3c7d476e3b38ed"
+  },
+  "products/052_B0CD7KVZ9Y/附图/07.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.825,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e1a76fcc4a9b2d20279755862cdc8408c076b163ff1027e734fca7b75bde9159"
+  }
+}
