@@ -1,0 +1,74 @@
+{
+  "products/002_B0CXD11DH3/附图/02.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "10.4 in 6.5 in 8.3 in",
+    "edge_white_ratio": 0.953,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5d4ea01d85ec05e5b2f21ef6aae8390172852214f15acf65aa802770d11817c3"
+  },
+  "products/002_B0CXD11DH3/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.021,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1fefc69b4ae68340248a50f8d2d1a2574df02264a8d1ddb79cfca37e694be344"
+  },
+  "products/002_B0CXD11DH3/附图/04.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Dimensions: 8.27\"(L)x1.5\"(W)x10.43\" (H) Weight: 1.49 kg (3.28 Ibs) Material: Premium Resin NO USB power adapter ON-OFF control Circulating water dund",
+    "edge_white_ratio": 0.424,
+    "method": "local_ocr_and_image_background",
+    "sha256": "dcb95370860ef3a1ba01382300e772cb04f4f2a8c7eda61435427b0fd50e637d"
+  },
+  "products/002_B0CXD11DH3/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "ZENHARMONY Modern Desktop Serenity",
+    "edge_white_ratio": 0.106,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f0f07843979448ece5decd81e754abf51e6bb54283110e25e93d46dce7b8a854"
+  },
+  "products/002_B0CXD11DH3/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.055,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ff2b151c3ad202e44e89c835650dfbefd8e2785731bf3b6d17ff10ad153dcb4a"
+  },
+  "products/002_B0CXD11DH3/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.208,
+    "method": "local_ocr_and_image_background",
+    "sha256": "9a1570ada4b553889c9b416078582a6f08a5f9761bf389e36ab53a5384d5f371"
+  },
+  "products/002_B0CXD11DH3/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "N",
+    "edge_white_ratio": 0.124,
+    "method": "local_ocr_and_image_background",
+    "sha256": "90e9065cace14ed778f4a14b8664bc5d59b15ecf9a5351e90c2979d9a6e995df"
+  },
+  "products/002_B0CXD11DH3/附图/09.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.037,
+    "method": "local_ocr_and_image_background",
+    "sha256": "bef515c780d26fc37805635ed09085530e3f7dc01531e1844821ff708616af70"
+  }
+}

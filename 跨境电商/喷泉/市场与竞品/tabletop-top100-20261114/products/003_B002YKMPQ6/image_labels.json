@@ -1,0 +1,119 @@
+{
+  "products/003_B002YKMPQ6/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.002,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1aa366dc5c90010565d5e3493bf9fcfc0054d6b908d002c6890420696406e159"
+  },
+  "products/003_B002YKMPQ6/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.048,
+    "method": "local_ocr_and_image_background",
+    "sha256": "249976a8cfeaaccaf68943cb15a88ffe8a7f303fc764fb860744abf96c68e40f"
+  },
+  "products/003_B002YKMPQ6/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "L L",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "592e18ad550207cf9539175462cb879428d2aa3840aba2625448ccd307d55cae"
+  },
+  "products/003_B002YKMPQ6/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.007,
+    "method": "local_ocr_and_image_background",
+    "sha256": "4abaf6b95f3cab6e8821d2f609de333e1e1f202393d441bd3cecf14047395e4c"
+  },
+  "products/003_B002YKMPQ6/附图/06.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "dimensions tabletop fountain measures 9\"L×9\"W×11\"H 0.91 ft (11in) HEIGHT 0.75 ft (9in) LENGTH",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "010aa157d6be130ad282607532eeb1e647d854d5799a9753f07f9d77ca7df6b1"
+  },
+  "products/003_B002YKMPQ6/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "indoor zen fountain 3-tierwaterfountaintransforms yourspaceintoarestfuloasis Interiorpumpkeepsthewater flowing-just plug it in!",
+    "edge_white_ratio": 0.146,
+    "method": "local_ocr_and_image_background",
+    "sha256": "9fa72feb9e9fb89398778165fc76c7aaad870697ed8d4e75bc83afce64cd5bfe"
+  },
+  "products/003_B002YKMPQ6/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "relaxing Waterfall Water trickles from each tier to mimic the sounds of a small waterfall,addingambianceto your living room, or anywhere you need to add a relaxing touch",
+    "edge_white_ratio": 0.197,
+    "method": "local_ocr_and_image_background",
+    "sha256": "dedeee0704b4ae5bd7ad4046d307008997b95eadadf8b893b0eb03484ed482dd"
+  },
+  "products/003_B002YKMPQ6/附图/09.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "romantic lighting 3 included tealight candles can be placed in the pillars forapeaceful andintimate lightingsource",
+    "edge_white_ratio": 0.149,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e36c839d031993130a11a2cbd0686db5677a8ebb0953fd2c0a5f0d9c80042399"
+  },
+  "products/003_B002YKMPQ6/附图/10.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "natural elements Weathered stone-like pillarsandincludedreal riverstonesbringatouch ofnaturalbeautyto yourspace",
+    "edge_white_ratio": 0.191,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2f1cc06fb8ec2b937593e6b290a5d7ff3413b811e965244f4269b1dc17f85159"
+  },
+  "products/003_B002YKMPQ6/附图/11.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.927,
+    "method": "local_ocr_and_image_background",
+    "sha256": "4764f2dc1f69d9587d6807996a98da84a8cd93ae639a97cce1c6829896ecb8af"
+  },
+  "products/003_B002YKMPQ6/附图/12.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.887,
+    "method": "local_ocr_and_image_background",
+    "sha256": "1d77b9488b945bf3e6284732a94c85560b732bc6de5be5daadda61846ffd0dd5"
+  },
+  "products/003_B002YKMPQ6/附图/13.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.434,
+    "method": "local_ocr_and_image_background",
+    "sha256": "14a0ceb89e399658fd48dbe52e33a6a2f9c27868ca9d543ff9eec9e010239b8b"
+  },
+  "products/003_B002YKMPQ6/附图/14.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "Loading",
+    "edge_white_ratio": 0.931,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5161d7bc7cc48e7956176f96c97660daef0ae21ebfdeb60c1a5601f64d25f5c1"
+  }
+}

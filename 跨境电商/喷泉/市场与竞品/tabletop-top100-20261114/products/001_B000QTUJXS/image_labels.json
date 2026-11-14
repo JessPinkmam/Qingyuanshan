@@ -1,0 +1,65 @@
+{
+  "products/001_B000QTUJXS/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "L",
+    "edge_white_ratio": 0.161,
+    "method": "local_ocr_and_image_background",
+    "sha256": "f169e9df03832e44655d42fd3998e0ef1e20755858d90810710b2418136a31b0"
+  },
+  "products/001_B000QTUJXS/附图/03.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "artistic design 3-tierformation & unique lighting offer a tranquil ambience",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "b546d131b519243377b1b29a7c92c5335137e3d12b0511959089c13a9089c3ca"
+  },
+  "products/001_B000QTUJXS/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "increasesrelaxation tranquilsounds cordedpowersupply on/offswitch",
+    "edge_white_ratio": 0.01,
+    "method": "local_ocr_and_image_background",
+    "sha256": "39d7185ea3158dccf4a364fd83c97e1f130d713b51fc11d9f0efc3bc19df15fa"
+  },
+  "products/001_B000QTUJXS/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "bring nature indoors Enjoy tranquil waterfall sounds paired withapeacefulglow",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "20a26fdf96777c5be52544b1c674e986802dde7e252255b4fdc5299323655ef6"
+  },
+  "products/001_B000QTUJXS/附图/06.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "de-stress Add a calming, zen-inspired touch anytime to any room",
+    "edge_white_ratio": 0.007,
+    "method": "local_ocr_and_image_background",
+    "sha256": "87fe894fbb18b20fed3b829d5f3b5b3f91dd116d7bea2b104f351b4190086205"
+  },
+  "products/001_B000QTUJXS/附图/07.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "8.25″ 8.1\" 7.25″ convenient Perfectforyour desk tabletop size orcoffeetable",
+    "edge_white_ratio": 0.003,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e5c0f308df1a5f8cb258ecfced4aa7d62f3d8bc80d70000ba5ee16f02c17dbc3"
+  },
+  "products/001_B000QTUJXS/附图/08.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "A quiet built-in automatic submersiblewater waterpump pump helps to circulatewater",
+    "edge_white_ratio": 0.016,
+    "method": "local_ocr_and_image_background",
+    "sha256": "21ffbd5f4e756f90ddd9b557d42661cec99c57d5e6b4cf3927da2b9867f12929"
+  }
+}
