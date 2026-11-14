@@ -1,0 +1,56 @@
+{
+  "products/073_B0FJQR1F1F/附图/02.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.267,
+    "method": "local_ocr_and_image_background",
+    "sha256": "0dab6148a558f0966c31acfd4ffa2dd2e7cd817368f25651acc42c0a81fb38a0"
+  },
+  "products/073_B0FJQR1F1F/附图/03.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "10.6 in 5.5 in 6.21 in",
+    "edge_white_ratio": 0.96,
+    "method": "local_ocr_and_image_background",
+    "sha256": "c53afa40f8d8bbd0db1d1e7db4f0be3c58ba4b64519b3f73049b82623a9839d0"
+  },
+  "products/073_B0FJQR1F1F/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": ": realistic resin stones : warm - colored LED lights : decorated with cobblestones",
+    "edge_white_ratio": 0.123,
+    "method": "local_ocr_and_image_background",
+    "sha256": "e108fad98f91ff9971e6b9a14b83a9b83945a15a5a342339ae0b248e8a347e83"
+  },
+  "products/073_B0FJQR1F1F/附图/05.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "",
+    "edge_white_ratio": 0.0,
+    "method": "local_ocr_and_image_background",
+    "sha256": "3fa4ca1350a898c27ba85f249ecb3aa829151bc2ef9455cd4a3167ef7cbbe4d0"
+  },
+  "products/073_B0FJQR1F1F/附图/06.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.811,
+    "method": "local_ocr_and_image_background",
+    "sha256": "a6fd063e5afb74ceb07907354044fc21352dda610f57cb447f4fc75e1c2b2256"
+  },
+  "products/073_B0FJQR1F1F/附图/07.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "ALSK",
+    "edge_white_ratio": 0.187,
+    "method": "local_ocr_and_image_background",
+    "sha256": "ff187edce5eea0b3267855f44e7669afe7dce20cdd12c99bca87f57a319e88c2"
+  }
+}

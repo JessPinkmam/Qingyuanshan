@@ -1,0 +1,89 @@
+{
+  "asin": "B08K3RTRKD",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/414AlPQYwAL._AC_UL600_SR600,400_.jpg",
+  "rank": 75,
+  "title": "Nature's Mark 10\" H Mirrored Waterfall Light Show Tabletop Water Fountain with Natural River Rocks and Color Changing LED Lights (Power Cord Attached)",
+  "url": "https://www.amazon.com/Newport-coast-collection-Mirrored-Waterfall/dp/B08K3RTRKD/ref=zg_bs_g_3735981_d_sccl_25/142-4700496-1670833?psc=1",
+  "captured_at": "2026-11-14T07:46:25.485Z",
+  "images": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/414AlPQYwAL._AC_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/81-OeOeGfEL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61hwWGAJqRL._AC_SL1200_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/51Zuhfjt0SL._AC_SL1400_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71iFY38qStL._AC_SL1500_.jpg"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/41PJOatO9OL._AC_.jpg"
+    }
+  ],
+  "videos": [],
+  "errors": [],
+  "page_title": "Nature's Mark 10\" H Mirrored Waterfall Light Show Tabletop Water Fountain with Natural River Rocks and Color Changing LED Lights (Power Cord Attached)",
+  "aplus": [],
+  "gallery_expected": 6,
+  "assets": [
+    {
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/414AlPQYwAL._AC_.jpg",
+      "path": "products/075_B08K3RTRKD/主图/01.jpg",
+      "status": "downloaded",
+      "bytes": 20952,
+      "sha256": "bbc8e82e1184d070691eeeb8a7ae40d4a3b4d703f84cc7192ca35f6c5f7a1336"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/81-OeOeGfEL._AC_SL1500_.jpg",
+      "path": "products/075_B08K3RTRKD/附图/02.jpg",
+      "status": "downloaded",
+      "bytes": 150502,
+      "sha256": "5224a859a1e89bff474403bbff30bd5d1be3a1e0b186039c840b01e00fbea9e1"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61hwWGAJqRL._AC_SL1200_.jpg",
+      "path": "products/075_B08K3RTRKD/附图/03.jpg",
+      "status": "downloaded",
+      "bytes": 120590,
+      "sha256": "e57fff421daedeb33013103802d9314d53664033bc054ad4e85c212bd84c04bc"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/51Zuhfjt0SL._AC_SL1400_.jpg",
+      "path": "products/075_B08K3RTRKD/附图/04.jpg",
+      "status": "downloaded",
+      "bytes": 40036,
+      "sha256": "7ff79c89c0fcc0b6f95b5f9559d2cec704986b60fc9e1e50a3e01f698063d630"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71iFY38qStL._AC_SL1500_.jpg",
+      "path": "products/075_B08K3RTRKD/附图/05.jpg",
+      "status": "downloaded",
+      "bytes": 164066,
+      "sha256": "f967239015a121ff53edcd8d940511d899cde5e2e57046de8c6a017f318a9fec"
+    },
+    {
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/41PJOatO9OL._AC_.jpg",
+      "path": "products/075_B08K3RTRKD/附图/06.jpg",
+      "status": "downloaded",
+      "bytes": 30234,
+      "sha256": "c51979832c5b965cb441d0ffea5ca7e778853569387c5def9c6ad6d4c9927bb2"
+    }
+  ]
+}
