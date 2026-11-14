@@ -1,0 +1,65 @@
+{
+  "products/013_B0B4NH54J8/附图/02.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "Loading",
+    "edge_white_ratio": 0.931,
+    "method": "local_ocr_and_image_background",
+    "sha256": "5161d7bc7cc48e7956176f96c97660daef0ae21ebfdeb60c1a5601f64d25f5c1"
+  },
+  "products/013_B0B4NH54J8/附图/03.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "Perfect size for your living room orhometabletopasadecor 9.8\" 5.5″ 6.5″",
+    "edge_white_ratio": 0.001,
+    "method": "local_ocr_and_image_background",
+    "sha256": "56f7240a0297c04534c90e92b612f75fd377411f4b55e1a4e804fcf74fad7c50"
+  },
+  "products/013_B0B4NH54J8/附图/04.jpg": {
+    "category": "场景图",
+    "confidence": "中",
+    "reason": "画面边缘以环境背景为主",
+    "ocr_text": "Easy to set up.You can set it up in minuteswith the manualand then enjoy thenatural feeling indoors.",
+    "edge_white_ratio": 0.121,
+    "method": "local_ocr_and_image_background",
+    "sha256": "242923cb63a8ce99db2e64d7341e16ae6e6e086c8265539fffccb992392a68eb"
+  },
+  "products/013_B0B4NH54J8/附图/05.jpg": {
+    "category": "尺寸图",
+    "confidence": "较高",
+    "reason": "OCR 检出尺寸或单位",
+    "ocr_text": "9.84inch 5.51inch 6.5inch-",
+    "edge_white_ratio": 0.91,
+    "method": "local_ocr_and_image_background",
+    "sha256": "2a5c1038d2c8dbc92208fc6176431a90c4d2617a1060cb9e7d8aa49fc1690b3e"
+  },
+  "products/013_B0B4NH54J8/附图/06.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.82,
+    "method": "local_ocr_and_image_background",
+    "sha256": "4d1a2716e3d5a28973653201b6cc50126cc08133286cbe3de0b816808c225416"
+  },
+  "products/013_B0B4NH54J8/附图/07.jpg": {
+    "category": "待复核",
+    "confidence": "低",
+    "reason": "画面用途不明确",
+    "ocr_text": "",
+    "edge_white_ratio": 0.686,
+    "method": "local_ocr_and_image_background",
+    "sha256": "cd54cc22ca27cefb209f6b4bc9122981c08b6fbf04aa73dd1479b8aa0627fb58"
+  },
+  "products/013_B0B4NH54J8/附图/08.jpg": {
+    "category": "产品展示图",
+    "confidence": "中",
+    "reason": "白底或浅底产品展示",
+    "ocr_text": "",
+    "edge_white_ratio": 0.833,
+    "method": "local_ocr_and_image_background",
+    "sha256": "df75a7a881211b0f673bc375b2f5996e607c0b46df91a91c5f51ed0f488d6ab2"
+  }
+}
