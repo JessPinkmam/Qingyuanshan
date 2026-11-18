@@ -1,0 +1,256 @@
+# ============================================================
+# 太阳能户外造型灯 Figurine Lights · 亚马逊 A+ 内容结构
+# 来源: 2026-11-18 亚马逊美国站 Top 100 A+ 普查
+#   100 款, 97 款有 A+, 共 691 张图
+#   横幅 97 张全量逐张实看分类, 第 1 名 7 张 A+ 全套拆解
+# 配套报告: 跨境电商/Light/营销与推广/figurine-lights-marketing-aplus-20261118.html
+# 版本: v2 · 2026-11-18
+# ============================================================
+
+meta:
+  category_zh: 太阳能户外造型灯
+  category_en: Solar Garden Statue Lights
+  marketplace: Amazon.com
+  research_date: 2026-11-18
+  version: "2.0"
+  price_band_usd: "14-28"
+  battery: NiMH
+  waterproof_target: IP65
+  headline_formula: 1 个主角动物 + 1 个第二功能 + 1 个发光点
+
+# ---------- 普查数据: 横幅 97 张全量 ----------
+census_hero_banners:
+  total: 97
+  no_aplus_ranks: [51, 60, 63]
+  scene:
+    night_garden: 45
+    christmas_winter: 24
+    day_garden: 12
+    other: 9
+    indoor: 3
+    multi_scene_collage: 3
+    white_background: 1
+  has_icon_strip: 41
+  has_gifting_element: 36
+  has_brand_name: 37
+  most_common_icon_words:
+    - Solar Powered
+    - Gift / Unique Gifts
+    - IP65 Waterproof
+    - Hand-Painted / Handmade
+    - Auto On/Off
+    - Easy Installation
+  seasonal_note: 圣诞 24 张是 11 月 18 日快照的季节偏差, 21-40 名里圣诞占 8 张,
+    放到 3-6 月花园季再普查圣诞会大跌, 所以横幅要做两套——日常夜景 + 圣诞
+  head_vs_tail:
+    top_20_icon_strip: 10
+    bottom_20_icon_strip: 8
+    top_20_gifting: 9
+    bottom_20_gifting: 7
+    top_20_brand: 9
+    bottom_20_brand: 8
+    reading: 横幅上头部和尾部拉不开差距, 真正的差距在横幅后面的 A+ 张数和低级错误
+
+# ---------- 全局规格 ----------
+global:
+  total_images_recommended: 7
+  total_images_range: 4-15
+  total_images_mode: 5-8
+  banner_size: 1464x600
+  banner_share: 433/691 张是 1464x600 横幅
+  module_order_logic: 喜欢(横幅) -> 相信做工(工艺) -> 会用(太阳能) -> 别人也买(晒单) -> 没疑虑了(Q&A)
+  photo_rule: 全部真实拍摄, 白天也要好看, 黄昏拍夜景不要等全黑
+
+# ---------- A+ 模块: 按顺序做 7 个 ----------
+modules:
+
+  - id: hero_banner
+    order: 1
+    required: true
+    name_zh: 品牌横幅
+    name_en: Brand Banner
+    purpose: 买家滑到 A+ 区第一眼, 知道什么牌子、什么东西、什么心情
+    image:
+      size: 1464x600
+      scene: 夜晚花园
+      must_show:
+        - 真实产品实拍
+        - 送礼画面 (递礼盒、礼盒堆、Gift 字样三选一)
+        - 品牌名或 logo
+      must_not:
+        - 白底产品图 (那是主图的活, 横幅里只有 1/97 这么做)
+        - 全图无文字 (第 91、93 名就是反面例子)
+        - 产品被裁出画面 (第 34 名)
+        - 只有 logo 没有产品 (第 87 名)
+        - 卡通插画代替实物 (第 70 名)
+    headline:
+      pattern: 品牌名 + 产品名 + 一句暖话
+      examples:
+        - "NACOME Turtle Garden Statue"
+        - "The Gift of Sunshine"
+        - "A Little Light. A Loyal Friend."
+    icon_strip:
+      count: 5
+      items:
+        - Solar Powered
+        - IP65 Waterproof
+        - NiMH Battery
+        - Hand-Painted
+        - Perfect Gift
+      rules:
+        - 图标必须有文字, 无文字等于没写 (第 5、27、66 名)
+        - 重要文字不要贴边, 上传裁切会裁掉 (第 17、19、86 名)
+    example: 第 1 名 Nacome 乌龟, 白天花园 + 女孩递礼盒给妈妈
+
+  - id: solar_function
+    order: 2
+    required: true
+    name_zh: 太阳能功能
+    name_en: Solar Function
+    purpose: "回答怎么用: 白天怎么充、晚上亮多久、开关在哪"
+    image:
+      must_show:
+        - 太阳能板背面特写
+        - ON / OFF 开关特写
+        - 白天充电 / 夜里亮灯左右对比
+    copy:
+      charge: 晒 6-8 小时直射阳光
+      glow: 自动亮 8-10 小时暖光
+      switch: 首次使用拨到 ON, 不用再管
+    must_not:
+      - 不要写 12-14 小时这种极端值 (第 65 名写 8-12 小时就是反面例子)
+      - 不要把 IP44 当卖点写 (头部普遍 IP65, 第 20、79 名)
+    example: 第 1 名第 3 张, 充电时长 + 亮灯时长 + 太阳能板 + 开关四要素一张讲完
+
+  - id: placement_grid
+    order: 3
+    required: true
+    name_zh: 摆放场景四格
+    name_en: Placement Scenes
+    purpose: 帮买家脑补自己家, 四个场景等于四次这适合我的确认
+    image:
+      count: 4
+      scenes:
+        - 花坛
+        - 门廊台阶
+        - 阳台桌
+        - 窗台
+      mix: 白天两张 + 黄昏两张, 不要全夜景也不要全白天
+    example: 第 5 名雪人四格, 第 50 名蘑菇屋四格白天夜晚混搭
+
+  - id: craft_story
+    order: 4
+    required: true
+    name_zh: 工艺与品牌故事
+    name_en: Craft Story
+    purpose: 给手工上色一个证据, 让买家觉得东西是用心做的
+    image:
+      count: 3
+      frames:
+        - 工厂手绘工位实拍
+        - 上色特写
+        - 成品和孩子 / 宠物合影
+    must_not:
+      - 不要用 AI 生成的设计手稿图 (第 1 名这张 AI 感很重, 细看会穿帮)
+    example: 第 1 名第 2 张四格, 设计灵感 -> 打样 -> 手工上色 -> 成为陪伴
+
+  - id: multi_angle
+    order: 5
+    required: true
+    name_zh: 多角度外观
+    name_en: Multi-Angle Views
+    purpose: 背面长什么样先给买家看, 减少和照片不一样的退货
+    image:
+      count: 4
+      views:
+        - 正面
+        - 侧面
+        - 背面 (太阳能板要露出来)
+        - 细节 (灯珠 / 上色)
+      background: 白底
+    example: 第 2 名第 2 张四视图, 背面太阳能板直接露出来
+
+  - id: buyer_reviews
+    order: 6
+    required: false
+    name_zh: 买家晒单与口碑
+    name_en: Buyer Reviews
+    purpose: 口碑 + 交叉卖货一次做完
+    condition: 只有真实评价才能上, 没有就空着, 不要硬凑
+    image:
+      forms:
+        - 真实评价截图 (隐去买家全名只留名)
+        - 真实买家照片墙 (只写场景不写编造的评语)
+    must_not:
+      - 编造人名、点赞数、评语 (假评价素材, 亚马逊处罚很重)
+    example: 第 1 名第 4 张四张社交卡片 + 顺带露出同品牌猫咪和鸟浴盆
+
+  - id: qa
+    order: 7
+    required: true
+    name_zh: Q&A 答疑
+    name_en: Q&A
+    purpose: 把差评的问题提前答掉, 问的全是下单前会犹豫的事
+    questions:
+      - q: 什么材质, 能不能全年放户外
+        a_must_include: 高密度树脂、IP65、抗 UV 涂层
+      - q: 开关怎么用, 电池是什么
+        a_must_include: 首次拨 ON、AAA NiMH 电池 (不是锂电)
+      - q: 放哪儿充电最好
+        a_must_include: 6-8 小时直射阳光
+      - q: 灯有多亮
+        a_must_include: 7 颗暖白 LED, 氛围光不是照明灯, 带具体数字不要写非常亮
+      - q: 尺寸多大
+        a_must_include: 英寸 + 厘米双标, 9-12 英寸是庭院款安全区
+      - q: 送人合不合适
+        a_must_include: 100% 纸浆礼盒, 送妈妈、奶奶、妻子都合适
+    example: 第 1 名最后三张, 一张两问, 最后一句落到送礼上收尾
+
+# ---------- 附录: 主图 7 张顺序 (A+ 的搭档, 供参考) ----------
+main_images_appendix:
+  order:
+    - 白天主图 (脸清楚, 自然光, 上色均匀)
+    - 黄昏夜景亮灯 (天刚暗、花坛里灯刚亮的时刻)
+    - 尺寸参照 (手 / 花盆 / 门廊台阶 + 英寸厘米双标)
+    - 太阳能板与开关
+    - 庭院场景
+    - 送礼与礼盒开箱
+    - 雨天防水或安装步骤
+  rule: 7 张里至少 2 张夜景, 至少 1 张有人或宠物
+
+# ---------- 红线 ----------
+red_lines:
+  - 晒单卡片只能用真实评价, 编造人名点赞评语是假评价素材
+  - 亮灯时长不夸大, 8-10 小时是上限, 先写清需要 6-8 小时直射阳光
+  - 件数三处一致: 主图、标题、A+ (第 69 名 8 件装对 16 件装)
+  - NiMH 电池不要写成锂电
+  - 视频凡是创作者署名的, 先确认归属再用
+  - 图标文字不要贴边, 上传前在手机上看一遍裁切
+
+# ---------- 自查: 16 项, 勾完算分 ----------
+self_check:
+  total: 16
+  score_bands:
+    below_12: 先补主图和横幅
+    12_to_14: 补 Q&A 和晒单
+    15_and_above: 只剩细节
+  items:
+    main_images:
+      - 白天主图: 自然光, 脸清楚, 上色均匀
+      - 黄昏夜景: 天刚暗、花坛里灯刚亮的时刻拍
+      - 尺寸参照: 手 / 花盆 / 门廊台阶 + 英寸厘米双标
+      - 太阳能板特写 + 开关位置
+      - 庭院场景: 真实摆放点
+      - 送礼与礼盒开箱
+      - 雨天防水或安装步骤
+    aplus:
+      - 品牌横幅: 夜景 + 图标条 + 送礼画面 + 品牌名四样齐全
+      - 太阳能功能图: 晒 6-8 小时、亮 8-10 小时、开关拨 ON
+      - 摆放场景四格: 四个真实摆放点, 白天黄昏混搭
+      - 工艺故事: 真实拍摄三格, 不用 AI 生成的设计图
+      - 多角度外观四视图
+      - 夜间生活场景: 黄昏拍, 画面里有孩子、妈妈或宠物
+      - 买家晒单: 只用真实评价, 没有就空着
+      - Q&A 六问: 每问带可验证的数
+    basics:
+      - 件数一致: 主图、标题、A+ 三处件数相同

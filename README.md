@@ -118,7 +118,7 @@
 
 | 报告 | 内容 | 标签 | 文件 |
 | --- | --- | --- | --- |
-| [造型灯怎么做营销 · 从 Top 100 的 A+ 与主图分类看打法 · 2026-11-18](跨境电商/Light/营销与推广/figurine-lights-marketing-aplus-20261118.html) | Top 100 的 A+ 分 8 类、主图与附图分 8 类；营销分 6 个方面。 | `户外造型灯` `营销` `A+` `主图` | [源码](跨境电商/Light/营销与推广/figurine-lights-marketing-aplus-20261118.html) |
+| [造型灯怎么做营销 · 从 Top 100 的 A+ 与主图分类看打法 · 2026-11-18](跨境电商/Light/营销与推广/figurine-lights-marketing-aplus-20261118.html) | Top 100 的 A+ 分 8 类、主图与附图分 8 类；营销分 6 个方面；97 张横幅全量普查。配套 A+ 结构 YAML：[figurine-lights-aplus-structure.yaml](跨境电商/Light/营销与推广/figurine-lights-aplus-structure.yaml)。 | `户外造型灯` `营销` `A+` `主图` | [源码](跨境电商/Light/营销与推广/figurine-lights-marketing-aplus-20261118.html) |
 
 ### 耳环（3 篇）
 
