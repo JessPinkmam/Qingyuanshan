@@ -17,7 +17,7 @@ a{color:#246c53}[hidden]{display:none}
 <body>
 <header><div class="wrap"><a href="../../../index.html">返回调研首页</a><h1>户外造型灯 Top 100 · A+ 图片索引</h1><p id="stats">正在载入索引</p></div></header>
 <main>
-<p>排名沿用 <a href="figurine-lights-media-top100-20261118.html">2026-11-18 榜单快照</a>。展开商品即可按采集顺序浏览商品描述区的 A+ 图片。图片由 Amazon 原站提供，链接可能随商品页面更新。</p>
+<p>排名沿用 <a href="figurine-lights-media-top100-20261118.html">2026-11-18 榜单快照</a>。展开商品即可按采集顺序浏览商品描述区的 A+ 图片。图片已归档在本站，可点击查看或保存原始文件。</p>
 <p>第 69 名的商品页显示 8 件装，A+ 模块写的是 16 件装。第 51、60、63 名复核后未看到商品 A+ 图片。</p>
 <div class="controls"><label for="q">搜索排名、ASIN 或商品名称</label><br><input id="q" type="search" placeholder="例如 67 或 B0F93QNWPL"></div>
 <section id="items" aria-live="polite"></section>
@@ -39,8 +39,9 @@ function card(row){
   panel.append(source);
   const stack=element('div');stack.className='stack';
   row.urls.forEach((url,i)=>{
-   const link=element('a');link.href=url;link.target='_blank';link.rel='noopener';
-   const img=element('img');img.src=url;img.loading='lazy';img.referrerPolicy='no-referrer';
+   const file=row.files?.[i] ? '../../../data/figurine-lights-20261118/aplus/'+row.files[i] : url;
+   const link=element('a');link.href=file;link.target='_blank';link.rel='noopener';
+   const img=element('img');img.src=file;img.loading='lazy';img.referrerPolicy='no-referrer';
    img.alt='第 '+row.rank+' 名 A+ 图片 '+(i+1);
    link.append(img);stack.append(link);
   });
