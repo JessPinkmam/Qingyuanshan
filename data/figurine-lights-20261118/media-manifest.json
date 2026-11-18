@@ -1,0 +1,1025 @@
+{
+  "description": "The downloader requires main/secondary/aplus/video role. Here main is a transport slot ONLY; every asset is an observed listing thumbnail, not a verified detail-page main image.",
+  "products": [
+    {
+      "id": "B091ZFL4X5",
+      "rank": 1,
+      "title": "Nacome Solar Turtle Garden Statue - Succulent & 7 LED Lights, Outdoor Decor | Warm glow for patio, porch, lawn and backyard; charming tortoise yard ornament and cute gift for Mom, Grandma or women.",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B091ZFL4X5",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71Mq0xq6M4L._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0B6B8TDRW",
+      "rank": 2,
+      "title": "FOXMIS Miniature Frog Garden Statue Gifts Fall Christmas Decorations Fairy Garden Accessories Outdoor Lights Solar Garden Frog Decor Art Housewarming Gift for Patio,Yard,Lawn Ornament,3.89\"x2.36\"x3.93",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0B6B8TDRW",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71ZLNdfUbwL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0FY4R1VL6",
+      "rank": 3,
+      "title": "Lavezee Porch Goose Statue Lawn Goose Outdoor, 13.3\" Metal Garden Goose with Solar Light for Lawn Yard Backyard, Front Porch Goose for Garden Decoration",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0FY4R1VL6",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71F3Vk+1OXL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0GGBMDT6K",
+      "rank": 4,
+      "title": "Solar Garden Gnomes Outdoor Statue, Christmas Gnomes Gifts for Women | Hand-Painted Resin, IP65 Waterproof Garden Decor for Patio Lawn Yard Christmas Decorations, Unique Gnomes Gifts for Mom",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0GGBMDT6K",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81XtbozZBUL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0H6NZJCBB",
+      "rank": 5,
+      "title": "Brightown Solar Snowman Garden Statues for Indoor & Outdoor Christmas Decor | IP65 Waterproof Resin Snowman Figurine with Red‑Green‑White Scarf for Yard Lawn Porch Balcony Decor, Birthday Gifts for Mom",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0H6NZJCBB",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/712PRb799PL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0HGXWX27Q",
+      "rank": 6,
+      "title": "Santa Claus Christmas Decorations Outdoor Solar Lights Garden Yard Decor | Solar Christmas Lights Outdoor Waterproof, Flashing Running Santa Xmas Decor for Lawn Pathway Patio Gifts for Christmas Women",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0HGXWX27Q",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81L1dG3kglL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0H9KFKC65",
+      "rank": 7,
+      "title": "Solar Garden Lights Christmas Decorations 2 Packs Solar Flamingo Light Outdoor Waterproof,Birthday Xmas Gifts for Women Mom,Pink Flamingo Garden Statue Decorative Lights for Yard Art Patio Porch Lawn",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0H9KFKC65",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81UIN0Gt8ZL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0HF4JZQK9",
+      "rank": 8,
+      "title": "Christmas Solar Flamingo Lights Outdoor, 2 Pack 23.6\" Pink Flamingo Lights | Decorated with Wreath & Santa Hat, Waterproof Xmas Lawn Decor for Garden Yard Pathway Party, Christmas Gift for Women Mom",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0HF4JZQK9",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71sV+HgBDyL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0CYQC2V77",
+      "rank": 9,
+      "title": "Viewpick Solar Garden Decor Lights 8 Crack Mushrooms Outdoor Decor Stake Lights, Waterproof Solar Pathway Light Gardening Gifts for Garden Gnomes Backyard Flower Bed Christmas Decorations",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0CYQC2V77",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81e9lhhDZZL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0FNQQBSFR",
+      "rank": 10,
+      "title": "QZJDDZSW Solar Garden Snail Statue,Lawn Decor Statue for Patio, Balcony, Yard Ornament - Mothers Day Gifts for Mom Grandma Women",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0FNQQBSFR",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81QtkuoXS0L._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0D6VB7NX1",
+      "rank": 11,
+      "title": "Json Garden Statue Solar Cat Figurine with Lantern, Solar Garden Decorations Statues for Patio, Balcony, Yard Ornament, Unique House Warming Gifts Figurine Lights, Gifts for Women, Mom",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0D6VB7NX1",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81e6Dk0ketL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0H4FSMLBQ",
+      "rank": 12,
+      "title": "Hanging Swing Garden Gnomes Outdoor Decor, Solar Statues Gifts for Women | 13.6 in, 30 LEDs, Leaf rope, Swinging seat, Fairy tree ornaments, Yard decorations, Wall art, Whimsical accessories",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0H4FSMLBQ",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71H0kOOyYNL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0GHVXWTL2",
+      "rank": 13,
+      "title": "Snclriao Solar Turtle Garden Decor Outdoor Statue, 7 Succulent LED Lights | Tortoise Yard Decoration, Outside Patio Balcony Lawn Porch Decor, Housewarming Christmas Birthday Gifts for Women Mom Grandma",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0GHVXWTL2",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71wPf7oyK9L._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0D66DF4Q6",
+      "rank": 14,
+      "title": "SRNPMIU Solar Watering Can Light - Solar Light Yard Decorations Outdoor | Garden Decor Lights for Yard, IP65 Waterproof Hanging Lantern Lights, Outside Garden Flower Bed Decor Light for Moms Birthday",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0D66DF4Q6",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81iMDE+QezL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0GD8QFYW4",
+      "rank": 15,
+      "title": "Solar Lights Outdoor Decor, Christmas Gardening Hummingbird Gifts for Women | Moon Stake Light, Birthday Gifts for Women Mom Grandma Wife Mother in Law Nana, Metal Decorative Solar Lights Outdoor Decor",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0GD8QFYW4",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81EjvM2e2CL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0HB4TJ8KG",
+      "rank": 16,
+      "title": "Solar Christmas Lights Outdoor Decorations, Santa Claus Watering Can Garden Stake with 90 LED Multicolor Cascading Lights, Xmas Solar Garden Decor for Yard Lawn Pathway Patio, Gifts for Women Mom",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0HB4TJ8KG",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71GBJOZ5whL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0CS32FD22",
+      "rank": 17,
+      "title": "GIGALUMI Solar Garden Statues Bears 9\" Black, Yard Decorations Outdoor | Loving Black Bear Decor, Bear Figurine Lights for Outside, Garden Decor Unique Birthday Housewarming Gifts for Women, Mom",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0CS32FD22",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/91T0Fsl6QiL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0DG292DJ7",
+      "rank": 18,
+      "title": "Acgarten Solar Funny Garden Gnome Statue Decor - Birthday Gifts for Mom | Hand-Painted Christmas Gift for Women Grandma Wife,IP65 Waterproof Resin Figurine Lights for Home Outdoor Decoration",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0DG292DJ7",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81ocjtrtJJL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B08RS1N68N",
+      "rank": 19,
+      "title": "GIGALUMI 2 Pack Angel Solar Lights Outdoor Garden Decor Yard Art | Angel Eternal Lights with 7 LEDs, Sympathy Memorial Gifts for Cemetery Grave Decorations",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B08RS1N68N",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81n-e315ZRL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0CXXG5PQ4",
+      "rank": 20,
+      "title": "Solar Garden Gnome Statue with Lights, Outdoor Decor Gift for Women and Mom | Funny solar gnome decoration for garden, yard, lawn, porch and patio, adding a charming touch to outdoor spaces",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0CXXG5PQ4",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/718rRG7oDpL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0HCZKTPCJ",
+      "rank": 21,
+      "title": "Outdoor Christmas Decorations Yard, 33\" Height Outside Christmas Snowmen Decorations for Yard, LED Solar Metal Garden Stake Lights with Joy for Patio Lawn Christmas Decor",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0HCZKTPCJ",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81v7VACCoGL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B07HNFQY7K",
+      "rank": 22,
+      "title": "Xodus Battery Operated Glowing Finial Ornament, Dusk Sensor, Red, 3 Pack | Outdoor Christmas decorations, battery powered, hanging LED twinkle ornament light, dusk sensor, 8-hour timer, 8-inch",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B07HNFQY7K",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/61wlzrtsAlL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0H1LYFV8N",
+      "rank": 23,
+      "title": "Lyeasw Solar Angel Statue with Lantern, Garden Gifts for Mom | Waterproof Polystone Figurine, Memorial Garden Decor, Patio Yard Porch, Gift for Mom Grandma",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0H1LYFV8N",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81RIUdVm5oL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0BPSHM94N",
+      "rank": 24,
+      "title": "Pohabery Gnome Garden Decor Statue Solar Gnomes Decorations for Yard with Lantern Light Outdoor Decorations for Patio Mom Gift",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0BPSHM94N",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71N-eo9lODL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0CR47W1Q8",
+      "rank": 25,
+      "title": "TERESA&#x27;S COLLECTIONS Fairy Garden House Decor Mushroom Statue Resin 6.6\" | Solar-powered Glowing Mushroom Garden Ornament | Outdoor/Indoor Resin Decor for Garden, Yard, Home | Great Gift for Christmas",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0CR47W1Q8",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81xF2-beaZL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0HF41D7S2",
+      "rank": 26,
+      "title": "ostritec Solar Christmas Lights Outdoor Decor, Santa Claus Garden Stake with Twinkling LED Christmas Tree and Gift Box, Gifts for Women Mom Grandma, Winter Holiday Yard Decorations for Lawn Pathway",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0HF41D7S2",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/717dJHi+XtL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0FKMPJGCV",
+      "rank": 27,
+      "title": "Solar Cat Hanging Lantern Outdoor, 2 Pack Black Cat Solar Lights, Cat Lover Gifts for Women Mom Grandma Birthday Mother&#x27;s Day, Waterproof Garden Ornaments Decor Outside Backyard Patio Pathway",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0FKMPJGCV",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/714OltSB-oL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0HGDLMTZW",
+      "rank": 28,
+      "title": "2 Pack Solar Flamingo Christmas Outdoor Decorations Xmas Gifts for Women | Christmas Solar Garden Lights Waterproof, Pink Flamingo Garden Statue, Gifts for Women Mom Christmas, Yard Lawn Patio Decor",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0HGDLMTZW",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71DzWxC-MhL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0CWN2PGF8",
+      "rank": 29,
+      "title": "MININOVA Garden Statues Rabbit with Solar Lantern Outdoor Bunny Decoration | Outdoor Figurine Light Decoration for Patio, Yard, Lawn Ornaments Gifts for Christmas Mother&#x27;s Day Birthday Housewarming",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0CWN2PGF8",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81oway7j63L._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0H82LLW85",
+      "rank": 30,
+      "title": "SOLPEX Solar Lights Outdoor, 4 Pack Christmas Firework Lights(Multi-color) | 120LED Solar Garden Lights, Waterproof Solar Christmas Lights for Yard, Pathway, Lawn & Patio Decor, Gifts for Mom",
+      "source_page": "https://www.amazon.com/gp/bestsellers/hi/5486449011/",
+      "product_url": "https://www.amazon.com/dp/B0H82LLW85",
+      "captured_at": "2026-11-18T09:34:40+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/91AD2+xdraL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0CC3SB9WP",
+      "rank": 51,
+      "title": "Xodus Battery Operated C9 Bulb Ornament Light, Dusk Sensor, Red, 3 Pack | Outdoor Christmas decorations, battery-powered, hanging LED twinkle glow light, 8-hour timer, 8-inch",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0CC3SB9WP",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71V4jeWhycL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0FHWL6RB5",
+      "rank": 52,
+      "title": "Lyeasw Dog Statue with Solar Lantern, 8.4in Garden Decor, Gift for Women | 8.4-Inch Polystone Dog, Auto-On Solar Lantern Porch & Yard Accent, Christmas Gift for Mom, Grandma & Dog Lovers",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0FHWL6RB5",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81sCv+bMgVL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0H4Z2F6TL",
+      "rank": 53,
+      "title": "4 Pack Solar Firework Lights 150 LED Starburst Fairy Lights Garden Decor | Solar Firework Lights with 8 Modes, IP65 Waterproof Solar Starburst Fairy Lights for Yard, Patio, Pathway, Lawn Decor",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0H4Z2F6TL",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81Dj7i-53gL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0G25G5YY4",
+      "rank": 54,
+      "title": "Yewanye Cat Garden Statue Decorations Outdoor,Solar Resin Figurine with Hanging Lantern Outdoor Decor(cat2)",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0G25G5YY4",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/61VVPVb-yNL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0HF4C9XYV",
+      "rank": 55,
+      "title": "Solar Lights Outdoor Christmas Decorations, 2 Pack Christmas Tree Garden Stake Lights, Waterproof Solar Garden Decor for Yard Lawn Pathway Patio, Xmas Holiday Outdoor Decor, Gifts for Women Mom",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0HF4C9XYV",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81hNHXunCWL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0H87NZNBB",
+      "rank": 56,
+      "title": "Plug in & Solar Christmas Lights Outdoor 98Ft 800LED Icicle Lights Indoor | Multicolor & Warm White Color Changing Connectable 8 Modes Remote Dimmable Timer Memory for Xmas House Roof Eaves Holiday",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0H87NZNBB",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81L8U7PFYDL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0GXG19ZRT",
+      "rank": 57,
+      "title": "Solar Garden Statues Bunny Decor, 12.7\" Upgraded Outdoor Rabbit Figurine with Welcome Planter & 3-Panel LED Lantern, Waterproof Resin Animal Yard Art Sculpture, Gardening Gifts for Women Mom Patio",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0GXG19ZRT",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81re+h4wdlL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0CG1FRQND",
+      "rank": 58,
+      "title": "Linkax Turtle Statues Solar Garden Decor, Christmas Gift for Grandma Mom | Birthday Gifts for Women, Mom Grandma Grandparents Gifts, Yard Decoration Outdoor Lawn Balcony Patio Decor with Succulent",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0CG1FRQND",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71Ai3a8WsVL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0HPBWQ3WB",
+      "rank": 59,
+      "title": "Solar Dragon Flame Garden Light, Fire Breathing Dragon Solar Lights Outdoor, Waterproof LED Dragon Stake Yard Decor for Patio Lawn Pathway",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0HPBWQ3WB",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81TvQLTVwoL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0H8757FV9",
+      "rank": 60,
+      "title": "Solar Watering Can Light,Christmas Santa Solar Kettle Lights, Solar Outdoor Decorative,Garden Decor Lights for Yard, IP65 Waterproof Novelty Santas Solars Christmas Decorations Night Lights",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0H8757FV9",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81Ot429F73L._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0FKGXP4K1",
+      "rank": 61,
+      "title": "Yewanye Solar Turtle Garden Statue, Resin Figurine with Hanging Solar Lantern Outdoor Statues for Patio (Turtle 1)",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0FKGXP4K1",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/810qDWLaHmL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0FKBD78B9",
+      "rank": 62,
+      "title": "Solar Turtle Garden Decor Statue 8 LED , Outdoor Ornament for Yard Lawn | Tortoise Figurine, Solar Powered Auto Lighting, Christmas Birthday Gifts for Women, Mom and Garden Outside Lovers",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0FKBD78B9",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71Ko2cuf4JL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0F2H3RXDD",
+      "rank": 63,
+      "title": "Mini Solar Lantern Lights Replacement for Outdoor Statue, Small Hanging Lantern Replacement, Waterproof Garden Decor Outdoor Lighting Decorative Lights for Yard Patio Lighting, Warm White, 1 Pack",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0F2H3RXDD",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/61pHoRnBIoL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0D14NL7B9",
+      "rank": 64,
+      "title": "GIGALUMI Solar Garden Lights 6 Pack, Solar Lights Outdoor Decorative | Outdoor Solar Lights for Yard Decorations Waterproof, Multi-Colored Changing Garden Globe Cracked Glass Ball with LED Lights",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0D14NL7B9",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81u4mj-c2RL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0FDGHF1HL",
+      "rank": 65,
+      "title": "11.1 Inch Large Solar Garden Decor Turtle Statues Lights with Succulent | Yard Decorations Outdoor Ornament Lamps for Yard, Lawn, Patio, Porch, Balcony, Unique Birthday Gifts for Mom Women Grandma",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0FDGHF1HL",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71Ht86hBSvL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0F9Y32KDH",
+      "rank": 66,
+      "title": "Solar Watering Can Lights, Cat Hanging Lantern Solar Lights Outdoor, Cat Lover Gifts for Mom Women Birthday Mother&#x27;s Day Christmas, Waterproof Garden Decor Outside Patio Yard Pathway Backyard",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0F9Y32KDH",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81iy5MbuR1L._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0F93QNWPL",
+      "rank": 67,
+      "title": "Solar Garden Lights Outdoor Decoration Flower Solar Watering Can Light | Waterproof Solar Lights Outdoor, Patio Yard Lawn Pathway Decor, Gardening Gifts for Women Mom Grandma",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0F93QNWPL",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71h+3O5aYgL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0H1QPD4H5",
+      "rank": 68,
+      "title": "Capoda 8\" Christmas Gnome with LED Light, Xmas Resin Holiday Figurine Decor | Xmas Winter Gnome Statue Table Centerpiece, Snowflake Tree Holly Berries Design, Home Mantel Tabletop Indoor Outdoor Decor",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0H1QPD4H5",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81Enrgar+5L._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B08KP138YW",
+      "rank": 69,
+      "title": "Kurifier Solar Lights Outdoor 8Pack Solar Torch Light with Flickering Flame | Waterproof Solar Garden Light, Outdoor Solar Lights for Yard, Flame Torches for Halloween Decorations Outdoor Garden Pathway",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B08KP138YW",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71yYLTAASbL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0DYJYZZP6",
+      "rank": 70,
+      "title": "GoGnome Solar Cat Garden Statue with Butterfly Light – 5-Inch Outdoor Resin Figurine for Yard, Patio, Balcony – Gifts for Women, Garden Decor Accent (Cat)",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0DYJYZZP6",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81C0BMmOdTL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0HB43P6M7",
+      "rank": 71,
+      "title": "Cnuoky 10 Pack Solar Garden Lights 80 LED, Solar Lights Outdoor Waterproof IP65, Decorative Garden Lights Solar Powered for Yard Patio Pathway Decor, Outside Fairy Firefly Lights Garden Gifts",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0HB43P6M7",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81obxkd85mL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0CGLNR62S",
+      "rank": 72,
+      "title": "Joint Honglin Solar Garden Resin Gnome Riding Highland Cow Outdoor Stautes | Telescope Gnome Decorations Yard Ornament for Patio Lawn Balcony, Unique Housewarming Birthday Gifts",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0CGLNR62S",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81JnF9WYmuL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0DY6ZD6TW",
+      "rank": 73,
+      "title": "Angel Garden Statues Outdoor Cemetery Decorations for Grave | Resin Praying Angel Figurines Cross Solar Light Waterproof Angel Decor for Grave-Sympathy Gifts for Loss of Loved One",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0DY6ZD6TW",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/813rCVRpS9L._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0H6W2YZ39",
+      "rank": 74,
+      "title": "Solar Christmas Lights Outdoor,Santa Claus Garden Stake with Gift Box,Twinkling LED Lighted Solar Christmas Tree for Lawn Patio Pathway Holiday Xmas Decor,Gifts for Women",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0H6W2YZ39",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/71TVzo6VXjL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0BQB4H952",
+      "rank": 75,
+      "title": "GIGALUMI Solar Garden Statues Turtle Figurine Lights for Outside Waterproof | Tortoise Statue for Garden Decor Lawn, Patio, Balcony Yard Decorations Outdoor, Birthday Housewarming Gifts for Mom, Women",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0BQB4H952",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81ZK21DSkPL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0H6ZC2BM5",
+      "rank": 76,
+      "title": "QZJDDZSW Christmas Decorations Solar Garden Outdoor Statues Goose | Cute Goose Figurines,Goose Decor Outside Decor for Yards Porches Gardens Lawn Party,Unique Gifts",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0H6ZC2BM5",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81UXPTsVblL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0GD7BTPXB",
+      "rank": 77,
+      "title": "GIGALUMI Solar Sunflower Decor, 2 Pack LED Sunflower Gifts for Women | 3 Lighting Mode, Auto On/Off/Flash, Garden Decor, Waterproof Solar Garden Lightsoutdoor Outdoor Fall Decor for Patio, Yard",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0GD7BTPXB",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81D3jrOZ3-L._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0CC1MY968",
+      "rank": 78,
+      "title": "Solar Elephant Garden Statue, Outdoor Decor, Elephant Gifts for Women | Lucky Elephant Unique Mom Birthday Gifts for Mom, Housewarming Gifts and Yard Decoration, Cute Birds Garden Sculpture Decor",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0CC1MY968",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81MRQy4sf0L._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0GCDZV867",
+      "rank": 79,
+      "title": "Solar Hanging Bee Light - Outdoor Metal Garden Decor with LED Glow, Yellow Body - Waterproof Solar Powered Insect Ornament for Yard, Tree, Porch, Patio - Gift for Women, Mom, Bee Lovers (1 Pack)",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0GCDZV867",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/51XbrALBm7L._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    },
+    {
+      "id": "B0D3YFDSF4",
+      "rank": 80,
+      "title": "Vuees Solar Garden Statues Outdoor Decor, 6 LED Cat Flowers Butterfly Figurine Lights, Waterproof for Balcony Patio Porch Lawn Yard Ornament Art - Gift Ideas for Housewarming Gardening Grandma Women",
+      "source_page": "https://www.amazon.com/Best-Sellers-Tools-Home-Improvement-Outdoor-Figurine-Lights/zgbs/hi/5486449011/ref=zg_bs_pg_2_hi?_encoding=UTF8&pg=2",
+      "product_url": "https://www.amazon.com/dp/B0D3YFDSF4",
+      "captured_at": "2026-11-18T09:34:52+08:00",
+      "assets": [
+        {
+          "role": "main",
+          "observed_role": "listing_thumbnail",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/81zSCOTGPrL._AC_UL300_SR300,200_.jpg",
+          "order": 1,
+          "confidence": "listing thumbnail only; product-detail main image not verified"
+        }
+      ]
+    }
+  ]
+}

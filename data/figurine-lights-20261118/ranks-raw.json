@@ -1,0 +1,820 @@
+{
+  "category": "Outdoor Figurine Lights",
+  "nodeId": "5486449011",
+  "description": "从两个榜单页面的 data-client-recs-list 提取排名与 ASIN；31–50 和 81–100 初始 HTML 仅提供排名与 ASIN，尚无已核实的商品详情。榜单会变化，两页抓取时间相差约 13 秒。",
+  "timezone": "Asia/Shanghai",
+  "pages": [
+    {
+      "page": 1,
+      "url": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00"
+    },
+    {
+      "page": 2,
+      "url": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00"
+    }
+  ],
+  "entries": [
+    {
+      "rank": 1,
+      "asin": "B091ZFL4X5",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 2,
+      "asin": "B0B6B8TDRW",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 3,
+      "asin": "B0FY4R1VL6",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 4,
+      "asin": "B0GGBMDT6K",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 5,
+      "asin": "B0H6NZJCBB",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 6,
+      "asin": "B0HGXWX27Q",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 7,
+      "asin": "B0H9KFKC65",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 8,
+      "asin": "B0HF4JZQK9",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 9,
+      "asin": "B0CYQC2V77",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 10,
+      "asin": "B0FNQQBSFR",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 11,
+      "asin": "B0D6VB7NX1",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 12,
+      "asin": "B0H4FSMLBQ",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 13,
+      "asin": "B0GHVXWTL2",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 14,
+      "asin": "B0D66DF4Q6",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 15,
+      "asin": "B0GD8QFYW4",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 16,
+      "asin": "B0HB4TJ8KG",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 17,
+      "asin": "B0CS32FD22",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 18,
+      "asin": "B0DG292DJ7",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 19,
+      "asin": "B08RS1N68N",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 20,
+      "asin": "B0CXXG5PQ4",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 21,
+      "asin": "B0HCZKTPCJ",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 22,
+      "asin": "B07HNFQY7K",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 23,
+      "asin": "B0H1LYFV8N",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 24,
+      "asin": "B0BPSHM94N",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 25,
+      "asin": "B0CR47W1Q8",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 26,
+      "asin": "B0HF41D7S2",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 27,
+      "asin": "B0FKMPJGCV",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 28,
+      "asin": "B0HGDLMTZW",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 29,
+      "asin": "B0CWN2PGF8",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 30,
+      "asin": "B0H82LLW85",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 31,
+      "asin": "B0H6WBJ9M7",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 32,
+      "asin": "B0D5WDS41T",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 33,
+      "asin": "B0C4Y1RZTR",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 34,
+      "asin": "B0GGGQ4B3W",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 35,
+      "asin": "B0HFJ4JRJ2",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 36,
+      "asin": "B0G3WNL2KJ",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 37,
+      "asin": "B08VS62KK7",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 38,
+      "asin": "B01MCUK9TN",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 39,
+      "asin": "B0FHHCNSN7",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 40,
+      "asin": "B0HC2V15BC",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 41,
+      "asin": "B07KXN94X4",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 42,
+      "asin": "B0HHRKLDK7",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 43,
+      "asin": "B0DBKMXG7Z",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 44,
+      "asin": "B0CSJXSQYK",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 45,
+      "asin": "B0DDT57GVH",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 46,
+      "asin": "B09PQL3JSB",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 47,
+      "asin": "B0HF4BXZ1D",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 48,
+      "asin": "B0BCFVC8X7",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 49,
+      "asin": "B097JLWW4T",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 50,
+      "asin": "B0DR8BDTQ2",
+      "sourcePage": 1,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=1",
+      "observedAt": "2026-11-18T09:34:32+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 51,
+      "asin": "B0CC3SB9WP",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 52,
+      "asin": "B0FHWL6RB5",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 53,
+      "asin": "B0H4Z2F6TL",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 54,
+      "asin": "B0G25G5YY4",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 55,
+      "asin": "B0HF4C9XYV",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 56,
+      "asin": "B0H87NZNBB",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 57,
+      "asin": "B0GXG19ZRT",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 58,
+      "asin": "B0CG1FRQND",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 59,
+      "asin": "B0HPBWQ3WB",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 60,
+      "asin": "B0H8757FV9",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 61,
+      "asin": "B0FKGXP4K1",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 62,
+      "asin": "B0FKBD78B9",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 63,
+      "asin": "B0F2H3RXDD",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 64,
+      "asin": "B0D14NL7B9",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 65,
+      "asin": "B0FDGHF1HL",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 66,
+      "asin": "B0F9Y32KDH",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 67,
+      "asin": "B0F93QNWPL",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 68,
+      "asin": "B0H1QPD4H5",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 69,
+      "asin": "B08KP138YW",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 70,
+      "asin": "B0DYJYZZP6",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 71,
+      "asin": "B0HB43P6M7",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 72,
+      "asin": "B0CGLNR62S",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 73,
+      "asin": "B0DY6ZD6TW",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 74,
+      "asin": "B0H6W2YZ39",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 75,
+      "asin": "B0BQB4H952",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 76,
+      "asin": "B0H6ZC2BM5",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 77,
+      "asin": "B0GD7BTPXB",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 78,
+      "asin": "B0CC1MY968",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 79,
+      "asin": "B0GCDZV867",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 80,
+      "asin": "B0D3YFDSF4",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": true
+    },
+    {
+      "rank": 81,
+      "asin": "B0CRV86M78",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 82,
+      "asin": "B0DSHZW79L",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 83,
+      "asin": "B0FJFWNX52",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 84,
+      "asin": "B0HGY9WVLR",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 85,
+      "asin": "B0FP2L5V78",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 86,
+      "asin": "B0CGM3CMD5",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 87,
+      "asin": "B0G3W78895",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 88,
+      "asin": "B0HF4L3WV6",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 89,
+      "asin": "B0F99C6ZXP",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 90,
+      "asin": "B0FTWXYCTR",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 91,
+      "asin": "B0DZNYB1MX",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 92,
+      "asin": "B0C2KK3V4S",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 93,
+      "asin": "B0FJ8PNSVZ",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 94,
+      "asin": "B0FT9MY1HJ",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 95,
+      "asin": "B0FCY6WGK8",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 96,
+      "asin": "B0GFVL6RZ5",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 97,
+      "asin": "B08TRFNNV8",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 98,
+      "asin": "B0FL7MXKJV",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 99,
+      "asin": "B0FJ64P42Q",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    },
+    {
+      "rank": 100,
+      "asin": "B0GJRSTXPQ",
+      "sourcePage": 2,
+      "sourceUrl": "https://www.amazon.com/gp/bestsellers/hi/5486449011?pg=2",
+      "observedAt": "2026-11-18T09:34:45+08:00",
+      "initialHtmlRendered": false
+    }
+  ]
+}
