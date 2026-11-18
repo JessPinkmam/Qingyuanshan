@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>户外造型灯 Top 100 · A+ 图片索引</title>
+<style>
+body{margin:0;background:#f5f7f4;color:#20362d;font:16px/1.6 system-ui,sans-serif}
+header{background:#153e31;color:#fff;padding:36px 20px}header a{color:#d2f5e3}h1{font-size:clamp(26px,5vw,44px);margin:8px 0}
+.wrap,main{max-width:1050px;margin:auto}main{padding:20px}.controls{margin:18px 0}
+input{width:min(100%,440px);padding:10px;box-sizing:border-box;border:1px solid #9eada2;border-radius:6px;font:inherit}
+details{margin:10px 0;background:white;border:1px solid #d6e0d6;border-radius:8px}summary{cursor:pointer;padding:12px 16px}
+article{padding:0 16px 16px}.stack{max-width:970px;margin:12px auto 0}.stack img{width:100%;height:auto;display:block}
+a{color:#246c53}[hidden]{display:none}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="../../../index.html">返回调研首页</a><h1>户外造型灯 Top 100 · A+ 图片索引</h1><p id="stats">正在载入索引</p></div></header>
+<main>
+<p>排名沿用 <a href="figurine-lights-media-top100-20261118.html">2026-11-18 榜单快照</a>。展开商品即可按采集顺序浏览商品描述区的 A+ 图片。图片由 Amazon 原站提供，链接可能随商品页面更新。</p>
+<p>第 69 名的商品页显示 8 件装，A+ 模块写的是 16 件装。第 51、60、63 名复核后未看到商品 A+ 图片。</p>
+<div class="controls"><label for="q">搜索排名、ASIN 或商品名称</label><br><input id="q" type="search" placeholder="例如 67 或 B0F93QNWPL"></div>
+<section id="items" aria-live="polite"></section>
+</main>
+<script>
+const q=document.querySelector('#q');
+const list=document.querySelector('#items');
+const stats=document.querySelector('#stats');
+function element(tag,value){const node=document.createElement(tag);if(value)node.textContent=value;return node}
+function card(row){
+ const d=element('details');
+ d.append(element('summary','#'+row.rank+' · '+row.asin+(row.title?' · '+row.title:'')+' · '+(row.urls.length?row.urls.length+' 张':'未见 A+ 图片')));
+ d.addEventListener('toggle',()=>{
+  if(!d.open||d.querySelector('article'))return;
+  const panel=element('article');
+  const source=element('a','打开商品原页');
+  source.href='https://www.amazon.com/dp/'+row.asin;
+  source.target='_blank';source.rel='noopener';
+  panel.append(source);
+  const stack=element('div');stack.className='stack';
+  row.urls.forEach((url,i)=>{
+   const link=element('a');link.href=url;link.target='_blank';link.rel='noopener';
+   const img=element('img');img.src=url;img.loading='lazy';img.referrerPolicy='no-referrer';
+   img.alt='第 '+row.rank+' 名 A+ 图片 '+(i+1);
+   link.append(img);stack.append(link);
+  });
+  panel.append(stack);d.append(panel);
+ });
+ return d;
+}
+q.addEventListener('input',()=>{
+ const key=q.value.trim().toLowerCase();
+ for(const d of list.children)d.hidden=!d.querySelector('summary').textContent.toLowerCase().includes(key);
+});
+fetch('../../../data/figurine-lights-20261118/aplus/source-index.json')
+ .then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()})
+ .then(data=>{
+  stats.textContent=data.rows.length+' 款已检查 · '+data.rows.filter(r=>r.urls.length).length+' 款有 A+ 图 · '+data.rows.reduce((n,r)=>n+r.urls.length,0)+' 张图片';
+  list.replaceChildren(...data.rows.map(card));
+ })
+ .catch(()=>{stats.textContent='图片索引载入失败';list.textContent='本地离线浏览请打开 A+ 档案目录中的 index.html。'});
+</script>
+</body>
+</html>

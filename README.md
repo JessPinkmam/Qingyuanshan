@@ -14,7 +14,7 @@
 | 旅行徒步 | 泉州徒步 | 清源山 |
 | 生活决策 | 居住与装修 | 租房 |
 
-现有 23 篇报告，分为 3 个领域、7 个二级分类。完整元数据见 [reports.json](reports.json)。
+现有 24 篇报告，分为 3 个领域、7 个二级分类。完整元数据见 [reports.json](reports.json)。
 
 ## 目录结构
 
@@ -53,7 +53,7 @@
 
 | 领域 | 品类 / 管理分类 | 报告数 |
 | --- | --- | --- |
-| [跨境电商](#跨境电商) | 喷泉（9）、Light（3）、耳环（3）、通用选品（2） | 17 |
+| [跨境电商](#跨境电商) | 喷泉（9）、Light（4）、耳环（3）、通用选品（2） | 18 |
 | [旅行徒步](#旅行徒步) | 泉州徒步（3） | 3 |
 | [生活决策](#生活决策) | 居住与装修（2）、汽车（1） | 3 |
 
@@ -102,12 +102,13 @@
 | [喷泉五款 · 版权与亚马逊在售核查报告（2026-11-08 / 落地款 2026-11-10）](https://jesspinkmam.github.io/Qingyuanshan/%E8%B7%A8%E5%A2%83%E7%94%B5%E5%95%86/%E5%96%B7%E6%B3%89/%E5%93%81%E7%89%8C%E4%B8%8E%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83/%E5%96%B7%E6%B3%89%E4%B8%A4%E6%AC%BE-%E7%89%88%E6%9D%83%E4%B8%8E%E4%BA%9A%E9%A9%AC%E9%80%8A%E6%A0%B8%E6%9F%A5%E6%8A%A5%E5%91%8A-20261108.html) | 五款产品的在售链接、知识产权核查与利润重算。 | `喷泉` `知识产权` `竞品分析` | [源码](跨境电商/喷泉/品牌与知识产权/喷泉两款-版权与亚马逊核查报告-20261108.html) |
 | [聚泉阁 喷泉商标](https://jesspinkmam.github.io/Qingyuanshan/%E8%B7%A8%E5%A2%83%E7%94%B5%E5%95%86/%E5%96%B7%E6%B3%89/%E5%93%81%E7%89%8C%E4%B8%8E%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83/juquange-fountain-trademark.html) | 品牌候选、USPTO 检索及商标名称核查。 | `喷泉` `商标` `品牌` | [源码](跨境电商/喷泉/品牌与知识产权/juquange-fountain-trademark.html) |
 
-### Light（3 篇）
+### Light（4 篇）
 
 #### 市场与选品
 
 | 报告 | 内容 | 标签 | 文件 |
 | --- | --- | --- | --- |
+| [户外造型灯 Top 100 · A+ 图片索引 · 2026-11-18](跨境电商/Light/市场与选品/figurine-lights-aplus-top100-20261118.html) | 核查前 100 款商品，97 款有商品 A+ 图片，共 691 张。 | `户外造型灯` `A+` `竞品分析` | [源码](跨境电商/Light/市场与选品/figurine-lights-aplus-top100-20261118.html) |
 | [户外造型灯 Top 100 · 四款商品素材补采 · 2026-11-18](跨境电商/Light/市场与选品/figurine-lights-media-supplement-20261118.html) | 第 67–70 名主图、附图分类与已获取 A+ 图片；其余 96 款未补采。 | `户外造型灯` `竞品分析` `素材采集` | [源码](跨境电商/Light/市场与选品/figurine-lights-media-supplement-20261118.html) |
 | [户外造型灯 Top 100 · 榜单素材不完整快照 · 2026-11-18](跨境电商/Light/市场与选品/figurine-lights-media-top100-20261118.html) | 100 个榜单 ASIN、60 张榜单缩略图；商品详情图、A+ 和视频尚未采集。 | `户外造型灯` `竞品分析` `素材采集` | [源码](跨境电商/Light/市场与选品/figurine-lights-media-top100-20261118.html) |
 | [Outdoor Figurine Lights 畅销拆解 · Amazon Best Sellers](https://jesspinkmam.github.io/Qingyuanshan/%E8%B7%A8%E5%A2%83%E7%94%B5%E5%95%86/Light/%E5%B8%82%E5%9C%BA%E4%B8%8E%E9%80%89%E5%93%81/outdoor-figurine-lights-bestsellers.html) | 畅销造型、选品元素、产品筛选及选品公式生成器。 | `户外造型灯` `竞品分析` `选品` | [源码](跨境电商/Light/市场与选品/outdoor-figurine-lights-bestsellers.html) |
