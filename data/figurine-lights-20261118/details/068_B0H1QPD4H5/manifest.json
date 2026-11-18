@@ -1,0 +1,20 @@
+{
+  "products": [{
+    "id": "B0H1QPD4H5", "rank": 68,
+    "source_page": "https://www.amazon.com/dp/B0H1QPD4H5",
+    "captured_date": "2026-11-18", "timezone": "Asia/Shanghai",
+    "gallery_expected": 7, "gallery_verified": 7,
+    "gallery_verification": "Selected IMAGES tab and verified each image on product page",
+    "aplus_status": "Not found on page; existence unconfirmed",
+    "video_status": "One video observed: Christmas Gnome with LED Light, creator Hondinmet; association with brand Capoda unverified; playback blob, no downloadable URL observed",
+    "assets": [
+      {"role":"main","order":1,"url":"https://m.media-amazon.com/images/I/81Enrgar+5L._AC_SL1500_.jpg"},
+      {"role":"secondary","order":1,"url":"https://m.media-amazon.com/images/I/71ENiiTY9LL._AC_SL1500_.jpg"},
+      {"role":"secondary","order":2,"url":"https://m.media-amazon.com/images/I/81hvnyOnxIL._AC_SL1500_.jpg"},
+      {"role":"secondary","order":3,"url":"https://m.media-amazon.com/images/I/817LQzWIYCL._AC_SL1500_.jpg"},
+      {"role":"secondary","order":4,"url":"https://m.media-amazon.com/images/I/71fBR87Bi3L._AC_SL1500_.jpg"},
+      {"role":"secondary","order":5,"url":"https://m.media-amazon.com/images/I/818VU6BBRlL._AC_SL1500_.jpg"},
+      {"role":"secondary","order":6,"url":"https://m.media-amazon.com/images/I/81kuBmMrWCL._AC_SL1500_.jpg"}
+    ]
+  }]
+}

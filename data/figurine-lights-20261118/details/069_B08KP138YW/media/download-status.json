@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "assets": {
+    "6eb6c7336941442c7ed9f92df88baf1059333db7d695ab39e7c9ef2395f2fd94": {
+      "rank": 69,
+      "id": "B08KP138YW",
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/417fldqcLcL._AC_.jpg",
+      "status": "downloaded",
+      "path": "products/069_B08KP138YW/gallery/003_6eb6c7336941.jpg",
+      "sha256": "4fb38e198afe3b404dcca3f7ed715eb3d5e22a6d80ae29809a42449a02ed111d",
+      "bytes": 25150
+    },
+    "1477543d28be3b98cca9afd20a32021b9b0ea1138c09f19d4ef7641538201100": {
+      "rank": 69,
+      "id": "B08KP138YW",
+      "role": "main",
+      "url": "https://m.media-amazon.com/images/I/71yYLTAASbL._AC_SL1001_.jpg",
+      "status": "downloaded",
+      "path": "products/069_B08KP138YW/main/001_1477543d28be.jpg",
+      "sha256": "5e6df7b3b6dd31d509dabfd165ebb50bdbae3b6090885bf25d35fbdd64a0e701",
+      "bytes": 130809
+    },
+    "29663ccf76038dc8a368e8ffca780a8df8d60370e563d9c93c8525ccea58b0ea": {
+      "rank": 69,
+      "id": "B08KP138YW",
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/712SAE2tbCL._AC_SL1001_.jpg",
+      "status": "downloaded",
+      "path": "products/069_B08KP138YW/gallery/002_29663ccf7603.jpg",
+      "sha256": "4211b5eb691dbd81d5332c4080667d38db965631e2fd2d0823c90b5737474e60",
+      "bytes": 235131
+    },
+    "fd6bbe93479c7dd7318f9e5b7fbd946bc28e24ac3739a4c7aa23fb1aaf369e89": {
+      "rank": 69,
+      "id": "B08KP138YW",
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/61ZH42D+ONL._AC_SL1314_.jpg",
+      "status": "downloaded",
+      "path": "products/069_B08KP138YW/gallery/004_fd6bbe93479c.jpg",
+      "sha256": "4d71172a2291835d7953c296303bfd8a03f704ba49aaec7b9bd3bcdcfdda9b09",
+      "bytes": 80261
+    },
+    "28404ce60aedd221d96c20612f506fa95c89ae528ed56b5416e4a27d171d49a2": {
+      "rank": 69,
+      "id": "B08KP138YW",
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71zcoolmQ2L._AC_SL1001_.jpg",
+      "status": "downloaded",
+      "path": "products/069_B08KP138YW/gallery/005_28404ce60aed.jpg",
+      "sha256": "554d33c8bb5c49e77f8224809abcc1d8a9e64df104da9e244fcafb8703c4f831",
+      "bytes": 129968
+    },
+    "f64b215bea8349dba61b1aef2e20cc5b1946cdc377a110766777e463a30a5380": {
+      "rank": 69,
+      "id": "B08KP138YW",
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71zNs0MjsPL._AC_SL1001_.jpg",
+      "status": "downloaded",
+      "path": "products/069_B08KP138YW/gallery/006_f64b215bea83.jpg",
+      "sha256": "35cc0dc59cc8b6b623d48703272e386bff6eee7d1139252ba920ff1658629d5c",
+      "bytes": 170297
+    },
+    "07360e857cf60d88ddc00ed2685a1796576b33dad370b565847369117f7f8c79": {
+      "rank": 69,
+      "id": "B08KP138YW",
+      "role": "secondary",
+      "url": "https://m.media-amazon.com/images/I/71XpsfB1-wL._AC_SL1001_.jpg",
+      "status": "downloaded",
+      "path": "products/069_B08KP138YW/gallery/007_07360e857cf6.jpg",
+      "sha256": "8781a63c7ac4b4baa61532842a593b058f9cdcfff8aa1a17095f5e9f55b946bf",
+      "bytes": 117803
+    },
+    "b1e1116ec3e225828f2718f13cf9ea4f97b0b5572b51d14e6ae29b724c7fcbd9": {
+      "rank": 69,
+      "id": "B08KP138YW",
+      "role": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/9e4eba35-ed36-4247-be69-fb911312bd30.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+      "status": "downloaded",
+      "path": "products/069_B08KP138YW/aplus/008_b1e1116ec3e2.jpg",
+      "sha256": "b5e4823e31944e4620720d7fe40fe279fb976f7c6d2c5533d551f884cdf883c0",
+      "bytes": 295309
+    },
+    "2198a4467121619cd6ebadb9a6730caac0e901ace4c7ea4f41ec842431cc421b": {
+      "rank": 69,
+      "id": "B08KP138YW",
+      "role": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/6c01e619-0c36-4886-a2b3-ac65faaab263.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+      "status": "downloaded",
+      "path": "products/069_B08KP138YW/aplus/009_2198a4467121.jpg",
+      "sha256": "32d7d7c4eb1f4b8089aea5747748dc55ba41e34a9b782bc0a6e1a8203de06dee",
+      "bytes": 471128
+    },
+    "33ea138229987ab81bd8eb08d1c788d38486a30a31bf85d74131015af544e8c7": {
+      "rank": 69,
+      "id": "B08KP138YW",
+      "role": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/39a21257-e928-4365-968c-a1b66f7d7f65.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+      "status": "downloaded",
+      "path": "products/069_B08KP138YW/aplus/010_33ea13822998.jpg",
+      "sha256": "be3c158c250c3cb8003e15eb30b50dbc9bb54c8b1e6c1314380584b035842c00",
+      "bytes": 1186819
+    },
+    "5715a00bdff18ab64d54d793f04ac1763b0b8d5c0cace9edfda0e81cbfa197f9": {
+      "rank": 69,
+      "id": "B08KP138YW",
+      "role": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/3f98ef42-aa6e-4eb8-bf1f-13eaea608d83.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+      "status": "downloaded",
+      "path": "products/069_B08KP138YW/aplus/011_5715a00bdff1.jpg",
+      "sha256": "9d6724524ea1f7cdf6a6342f01b2483aa668c75a3b2ff9f0d9a2575afd3d5cf9",
+      "bytes": 358477
+    },
+    "a1e73bd146afaaf286dd995787a2fc98c709aa8217abc50dba1199958595fc61": {
+      "rank": 69,
+      "id": "B08KP138YW",
+      "role": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/a3c942eb-7553-40b4-b46f-78acd94a1caf.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+      "status": "downloaded",
+      "path": "products/069_B08KP138YW/aplus/012_a1e73bd146af.jpg",
+      "sha256": "8f884bcbe9e0f735e9c7fe8bbdc049868146d5c218c74b42abf97bb29cd9fd37",
+      "bytes": 1003333
+    },
+    "511ab4021055e3a9d7ecdd98a8d35888d61154c1ee6601a6b70ab9b473d09170": {
+      "rank": 69,
+      "id": "B08KP138YW",
+      "role": "aplus",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/b1ba58e7-ae80-47d2-baaa-f2d782115cc1.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+      "status": "downloaded",
+      "path": "products/069_B08KP138YW/aplus/013_511ab4021055.jpg",
+      "sha256": "e07de5663c7675ac9853e4ea03b0fb2f9af6ba69951259bdf34e00165ee466df",
+      "bytes": 1126433
+    }
+  }
+}

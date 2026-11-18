@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "id": "B08KP138YW",
+      "rank": 69,
+      "source_page": "https://www.amazon.com/dp/B08KP138YW",
+      "captured_date": "2026-11-18",
+      "timezone": "Asia/Shanghai",
+      "gallery_expected": 7,
+      "gallery_verified": 7,
+      "video_status": "unverified",
+      "aplus_variant_note": "Product shows 8Pack; A+ heading says 16Pack.",
+      "assets": [
+        {
+          "role": "main",
+          "order": 1,
+          "url": "https://m.media-amazon.com/images/I/71yYLTAASbL._AC_SL1001_.jpg"
+        },
+        {
+          "role": "secondary",
+          "order": 1,
+          "url": "https://m.media-amazon.com/images/I/712SAE2tbCL._AC_SL1001_.jpg"
+        },
+        {
+          "role": "secondary",
+          "order": 2,
+          "url": "https://m.media-amazon.com/images/I/417fldqcLcL._AC_.jpg"
+        },
+        {
+          "role": "secondary",
+          "order": 3,
+          "url": "https://m.media-amazon.com/images/I/61ZH42D+ONL._AC_SL1314_.jpg"
+        },
+        {
+          "role": "secondary",
+          "order": 4,
+          "url": "https://m.media-amazon.com/images/I/71zcoolmQ2L._AC_SL1001_.jpg"
+        },
+        {
+          "role": "secondary",
+          "order": 5,
+          "url": "https://m.media-amazon.com/images/I/71zNs0MjsPL._AC_SL1001_.jpg"
+        },
+        {
+          "role": "secondary",
+          "order": 6,
+          "url": "https://m.media-amazon.com/images/I/71XpsfB1-wL._AC_SL1001_.jpg"
+        },
+        {
+          "role": "aplus",
+          "order": 1,
+          "section": "product description",
+          "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/9e4eba35-ed36-4247-be69-fb911312bd30.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+        },
+        {
+          "role": "aplus",
+          "order": 2,
+          "section": "product description",
+          "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/6c01e619-0c36-4886-a2b3-ac65faaab263.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+        },
+        {
+          "role": "aplus",
+          "order": 3,
+          "section": "product description",
+          "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/39a21257-e928-4365-968c-a1b66f7d7f65.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+        },
+        {
+          "role": "aplus",
+          "order": 4,
+          "section": "product description",
+          "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/3f98ef42-aa6e-4eb8-bf1f-13eaea608d83.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+        },
+        {
+          "role": "aplus",
+          "order": 5,
+          "section": "product description",
+          "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/a3c942eb-7553-40b4-b46f-78acd94a1caf.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+        },
+        {
+          "role": "aplus",
+          "order": 6,
+          "section": "product description",
+          "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/b1ba58e7-ae80-47d2-baaa-f2d782115cc1.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+        }
+      ]
+    }
+  ]
+}
