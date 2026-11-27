@@ -108,6 +108,23 @@
       "legacy_paths": [
         "weilandacheck.html"
       ]
+    },
+    {
+      "id": "mimeng-writing-topic-selection",
+      "title": "咪蒙的文章是怎么建构、选题又是怎么来的",
+      "path": "内容研究/自媒体写作/咪蒙写作与选题/咪蒙文章建构与选题.html",
+      "domain": "内容研究",
+      "category": "自媒体写作",
+      "topic": "咪蒙写作与选题",
+      "tags": [
+        "咪蒙",
+        "自媒体写作",
+        "选题",
+        "数据分析"
+      ],
+      "summary": "942 篇语料 × 83 天热搜样本的量化拆解：选题题库模型、文章建构流水线、情绪公式与写作 prompt。",
+      "updated_at": "2026-11-27",
+      "legacy_paths": []
     }
   ]
 }
